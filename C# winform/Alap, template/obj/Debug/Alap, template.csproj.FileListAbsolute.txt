@@ -1,0 +1,10 @@
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\bin\Debug\Alap, template.exe.config
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\bin\Debug\Alap, template.exe
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\bin\Debug\Alap, template.pdb
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\obj\Debug\Alap, template.csproj.AssemblyReference.cache
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\obj\Debug\Alap__template.Properties.Resources.resources
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\obj\Debug\Alap, template.csproj.GenerateResource.cache
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\obj\Debug\Alap, template.csproj.CoreCompileInputs.cache
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\obj\Debug\Alap, template.exe
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\obj\Debug\Alap, template.pdb
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform\Alap, template\obj\Debug\Alap__template.Form1.resources
