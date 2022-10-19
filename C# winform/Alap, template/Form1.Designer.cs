@@ -80,8 +80,8 @@ namespace Alap__template
             this.eszközökInicializálásaToolStripMenuItem,
             this.kilépésAProgrambólToolStripMenuItem});
             this.programToolStripMenuItem.Name = "programToolStripMenuItem";
-            this.programToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.programToolStripMenuItem.Text = "Program";
+            this.programToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
+            this.programToolStripMenuItem.Text = "Gyakorlatok inicializálása";
             // 
             // eszközökFelméréseToolStripMenuItem
             // 
@@ -124,13 +124,13 @@ namespace Alap__template
             this.programKészítéseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ütemHozzáadásaToolStripMenuItem});
             this.programKészítéseToolStripMenuItem.Name = "programKészítéseToolStripMenuItem";
-            this.programKészítéseToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
-            this.programKészítéseToolStripMenuItem.Text = "Program készítése";
+            this.programKészítéseToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
+            this.programKészítéseToolStripMenuItem.Text = "Új gyakorlat hozzáadása";
             // 
             // ütemHozzáadásaToolStripMenuItem
             // 
             this.ütemHozzáadásaToolStripMenuItem.Name = "ütemHozzáadásaToolStripMenuItem";
-            this.ütemHozzáadásaToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.ütemHozzáadásaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ütemHozzáadásaToolStripMenuItem.Text = "Ütem hozzáadása";
             this.ütemHozzáadásaToolStripMenuItem.Click += new System.EventHandler(this.ütemHozzáadásaToolStripMenuItem_Click);
             // 
@@ -142,8 +142,8 @@ namespace Alap__template
             this.feladatsorSzerkesztéseToolStripMenuItem,
             this.feladatsorFuttatásaToolStripMenuItem});
             this.programokKezeléseToolStripMenuItem.Name = "programokKezeléseToolStripMenuItem";
-            this.programokKezeléseToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
-            this.programokKezeléseToolStripMenuItem.Text = "Programok kezelése";
+            this.programokKezeléseToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
+            this.programokKezeléseToolStripMenuItem.Text = "Gyakorlatok kezelése";
             // 
             // feladatsorBetöltéseToolStripMenuItem
             // 
@@ -240,7 +240,7 @@ namespace Alap__template
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(822, 386);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Programszöveg";
+            this.tabPage2.Text = "Feladatsor szövegként";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // timer
@@ -255,7 +255,7 @@ namespace Alap__template
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(75, 23);
             this.Panel2.TabIndex = 8;
-            this.Panel2.Text = "&mainPanel";
+            this.Panel2.Text = "&Indít";
             this.Panel2.UseVisualStyleBackColor = true;
             this.Panel2.Click += new System.EventHandler(this.Panel2_Click);
             // 
