@@ -1,0 +1,11 @@
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.csproj.AssemblyReference.cache
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.FormMainMenu.resources
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.csproj.GenerateResource.cache
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\Thesis_project.exe.config
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\Thesis_project.exe
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\Thesis_project.pdb
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Properties.Resources.resources
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.csproj.CoreCompileInputs.cache
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.exe
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.pdb
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormGyakorlat.resources
