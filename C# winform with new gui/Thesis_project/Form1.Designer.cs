@@ -37,14 +37,14 @@ namespace Thesis_project
             this.btnTesztek = new System.Windows.Forms.Button();
             this.btnGyakorlat = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelDesktopPanel = new System.Windows.Forms.Panel();
             this.btnCloseChildForm = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelDesktopPanel = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -80,7 +80,7 @@ namespace Thesis_project
             this.btnValami.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnValami.Size = new System.Drawing.Size(200, 60);
             this.btnValami.TabIndex = 5;
-            this.btnValami.Text = " Gyakorlat";
+            this.btnValami.Text = " Kilépés";
             this.btnValami.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnValami.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnValami.UseVisualStyleBackColor = false;
@@ -101,7 +101,7 @@ namespace Thesis_project
             this.btnBeállítások.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnBeállítások.Size = new System.Drawing.Size(200, 60);
             this.btnBeállítások.TabIndex = 4;
-            this.btnBeállítások.Text = " Gyakorlatok kezelése";
+            this.btnBeállítások.Text = " Feladatsor Szerkesztése";
             this.btnBeállítások.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBeállítások.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBeállítások.UseVisualStyleBackColor = false;
@@ -122,7 +122,7 @@ namespace Thesis_project
             this.btnÚjGyak.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnÚjGyak.Size = new System.Drawing.Size(200, 60);
             this.btnÚjGyak.TabIndex = 3;
-            this.btnÚjGyak.Text = " Gyakorlat hozzáadás";
+            this.btnÚjGyak.Text = " Feladatsor Betöltése";
             this.btnÚjGyak.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnÚjGyak.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnÚjGyak.UseVisualStyleBackColor = false;
@@ -143,7 +143,7 @@ namespace Thesis_project
             this.btnTesztek.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnTesztek.Size = new System.Drawing.Size(200, 60);
             this.btnTesztek.TabIndex = 2;
-            this.btnTesztek.Text = " Tesztek";
+            this.btnTesztek.Text = " Feladatsor Mentés";
             this.btnTesztek.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTesztek.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTesztek.UseVisualStyleBackColor = false;
@@ -164,7 +164,7 @@ namespace Thesis_project
             this.btnGyakorlat.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnGyakorlat.Size = new System.Drawing.Size(200, 60);
             this.btnGyakorlat.TabIndex = 1;
-            this.btnGyakorlat.Text = " Gyakorlat";
+            this.btnGyakorlat.Text = " Indítás";
             this.btnGyakorlat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGyakorlat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGyakorlat.UseVisualStyleBackColor = false;
@@ -180,6 +180,17 @@ namespace Thesis_project
             this.panelLogo.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.panelLogo.Size = new System.Drawing.Size(200, 80);
             this.panelLogo.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(63, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Project";
             // 
             // button1
             // 
@@ -246,37 +257,6 @@ namespace Thesis_project
             this.panelTitleBar.Size = new System.Drawing.Size(733, 80);
             this.panelTitleBar.TabIndex = 1;
             // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(310, 23);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(80, 37);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "HOME";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(63, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Project";
-            // 
-            // panelDesktopPanel
-            // 
-            this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPanel.Location = new System.Drawing.Point(200, 80);
-            this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(733, 386);
-            this.panelDesktopPanel.TabIndex = 2;
-            // 
             // btnCloseChildForm
             // 
             this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
@@ -289,6 +269,26 @@ namespace Thesis_project
             this.btnCloseChildForm.TabIndex = 1;
             this.btnCloseChildForm.UseVisualStyleBackColor = true;
             this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(310, 23);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(80, 37);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "HOME";
+            // 
+            // panelDesktopPanel
+            // 
+            this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPanel.Location = new System.Drawing.Point(200, 80);
+            this.panelDesktopPanel.Name = "panelDesktopPanel";
+            this.panelDesktopPanel.Size = new System.Drawing.Size(733, 386);
+            this.panelDesktopPanel.TabIndex = 2;
             // 
             // FormMainMenu
             // 
