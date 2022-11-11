@@ -8,9 +8,9 @@ D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new g
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.csproj.CoreCompileInputs.cache
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.exe
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.pdb
-D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormGyakorlat.resources
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\SLFormHelper.dll
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\Newtonsoft.Json.dll
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\SLFormHelper.pdb
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\Newtonsoft.Json.xml
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.csproj.CopyComplete
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormInditas.resources

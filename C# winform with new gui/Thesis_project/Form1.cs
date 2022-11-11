@@ -91,29 +91,29 @@ namespace Thesis_project
         }
 
 
-        private void btnGyakorlat_Click(object sender, EventArgs e)
+        private void btnInditas_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormGyakorlat(),sender);
+            OpenChildForm(new Forms.FormInditas(),sender);
         }
 
-        private void btnTesztek_Click(object sender, EventArgs e)
+        private void btnMentes_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.FormMentes(), sender);
         }
 
-        private void btnÚjGyak_Click(object sender, EventArgs e)
+        private void btnBetoltes_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.FormBetoltes(), sender);
         }
 
-        private void btnBeállítások_Click(object sender, EventArgs e)
+        private void btnSzerkesztes_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.FormSzerkesztes(), sender);
         }
 
-        private void btnValami_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            Application.Exit();
         }
 
         private void btnCloseChildForm_Click(object sender, EventArgs e)

@@ -31,11 +31,11 @@ namespace Thesis_project
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnValami = new System.Windows.Forms.Button();
-            this.btnBeállítások = new System.Windows.Forms.Button();
-            this.btnÚjGyak = new System.Windows.Forms.Button();
-            this.btnTesztek = new System.Windows.Forms.Button();
-            this.btnGyakorlat = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnSzerkesztés = new System.Windows.Forms.Button();
+            this.btnBetöltés = new System.Windows.Forms.Button();
+            this.btnMentés = new System.Windows.Forms.Button();
+            this.btnInditás = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -53,122 +53,123 @@ namespace Thesis_project
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.btnValami);
-            this.panelMenu.Controls.Add(this.btnBeállítások);
-            this.panelMenu.Controls.Add(this.btnÚjGyak);
-            this.panelMenu.Controls.Add(this.btnTesztek);
-            this.panelMenu.Controls.Add(this.btnGyakorlat);
+            this.panelMenu.Controls.Add(this.btnExit);
+            this.panelMenu.Controls.Add(this.btnSzerkesztés);
+            this.panelMenu.Controls.Add(this.btnBetöltés);
+            this.panelMenu.Controls.Add(this.btnMentés);
+            this.panelMenu.Controls.Add(this.btnInditás);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 466);
+            this.panelMenu.Size = new System.Drawing.Size(200, 583);
             this.panelMenu.TabIndex = 0;
             // 
-            // btnValami
+            // btnExit
             // 
-            this.btnValami.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnValami.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnValami.FlatAppearance.BorderSize = 0;
-            this.btnValami.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnValami.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btnValami.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnValami.Image = ((System.Drawing.Image)(resources.GetObject("btnValami.Image")));
-            this.btnValami.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnValami.Location = new System.Drawing.Point(0, 320);
-            this.btnValami.Name = "btnValami";
-            this.btnValami.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnValami.Size = new System.Drawing.Size(200, 60);
-            this.btnValami.TabIndex = 5;
-            this.btnValami.Text = " Kilépés";
-            this.btnValami.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnValami.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnValami.UseVisualStyleBackColor = false;
-            this.btnValami.Click += new System.EventHandler(this.btnValami_Click);
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
+            
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 480);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(200, 100);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = " Kilépés";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnBeállítások
+            // btnSzerkesztés
             // 
-            this.btnBeállítások.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnBeállítások.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBeállítások.FlatAppearance.BorderSize = 0;
-            this.btnBeállítások.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBeállítások.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btnBeállítások.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnBeállítások.Image = ((System.Drawing.Image)(resources.GetObject("btnBeállítások.Image")));
-            this.btnBeállítások.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBeállítások.Location = new System.Drawing.Point(0, 260);
-            this.btnBeállítások.Name = "btnBeállítások";
-            this.btnBeállítások.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnBeállítások.Size = new System.Drawing.Size(200, 60);
-            this.btnBeállítások.TabIndex = 4;
-            this.btnBeállítások.Text = " Feladatsor Szerkesztése";
-            this.btnBeállítások.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBeállítások.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBeállítások.UseVisualStyleBackColor = false;
-            this.btnBeállítások.Click += new System.EventHandler(this.btnBeállítások_Click);
+            this.btnSzerkesztés.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnSzerkesztés.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSzerkesztés.FlatAppearance.BorderSize = 0;
+            this.btnSzerkesztés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSzerkesztés.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnSzerkesztés.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSzerkesztés.Image = ((System.Drawing.Image)(resources.GetObject("btnSzerkesztés.Image")));
+            this.btnSzerkesztés.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSzerkesztés.Location = new System.Drawing.Point(0, 380);
+            this.btnSzerkesztés.Name = "btnSzerkesztés";
+            this.btnSzerkesztés.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnSzerkesztés.Size = new System.Drawing.Size(200, 100);
+            this.btnSzerkesztés.TabIndex = 4;
+            this.btnSzerkesztés.Text = " Feladatsor Szerkesztése";
+            this.btnSzerkesztés.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSzerkesztés.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSzerkesztés.UseVisualStyleBackColor = false;
+            this.btnSzerkesztés.Click += new System.EventHandler(this.btnSzerkesztes_Click);
             // 
-            // btnÚjGyak
+            // btnBetöltés
             // 
-            this.btnÚjGyak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnÚjGyak.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnÚjGyak.FlatAppearance.BorderSize = 0;
-            this.btnÚjGyak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnÚjGyak.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btnÚjGyak.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnÚjGyak.Image = ((System.Drawing.Image)(resources.GetObject("btnÚjGyak.Image")));
-            this.btnÚjGyak.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnÚjGyak.Location = new System.Drawing.Point(0, 200);
-            this.btnÚjGyak.Name = "btnÚjGyak";
-            this.btnÚjGyak.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnÚjGyak.Size = new System.Drawing.Size(200, 60);
-            this.btnÚjGyak.TabIndex = 3;
-            this.btnÚjGyak.Text = " Feladatsor Betöltése";
-            this.btnÚjGyak.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnÚjGyak.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnÚjGyak.UseVisualStyleBackColor = false;
-            this.btnÚjGyak.Click += new System.EventHandler(this.btnÚjGyak_Click);
+            this.btnBetöltés.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnBetöltés.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBetöltés.FlatAppearance.BorderSize = 0;
+            this.btnBetöltés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBetöltés.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnBetöltés.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBetöltés.Image = ((System.Drawing.Image)(resources.GetObject("btnBetöltés.Image")));
+            this.btnBetöltés.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBetöltés.Location = new System.Drawing.Point(0, 280);
+            this.btnBetöltés.Name = "btnBetöltés";
+            this.btnBetöltés.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnBetöltés.Size = new System.Drawing.Size(200, 100);
+            this.btnBetöltés.TabIndex = 3;
+            this.btnBetöltés.Text = " Feladatsor Betöltése";
+            this.btnBetöltés.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBetöltés.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBetöltés.UseVisualStyleBackColor = false;
+            this.btnBetöltés.Click += new System.EventHandler(this.btnBetoltes_Click);
             // 
-            // btnTesztek
+            // btnMentés
             // 
-            this.btnTesztek.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnTesztek.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTesztek.FlatAppearance.BorderSize = 0;
-            this.btnTesztek.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTesztek.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btnTesztek.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnTesztek.Image = ((System.Drawing.Image)(resources.GetObject("btnTesztek.Image")));
-            this.btnTesztek.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTesztek.Location = new System.Drawing.Point(0, 140);
-            this.btnTesztek.Name = "btnTesztek";
-            this.btnTesztek.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnTesztek.Size = new System.Drawing.Size(200, 60);
-            this.btnTesztek.TabIndex = 2;
-            this.btnTesztek.Text = " Feladatsor Mentés";
-            this.btnTesztek.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTesztek.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTesztek.UseVisualStyleBackColor = false;
-            this.btnTesztek.Click += new System.EventHandler(this.btnTesztek_Click);
+            this.btnMentés.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnMentés.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMentés.FlatAppearance.BorderSize = 0;
+            this.btnMentés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMentés.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnMentés.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMentés.Image = ((System.Drawing.Image)(resources.GetObject("btnMentés.Image")));
+            this.btnMentés.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMentés.Location = new System.Drawing.Point(0, 180);
+            this.btnMentés.Name = "btnMentés";
+            this.btnMentés.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnMentés.Size = new System.Drawing.Size(200, 100);
+            this.btnMentés.TabIndex = 2;
+            this.btnMentés.Text = " Feladatsor Mentés";
+            this.btnMentés.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMentés.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMentés.UseVisualStyleBackColor = false;
+            this.btnMentés.Click += new System.EventHandler(this.btnMentes_Click);
             // 
-            // btnGyakorlat
+            // btnInditás
             // 
-            this.btnGyakorlat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnGyakorlat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnGyakorlat.FlatAppearance.BorderSize = 0;
-            this.btnGyakorlat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGyakorlat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGyakorlat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnGyakorlat.Image = ((System.Drawing.Image)(resources.GetObject("btnGyakorlat.Image")));
-            this.btnGyakorlat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGyakorlat.Location = new System.Drawing.Point(0, 80);
-            this.btnGyakorlat.Name = "btnGyakorlat";
-            this.btnGyakorlat.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnGyakorlat.Size = new System.Drawing.Size(200, 60);
-            this.btnGyakorlat.TabIndex = 1;
-            this.btnGyakorlat.Text = " Indítás";
-            this.btnGyakorlat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGyakorlat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGyakorlat.UseVisualStyleBackColor = false;
-            this.btnGyakorlat.Click += new System.EventHandler(this.btnGyakorlat_Click);
+            this.btnInditás.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnInditás.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInditás.FlatAppearance.BorderSize = 0;
+            this.btnInditás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInditás.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInditás.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnInditás.Image = ((System.Drawing.Image)(resources.GetObject("btnInditás.Image")));
+            this.btnInditás.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInditás.Location = new System.Drawing.Point(0, 80);
+            this.btnInditás.Name = "btnInditás";
+            this.btnInditás.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnInditás.Size = new System.Drawing.Size(200, 100);
+            this.btnInditás.TabIndex = 1;
+            this.btnInditás.Text = " Indítás";
+            this.btnInditás.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInditás.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInditás.UseVisualStyleBackColor = false;
+            this.btnInditás.Click += new System.EventHandler(this.btnInditas_Click);
             // 
             // panelLogo
             // 
@@ -254,7 +255,7 @@ namespace Thesis_project
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(200, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(733, 80);
+            this.panelTitleBar.Size = new System.Drawing.Size(734, 80);
             this.panelTitleBar.TabIndex = 1;
             // 
             // btnCloseChildForm
@@ -276,7 +277,7 @@ namespace Thesis_project
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(310, 23);
+            this.lblTitle.Location = new System.Drawing.Point(311, 23);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(80, 37);
             this.lblTitle.TabIndex = 0;
@@ -287,14 +288,14 @@ namespace Thesis_project
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopPanel.Location = new System.Drawing.Point(200, 80);
             this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(733, 386);
+            this.panelDesktopPanel.Size = new System.Drawing.Size(734, 503);
             this.panelDesktopPanel.TabIndex = 2;
             // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 466);
+            this.ClientSize = new System.Drawing.Size(934, 583);
             this.Controls.Add(this.panelDesktopPanel);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
@@ -312,12 +313,12 @@ namespace Thesis_project
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Button btnGyakorlat;
+        private System.Windows.Forms.Button btnInditás;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button btnValami;
-        private System.Windows.Forms.Button btnBeállítások;
-        private System.Windows.Forms.Button btnÚjGyak;
-        private System.Windows.Forms.Button btnTesztek;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnSzerkesztés;
+        private System.Windows.Forms.Button btnBetöltés;
+        private System.Windows.Forms.Button btnMentés;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

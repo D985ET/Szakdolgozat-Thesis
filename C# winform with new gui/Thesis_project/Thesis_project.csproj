@@ -55,11 +55,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormGyakorlat.cs">
+    <Compile Include="Forms\FormBetoltes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormGyakorlat.Designer.cs">
-      <DependentUpon>FormGyakorlat.cs</DependentUpon>
+    <Compile Include="Forms\FormBetoltes.Designer.cs">
+      <DependentUpon>FormBetoltes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormInditas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormInditas.Designer.cs">
+      <DependentUpon>FormInditas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMentes.Designer.cs">
+      <DependentUpon>FormMentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSzerkesztes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSzerkesztes.Designer.cs">
+      <DependentUpon>FormSzerkesztes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +90,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormGyakorlat.resx">
-      <DependentUpon>FormGyakorlat.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormInditas.resx">
+      <DependentUpon>FormInditas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\programmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\lamp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

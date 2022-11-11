@@ -1,7 +1,7 @@
 ﻿
 namespace Thesis_project.Forms
 {
-    partial class FormGyakorlat
+    partial class FormInditas
     {
         /// <summary>
         /// Required designer variable.

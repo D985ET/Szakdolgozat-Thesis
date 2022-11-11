@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnValami.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAA0RJREFUWEftl8tPE1EYxbs1/gGa+LcYdeHKhZsiPhpMioDQdl6dFmgp1AItjwJV
@@ -138,7 +138,7 @@
         PeXm/8ffHTrdDwUJs/O+dAvtAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnBeállítások.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSzerkesztés.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAAstJREFUWEfFV89rE0EUXhUF9U+Q4lX8QzQepKJ4KEbwYjVbPIhQhZIN5u5BafTi
@@ -156,7 +156,7 @@
         oMhk8HluWX8Bjt5N5cim7d8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnÚjGyak.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnBetöltés.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAA0RJREFUWEftl8tPE1EYxbs1/gGa+LcYdeHKhZsiPhpMioDQdl6dFmgp1AItjwJV
@@ -176,7 +176,7 @@
         PeXm/8ffHTrdDwUJs/O+dAvtAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnTesztek.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnMentés.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAABMFJREFUWEe9l1tMU3ccx3kw28uyLdmyZ16WJSZ7hbiHzURwxmTZHmAsZICMhZht
@@ -202,7 +202,7 @@
         EJGdQi6+U8idE7j5Y9XrRABP/VfwK/liKgGrL/b3v6oykM3ZvoSeAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnGyakorlat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnInditás.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAABBtJREFUWEfVVl1oU0kUnsZlUdNWfPBBH8Sy7OpuktXCVtu00pZtmq67trlpg2hu

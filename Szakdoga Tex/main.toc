@@ -1,0 +1,2 @@
+\select@language {magyar} \contentsline {chapter}{Bevezetés}{1}{chapter*.1}%
+\select@language {magyar} \contentsline {chapter}{Összegzés}{1}{chapter*.1}%
