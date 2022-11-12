@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.23)  11 NOV 2022 17:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.23)  12 NOV 2022 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -641,7 +641,7 @@ LaTeX Info: Redefining \cal on input line 577.
 LaTeX Info: Redefining \mit on input line 578.
 )
 Package hyperref Info: Option `pageanchor' set `false' on input line 17.
-<eszterhazy-logo-hu.pdf, id=15, 256.07971pt x 88.04292pt>
+<eszterhazy-logo-hu.pdf, id=26, 256.07971pt x 88.04292pt>
 File: eszterhazy-logo-hu.pdf Graphic file (type pdf)
 <use eszterhazy-logo-hu.pdf>
 Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 24.
@@ -667,39 +667,61 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 25.
  Excluding 'comment' comment. [1
 
 
+] [2
+
+] [3
+
+] [4
+
+] [5
+
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-2.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
+1.
 
 (D:\Program Files\MikTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (main.bbl [2
+) (main.bbl [6
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [3
+) Excluding 'comment' comment. [7
 
 ] (main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 732AB65405E7D3AEDD8DCBD7A63B7B62;187.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 3883B484DCF5C5AF15D073C52E24EF6F;950
+(rerunfilecheck)             After:  C4408E68C89AF57DCE6590D46F1F1AD4;318.
  ) 
 Here is how much of TeX's memory you used:
- 15358 strings out of 478338
- 248154 string characters out of 2846509
+ 15370 strings out of 478338
+ 248258 string characters out of 2846509
  572035 words of memory out of 3000000
- 33477 multiletter control sequences out of 15000+600000
+ 33479 multiletter control sequences out of 15000+600000
  515437 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,81p,296b,457s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{D:/Program Files/MikTeX/fonts/enc/dvips/lm/lm-ec.enc}<D:/Program Files/MikTe
-X/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTeX/fonts/type1/public/
-lm/lmcsc10.pfb><D:/Program Files/MikTeX/fonts/type1/public/lm/lmr12.pfb><D:/Pro
-gram Files/MikTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (5 pages, 124808 bytes).
+ 75i,7n,81p,392b,457s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+{D:/Program Files/MikTeX/fonts/enc/dvips/lm/lm-ec.enc}<D:/Program Files/MikTeX/
+fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTeX/fonts/type1/public/lm
+/lmcsc10.pfb><D:/Program Files/MikTeX/fonts/type1/public/lm/lmr12.pfb><D:/Progr
+am Files/MikTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (9 pages, 133166 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
