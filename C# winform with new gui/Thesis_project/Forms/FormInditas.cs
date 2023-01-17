@@ -37,7 +37,6 @@ namespace Thesis_project.Forms
 
             //kétszer kell lefuttatni
             Res.Text = SLFormHelper.FormHelper.CallSLDLL_Open(this.Handle).ToString();
-            Res.Text = SLFormHelper.FormHelper.CallSLDLL_Open(this.Handle).ToString(); //Felmérés,
 
             Res2.Text = SLFormHelper.FormHelper.CallFelmeres().ToString(); //Inicializálás, hány eszköz van bekötve
             
