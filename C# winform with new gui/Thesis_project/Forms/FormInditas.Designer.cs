@@ -31,11 +31,11 @@ namespace Thesis_project.Forms
         {
             this.Res = new System.Windows.Forms.Label();
             this.Res2 = new System.Windows.Forms.Label();
-            this.Eszk_feltolt_BTN = new System.Windows.Forms.Button();
             this.EszkozokdbTxt = new System.Windows.Forms.Label();
             this.Eszközöknevei = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnKekLampa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Res
@@ -53,16 +53,6 @@ namespace Thesis_project.Forms
             this.Res2.Name = "Res2";
             this.Res2.Size = new System.Drawing.Size(0, 13);
             this.Res2.TabIndex = 2;
-            // 
-            // Eszk_feltolt_BTN
-            // 
-            this.Eszk_feltolt_BTN.Location = new System.Drawing.Point(12, 13);
-            this.Eszk_feltolt_BTN.Name = "Eszk_feltolt_BTN";
-            this.Eszk_feltolt_BTN.Size = new System.Drawing.Size(139, 60);
-            this.Eszk_feltolt_BTN.TabIndex = 3;
-            this.Eszk_feltolt_BTN.Text = "Eszközök felmérése (Valid eszközök nélkül)";
-            this.Eszk_feltolt_BTN.UseVisualStyleBackColor = true;
-            this.Eszk_feltolt_BTN.Click += new System.EventHandler(this.Eszk_feltolt_BTN_Click);
             // 
             // EszkozokdbTxt
             // 
@@ -97,19 +87,29 @@ namespace Thesis_project.Forms
             this.panel1.Size = new System.Drawing.Size(775, 283);
             this.panel1.TabIndex = 7;
             // 
-            // FormGyakorlat
+            // btnKekLampa
+            // 
+            this.btnKekLampa.Location = new System.Drawing.Point(509, 13);
+            this.btnKekLampa.Name = "btnKekLampa";
+            this.btnKekLampa.Size = new System.Drawing.Size(75, 23);
+            this.btnKekLampa.TabIndex = 8;
+            this.btnKekLampa.Text = "kekLampa";
+            this.btnKekLampa.UseVisualStyleBackColor = true;
+            this.btnKekLampa.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // FormInditas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnKekLampa);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Eszközöknevei);
             this.Controls.Add(this.EszkozokdbTxt);
-            this.Controls.Add(this.Eszk_feltolt_BTN);
             this.Controls.Add(this.Res2);
             this.Controls.Add(this.Res);
-            this.Name = "FormGyakorlat";
+            this.Name = "FormInditas";
             this.Text = "Gyakorlat";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -119,10 +119,10 @@ namespace Thesis_project.Forms
         #endregion
         private System.Windows.Forms.Label Res;
         private System.Windows.Forms.Label Res2;
-        private System.Windows.Forms.Button Eszk_feltolt_BTN;
         private System.Windows.Forms.Label EszkozokdbTxt;
         private System.Windows.Forms.RichTextBox Eszközöknevei;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnKekLampa;
     }
 }

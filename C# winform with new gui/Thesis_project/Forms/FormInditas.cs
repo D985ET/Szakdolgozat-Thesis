@@ -13,7 +13,8 @@ namespace Thesis_project.Forms
 {
     public partial class FormInditas : Form
     {
-        
+
+        bool dev485Set = false;
         public FormInditas()
         {
             InitializeComponent();
@@ -33,29 +34,21 @@ namespace Thesis_project.Forms
                     btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
                 }
             }
-
-
-            //kétszer kell lefuttatni
-            Res.Text = SLFormHelper.FormHelper.CallSLDLL_Open(this.Handle).ToString();
-
-            Res2.Text = SLFormHelper.FormHelper.CallFelmeres().ToString(); //Inicializálás, hány eszköz van bekötve
             
-            
-            
+            if(dev485Set == false)
+            {
+                Res.Text = FormHelper.CallFelmeres().ToString();
+                dev485Set = true;
+                Gombokat_Kirak();
+            }
 
         }
-    
-
-
-
-        private void Eszk_feltolt_BTN_Click(object sender, EventArgs e)
+        private void Gombokat_Kirak()
         {
-           
+
             Point p = new Point(0, 0);
             bool elsosor = false;
-            bool masodiksor = false;
-            SLFormHelper.FormHelper.FillDeviceListWithDevices(); //DEV485 Töltése
-            SLFormHelper.FormHelper.FillDevices(); //JSON-ös parseolás
+
             for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
             {
                 Console.WriteLine();
@@ -68,12 +61,13 @@ namespace Thesis_project.Forms
                 if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDLight))
                 {
                     lampatKirak(p);
+
                 }
                 if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(Speaker))
                 {
                     hangszoroKirak(p);
                 }
-                if (SLFormHelper.FormHelper.Devices.Count > 9 && elsosor == true)/* SLFormHelper.FormHelper.Devices.Count > 6*/
+                if (SLFormHelper.FormHelper.Devices.Count > 9 && elsosor == true) /* SLFormHelper.FormHelper.Devices.Count > 6*/
                 {
 
                     if (p.X != 0 && p.Y == 100)
@@ -89,7 +83,7 @@ namespace Thesis_project.Forms
                     {
                         p.X = p.X + 100;
                     }
-                    
+
                 }
                 if (SLFormHelper.FormHelper.Devices.Count > 6 && elsosor == false)/* SLFormHelper.FormHelper.Devices.Count > 6*/
                 {
@@ -103,7 +97,7 @@ namespace Thesis_project.Forms
                         p.X = 0;
                         p.Y = 100;
                     }
-                    else if(p.X == 0 && p.Y == 100)
+                    else if (p.X == 0 && p.Y == 100)
                     {
                         p.X = p.X + 100;
                     }
@@ -112,7 +106,7 @@ namespace Thesis_project.Forms
                         p.X = p.X + 100;
                     }
                 }
-                
+
                 else //6 alatt fut le
                 {
                     p.Y = 0;
@@ -120,10 +114,10 @@ namespace Thesis_project.Forms
                 }
             }
             EszkozokdbTxt.Text = SLFormHelper.FormHelper.Devices.Count.ToString() + " db"; //hány db eszköz van
-               
-               
-            
+
         }
+        
+   
         private void nyilatKirak(Point location)
         {
 
@@ -132,13 +126,14 @@ namespace Thesis_project.Forms
             
             arrowButton.Location = location;
 
-            arrowButton.Width = 45;
-            arrowButton.Height = 45;
+            arrowButton.Width = 100;
+            arrowButton.Height = 100;
            
             arrowButton.BackColor = Color.White;
             arrowButton.Image = Image.FromFile(@"img\right-arrow.png");
             arrowButton.FlatStyle = FlatStyle.Flat;
             arrowButton.FlatAppearance.BorderSize = 0;
+     
 
             panel1.Controls.Add(arrowButton);
         }
@@ -148,24 +143,26 @@ namespace Thesis_project.Forms
 
             Button lampaButton = new Button();
            
-            lampaButton.Width = 45;
-            lampaButton.Height = 45;
+            lampaButton.Width = 100;
+            lampaButton.Height = 100;
             lampaButton.Location = location;
             lampaButton.BackColor = Color.White;
             lampaButton.FlatStyle = FlatStyle.Flat;
             lampaButton.FlatAppearance.BorderSize = 0;
             //lampaButton.Text = "LAMPA";//TODO IMAGE
             lampaButton.Image = Image.FromFile(@"img\lamp.png");
+           
             panel1.Controls.Add(lampaButton);
         }
+
         private void hangszoroKirak(Point location)
         {
             Button hangszoroButton = new Button();
           
             hangszoroButton.Location = location;
 
-            hangszoroButton.Width = 45;
-            hangszoroButton.Height = 45;
+            hangszoroButton.Width = 100;
+            hangszoroButton.Height = 100;
             /*hangszoroButton.Location = location;*/
             hangszoroButton.Image = Image.FromFile(@"img\speaker-filled-audio-tool.png");
 
@@ -173,6 +170,16 @@ namespace Thesis_project.Forms
             hangszoroButton.FlatAppearance.BorderSize = 0;
             /*hangszoroButton.Text = "HANGSZORO";//TODO IMA*/
             panel1.Controls.Add(hangszoroButton);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LEDLight light = (LEDLight)FormHelper.Devices[0];
+            light.Color = Color.Green;
+            byte turn = 1;
+            string json_source = FormHelper.DevicesToJSON();
+            
+            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
         }
     }
 }
