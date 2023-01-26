@@ -24,9 +24,7 @@ namespace Thesis_project
             InitializeComponent();
             vsz = new Random();
             btnCloseChildForm.Visible = false;
-            FormHelper.CallOpen(this.Handle);
-          
-      
+     
         }
 
         //Methods
@@ -91,7 +89,8 @@ namespace Thesis_project
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
-          
+           
+
         }
 
 
@@ -161,8 +160,10 @@ namespace Thesis_project
                             this.DRB485 = (int)msg.LParam;
                             if (!dev485Set)
                             {
+                             
                                 FormHelper.CallListelem(ref drb485);
                                 dev485Set = true;
+                                
                             }
                             break;
                         //itt van egy while/for-ciklus, de egyébként nem csinál semmit
@@ -234,6 +235,14 @@ namespace Thesis_project
                 if (value < 0)
                     throw new ArgumentOutOfRangeException("Az eszközök darabszáma nem lehet negatív!");
                 drb485 = value;
+            }
+        }
+
+        private void FormMainMenu_Load(object sender, EventArgs e)
+        {
+            if (!dev485Set)
+            {
+                FormHelper.CallOpen(this.Handle);
             }
         }
     }

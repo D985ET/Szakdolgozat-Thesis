@@ -37,7 +37,8 @@ namespace Thesis_project.Forms
             
             if(dev485Set == false)
             {
-                Res.Text = FormHelper.CallFelmeres().ToString();
+               Res.Text = FormHelper.CallFelmeres().ToString();
+              
                 dev485Set = true;
                 Gombokat_Kirak();
             }
@@ -174,11 +175,54 @@ namespace Thesis_project.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LEDLight light = (LEDLight)FormHelper.Devices[0];
-            light.Color = Color.Green;
+            /*LEDLight light = (LEDLight)FormHelper.Devices[0];
+            light.Color = Color.Blue;
+            
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
             
+            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);*/
+            LEDArrow ledArrow1 = (LEDArrow)FormHelper.Devices[0];
+            ledArrow1.Color = Color.Red;
+            ledArrow1.Direction = Direction.RIGHT;
+
+            byte turn = 1;
+            string json_source = FormHelper.DevicesToJSON();
+
+            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+        }
+
+        private void nyilUres_Click(object sender, EventArgs e)
+        {
+            LEDArrow ledArrow1 = (LEDArrow)FormHelper.Devices[0];
+            ledArrow1.Color = Color.Black;
+            ledArrow1.Direction = Direction.BOTH;
+
+            byte turn = 1;
+            string json_source = FormHelper.DevicesToJSON();
+
+            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+        }
+
+        private void hangszOn_Click(object sender, EventArgs e)
+        {
+            Speaker speaker1 = (Speaker)FormHelper.Devices[0];
+            Speaker newSpeaker = new Speaker(speaker1.Azonos, 20, 20, 10000);
+            FormHelper.Devices[0] = newSpeaker;
+            byte turn = 1;
+            string json_source = FormHelper.DevicesToJSON();
+
+            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+        }
+
+        private void hangszOff_Click(object sender, EventArgs e)
+        {
+            Speaker speaker1 = (Speaker)FormHelper.Devices[0];
+            Speaker newSpeaker = new Speaker(speaker1.Azonos, 0, 0, 0);
+            FormHelper.Devices[0] = newSpeaker;
+            byte turn = 1;
+            string json_source = FormHelper.DevicesToJSON();
+
             FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
         }
     }

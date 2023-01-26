@@ -73,7 +73,6 @@ namespace Thesis_project
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
-            
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.Location = new System.Drawing.Point(0, 480);
@@ -301,6 +300,7 @@ namespace Thesis_project
             this.Controls.Add(this.panelMenu);
             this.Name = "FormMainMenu";
             this.Text = "FormMainMenu";
+            this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
