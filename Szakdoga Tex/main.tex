@@ -31,45 +31,59 @@
 	\addcontentsline{toc}{chapter}{Elméleti háttér}
 	\addcontentsline{toc}{chapter}{Összegzés}
 
+
+
+	\begin{comment}
+		leírom hogy miről szól, (nem kötelező), 2 rész -> probléma felvetés, mi a motiváció, kontextus, előremutatva a dolgozatban hol miről fogsz beszélni.(1.fejezetben befogom mutatni a kódolást)
+	\end{comment}
 	\chapter*{Bevezetés}
 	A tanulmányaim során sok olyan tárgyat tanulhattam amelyek segítettek belátást nyerni, hogy valójában melyik is az az irányágazat az informatikán belül, amely felkeltette az érdeklődésemet. Az utolsó félévekben tanulhattam robotikát a Robotika alapjai nevezetű tárgy következtében, amely közelebb vitt engem a gépközeli programozás világába. Továbbá C\# nyelvben elég biztos tudást szerezhettem a Szolgáltatás Orientált Programozás, Magasszintű programozási nyelvek I. és II. című tárgyakon.
 	\par
-	Szakdolgozatom témájául szerettem volna egy olyan szakdolgozatot készíteni, melynek a későbbiekben másoknak tudok segítséget nyújtani.
+	Szakdolgozatom témájául szerettem volna egy olyan szakdolgozatot készíteni, melynek a későbbiekben másoknak tudok segítséget nyújtani az informatikai szaktudásommal.
 	\par
 	A választott téma, mind az informatika mind, az egészségügy számára fontos kérdéseket tehet fel:
 	\begin{itemize}
-		\item  Mi jelenthet arra megoldást, ha egy adott korosztályba tartozó ember, nehézségekkel küzd a mindennapokban a mozgását illetve a mentális felfogását illetően? (Akár ez jelentheti az egyszerű mozgások nem megfelelő elvégzését, akár pedig az alap információk felfogásában való akadályozottságot is.)
+		\item  Mi jelenthet arra megoldást, ha egy adott korosztályba tartozó ember, nehézségekkel küzd a mindennapokban, a mozgását, illetve a mentális felfogását illetően? (Akár ez jelentheti az egyszerű mozgások nem megfelelő elvégzését, akár pedig az alap információk felfogásában való akadályozottságot is.)
 		\item  Az informatikával tudunk-e az előbb említett kérdésre, olyan alkalmazást írni, amely ezeknek a fejlődését elősegítheti?
 		\item Amennyiben tudunk ilyen alkalmazást írni, hogyan valósítsuk meg?
 	\end{itemize}
+	Alapvetően a következő fejezetekben azt szeretném részletezni, hogy milyen technológiákat használunk, és emellett milyen programozási nyelven készül a projekt. \\ 
+	Továbbá, ki fogok térni azokra a rendszerekre is, amelyek hasonló céllal készültek el. Majd ezen projekteket hasonlóságait és különbségeit mérném össze, az elkészült projektünkkel. 
+	
+	\begin{comment}
+	Bevezető2: Rendszer amit kidolgozott Somodi László, mi a szerepe, mi a célja, mit vállaltam én? -> frontend
+	\end{comment}
+	\chapter*{Bevezető 2}
 	\par
-	A témában jártas, és a "Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok óvodától a felnőtt korig" \cite{SLaszlo} című könyv írója, Somodi László, segített belátást nyerni az egészségügyi és a morális lényegességébe a projektnek. Meglátása szerint a mozgásfejlesztés és az agyi kapacitás fejlesztése, kéz a kézben jár. Ezt a mozgásfejlesztést úgy érhetjük el, ha az adott személynek utasításokat adunk ki, hogy adott jelzésre (szín, hang, nyíl) és ezek kombinációjára, milyen mozgást kell végeznie. Továbbá, ez a módszer akár szellemi leépüléssel küzdő, szépkorúak számára is segítséget nyújthat, mivel a változatos mozgás, és a különböző ingerek ki- és be- kapcsolása növeli az agy alap működését.
+	A témában jártas, és a "Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok óvodától a felnőtt korig" \cite{SLaszlo} című könyv írója, Somodi László, segített belátást nyerni az egészségügyi és a morális lényegességébe a projektnek. \\ Elmondása szerint a mozgásfejlesztés és az agyi kapacitás fejlesztése, kéz a kézben jár. Ezt a mozgásfejlesztést úgy érhetjük el, ha az adott személynek utasításokat adunk ki, hogy adott jelzésre (szín, hang, irány) és ezek kombinációjára, milyen mozgást kell végeznie. Továbbá, ez a módszer akár szellemi leépüléssel küzdő, szépkorúak számára is segítséget nyújthat, mivel a változatos mozgás, és a különböző ingerek ki- és be- kapcsolása növeli az agy alap működését.
 	\par 
-	Ennek automatizálására készül a projekt, amely különböző informatikai eszközökkel valósítja meg a színek, hangok, és nyilak megjelenítését, illetve érzékeltetését. 
+	A fentebb említettek automatizálására készül a projekt, amely különböző informatikai eszközökkel valósítja meg a színek, hangok, és nyilak megjelenítését, illetve érzékeltetését. 
+	\begin{comment}
+		Itt még lehetne kicsit beszélni a Somodi Lászlós dologokról.
+	\end{comment}
+\\
+	Alapvetően, a projekten sok személy részt vett, a hardver lefejlesztésében és 
+	összeszerelésében, Keresztes Péter Tanár úr. \\
+	A backend és ezeknek a hardvereknek a mögöttes működtetését, valamint a Delphi és a C$\sharp$ nyelvek közötti kapcsolat megoldását, Nagy-Tóth Bence, barátom és szaktársam készítette el.
+	\\
+	Én ezeknek a hardvereknek a működtetéséhez a felületet írtam, amin keresztül lehet különféle módon, változatos ütemekben vezérelni a fentebb említett eszközöket. Ezt C$\sharp$ nyelven írtam ami a felhasználói felület írására kellően alkalmas.
 	
 	
 	\begin{comment}
-		Ezek később lesznek hasznosak
-		\begin{tetel}
-			Tétel szövege.
-		\end{tetel}
-		
-		\begin{proof}
-			Bizonyítás szövege.
-		\end{proof}
-		
-		\begin{definicio}
-			Definíció szövege.
-		\end{definicio}
-		
-		\begin{megjegyzes}
-			Megjegyzés szövege.
-		\end{megjegyzes}
+		1.fejezet: Rendszer amit kidolgozott Somodi László, mi a szerepe, mi a célja, mit vállaltam én? -> frontend
 	\end{comment}
-	\chapter*{Projekt megvalósítása}
 	\chapter*{A Winformos projekt}
+	\begin{comment}
+		2.fejezet: Rendszer amit kidolgozott Somodi László, mi a szerepe, mi a célja, mit vállaltam én? -> frontend
+	\end{comment}
 	\chapter*{Imperatív és az oop közti kommunikáció}
+	\begin{comment}
+		3.fejezet(vége): Rendszer amit kidolgozott Somodi László, mi a szerepe, mi a célja, mit vállaltam én? -> frontend
+	\end{comment}
 	\chapter*{Projekt tényleges használata, felmérések, vélemények}
+	\begin{comment}
+		4.fejezet: Rendszer amit kidolgozott Somodi László, mi a szerepe, mi a célja, mit vállaltam én? -> frontend
+	\end{comment}
 	\chapter*{Összegzés}
 	
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.23)  17 JAN 2023 10:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.23)  27 JAN 2023 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -664,20 +664,23 @@ Overfull \hbox (11.97961pt too wide) in paragraph at lines 25--25
 
 ]
 Package hyperref Info: Option `pageanchor' set `true' on input line 28.
- Excluding 'comment' comment. [1
+ Excluding 'comment' comment. Excluding 'comment' comment. [1
 
-
-] [2
-
-] [3
-
-] [4
-
-] [5
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
-8.
+Excluding 'comment' comment. Excluding 'comment' comment. [2
+
+]
+Excluding 'comment' comment. [3
+
+] Excluding 'comment' comment. [4
+
+]
+Excluding 'comment' comment. [5
+
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
+2.
 
 (D:\Program Files\MikTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -691,20 +694,22 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C4408E68C89AF57DCE6590D46F1F1AD4;318.
  ) 
 Here is how much of TeX's memory you used:
- 15371 strings out of 478338
- 248285 string characters out of 2846509
- 576065 words of memory out of 3000000
- 33481 multiletter control sequences out of 15000+600000
- 515437 words of font info for 70 fonts, out of 8000000 for 9000
+ 15378 strings out of 478338
+ 248384 string characters out of 2846509
+ 575065 words of memory out of 3000000
+ 33484 multiletter control sequences out of 15000+600000
+ 516111 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,81p,824b,459s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{D:/Program Files/MikTeX/fonts/enc/dvips/lm/lm-ec.enc}<D:/Program Files/MikTe
-X/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTeX/fonts/type1/public/
-lm/lmcsc10.pfb><D:/Program Files/MikTeX/fonts/type1/public/lm/lmr12.pfb><D:/Pro
-gram Files/MikTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (9 pages, 137018 bytes).
+ 75i,7n,81p,827b,459s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{D:/Program Files/MikTeX/fonts/enc/dvips/lm/lm-ec.enc}{D:/Program Files/MikTe
+X/fonts/enc/dvips/lm/lm-mathit.enc}<D:/Program Files/MikTeX/fonts/type1/public/
+lm/lmbx12.pfb><D:/Program Files/MikTeX/fonts/type1/public/lm/lmcsc10.pfb><D:/Pr
+ogram Files/MikTeX/fonts/type1/public/lm/lmmi12.pfb><D:/Program Files/MikTeX/fo
+nts/type1/public/lm/lmr12.pfb><D:/Program Files/MikTeX/fonts/type1/public/lm/lm
+tt12.pfb>
+Output written on main.pdf (9 pages, 142216 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
  50 words of extra memory for PDF output out of 10000 (max. 10000000)
 
