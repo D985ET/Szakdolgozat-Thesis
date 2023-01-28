@@ -14,3 +14,4 @@ D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new g
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.csproj.CopyComplete
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormInditas.resources
 D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\SLFormHelper.dll
+D:\Programozás\5.félév\szakdolgozat\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormNyilSzerk.resources

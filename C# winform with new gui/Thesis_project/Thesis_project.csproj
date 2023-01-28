@@ -74,6 +74,12 @@
     <Compile Include="Forms\FormMentes.Designer.cs">
       <DependentUpon>FormMentes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormNyilSzerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNyilSzerk.Designer.cs">
+      <DependentUpon>FormNyilSzerk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormSzerkesztes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormInditas.resx">
       <DependentUpon>FormInditas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNyilSzerk.resx">
+      <DependentUpon>FormNyilSzerk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

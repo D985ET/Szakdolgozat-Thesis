@@ -1,0 +1,98 @@
+﻿using SLFormHelper;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Thesis_project.Forms
+{
+    public partial class FormNyilSzerk : Form
+    {
+        private LEDArrow arrowToSzerk;
+        public FormNyilSzerk(ref LEDArrow arrowToSzerk)
+        {
+            this.arrowToSzerk = arrowToSzerk;
+            InitializeComponent();
+            LoadTheme();
+            SzerkNyil();
+        }
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.Black; //ezt visszakell rakni majd white-ra
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+        }
+        private void SzerkNyil()
+        {
+            nyilAz.Text = arrowToSzerk.Azonos.ToString();
+            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
+            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+        }
+
+        private void nyilSzerkR_Click(object sender, EventArgs e)
+        {
+            arrowToSzerk.Color = Color.Red;
+            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
+        }
+
+        private void nyilSzerkB_Click(object sender, EventArgs e)
+        {
+            arrowToSzerk.Color = Color.Blue;
+            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
+        }
+
+        private void nyilSzerkG_Click(object sender, EventArgs e)
+        {
+            arrowToSzerk.Color = Color.Green;
+            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
+          
+        }
+
+        private void nyilSzerkDefault_Click(object sender, EventArgs e)
+        {
+            arrowToSzerk.Color = Color.Black;
+            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
+        }
+
+        private void nyilSzerkBal_Click(object sender, EventArgs e)
+        {
+            arrowToSzerk.Direction = Direction.LEFT;
+            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+        }
+
+        private void nyilSzerkJobb_Click(object sender, EventArgs e)
+        {
+            arrowToSzerk.Direction = Direction.RIGHT;
+            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+        }
+
+        private void nyilSzerkBoth_Click(object sender, EventArgs e)
+        {
+            arrowToSzerk.Direction = Direction.BOTH;
+            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+        }
+
+        private void btnMentNyil_Click(object sender, EventArgs e)
+        {
+            
+            byte turn = 1;
+            string json_source = FormHelper.DevicesToJSON();
+
+            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+        }
+
+     
+    }
+}

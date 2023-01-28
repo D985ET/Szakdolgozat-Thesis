@@ -15,11 +15,14 @@ namespace Thesis_project.Forms
     {
 
         bool dev485Set = false;
+        
         public FormInditas()
         {
             InitializeComponent();
             LoadTheme();
+            
         }
+
         //ez az összes formba megy majd
        
         private void LoadTheme()
@@ -118,6 +121,8 @@ namespace Thesis_project.Forms
 
         }
         
+
+        //buttonok kirakása attól függően hogy mik.
    
         private void nyilatKirak(Point location)
         {
@@ -134,10 +139,18 @@ namespace Thesis_project.Forms
             arrowButton.Image = Image.FromFile(@"img\right-arrow.png");
             arrowButton.FlatStyle = FlatStyle.Flat;
             arrowButton.FlatAppearance.BorderSize = 0;
-     
-
             panel1.Controls.Add(arrowButton);
+            arrowButton.Click += ArrowButton_Click;
         }
+        private FormNyilSzerk nyilSzerkForm; //nyil kirakás új form Clickre.
+        private void ArrowButton_Click(object sender, EventArgs e)
+        {
+            LEDArrow ledArrow1 = (LEDArrow)FormHelper.Devices[0];
+            nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
+            
+            nyilSzerkForm.Show();
+        }
+
         private void lampatKirak(Point location)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
@@ -172,6 +185,10 @@ namespace Thesis_project.Forms
             /*hangszoroButton.Text = "HANGSZORO";//TODO IMA*/
             panel1.Controls.Add(hangszoroButton);
         }
+
+
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
