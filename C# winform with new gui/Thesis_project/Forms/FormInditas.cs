@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SLFormHelper;
+using Thesis_project.Forms.EszkozSzerk;
 
 namespace Thesis_project.Forms
 {
@@ -139,15 +140,19 @@ namespace Thesis_project.Forms
             arrowButton.Image = Image.FromFile(@"img\right-arrow.png");
             arrowButton.FlatStyle = FlatStyle.Flat;
             arrowButton.FlatAppearance.BorderSize = 0;
+
             panel1.Controls.Add(arrowButton);
             arrowButton.Click += ArrowButton_Click;
         }
         private FormNyilSzerk nyilSzerkForm; //nyil kirakás új form Clickre.
         private void ArrowButton_Click(object sender, EventArgs e)
         {
-            LEDArrow ledArrow1 = (LEDArrow)FormHelper.Devices[0];
-            nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
-            
+            LEDArrow ledArrow1;
+            if (FormHelper.Devices[0] is LEDArrow)
+            {
+                ledArrow1 = (LEDArrow)FormHelper.Devices[0];
+                nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
+            }
             nyilSzerkForm.Show();
         }
 
@@ -167,6 +172,18 @@ namespace Thesis_project.Forms
             lampaButton.Image = Image.FromFile(@"img\lamp.png");
            
             panel1.Controls.Add(lampaButton);
+            lampaButton.Click += LampaButton_Click;
+        }
+        FormLampaSzerk lampaSzerkForm;
+        private void LampaButton_Click(object sender, EventArgs e)
+        {
+            LEDLight ledLight1;
+            if (FormHelper.Devices[0] is LEDLight)
+            {
+                ledLight1 = (LEDLight)FormHelper.Devices[0];
+                lampaSzerkForm = new FormLampaSzerk(ref ledLight1);
+            }
+            lampaSzerkForm.Show();
         }
 
         private void hangszoroKirak(Point location)
@@ -184,13 +201,25 @@ namespace Thesis_project.Forms
             hangszoroButton.FlatAppearance.BorderSize = 0;
             /*hangszoroButton.Text = "HANGSZORO";//TODO IMA*/
             panel1.Controls.Add(hangszoroButton);
+            hangszoroButton.Click += hangszoroButton_Click;
+        }
+        FormHangszSzerk hangSzerkForm;
+        private void hangszoroButton_Click(object sender, EventArgs e)
+        {
+            Speaker speaker1;
+            
+            if (FormHelper.Devices[0] is Speaker)
+            {
+                speaker1 = (Speaker)FormHelper.Devices[0];
+                hangSzerkForm = new FormHangszSzerk(ref speaker1);
+            }
+            hangSzerkForm.Show();
         }
 
 
 
-
         //nyíl
-        private void button1_Click(object sender, EventArgs e)
+        private void nyilKek_Click(object sender, EventArgs e)
         {
             /*LEDLight light = (LEDLight)FormHelper.Devices[0];
             light.Color = Color.Blue;
@@ -253,17 +282,14 @@ namespace Thesis_project.Forms
 
             FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
         }
-
+        //lámpa
         private void kekLampa_Click(object sender, EventArgs e)
         {
             LEDLight ledlight1;
-            
-
             if (FormHelper.Devices[0] is LEDLight)
             {
                 ledlight1 = (LEDLight)FormHelper.Devices[0];
                 ledlight1.Color = Color.Blue;
-                
             }
           
             byte turn = 1;

@@ -14,6 +14,11 @@ namespace Thesis_project.Forms
     public partial class FormNyilSzerk : Form
     {
         private LEDArrow arrowToSzerk;
+        //FORMHOZ:
+        private Button currentButton;
+        private Random vsz;
+        private int tempIndex;
+        private Form activeForm;
         public FormNyilSzerk(ref LEDArrow arrowToSzerk)
         {
             this.arrowToSzerk = arrowToSzerk;
@@ -21,6 +26,7 @@ namespace Thesis_project.Forms
             LoadTheme();
             SzerkNyil();
         }
+      
         private void LoadTheme()
         {
             foreach (Control btns in this.Controls)
@@ -90,7 +96,7 @@ namespace Thesis_project.Forms
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
 
-            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source); //ez futtatja le a színt és a directiont
         }
 
      

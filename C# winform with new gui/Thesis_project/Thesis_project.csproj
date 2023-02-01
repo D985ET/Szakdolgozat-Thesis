@@ -56,6 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormHangszSzerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormHangszSzerk.Designer.cs">
+      <DependentUpon>FormHangszSzerk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormBetoltes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,16 +74,22 @@
     <Compile Include="Forms\FormInditas.Designer.cs">
       <DependentUpon>FormInditas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormLampaSzerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormLampaSzerk.Designer.cs">
+      <DependentUpon>FormLampaSzerk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormMentes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormMentes.Designer.cs">
       <DependentUpon>FormMentes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormNyilSzerk.cs">
+    <Compile Include="Forms\EszkozSzerk\FormNyilSzerk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormNyilSzerk.Designer.cs">
+    <Compile Include="Forms\EszkozSzerk\FormNyilSzerk.Designer.cs">
       <DependentUpon>FormNyilSzerk.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormSzerkesztes.cs">
@@ -97,10 +109,16 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EszkozSzerk\FormHangszSzerk.resx">
+      <DependentUpon>FormHangszSzerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EszkozSzerk\FormLampaSzerk.resx">
+      <DependentUpon>FormLampaSzerk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormInditas.resx">
       <DependentUpon>FormInditas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormNyilSzerk.resx">
+    <EmbeddedResource Include="Forms\EszkozSzerk\FormNyilSzerk.resx">
       <DependentUpon>FormNyilSzerk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

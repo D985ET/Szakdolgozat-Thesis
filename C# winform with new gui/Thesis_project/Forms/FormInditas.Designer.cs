@@ -100,7 +100,7 @@ namespace Thesis_project.Forms
             this.btnKekLampa.TabIndex = 8;
             this.btnKekLampa.Text = "kekNyil";
             this.btnKekLampa.UseVisualStyleBackColor = true;
-            this.btnKekLampa.Click += new System.EventHandler(this.button1_Click);
+            this.btnKekLampa.Click += new System.EventHandler(this.nyilKek_Click);
             // 
             // nyilUres
             // 
