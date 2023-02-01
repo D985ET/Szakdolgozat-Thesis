@@ -189,7 +189,7 @@ namespace Thesis_project.Forms
 
 
 
-
+        //nyíl
         private void button1_Click(object sender, EventArgs e)
         {
             /*LEDLight light = (LEDLight)FormHelper.Devices[0];
@@ -199,6 +199,7 @@ namespace Thesis_project.Forms
             string json_source = FormHelper.DevicesToJSON();
             
             FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);*/
+        
             LEDArrow ledArrow1 = (LEDArrow)FormHelper.Devices[0];
             ledArrow1.Color = Color.Red;
             ledArrow1.Direction = Direction.RIGHT;
@@ -220,23 +221,67 @@ namespace Thesis_project.Forms
 
             FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
         }
-
+        //hangszóró
         private void hangszOn_Click(object sender, EventArgs e)
         {
-            Speaker speaker1 = (Speaker)FormHelper.Devices[0];
-            Speaker newSpeaker = new Speaker(speaker1.Azonos, 20, 20, 10000);
-            FormHelper.Devices[0] = newSpeaker;
+            Speaker speaker1;
+            speaker1 = (Speaker)FormHelper.Devices[0]; //itt baj van, mert egy hangtömböt kéne kiküldeni
+
+            speaker1.AddSound(Pitch.E, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.E, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.E_OKTAV1, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.D_OKTAV1, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.E, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.C_OKTAV1, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.E, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.GISZ, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.H_OKTAV1, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.C_OKTAV1, volume: 63, length: 200);
+            byte turn = 1;
+            string json_source = FormHelper.DevicesToJSON();
+            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+        }
+
+        private void hangszOff_Click(object sender, EventArgs e)
+        {
+            Speaker speaker1;
+            speaker1 = (Speaker)FormHelper.Devices[0]; //itt baj van, mert egy hangtömböt kéne kiküldeni
+            speaker1.ClearSounds();
+
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
 
             FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
         }
 
-        private void hangszOff_Click(object sender, EventArgs e)
+        private void kekLampa_Click(object sender, EventArgs e)
         {
-            Speaker speaker1 = (Speaker)FormHelper.Devices[0];
-            Speaker newSpeaker = new Speaker(speaker1.Azonos, 0, 0, 0);
-            FormHelper.Devices[0] = newSpeaker;
+            LEDLight ledlight1;
+            
+
+            if (FormHelper.Devices[0] is LEDLight)
+            {
+                ledlight1 = (LEDLight)FormHelper.Devices[0];
+                ledlight1.Color = Color.Blue;
+                
+            }
+          
+            byte turn = 1;
+            string json_source = FormHelper.DevicesToJSON();
+
+            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+        }
+
+        private void lampaUres_Click(object sender, EventArgs e)
+        {
+
+            LEDLight ledlight1;
+            if (FormHelper.Devices[0] is LEDLight)
+            {
+                ledlight1 = (LEDLight)FormHelper.Devices[0];
+                ledlight1.Color = Color.Black;
+
+            }
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
 

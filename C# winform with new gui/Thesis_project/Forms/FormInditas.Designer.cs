@@ -140,6 +140,7 @@ namespace Thesis_project.Forms
             this.kekLampa.TabIndex = 12;
             this.kekLampa.Text = "kekLampa";
             this.kekLampa.UseVisualStyleBackColor = true;
+            this.kekLampa.Click += new System.EventHandler(this.kekLampa_Click);
             // 
             // lampaUres
             // 
@@ -149,6 +150,7 @@ namespace Thesis_project.Forms
             this.lampaUres.TabIndex = 13;
             this.lampaUres.Text = "kikapcsLamp";
             this.lampaUres.UseVisualStyleBackColor = true;
+            this.lampaUres.Click += new System.EventHandler(this.lampaUres_Click);
             // 
             // FormInditas
             // 
