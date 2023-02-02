@@ -236,7 +236,7 @@ namespace Thesis_project.Forms
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
 
-            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+            FormHelper.CallSetTurnForEachDevice(ref json_source);
         }
 
         private void nyilUres_Click(object sender, EventArgs e)
@@ -248,7 +248,7 @@ namespace Thesis_project.Forms
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
 
-            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+            FormHelper.CallSetTurnForEachDevice(ref json_source);
         }
         //hangszóró
         private void hangszOn_Click(object sender, EventArgs e)
@@ -268,7 +268,8 @@ namespace Thesis_project.Forms
             speaker1.AddSound(Pitch.C_OKTAV1, volume: 63, length: 200);
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
-            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+           
+            FormHelper.CallSetTurnForEachDevice(ref json_source);
         }
 
         private void hangszOff_Click(object sender, EventArgs e)
@@ -280,7 +281,7 @@ namespace Thesis_project.Forms
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
 
-            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+            FormHelper.CallSetTurnForEachDevice(ref json_source);
         }
         //lámpa
         private void kekLampa_Click(object sender, EventArgs e)
@@ -294,8 +295,7 @@ namespace Thesis_project.Forms
           
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
-
-            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+            FormHelper.CallSetTurnForEachDevice(ref json_source);
         }
 
         private void lampaUres_Click(object sender, EventArgs e)
@@ -311,7 +311,7 @@ namespace Thesis_project.Forms
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
 
-            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source);
+            FormHelper.CallSetTurnForEachDevice(ref json_source);
         }
     }
 }

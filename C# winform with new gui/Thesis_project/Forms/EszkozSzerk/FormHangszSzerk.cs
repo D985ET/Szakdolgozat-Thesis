@@ -14,6 +14,7 @@ namespace Thesis_project.Forms.EszkozSzerk
     public partial class FormHangszSzerk : Form
     {
         private Speaker speakerToSzerk;
+        private Pitch selectedPitch;
         public FormHangszSzerk(ref Speaker speakerToSzerk)
         {
             this.speakerToSzerk = speakerToSzerk;
@@ -30,6 +31,9 @@ namespace Thesis_project.Forms.EszkozSzerk
             {
                 pitchComboBox.Items.Add(pitches);
             }
+           
+          
+
            /* for (int i = 0; i < pitchEnumCount; i++)
             {
                 
@@ -62,6 +66,28 @@ namespace Thesis_project.Forms.EszkozSzerk
             {
                 e.Handled = true;
             }
+
+        }
+      
+        private void pitchComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine(pitchComboBox.SelectedItem);
+            selectedPitch = (Pitch)pitchComboBox.SelectedItem;
+        }
+
+        private void btnHangMent_Click(object sender, EventArgs e)
+        {
+            if(pitchComboBox.SelectedItem == null)
+            {
+                aktHszinLbl.Text = "Válasszon ki hangszínt!";
+                aktHszinLbl.BackColor = Color.Red;
+                return;
+            }
+            speakerToSzerk.AddSound(selectedPitch, (byte)hangeroNumUp.Value, (ushort)timeMilisecBox.Value);
+            byte turn = 1;
+            string json_source = FormHelper.DevicesToJSON();
+            FormHelper.CallSetTurnForEachDevice(ref json_source); //ez futtatja le a színt
+            speakerToSzerk.ClearSounds();
         }
     }
 }

@@ -70,7 +70,7 @@ namespace Thesis_project.Forms
         {
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
-            FormHelper.CallSetTurnForEachDevice(ref turn, ref json_source); //ez futtatja le a színt
+            FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
         }
     }
 }
