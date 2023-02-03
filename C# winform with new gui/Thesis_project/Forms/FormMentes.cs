@@ -1,8 +1,10 @@
-﻿using System;
+﻿using SLFormHelper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +18,7 @@ namespace Thesis_project.Forms
         {
             InitializeComponent();
             LoadTheme();
+            Mentes();
         }
         private void LoadTheme()
         {
@@ -30,5 +33,24 @@ namespace Thesis_project.Forms
                 }
             }
         }
+
+        string fileContent = string.Empty;
+        string filePath = string.Empty;
+
+        private void Mentes()
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.InitialDirectory = "c:\\";
+            saveFileDialog.Filter = "JSON files (*.json)|*.json";
+            saveFileDialog.FilterIndex = 2;
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                //Get the path of specified file
+                filePath = saveFileDialog.FileName;
+            }
+            MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
+            FormHelper.UnloadDeviceSettings(filePath);//kiment
+        }
+
     }
 }

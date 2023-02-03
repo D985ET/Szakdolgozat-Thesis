@@ -3,7 +3,7 @@
    "devices":[
       {
          "type":"L",
-         "settings":"255|0|0"
+         "settings":"0|0|255"
       }
    ],
    "time":5000

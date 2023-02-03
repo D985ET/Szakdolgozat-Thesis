@@ -59,65 +59,71 @@ namespace Thesis_project.Forms
                 Console.WriteLine();
                 Console.WriteLine(SLFormHelper.FormHelper.Devices[i].GetType().Name);
                 Eszközöknevei.Text += SLFormHelper.FormHelper.Devices[i].GetType().Name + "\n";
-                if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDArrow))
+                for (int j = 0; j < 2; j++)
                 {
-                    nyilatKirak(p);
-                }
-                if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDLight))
-                {
-                    lampatKirak(p);
-
-                }
-                if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(Speaker))
-                {
-                    hangszoroKirak(p);
-                }
-                if (SLFormHelper.FormHelper.Devices.Count > 9 && elsosor == true) /* SLFormHelper.FormHelper.Devices.Count > 6*/
-                {
-
-                    if (p.X != 0 && p.Y == 100)
+                    if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDArrow))
                     {
-                        p.X = 0;
-                        p.Y = 200;
+                        nyilatKirak(p);
                     }
-                    else if (p.X == 0 && p.Y == 200)
+                    if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDLight))
                     {
+                        lampatKirak(p);
+
+                    }
+                    if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(Speaker))
+                    {
+                        hangszoroKirak(p);
+                    }
+                    if (SLFormHelper.FormHelper.Devices.Count > 9 && elsosor == true) /* SLFormHelper.FormHelper.Devices.Count > 6*/
+                    {
+
+                        if (p.X != 0 && p.Y == 100)
+                        {
+                            p.X = 0;
+                            p.Y = 200;
+                        }
+                        else if (p.X == 0 && p.Y == 200)
+                        {
+                            p.X = p.X + 100;
+                        }
+                        else
+                        {
+                            p.X = p.X + 100;
+                        }
+
+                    }
+                    if (SLFormHelper.FormHelper.Devices.Count > 6 && elsosor == false)/* SLFormHelper.FormHelper.Devices.Count > 6*/
+                    {
+
+                        if (SLFormHelper.FormHelper.Devices.Count == 5)
+                        {
+                            elsosor = true;
+                        }
+                        if (p.X != 0 && p.Y == 0)
+                        {
+                            p.X = 0;
+                            p.Y = 100;
+                        }
+                        else if (p.X == 0 && p.Y == 100)
+                        {
+                            p.X = p.X + 100;
+                        }
+                        else
+                        {
+                            p.X = p.X + 100;
+                        }
+                    }
+
+                    else //6 alatt fut le
+                    {
+                        p.Y = 0;
                         p.X = p.X + 100;
                     }
-                    else
-                    {
-                        p.X = p.X + 100;
-                    }
 
-                }
-                if (SLFormHelper.FormHelper.Devices.Count > 6 && elsosor == false)/* SLFormHelper.FormHelper.Devices.Count > 6*/
-                {
-
-                    if (SLFormHelper.FormHelper.Devices.Count == 5)
-                    {
-                        elsosor = true;
-                    }
-                    if (p.X != 0 && p.Y == 0)
-                    {
-                        p.X = 0;
-                        p.Y = 100;
-                    }
-                    else if (p.X == 0 && p.Y == 100)
-                    {
-                        p.X = p.X + 100;
-                    }
-                    else
-                    {
-                        p.X = p.X + 100;
-                    }
-                }
-
-                else //6 alatt fut le
-                {
-                    p.Y = 0;
-                    p.X = p.X + 100;
                 }
             }
+              
+            /*lampAktSzin.Text = ((LEDLight)FormHelper.Devices[0]).Color.ToString();*/
             EszkozokdbTxt.Text = SLFormHelper.FormHelper.Devices.Count.ToString() + " db"; //hány db eszköz van
 
         }
@@ -311,6 +317,42 @@ namespace Thesis_project.Forms
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
 
+            FormHelper.CallSetTurnForEachDevice(ref json_source);
+        }
+
+        private void lampEllenBtn_Click(object sender, EventArgs e)
+        {
+            string json_source = FormHelper.DevicesToJSON();
+            FormHelper.CallSetTurnForEachDevice(ref json_source);
+        }
+
+        private void utemFuttLmpBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nyilEllenBtn_Click(object sender, EventArgs e)
+        {
+            string json_source = FormHelper.DevicesToJSON();
+            FormHelper.CallSetTurnForEachDevice(ref json_source);
+        }
+
+        private void hangszEllenBtn_Click(object sender, EventArgs e)
+        {
+           /* Speaker speaker1;
+            speaker1 = (Speaker)FormHelper.Devices[0]; //itt baj van, mert egy hangtömböt kéne kiküldeni
+
+            speaker1.AddSound(Pitch.E, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.E, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.E_OKTAV1, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.D_OKTAV1, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.E, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.C_OKTAV1, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.E, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.GISZ, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.H_OKTAV1, volume: 63, length: 200);
+            speaker1.AddSound(Pitch.C_OKTAV1, volume: 63, length: 200);*/
+            string json_source = FormHelper.DevicesToJSON();
             FormHelper.CallSetTurnForEachDevice(ref json_source);
         }
     }

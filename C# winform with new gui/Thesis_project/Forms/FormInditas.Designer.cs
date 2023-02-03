@@ -35,6 +35,12 @@ namespace Thesis_project.Forms
             this.Eszközöknevei = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lampEllenBtn = new System.Windows.Forms.Button();
+            this.lampAktSzin = new System.Windows.Forms.Label();
+            this.utemFuttLmpBtn = new System.Windows.Forms.Button();
+            this.nyilEllenBtn = new System.Windows.Forms.Button();
+            this.hangszEllenBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Res
@@ -81,16 +87,79 @@ namespace Thesis_project.Forms
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(13, 155);
+            this.panel1.Location = new System.Drawing.Point(13, 129);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(775, 283);
+            this.panel1.Size = new System.Drawing.Size(775, 309);
             this.panel1.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(416, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Lámpa színe:";
+            // 
+            // lampEllenBtn
+            // 
+            this.lampEllenBtn.Location = new System.Drawing.Point(659, 12);
+            this.lampEllenBtn.Name = "lampEllenBtn";
+            this.lampEllenBtn.Size = new System.Drawing.Size(129, 23);
+            this.lampEllenBtn.TabIndex = 9;
+            this.lampEllenBtn.Text = "lampaEllenőrzés";
+            this.lampEllenBtn.UseVisualStyleBackColor = true;
+            this.lampEllenBtn.Click += new System.EventHandler(this.lampEllenBtn_Click);
+            // 
+            // lampAktSzin
+            // 
+            this.lampAktSzin.AutoSize = true;
+            this.lampAktSzin.Location = new System.Drawing.Point(511, 18);
+            this.lampAktSzin.Name = "lampAktSzin";
+            this.lampAktSzin.Size = new System.Drawing.Size(0, 13);
+            this.lampAktSzin.TabIndex = 10;
+            // 
+            // utemFuttLmpBtn
+            // 
+            this.utemFuttLmpBtn.Location = new System.Drawing.Point(659, 100);
+            this.utemFuttLmpBtn.Name = "utemFuttLmpBtn";
+            this.utemFuttLmpBtn.Size = new System.Drawing.Size(75, 23);
+            this.utemFuttLmpBtn.TabIndex = 11;
+            this.utemFuttLmpBtn.Text = "utemFuttatas";
+            this.utemFuttLmpBtn.UseVisualStyleBackColor = true;
+            this.utemFuttLmpBtn.Click += new System.EventHandler(this.utemFuttLmpBtn_Click);
+            // 
+            // nyilEllenBtn
+            // 
+            this.nyilEllenBtn.Location = new System.Drawing.Point(659, 41);
+            this.nyilEllenBtn.Name = "nyilEllenBtn";
+            this.nyilEllenBtn.Size = new System.Drawing.Size(129, 23);
+            this.nyilEllenBtn.TabIndex = 12;
+            this.nyilEllenBtn.Text = "nyilEllenőrzés";
+            this.nyilEllenBtn.UseVisualStyleBackColor = true;
+            this.nyilEllenBtn.Click += new System.EventHandler(this.nyilEllenBtn_Click);
+            // 
+            // hangszEllenBtn
+            // 
+            this.hangszEllenBtn.Location = new System.Drawing.Point(659, 71);
+            this.hangszEllenBtn.Name = "hangszEllenBtn";
+            this.hangszEllenBtn.Size = new System.Drawing.Size(129, 23);
+            this.hangszEllenBtn.TabIndex = 13;
+            this.hangszEllenBtn.Text = "hangszEllenőrzés";
+            this.hangszEllenBtn.UseVisualStyleBackColor = true;
+            this.hangszEllenBtn.Click += new System.EventHandler(this.hangszEllenBtn_Click);
             // 
             // FormInditas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.hangszEllenBtn);
+            this.Controls.Add(this.nyilEllenBtn);
+            this.Controls.Add(this.utemFuttLmpBtn);
+            this.Controls.Add(this.lampAktSzin);
+            this.Controls.Add(this.lampEllenBtn);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Eszközöknevei);
@@ -111,5 +180,11 @@ namespace Thesis_project.Forms
         private System.Windows.Forms.RichTextBox Eszközöknevei;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button lampEllenBtn;
+        private System.Windows.Forms.Label lampAktSzin;
+        private System.Windows.Forms.Button utemFuttLmpBtn;
+        private System.Windows.Forms.Button nyilEllenBtn;
+        private System.Windows.Forms.Button hangszEllenBtn;
     }
 }

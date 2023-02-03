@@ -2,8 +2,8 @@
 {
    "devices":[
       {
-         "type":"L",
-         "settings":"255|0|0"
+         "type":"N",
+         "settings":"0|0|255|2"
       }
    ],
    "time":5000

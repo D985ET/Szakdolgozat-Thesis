@@ -35,7 +35,7 @@ namespace Thesis_project.Forms
         }
         string fileContent = string.Empty;
         string filePath = string.Empty;
-        string filePathWithout = string.Empty;
+      
         private void Betoltes()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -57,8 +57,9 @@ namespace Thesis_project.Forms
                 }
             }
             MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
-            
-            FormHelper.LoadDeviceSettings(filePath , 1); //1 ütem
+        
+            FormHelper.LoadDeviceSettings(filePath); //1 ütem
+            Console.WriteLine(FormHelper.Devices[0]);
         }
 
     }
