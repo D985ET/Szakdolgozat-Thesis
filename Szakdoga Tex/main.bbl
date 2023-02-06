@@ -6,6 +6,11 @@ Európában egyedülálló az időseket segítő gondosóra program.
   \url{http://medicalonline.hu/informatika/cikk/europaban_egyedulallo_az_idoseket_segito_gondosora_program}.
 \newblock Accessed: 2023-01-26.
 
+\bibitem{hejlsberg2003c}
+Anders Hejlsberg, Scott Wiltamuth, and Peter Golde.
+\newblock {\em C\# language specification}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., 2003.
+
 \bibitem{SLaszlo}
 Somodi László.
 \newblock Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok

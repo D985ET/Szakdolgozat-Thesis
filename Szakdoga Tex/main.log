@@ -1,33 +1,31 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.12)  28 JAN 2023 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  6 FEB 2023 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
-LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-30>
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/thesis-ekf/thesis-ekf.
-cls
+**./main.tex
+(main.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-02>
+(D:\Program Files\MikTex\tex/latex/thesis-ekf\thesis-ekf.cls
 Document Class: thesis-ekf 2021/08/12 v4.2 Thesis class for Eszterhazy Karoly C
 atholic University (Eger, Hungary)
-
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.st
-y
+(D:\Program Files\MikTex\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
+
+(D:\Program Files\MikTex\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
-) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.st
-y
+)
+(D:\Program Files\MikTex\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.
-sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(D:\Program Files\MikTex\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(D:\Program Files\MikTex\tex/latex/base\report.cls
+Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
+(D:\Program Files\MikTex\tex/latex/base\size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@chapter=\count186
@@ -38,84 +36,78 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count191
 \c@figure=\count192
 \c@table=\count193
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+(D:\Program Files\MikTex\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/cmap/cmap.sty
+(D:\Program Files\MikTex\tex/latex/cmap\cmap.sty
 Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.st
-y
-Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
+(D:\Program Files\MikTex\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(D:\Program Files\MikTex\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmd
-s.sty
+(D:\Program Files\MikTex\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.
-sty
+(D:\Program Files\MikTex\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefin
-ekeys.sty
+(D:\Program Files\MikTex\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.
-sty
+(D:\Program Files\MikTex\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+(D:\Program Files\MikTex\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacr
-o.sty
+(D:\Program Files\MikTex\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
+(D:\Program Files\MikTex\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+(D:\Program Files\MikTex\tex/latex/hyperref\nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
+(D:\Program Files\MikTex\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/gettitlestring/getti
-tlestring.sty
+(D:\Program Files\MikTex\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count194
 )
-\@linkdim=\dimen139
+\@linkdim=\dimen141
 \Hy@linkcounter=\count195
 \Hy@pagecounter=\count196
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
+(D:\Program Files\MikTex\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+(D:\Program Files\MikTex\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.st
-y
+(D:\Program Files\MikTex\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count197
- (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
+
+(D:\Program Files\MikTex\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -129,35 +121,35 @@ Package hyperref Info: Hyper index ON on input line 4170.
 Package hyperref Info: Plain pages OFF on input line 4177.
 Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4408.
+Package hyperref Info: Bookmarks ON on input line 4410.
 \c@Hy@tempcnt=\count198
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/url/url.sty
+
+(D:\Program Files\MikTex\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4746.
-\XeTeXLinkMargin=\dimen140
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen142
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+(D:\Program Files\MikTex\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcal
-c.sty
+(D:\Program Files\MikTex\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count199
-\Field@Width=\dimen141
-\Fld@charsize=\dimen142
-Package hyperref Info: Hyper figures OFF on input line 6024.
-Package hyperref Info: Link nesting OFF on input line 6029.
-Package hyperref Info: Hyper index ON on input line 6032.
-Package hyperref Info: backreferencing OFF on input line 6039.
-Package hyperref Info: Link coloring OFF on input line 6044.
-Package hyperref Info: Link coloring with OCG OFF on input line 6049.
-Package hyperref Info: PDF/A mode OFF on input line 6054.
+\Field@Width=\dimen143
+\Fld@charsize=\dimen144
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(D:\Program Files\MikTex\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -166,10 +158,11 @@ package with kernel methods
 \c@Hfootnote=\count268
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-06-20 v7.00s Hyperref driver for pdfTeX
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(D:\Program Files\MikTex\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
+
+(D:\Program Files\MikTex\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
@@ -177,39 +170,38 @@ with kernel methods
 \Fld@listcount=\count269
 \c@bookmark@seq@number=\count270
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfi
-lecheck.sty
+(D:\Program Files\MikTex\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/uniquecounter/unique
-counter.sty
+(D:\Program Files\MikTex\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip49
+\Hy@SectionHShift=\skip50
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+(D:\Program Files\MikTex\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+(D:\Program Files\MikTex\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count271
 \Gm@cntv=\count272
 \c@Gm@tempcnt=\count273
-\Gm@bindingoffset=\dimen143
-\Gm@wd@mp=\dimen144
-\Gm@odd@mp=\dimen145
-\Gm@even@mp=\dimen146
-\Gm@layoutwidth=\dimen147
-\Gm@layoutheight=\dimen148
-\Gm@layouthoffset=\dimen149
-\Gm@layoutvoffset=\dimen150
+\Gm@bindingoffset=\dimen145
+\Gm@wd@mp=\dimen146
+\Gm@odd@mp=\dimen147
+\Gm@even@mp=\dimen148
+\Gm@layoutwidth=\dimen149
+\Gm@layoutheight=\dimen150
+\Gm@layouthoffset=\dimen151
+\Gm@layoutvoffset=\dimen152
 \Gm@dimlist=\toks17
-)
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/lm/lmodern.sty
+
+(D:\Program Files\MikTex\tex/latex/geometry\geometry.cfg))
+(D:\Program Files\MikTex\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -244,53 +236,60 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/fixcmex/fixcmex.sty
-Package: fixcmex 2019/08/05 v1.1 Scalable math extensions font (Enrico Gregorio
+(D:\Program Files\MikTex\tex/latex/fixcmex\fixcmex.sty
+Package: fixcmex 2015/11/10 v1.0 Scalable math extensions font (Enrico Gregorio
 )
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(D:\Program Files\MikTex\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count274
-) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.st
-y
+)
+(D:\Program Files\MikTex\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+
+(D:\Program Files\MikTex\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+(D:\Program Files\MikTex\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.
-cfg
+(D:\Program Files\MikTex\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.de
-f
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(D:\Program Files\MikTex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen151
-\Gin@req@width=\dimen152
-)) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+))
+(D:\Program Files\MikTex\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 2.
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)<<t1.cmap>>) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/babel/
-babel.sty
-Package: babel 2022/08/29 3.79 The Babel package
-\babel@savecnt=\count275
-\U@D=\dimen153
-\l@unhyphenated=\language87
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
+(D:\Program Files\MikTex\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)<<t1.cmap>>)
+(D:\Program Files\MikTex\tex/generic/babel\babel.sty
+Package: babel 2022/01/23 3.85 The Babel package
+\babel@savecnt=\count275
+\U@D=\dimen155
+\l@unhyphenated=\language79
+
+(D:\Program Files\MikTex\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count276
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/babel-hungarian/magy
-ar.ldf
+*************************************
+* Local config file bblopts.cfg used
+*
+(D:\Program Files\MikTex\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(D:\Program Files\MikTex\tex/latex/babel-hungarian\magyar.ldf
 Language: magyar 2019/01/14 v1.5c Magyar (Hungarian) support for babel
 \c@enumv=\count277
 Package babel Info: Making ; an active character on input line 2791.
@@ -301,47 +300,47 @@ Package babel Info: Making ` an active character on input line 2819.
 \c@footnote@add=\count278
 \c@footnote@ch=\count279
 ))
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/generic/babel/locale/hu/babe
-l-magyar.tex
+(D:\Program Files\MikTex\tex/generic/babel/locale/hu\babel-magyar.tex
 Package babel Info: Importing font and identification data for magyar
 (babel)             from babel-hu.ini. Reported on input line 11.
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/mathtools/mathtools.st
-y
+(D:\Program Files\MikTex\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
- (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+
+(D:\Program Files\MikTex\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count280
 \calc@Bcount=\count281
-\calc@Adimen=\dimen154
-\calc@Bdimen=\dimen155
-\calc@Askip=\skip50
-\calc@Bskip=\skip51
+\calc@Adimen=\dimen156
+\calc@Bdimen=\dimen157
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count282
-\calc@Cskip=\skip52
+\calc@Cskip=\skip53
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/mathtools/mhsetup.sty
+(D:\Program Files\MikTex\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(D:\Program Files\MikTex\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip53
+\@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+(D:\Program Files\MikTex\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+(D:\Program Files\MikTex\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen156
+\ex@=\dimen158
 ))
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(D:\Program Files\MikTex\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen157
+\pmbraise@=\dimen159
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
+(D:\Program Files\MikTex\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count283
@@ -361,7 +360,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen158
+\big@size=\dimen160
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count288
@@ -379,74 +378,74 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count293
 \maxfields@=\count294
 \andhelp@=\toks20
-\eqnshift@=\dimen159
-\alignsep@=\dimen160
-\tagshift@=\dimen161
-\tagwidth@=\dimen162
-\totwidth@=\dimen163
-\lineht@=\dimen164
+\eqnshift@=\dimen161
+\alignsep@=\dimen162
+\tagshift@=\dimen163
+\tagwidth@=\dimen164
+\totwidth@=\dimen165
+\lineht@=\dimen166
 \@envbody=\toks21
-\multlinegap=\skip54
-\multlinetaggap=\skip55
+\multlinegap=\skip55
+\multlinetaggap=\skip56
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
 \g_MT_multlinerow_int=\count295
-\l_MT_multwidth_dim=\dimen165
-\origjot=\skip56
-\l_MT_shortvdotswithinadjustabove_dim=\dimen166
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen167
-\l_MT_above_intertext_sep=\dimen168
-\l_MT_below_intertext_sep=\dimen169
-\l_MT_above_shortintertext_sep=\dimen170
-\l_MT_below_shortintertext_sep=\dimen171
+\l_MT_multwidth_dim=\dimen167
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen168
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen169
+\l_MT_above_intertext_sep=\dimen170
+\l_MT_below_intertext_sep=\dimen171
+\l_MT_above_shortintertext_sep=\dimen172
+\l_MT_below_shortintertext_sep=\dimen173
 \xmathstrut@box=\box53
-\xmathstrut@dim=\dimen172
+\xmathstrut@dim=\dimen174
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(D:\Program Files\MikTex\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(D:\Program Files\MikTex\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
+))
+(D:\Program Files\MikTex\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks23
 \thm@bodyfont=\toks24
 \thm@headfont=\toks25
 \thm@notefont=\toks26
 \thm@headpunct=\toks27
-\thm@preskip=\skip57
-\thm@postskip=\skip58
-\thm@headsep=\skip59
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
 \dth@everypar=\toks28
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2022/05/22 v0.5v Insert pages of external PDF documents (AM)
+(D:\Program Files\MikTex\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+(D:\Program Files\MikTex\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(D:\Program Files\MikTex\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen173
-\ESO@tempdimb=\dimen174
+\ESO@tempdima=\dimen175
+\ESO@tempdimb=\dimen176
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
+(D:\Program Files\MikTex\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(D:\Program Files\MikTex\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx
-)
+(D:\Program Files\MikTex\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -457,69 +456,72 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ))
-\AM@pagewidth=\dimen175
-\AM@pageheight=\dimen176
-\AM@fboxrule=\dimen177
+\AM@pagewidth=\dimen177
+\AM@pageheight=\dimen178
+\AM@fboxrule=\dimen179
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2022/05/22 v0.5v Pdfpages driver for pdfTeX (AM)
+(D:\Program Files\MikTex\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count296
 \AM@pagebox=\box54
 \AM@global@opts=\toks29
 \AM@pagecnt=\count297
 \AM@toc@title=\toks30
+\AM@lof@heading=\toks31
 \c@AM@survey=\count298
 \AM@templatesizebox=\box55
-) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/comment/comment.sty
+)
+(D:\Program Files\MikTex\tex/latex/comment\comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment')
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
+(D:\Program Files\MikTex\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip60
-\enit@outerparindent=\dimen178
-\enit@toks=\toks31
+\labelindent=\skip61
+\enit@outerparindent=\dimen180
+\enit@toks=\toks32
 \enit@inbox=\box56
 \enit@count@id=\count299
 \enitdp@description=\count300
 )
 \c@tetel=\count301
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/upquote/upquote.sty
+
+(D:\Program Files\MikTex\tex/latex/upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
+(D:\Program Files\MikTex\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pd
-ftex.def
-File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
+(D:\Program Files\MikTex\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box57
-) (./main.aux)
+) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-Package hyperref Info: Link coloring OFF on input line 17.
- (./main.out) (./main.out)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+Package hyperref Info: Link coloring OFF on input line 19.
+
+(main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -559,134 +561,217 @@ Package hyperref Info: Link coloring OFF on input line 17.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-7.
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
+9.
+(D:\Program Files\MikTex\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<ot1.cmap>>
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-7.
- (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/lm/omllmm.fd
+9.
+
+(D:\Program Files\MikTex\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<oml.cmap>>
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-17.
- (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/lm/omslmsy.fd
+19.
+
+(D:\Program Files\MikTex\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<oms.cmap>>
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-17.
+19.
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/lm/omxlmex.fd
+(D:\Program Files\MikTex\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 17.
+(Font)              <12> on input line 19.
 <<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 17.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+(Font)              <6> on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
 
- (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(D:\Program Files\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+(D:\Program Files\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 19.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 17.
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 17.
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 19.
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.m
-kii
+(D:\Program Files\MikTex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count303
-\scratchdimen=\dimen179
+\scratchdimen=\dimen181
 \scratchbox=\box58
 \nofMPsegments=\count304
 \nofMParguments=\count305
-\everyMPshowfont=\toks32
+\everyMPshowfont=\toks33
 \MPscratchCnt=\count306
-\MPscratchDim=\dimen180
+\MPscratchDim=\dimen182
 \MPnumerator=\count307
 \makeMPintoPDFobject=\count308
-\everyMPtoPDFconversion=\toks33
-)
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-
-base.sty
+\everyMPtoPDFconversion=\toks34
+) (D:\Program Files\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-s
-ys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+(D:\Program Files\MikTex\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/pdflscape/pdflscape.st
-y
-Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
- (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/graphics/lscape.sty
+(D:\Program Files\MikTex\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(D:\Program Files\MikTex\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(D:\Program Files\MikTex\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-) (d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/base/report.cls
+))
+(D:\Program Files\MikTex\tex/latex/base\report.cls
 LaTeX Info: Redefining \cal on input line 577.
 LaTeX Info: Redefining \mit on input line 578.
 )
-Package hyperref Info: Option `pageanchor' set `false' on input line 17.
-<eszterhazy-logo-hu.pdf, id=19, 256.07971pt x 88.04292pt>
+Package hyperref Info: Option `pageanchor' set `false' on input line 19.
+<eszterhazy-logo-hu.pdf, id=18, 256.07971pt x 88.04292pt>
 File: eszterhazy-logo-hu.pdf Graphic file (type pdf)
 <use eszterhazy-logo-hu.pdf>
-Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 25.
+Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 27.
 (pdftex.def)             Requested size: 256.07907pt x 88.0427pt.
 
-Overfull \hbox (11.97961pt too wide) in paragraph at lines 25--25
+Overfull \hbox (11.97961pt too wide) in paragraph at lines 27--27
  []| []  [] [] 
  []
 
 [1
 
 
-{d:/Szoftverek/Texlive/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.ma
-p} <d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/thesis-ekf/eszterha
-zy-logo-hu.pdf>] (./main.toc)
+{C:/Users/Levente/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <D:/Program
+ Files/MikTex/tex/latex/thesis-ekf/eszterhazy-logo-hu.pdf>] (main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1
+
+[1
 
 ]
-Package hyperref Info: Option `pageanchor' set `true' on input line 28.
+Package hyperref Info: Option `pageanchor' set `true' on input line 30.
  Excluding 'comment' comment. [1
 
 
-]
-Excluding 'comment' comment. [2] Excluding 'comment' comment.
-Excluding 'comment' comment. [3
-
-] Excluding 'comment' comment. [4
+] Excluding 'comment' comment. [2]
+Excluding 'comment' comment. Excluding 'comment' comment. [3
 
 ]
-Excluding 'comment' comment. [5
+Overfull \hbox (10.12099pt too wide) in paragraph at lines 93--116
+\T1/lmr/m/n/12 App-li-ká-ció(Console App-li-ca-ti-on), a Win-dows Forms App-li-
+ca-ti-on, il-let-ve a WPF(Windows
+ []
 
-] Excluding 'comment' comment. [6
+[4
 
 ]
-Excluding 'comment' comment. [7
+<./images//SLH.pdf, id=65, page=1, 597.23125pt x 845.1575pt>
+File: ./images//SLH.pdf Graphic file (type pdf)
+<use ./images//SLH.pdf, page 1>
+Package pdftex.def Info: ./images//SLH.pdf , page1 used on input line 120.
+(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
+<./images//SLH.pdf, id=66, page=2, 597.23125pt x 845.1575pt>
+File: ./images//SLH.pdf Graphic file (type pdf)
+<use ./images//SLH.pdf, page 2>
+Package pdftex.def Info: ./images//SLH.pdf , page2 used on input line 126.
+(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images//SLH.pdf, id=67, page=3, 597.23125pt x 845.1575pt>
+File: ./images//SLH.pdf Graphic file (type pdf)
+<use ./images//SLH.pdf, page 3>
+Package pdftex.def Info: ./images//SLH.pdf , page3 used on input line 133.
+(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images//SLL.pdf, id=71, page=1, 845.1575pt x 597.23125pt>
+File: ./images//SLL.pdf Graphic file (type pdf)
+<use ./images//SLL.pdf, page 1>
+Package pdftex.def Info: ./images//SLL.pdf , page1 used on input line 144.
+(pdftex.def)             Requested size: 220.50887pt x 155.82324pt.
+<./images//SLL.pdf, id=72, page=2, 597.23125pt x 845.1575pt>
+File: ./images//SLL.pdf Graphic file (type pdf)
+<use ./images//SLL.pdf, page 2>
+Package pdftex.def Info: ./images//SLL.pdf , page2 used on input line 151.
+(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
+<./images//SLL.pdf, id=73, page=3, 597.23125pt x 845.1575pt>
+File: ./images//SLL.pdf Graphic file (type pdf)
+<use ./images//SLL.pdf, page 3>
+Package pdftex.def Info: ./images//SLL.pdf , page3 used on input line 158.
+(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
+<./images//SLN.pdf, id=77, page=1, 845.1575pt x 597.23125pt>
+File: ./images//SLN.pdf Graphic file (type pdf)
+<use ./images//SLN.pdf, page 1>
+Package pdftex.def Info: ./images//SLN.pdf , page1 used on input line 169.
+(pdftex.def)             Requested size: 220.50887pt x 155.82324pt.
+<./images//SLN.pdf, id=78, page=2, 597.23125pt x 845.1575pt>
+File: ./images//SLN.pdf Graphic file (type pdf)
+<use ./images//SLN.pdf, page 2>
+Package pdftex.def Info: ./images//SLN.pdf , page2 used on input line 176.
+(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
+<./images//SLN.pdf, id=79, page=3, 597.23125pt x 845.1575pt>
+File: ./images//SLN.pdf Graphic file (type pdf)
+<use ./images//SLN.pdf, page 3>
+Package pdftex.def Info: ./images//SLN.pdf , page3 used on input line 183.
+(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Excluding 'comment' comment. Excluding 'comment' comment.
+Excluding 'comment' comment. [5 <./images//SLH.pdf>] [6 <./images//SLH.pdf> <./
+images//SLH.pdf>] [7 <./images//SLL.pdf, page is rotated 90 degrees> <./images/
+/SLL.pdf>] [8 <./images//SLL.pdf> <./images//SLN.pdf, page is rotated 90 degree
+s>] [9 <./images//SLN.pdf> <./images//SLN.pdf>] Excluding 'comment' comment.
+[10
+
+] Excluding 'comment' comment. [11
+
+] Excluding 'comment' comment. [12
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-14.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+20.
 
-(d:/Szoftverek/Texlive/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
+(D:\Program Files\MikTex\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-(./main.bbl [8
+) (main.bbl [13
 
 ]
 Underfull \hbox (badness 6396) in paragraph at lines 4--8
@@ -700,32 +785,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 ulallo _ az _
  []
 
-) Excluding 'comment' comment. [9
+) Excluding 'comment' comment. [14
 
-] (./main.aux)
+] (main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [15
+
+] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C4408E68C89AF57DCE6590D46F1F1AD4;318.
  ) 
 Here is how much of TeX's memory you used:
- 15368 strings out of 475075
- 252164 string characters out of 5773520
- 618515 words of memory out of 5000000
- 36445 multiletter control sequences out of 15000+600000
- 516111 words of font info for 73 fonts, out of 8000000 for 9000
+ 15509 strings out of 476374
+ 251246 string characters out of 5798664
+ 1858340 words of memory out of 5000000
+ 35542 multiletter control sequences out of 15000+600000
+ 563401 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,81p,825b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{d:/Szoftverek/Texlive/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{
-d:/Szoftverek/Texlive/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}
-<d:/Szoftverek/Texlive/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
-><d:/Szoftverek/Texlive/texlive/2022/texmf-dist/fonts/type1/public/lm/lmcsc10.p
-fb><d:/Szoftverek/Texlive/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.
-pfb><d:/Szoftverek/Texlive/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.
-pfb><d:/Szoftverek/Texlive/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12
-.pfb>
-Output written on main.pdf (11 pages, 142050 bytes).
+ 78i,7n,81p,828b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}<D:/Program Files/MikTe
+x/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTex/fonts/type1/public/
+lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/Pro
+gram Files/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fon
+ts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (17 pages, 697198 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

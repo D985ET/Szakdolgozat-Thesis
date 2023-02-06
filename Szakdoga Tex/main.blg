@@ -1,49 +1,51 @@
-This is BibTeX, Version 0.99d (TeX Live 2022)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
 Warning--to sort, need author or key in MTI
 Warning--empty journal in SLaszlo
-You've used 2 entries,
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            509 strings with 4343 characters,
-and the built_in function-call counts, 476 in all, are:
-= -- 46
-> -- 8
+            513 strings with 4481 characters,
+and the built_in function-call counts, 758 in all, are:
+= -- 70
+> -- 26
 < -- 1
-+ -- 4
-- -- 2
-* -- 18
-:= -- 72
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 7
++ -- 11
+- -- 8
+* -- 35
+:= -- 122
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 25
-empty$ -- 47
-format.name$ -- 2
-if$ -- 109
+cite$ -- 5
+duplicate$ -- 37
+empty$ -- 69
+format.name$ -- 8
+if$ -- 167
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 1
-newline$ -- 13
-num.names$ -- 2
-pop$ -- 17
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 4
+pop$ -- 27
 preamble$ -- 1
-purify$ -- 5
+purify$ -- 10
 quote$ -- 0
-skip$ -- 20
+skip$ -- 26
 stack$ -- 0
-substring$ -- 16
-swap$ -- 8
+substring$ -- 21
+swap$ -- 9
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 10
 warning$ -- 2
-while$ -- 3
-width$ -- 3
-write$ -- 21
+while$ -- 5
+width$ -- 4
+write$ -- 31
 (There were 2 warnings)

@@ -13,6 +13,8 @@
 \newtheorem{definicio}[tetel]{Definíció}
 \theoremstyle{remark}
 \newtheorem{megjegyzes}[tetel]{Megjegyzés}
+\graphicspath{{./images/}}
+\DeclareGraphicsExtensions{.png,.jpg,.pdf}
 
 \begin{document}
 	\institute{Matematikai és Informatikai Intézet}
@@ -70,7 +72,7 @@
 	\end{comment}
 	\chapter*{Bevezető 2}
 	\par
-	A témában jártas, és a "Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok óvodától a felnőtt korig" \cite{SLaszlo} című könyv írója, Somodi László, segített belátást nyerni az egészségügyi és a morális lényegességébe a projektnek. \\ Elmondása szerint a mozgásfejlesztés és az agyi kapacitás fejlesztése, kéz a kézben jár. Ezt a mozgásfejlesztést úgy érhetjük el, ha az adott személynek utasításokat adunk ki, hogy adott jelzésre (szín, hang, irány) és ezek kombinációjára, milyen mozgást kell végeznie. Továbbá, ez a módszer akár szellemi leépüléssel küzdő, szépkorúak számára is segítséget nyújthat, mivel a változatos mozgás, és a különböző ingerek ki- és be- kapcsolása növeli az agy alap működését.
+	A témában jártas, és a "Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok óvodától a felnőtt korig" \cite{SLaszlo} című könyv írója, Somodi László, segített belátást nyerni az egészségügyi és a morális lényegességébe a projektnek. \\ Elmondása szerint a mozgásfejlesztés és az agyi kapacitás fejlesztése, kéz a kézben jár. Ezt a mozgásfejlesztést úgy érhetjük el, ha az adott személynek utasításokat adunk ki, hogy adott jelzésre (szín, hang, irány) és ezek kombinációjára, milyen mozgást kell végeznie. Továbbá, ez a módszer akár szellemi leépüléssel küzdő, szép korúak számára is segítséget nyújthat, mivel a változatos mozgás, és a különböző ingerek ki- és be- kapcsolása növeli az agy alap működését.
 	\par 
 	A fentebb említettek automatizálására készül a projekt, amely különböző informatikai eszközökkel valósítja meg a színek, hangok, és nyilak megjelenítését, illetve érzékeltetését. 
 	\begin{comment}
@@ -79,15 +81,119 @@
 \\
 	Alapvetően, a projekten sok személy részt vett, a hardver lefejlesztésében és 
 	összeszerelésében, Keresztes Péter Tanár úr. \\
-	A backend és ezeknek a hardvereknek a mögöttes működtetését, valamint a Delphi és a C$\sharp$ nyelvek közötti kapcsolat megoldását, Nagy-Tóth Bence, barátom és szaktársam készítette el.
+	A back-end és ezeknek a hardvereknek a mögöttes működtetését, valamint a Delphi és a C\# nyelvek közötti kapcsolat megoldását, Nagy-Tóth Bence, barátom és szaktársam készítette el.
 	\\
-	Én ezeknek a hardvereknek a működtetéséhez a felületet írtam, amin keresztül lehet különféle módon, változatos ütemekben vezérelni a fentebb említett eszközöket. Ezt C$\sharp$ nyelven írtam ami a felhasználói felület írására kellően alkalmas.
+	Én ezeknek a hardvereknek a működtetéséhez a felületet írtam, amin keresztül lehet különféle módon, változatos ütemekben vezérelni a fentebb említett eszközöket. Ezt C\# nyelven írtam ami a felhasználói felület írására kellően alkalmas.
 	
 	
 	\begin{comment}
 		1.fejezet: Milyen technológiákat használunk, milyen nyelv, architektúrák, kapcsolási rajz, interface, ui, meg ezek hogyan néznek ki.
 	\end{comment}
 	\chapter*{1.fejezet}
+	A szakdolgozatom projektje C\# nyelven íródik amely a legjobban alkalmazkodik az ilyen felületek leimplementálásához. \\
+	A C\# nyelv alapvetően a Microsoft által kifejlesztett objektumorientált programozási nyelv.
+	Ezentúl ez egy egyszerű, modern programozási nyelv amely egybeköti a C és a C++ nyelv erejét az új applikáció fejlesztésével egybekötve. \cite{hejlsberg2003c}
+	\\ 
+	Számos főbb újdonságokat implementáltak ebbe a nyelvbe, megemlítésre méltóak például a 2005-ös verzióban létrejövő Generikus és parciális típusok amelyek megkönnyítették a programozó munkáját, mivel általánosabb kódot tudtak írni ezek segítségével.
+	Ezentúl, még hasonlóságokat is fedezhetünk fel például a Java nyelvben, amely egyezést mutat számos helyen.
+	Mint például az osztályok deklarálása, metódusok illetve függvények létrehozása. Emellett a mezők szintaxisa is megegyező.
+	\\
+	A C\#-ban még sok más opciónk is van programok fejlesztésére, ilyen például a Konzolos Applikáció(Console Application), a Windows Forms Application, illetve a WPF(Windows Presentation Foundation). Ezen utóbbi kettő applikáció segítségével ablakos illetve asztali alkalmazásokat készíthetünk.
+	\\
+	A projektem során azért választottam a Windows Forms Application-t mivel a különböző eszközök(gombok, címkék) amelyek az ezen alkalmazásban megtalálhatóak elősegítik a felhasználó számára a könnyed olvashatóságot és feltérképezés lehetőségét. Az alkalmazás hasonló módon elkészülhetett volna konzolos felületre is, de mivel ez a felhasználó és az esetlegesen laikus ügyfél számára is nehezen érthető, ezért az ablakos alkalmazás a támogatott.
+	\\ 
+	C\#-ban lehetőség van úgynevezett DLL-ek használatára is. A DLL(Dynamic Link Library) mint olyan az egy kisebb programok összessége, amelyeket nagyobb programok könnyűszerrel be tudnak importálni a saját projektjükbe. Ezen kisebb programokhoz vagy DLL fájlokhoz, hozzátartozik leírás is amelyek általában minden egyes függvényeknél, illetve metódusoknál megjegyezhető. Ennek oka, hogy az a fejlesztő aki használja a DLL-t
+	nagyobb belátást kapjon arról hogy az adott metódus, miként és hogyan működik.
+	\\
+	A projekthez a DLL-t, Nagy-Tóth Bence hallgatótársam szolgáltatja amelyben számos metódus meg lett írva, ezeket felhasználva a fő applikáció működésre bírható.
+	\\
+	Ezentúl, a működtettet eszközökkel való kommunikációt Delphi programozási nyelvben volt szükséges megírni amely a DLL alapját képezte. 
+	\\
+	Háromféle eszközt működtetünk, lámpát, nyilakat szimbolizáló lámpa, illetve egy hangszóró.
+	\\  
+	A hangszóró adott hangszínt le tud játszani, amelyeket különbőző hosszúságig illetve hangerősségbe tudunk működtetni.
+	Az ehhez tartozó kapcsolási rajzok megtalálhatóak a \ref{fig:hangsz1},\ref{fig:hangsz2},\ref{fig:hangsz3} alatt.
+
+	%Hangszóró:
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[page=1,width=0.5\textwidth]{SLH}
+	\caption{hangszóró kapcsolási rajz \#1}
+	\label{fig:hangsz1}
+	\end{figure}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[page=2,width=0.5\textwidth]{SLH}
+		
+		\caption{hangszóró kapcsolási rajz \#2}
+			\label{fig:hangsz2}
+	\end{figure}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[page=3,width=0.5\textwidth]{SLH}
+		
+		\caption{hangszóró kapcsolási rajz \#3}
+		\label{fig:hangsz3}
+	\end{figure}
+	A lámpa egy olyan eszköz lesz amelyen különböző színben tud világítani a LED, különböző időközönként. Természetesen a világítás hosszát is be lehet állítani különböző eszközökhöz.
+	Az ehhez tartozó kapcsolási rajzot a \ref{fig:lamp1},\ref{fig:lamp2},\ref{fig:lamp3} alatt.
+	\\
+	%lámpa
+		\begin{figure}[h!]
+		\centering
+		\includegraphics[page=1,width=0.5\textwidth]{SLL}
+		
+		\caption{lámpa kapcsolási rajz \#1}
+			\label{fig:lamp1}
+	\end{figure}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[page=2,width=0.5\textwidth]{SLL}
+		
+		\caption{lámpa kapcsolási rajz \#2}
+		\label{fig:lamp2}
+	\end{figure}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[page=3,width=0.5\textwidth]{SLL}
+		
+		\caption{lámpa kapcsolási rajz \#3}
+		\label{fig:lamp3}
+	\end{figure}
+	A nyíl egy olyan eszköz lesz amelyen különböző színben tud világítani a LED-ek összessége, illetve különböző irányba tud mutatni a LED-ek által kialakított alakzat.  Természetesen  világítás hosszát is be lehet állítani különböző eszközökhöz, különböző időközönként.
+	Az ehhez tartozó kapcsolási rajzot a \ref{fig:nyil1},\ref{fig:nyil2},\ref{fig:nyil3} alatt.
+	\\
+	%nyíl
+		\begin{figure}[h!]
+		\centering
+		\includegraphics[page=1,width=0.5\textwidth]{SLN}
+		
+		\caption{nyíl kapcsolási rajz \#1}
+		\label{fig:nyil1}
+	\end{figure}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[page=2,width=0.5\textwidth]{SLN}
+		
+		\caption{nyíl kapcsolási rajz \#2}
+		\label{fig:nyil2}
+	\end{figure}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[page=3,width=0.5\textwidth]{SLN}
+		
+		\caption{nyíl kapcsolási rajz \#3}
+		\label{fig:nyil3}
+	\end{figure}
+
+
+	\begin{comment}
+		\includegraphics[width=0.5\textwidth]{SLL}
+		\includegraphics[width=0.5\textwidth]{SLN}
+	\end{comment}
+	\begin{comment}
+		2.fejezet: Melyik részét csinálom én? Mit csináltunk, és hogyan ui-t kellett fejleszteni, milyen lépésekből állt, képernyőképekkel, eladjuk a munkánkat.
+	\end{comment}
 	\begin{comment}
 		2.fejezet: Melyik részét csinálom én? Mit csináltunk, és hogyan ui-t kellett fejleszteni, milyen lépésekből állt, képernyőképekkel, eladjuk a munkánkat.
 	\end{comment}
@@ -132,4 +238,5 @@
 	\end{comment}
 	% Aláírt, szkennelt nyilatkozat beillesztése a szakdolgozat végére
 	%\includepdf{nyilatkozat.pdf}
+		\listoffigures
 \end{document}
