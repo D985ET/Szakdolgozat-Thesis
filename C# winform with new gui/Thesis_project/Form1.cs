@@ -28,37 +28,60 @@ namespace Thesis_project
         }
 
         //Methods
-        private Color SelectThemeColor()
+        public Color SelectThemeColor()
         {
-            int index = vsz.Next(ThemeColor.ColorList.Count);
-            while (tempIndex == index)
+            string color;
+            try
             {
-                index = vsz.Next(ThemeColor.ColorList.Count);
+                int index = vsz.Next(ThemeColor.ColorList.Count);
+                while (tempIndex == index)
+                {
+                    index = vsz.Next(ThemeColor.ColorList.Count);
+                }
+                tempIndex = index;
+                color = ThemeColor.ColorList[index];
             }
-            tempIndex = index;
-            string color = ThemeColor.ColorList[index];
+            catch(Exception e)
+            {
+                throw new Exception("A color nem lehet null vagy üres! ",e);
+               
+            }
             return ColorTranslator.FromHtml(color);
+            
+            
+           
+          
 
         }
-        private void ActivateButton(object btnSender)
+        public void ActivateButton(object btnSender)
         {
-            if (btnSender != null)
+            try
             {
-                if (currentButton != (Button)btnSender)
+
+
+                if (btnSender != null)
                 {
-                    DisableButton();
-                    Color color = SelectThemeColor();
-                    currentButton = (Button)btnSender;
-                    currentButton.BackColor = color;
-                    currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                    panelTitleBar.BackColor = color;
-                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color,-0.3f);
-                    ThemeColor.PrimaryColor = color;
-                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3f);
-                    btnCloseChildForm.Visible = true;
+                    if (currentButton != (Button)btnSender)
+                    {
+                        DisableButton();
+                        Color color = SelectThemeColor();
+                        currentButton = (Button)btnSender;
+                        currentButton.BackColor = color;
+                        currentButton.ForeColor = Color.White;
+                        currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        panelTitleBar.BackColor = color;
+                        panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3f);
+                        ThemeColor.PrimaryColor = color;
+                        ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3f);
+                        btnCloseChildForm.Visible = true;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                throw new Exception("A btn értéke null!",ex);
+            }
+         
         }
         private void DisableButton()
         {
@@ -73,17 +96,28 @@ namespace Thesis_project
             }
         }
 
-        private void OpenChildForm(Form childForm, object btnSender)
+        public void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
             {
                 activeForm.Close();
             }
-            ActivateButton(btnSender);
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
+            try
+            {
+
+
+                ActivateButton(btnSender);
+                activeForm = childForm;
+                childForm.TopLevel = false;
+                childForm.FormBorderStyle = FormBorderStyle.None;
+                childForm.Dock = DockStyle.Fill;
+               
+              
+            }
+            catch(Exception ex) 
+            {
+                throw new Exception("A form vagy a btn nem megfelelő!",ex);
+            }
             this.panelDesktopPanel.Controls.Add(childForm);
             this.panelDesktopPanel.Tag = childForm;
             childForm.BringToFront();

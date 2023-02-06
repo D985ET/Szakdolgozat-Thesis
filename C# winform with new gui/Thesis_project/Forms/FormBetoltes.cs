@@ -36,10 +36,11 @@ namespace Thesis_project.Forms
         string fileContent = string.Empty;
         string filePath = string.Empty;
       
-        private void Betoltes()
+        public void Betoltes()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.InitialDirectory = "c:\\";
+         
             openFileDialog.Filter = "JSON files (*.json)|*.json";
             openFileDialog.FilterIndex = 2;
             openFileDialog.RestoreDirectory = true;
@@ -47,6 +48,10 @@ namespace Thesis_project.Forms
             {
                 //Get the path of specified file
                 filePath = openFileDialog.FileName;
+                if(string.IsNullOrEmpty(filePath) && !File.Exists(filePath)) 
+                {
+                    throw new Exception("A file név üres vagy a file nem létezik!");
+                }
                
                 //Read the contents of the file into a stream
                 var fileStream = openFileDialog.OpenFile();
