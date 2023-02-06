@@ -7,7 +7,7 @@
 \footnotestyle{rule=fourth}
 \usepackage{comment}
 \usepackage{enumitem}
-
+\usepackage{colortbl}
 \newtheorem{tetel}{Tétel}[chapter]
 \theoremstyle{definition}
 \newtheorem{definicio}[tetel]{Definíció}
@@ -15,6 +15,10 @@
 \newtheorem{megjegyzes}[tetel]{Megjegyzés}
 \graphicspath{{./images/}}
 \DeclareGraphicsExtensions{.png,.jpg,.pdf}
+%excel to latex
+\usepackage{booktabs}
+\usepackage{bigstrut}
+
 
 \begin{document}
 	\institute{Matematikai és Informatikai Intézet}
@@ -75,10 +79,57 @@
 	A témában jártas, és a "Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok óvodától a felnőtt korig" \cite{SLaszlo} című könyv írója, Somodi László, segített belátást nyerni az egészségügyi és a morális lényegességébe a projektnek. \\ Elmondása szerint a mozgásfejlesztés és az agyi kapacitás fejlesztése, kéz a kézben jár. Ezt a mozgásfejlesztést úgy érhetjük el, ha az adott személynek utasításokat adunk ki, hogy adott jelzésre (szín, hang, irány) és ezek kombinációjára, milyen mozgást kell végeznie. Továbbá, ez a módszer akár szellemi leépüléssel küzdő, szép korúak számára is segítséget nyújthat, mivel a változatos mozgás, és a különböző ingerek ki- és be- kapcsolása növeli az agy alap működését.
 	\par 
 	A fentebb említettek automatizálására készül a projekt, amely különböző informatikai eszközökkel valósítja meg a színek, hangok, és nyilak megjelenítését, illetve érzékeltetését. 
+	Ennek egy példája a \pageref{table:egyedzesterv}. oldalon található táblázat amely az automatizálásra létrehozott "edzéstervet" mutat be.[\ref{table:egyedzesterv}]
+	\begin{table}[h]
+		\centering
+		\caption{Egy adott edzésterv}
+		\scalebox{0.7}
+		{
+			\begin{tabular}{|rrrrlrrrrr|}
+				\hline
+				\multicolumn{1}{|l|}{\textbf{helyzet}} & \multicolumn{1}{l|}{\textbf{egység típusa}} & \multicolumn{1}{l|}{\textbf{jel száma}} & \multicolumn{1}{l|}{\textbf{szín}} & \multicolumn{1}{l|}{\textbf{hang}} & \multicolumn{1}{l|}{\textbf{irány}} &       &       & \multicolumn{1}{l}{\textbf{fenntartási idő}} & \multicolumn{1}{l|}{\textbf{irány}} \bigstrut\\
+				\hline
+				&       &       &       &       &       &       &       &       &  \bigstrut[t]\\
+				&       &       &       &       &       &       &       &       &  \\
+				\multicolumn{1}{|c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{6} & \multicolumn{1}{c}{7} & \multicolumn{1}{c}{8} &       &  \\
+				\multicolumn{1}{|c}{lámpa} & \multicolumn{1}{c}{lámpa} & \multicolumn{1}{c}{hang} & \multicolumn{1}{c}{lámpa} & \multicolumn{1}{c}{nyíl} & \multicolumn{1}{c}{lámpa} & \multicolumn{1}{c}{lámpa} & \multicolumn{1}{c}{nyíl} &       &  \\
+				&       &       &       &       &       &       &       &       &  \\
+				\multicolumn{1}{|l}{szemben} &       &       &       &       &       &       &       &       &  \bigstrut[b]\\
+				\cline{1-2}\cline{7-7}    \rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c|}{\textcolor[rgb]{ .2,  .6,  .4}{zöld}} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  0,  0}piros} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  0}sárga} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c|}{\cellcolor[rgb]{ .2,  .4,  1}kék} & \multicolumn{1}{l|}{\cellcolor[rgb]{ 1,  1,  1}fehér} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} \bigstrut\\
+				\cline{1-2}\cline{7-7}    \rowcolor[rgb]{ 0,  0,  0}       &       &       &       &       &       &       &       &       &  \bigstrut\\
+				\cline{2-2}    \multicolumn{1}{|r|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  0,  0}1 piros} &       &       &       &       &       &       & \multicolumn{1}{c}{16"} &  \bigstrut\\
+				\cline{2-2}\cline{4-4}          &       & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  1,  0}2 sárga} &       &       &       &       & \multicolumn{1}{c}{1"} &  \bigstrut[t]\\
+				&       & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  1,  0}2 sárga} &       &       &       &       & \multicolumn{1}{c}{16"} &  \bigstrut[b]\\
+				\cline{1-1}\cline{4-4}    \rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c|}{1 zöld} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  1}1"} & \cellcolor[rgb]{ 1,  1,  1} \bigstrut[t]\\
+				\rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c|}{1 zöld} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  1}16"} & \cellcolor[rgb]{ 1,  1,  1} \bigstrut[b]\\
+				\cline{1-1}\cline{6-6}          &       &       &       & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ .2,  .4,  1}1 kék} &       &       & \multicolumn{1}{c}{1"} &  \bigstrut[t]\\
+				&       &       &       & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ .2,  .4,  1}1 kék} &       &       & \multicolumn{1}{c}{8"} &  \bigstrut[b]\\
+				\cline{4-4}\cline{6-6}          &       & \multicolumn{1}{r|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  1,  0}2 sárga} &       &       &       &       & \multicolumn{1}{c}{1"} &  \bigstrut[t]\\
+				&       & \multicolumn{1}{r|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  1,  0}2 sárga} &       &       &       &       & \multicolumn{1}{c}{16"} &  \bigstrut[b]\\
+				\cline{4-4}\cline{7-7}          &       &       &       &       & \multicolumn{1}{r|}{} & \multicolumn{1}{c|}{1 fehér} &       & \multicolumn{1}{c}{1"} &  \bigstrut[t]\\
+				&       &       &       &       & \multicolumn{1}{r|}{} & \multicolumn{1}{c|}{1 fehér} &       & \multicolumn{1}{c}{4"} &  \bigstrut[b]\\
+				\cline{3-3}\cline{7-7}          & \multicolumn{1}{r|}{} & \multicolumn{1}{l|}{3 - 1 bip} &       &       &       &       &       &       & \multicolumn{1}{l|}{ford. jobbra} \bigstrut\\
+				\cline{3-3}    \rowcolor[rgb]{ 0,  0,  0}       &       &       &       &       &       &       &       &       &  \bigstrut[t]\\
+				& \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  0,  0}4 piros} &       &       &       &       &       &       & \multicolumn{1}{c}{8"} &  \\
+				\rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c}{5 zöld} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  1}1"} & \cellcolor[rgb]{ 1,  1,  1} \\
+				\rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c}{5 zöld} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  1}8"} & \cellcolor[rgb]{ 1,  1,  1} \\
+				&       &       &       &       &       & \multicolumn{1}{l}{4 fehér} &       & \multicolumn{1}{c}{1"} &  \\
+				&       &       &       &       &       & \multicolumn{1}{l}{4 fehér} &       & \multicolumn{1}{c}{8"} &  \\
+				&       &       & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  0}4 sárga} &       &       &       &       & \multicolumn{1}{c}{1"} &  \\
+				&       &       & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  0}4 sárga} &       &       &       &       & \multicolumn{1}{c}{8"} &  \\
+				&       & \multicolumn{1}{l}{hang semleges} &       &       &       &       &       & \multicolumn{1}{c}{1"} &  \\
+				&       & \multicolumn{1}{l}{hang semleges} &       &       &       &       &       & \multicolumn{1}{c}{8"} &  \\
+				&       &       &       & zöld nyíl &       &       &       &       &  \bigstrut[b]\\
+				\hline
+			\end{tabular}%
+		}
+		\label{table:egyedzesterv}%
+	\end{table}%
+	
 	\begin{comment}
 		Itt még lehetne kicsit beszélni a Somodi Lászlós dologokról.
 	\end{comment}
-\\
+
 	Alapvetően, a projekten sok személy részt vett, a hardver lefejlesztésében és 
 	összeszerelésében, Keresztes Péter Tanár úr. \\
 	A back-end és ezeknek a hardvereknek a mögöttes működtetését, valamint a Delphi és a C\# nyelvek közötti kapcsolat megoldását, Nagy-Tóth Bence, barátom és szaktársam készítette el.
@@ -112,79 +163,95 @@
 	Háromféle eszközt működtetünk, lámpát, nyilakat szimbolizáló lámpa, illetve egy hangszóró.
 	\\  
 	A hangszóró adott hangszínt le tud játszani, amelyeket különbőző hosszúságig illetve hangerősségbe tudunk működtetni.
-	Az ehhez tartozó kapcsolási rajzok megtalálhatóak a \ref{fig:hangsz1},\ref{fig:hangsz2},\ref{fig:hangsz3} alatt.
-
+	Az ehhez tartozó kapcsolási rajzok megtalálhatóak a [\ref{fig:hangsz1}],[\ref{fig:hangsz2}],[\ref{fig:hangsz3}] ábrák alatt.
+	\par
+	A lámpa egy olyan eszköz lesz amelyen különböző színben tud világítani a LED, különböző időközönként. Természetesen a világítás hosszát is be lehet állítani különböző eszközökhöz.
+	Az ehhez tartozó kapcsolási rajzot a [\ref{fig:lamp1}],[\ref{fig:lamp2}],[\ref{fig:lamp3}] ábrák alatt.
+	\par
+	A nyíl egy olyan eszköz lesz amelyen különböző színben tud világítani a LED-ek összessége, illetve különböző irányba tud mutatni a LED-ek által kialakított alakzat.  Természetesen  világítás hosszát is be lehet állítani különböző eszközökhöz, különböző időközönként.
+Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref{fig:nyil3}] ábrák alatt.\medskip
+\\
 	%Hangszóró:
 	\begin{figure}[h!]
-		\centering
-		\includegraphics[page=1,width=0.5\textwidth]{SLH}
+	
+	\centering
+	\includegraphics[page=1,width=0.5\textwidth]{SLH}
 	\caption{hangszóró kapcsolási rajz \#1}
 	\label{fig:hangsz1}
+	
 	\end{figure}
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[page=2,width=0.5\textwidth]{SLH}
 		
 		\caption{hangszóró kapcsolási rajz \#2}
-			\label{fig:hangsz2}
+		\label{fig:hangsz2}
 	\end{figure}
 	\begin{figure}[h!]
+	
 		\centering
 		\includegraphics[page=3,width=0.5\textwidth]{SLH}
 		
 		\caption{hangszóró kapcsolási rajz \#3}
-		\label{fig:hangsz3}
-	\end{figure}
-	A lámpa egy olyan eszköz lesz amelyen különböző színben tud világítani a LED, különböző időközönként. Természetesen a világítás hosszát is be lehet állítani különböző eszközökhöz.
-	Az ehhez tartozó kapcsolási rajzot a \ref{fig:lamp1},\ref{fig:lamp2},\ref{fig:lamp3} alatt.
-	\\
+		\label{fig:hangsz3}\medskip
+	\end{figure} 
+
+
 	%lámpa
-		\begin{figure}[h!]
+	\begin{figure}[t]
+	
 		\centering
 		\includegraphics[page=1,width=0.5\textwidth]{SLL}
 		
 		\caption{lámpa kapcsolási rajz \#1}
 			\label{fig:lamp1}
+	
 	\end{figure}
-	\begin{figure}[h!]
+	\begin{figure}[t]
+	
 		\centering
 		\includegraphics[page=2,width=0.5\textwidth]{SLL}
 		
 		\caption{lámpa kapcsolási rajz \#2}
 		\label{fig:lamp2}
+	
 	\end{figure}
-	\begin{figure}[h!]
+	\begin{figure}[t]
+		
 		\centering
 		\includegraphics[page=3,width=0.5\textwidth]{SLL}
 		
 		\caption{lámpa kapcsolási rajz \#3}
 		\label{fig:lamp3}
+	
 	\end{figure}
-	A nyíl egy olyan eszköz lesz amelyen különböző színben tud világítani a LED-ek összessége, illetve különböző irányba tud mutatni a LED-ek által kialakított alakzat.  Természetesen  világítás hosszát is be lehet állítani különböző eszközökhöz, különböző időközönként.
-	Az ehhez tartozó kapcsolási rajzot a \ref{fig:nyil1},\ref{fig:nyil2},\ref{fig:nyil3} alatt.
-	\\
+\par
+
+
 	%nyíl
-		\begin{figure}[h!]
+	\begin{figure}[h]
 		\centering
 		\includegraphics[page=1,width=0.5\textwidth]{SLN}
 		
 		\caption{nyíl kapcsolási rajz \#1}
 		\label{fig:nyil1}
 	\end{figure}
-	\begin{figure}[h!]
+	\begin{figure}[h]
 		\centering
 		\includegraphics[page=2,width=0.5\textwidth]{SLN}
 		
 		\caption{nyíl kapcsolási rajz \#2}
 		\label{fig:nyil2}
 	\end{figure}
-	\begin{figure}[h!]
+	\begin{figure}[h]
 		\centering
 		\includegraphics[page=3,width=0.5\textwidth]{SLN}
 		
 		\caption{nyíl kapcsolási rajz \#3}
 		\label{fig:nyil3}
 	\end{figure}
+
+
 
 
 	\begin{comment}
