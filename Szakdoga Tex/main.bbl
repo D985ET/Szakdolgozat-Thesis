@@ -6,6 +6,12 @@ Európában egyedülálló az időseket segítő gondosóra program.
   \url{http://medicalonline.hu/informatika/cikk/europaban_egyedulallo_az_idoseket_segito_gondosora_program}.
 \newblock Accessed: 2023-01-26.
 
+\bibitem{modernUI}
+RJ~Code~Advance EN.
+\newblock {Modern Flat UI, Random MultiColor, Highlight button-Active Form,
+  WinForm, C\#, V-0.1}.
+\newblock \url{https://youtu.be/BtOEztT1Qzk}, 2020.
+
 \bibitem{hejlsberg2003c}
 Anders Hejlsberg, Scott Wiltamuth, and Peter Golde.
 \newblock {\em C\# language specification}.

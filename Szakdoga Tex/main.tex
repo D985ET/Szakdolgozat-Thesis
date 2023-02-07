@@ -203,7 +203,7 @@
 	Az ehhez tartozó kapcsolási rajzot a [\ref{fig:lamp1}],[\ref{fig:lamp2}],[\ref{fig:lamp3}] ábrák alatt.
 	\par
 	A nyíl egy olyan eszköz lesz amelyen különböző színben tud világítani a LED-ek összessége, illetve különböző irányba tud mutatni a LED-ek által kialakított alakzat.  Természetesen  világítás hosszát is be lehet állítani különböző eszközökhöz, különböző időközönként.
-Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref{fig:nyil3}] ábrák alatt.\medskip
+Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref{fig:nyil3}] ábrák alatt található.\medskip
 \\
 	%Hangszóró:
 	\begin{figure}[h!]
@@ -302,7 +302,14 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	A jelenlegi fejezetben magáról a kódról és a felhasználó élményről szeretnék beszélni.
 	A korábbi fejezetekben már említést tettem azon kapcsán, hogy az alkalmazást a C\# programozási nyelvben írom. Ezenfelül, egy olyan asztali alkalmazást szerettem volna készíteni amely apelláló lehet a felhasználó számára. Továbbá, a megjelenéstől, és a küllemtől eltekintve fontosnak tartom azt is, hogy egyszerű legyen az alkalmazás használata.
 	\\
-	A felületnek fontos jellemzője, hogy reszponzív legyen. Amikor a "reszponzív" kifejezést használjuk akkor a "reszponzív kinézetet" értjük. Ez azt jelenti, hogy az adott alkalmazás elérhető és alkalmazkodó legyen mindenféle eszközön. Akár itt értjük azokat az eszközöket amelyeknél nincsen kifejezetten sok beépített periféria, ilyenek például a okostelefon, tablet. Az ilyen eszközök során, fontos azt megoldani, hogy az alkalmazásban lévő objektumok(gombok, címkék) könnyen észlelhető, és elérhető lehessen a felhasználó számára. 
+	Az elkészített szoftver, főleg Windows operációs rendszerrel rendelkező eszközre készül, ez abból is következik, hogy a C\# nyelv kifejezetten a Windows alapú operációs rendszereket támogatja, illetve talán ez a legelterjedtebb operációs rendszer.
+	Miután telepítettük a szoftvert azután USB port-on keresztül lehet kommunikálni az adott eszközökkel.
+	\\
+	A felületnek fontos jellemzője, hogy reszponzív legyen. Amikor a "reszponzív" kifejezést használjuk akkor a "reszponzív kinézetet" értjük. Ez azt jelenti, hogy az adott alkalmazás elérhető és alkalmazkodó legyen mindenféle eszközön. Akár itt értjük azokat az eszközöket amelyeknél nincsen kifejezetten sok beépített periféria, ilyenek például a okos telefonok, tabletek. Az ilyen eszközök során, fontos azt megoldani, hogy az alkalmazásban lévő objektumok(gombok, címkék) könnyen észlelhetőek, és elérhetőek lehessenek a felhasználó számára. 
+	Mivel esetlegesen alacsony felbontású képernyőn vagy kis méretű kijelzőn ezek a funkciók nem feltétlen működnének. 
+	\\
+	Kutatásom során találkoztam egy olyan dizájn formával ami kifejezetten szépnek és modernnek bizonyult számomra.\cite{modernUI} 
+
 	\begin{comment}
 		3.fejezet(vége): kitekintés, milyen más rendszerek vannak még, és ahhoz képest ez mit tud, vannak hasonló szoftverek, vannak tréner szoftverek, de a mienk az spec képzésre alkalmas
 		- szoftver és a hardvert hozzákellett fejleszteni, ez egy prototípus.

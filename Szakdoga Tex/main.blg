@@ -7,45 +7,45 @@ Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
 Warning--to sort, need author or key in MTI
 Warning--empty journal in SLaszlo
-You've used 3 entries,
+You've used 4 entries,
             2118 wiz_defined-function locations,
-            513 strings with 4481 characters,
-and the built_in function-call counts, 758 in all, are:
-= -- 70
-> -- 26
+            519 strings with 4638 characters,
+and the built_in function-call counts, 966 in all, are:
+= -- 90
+> -- 33
 < -- 1
-+ -- 11
-- -- 8
-* -- 35
-:= -- 122
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 12
++ -- 14
+- -- 10
+* -- 41
+:= -- 157
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 37
-empty$ -- 69
-format.name$ -- 8
-if$ -- 167
+cite$ -- 6
+duplicate$ -- 44
+empty$ -- 91
+format.name$ -- 10
+if$ -- 213
 int.to.chr$ -- 0
-int.to.str$ -- 3
+int.to.str$ -- 4
 missing$ -- 3
-newline$ -- 18
-num.names$ -- 4
-pop$ -- 27
+newline$ -- 23
+num.names$ -- 6
+pop$ -- 35
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 13
 quote$ -- 0
-skip$ -- 26
+skip$ -- 33
 stack$ -- 0
-substring$ -- 21
-swap$ -- 9
+substring$ -- 26
+swap$ -- 10
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 10
+type$ -- 14
 warning$ -- 2
-while$ -- 5
-width$ -- 4
-write$ -- 31
+while$ -- 7
+width$ -- 5
+write$ -- 41
 (There were 2 warnings)
