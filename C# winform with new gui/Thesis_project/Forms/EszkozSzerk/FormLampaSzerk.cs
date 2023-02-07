@@ -18,6 +18,10 @@ namespace Thesis_project.Forms
         {
             this.lightToSzerk = lightToSzerk;
             InitializeComponent();
+            //kinézet:
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
+            Application.EnableVisualStyles();
             LoadTheme();
             SzerkLampa();
         }

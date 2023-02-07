@@ -29,6 +29,10 @@ namespace Thesis_project.Forms
         public FormInditas()
         {
             InitializeComponent();
+            //kinézet:
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
+            Application.EnableVisualStyles();
             LoadTheme();
             
         }
@@ -68,7 +72,7 @@ namespace Thesis_project.Forms
                 Console.WriteLine();
                 Console.WriteLine(SLFormHelper.FormHelper.Devices[i].GetType().Name);
                 Eszközöknevei.Text += SLFormHelper.FormHelper.Devices[i].GetType().Name + "\n";
-                for (int j = 0; j < 2; j++)
+                for (int j = 0; j < 1; j++)
                 {
                     if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDArrow))
                     {
@@ -160,8 +164,8 @@ namespace Thesis_project.Forms
             }
            
 
-            arrowButton.Width = 100;
-            arrowButton.Height = 100;
+            arrowButton.Width = 200;
+            arrowButton.Height = 200;
            
             arrowButton.BackColor = Color.White;
             arrowButton.Image = Image.FromFile(@"img\right-arrow.png");
@@ -177,9 +181,17 @@ namespace Thesis_project.Forms
             LEDArrow ledArrow1;
             if (FormHelper.Devices[0] is LEDArrow)
             {
+                FormMainMenu formMain = new FormMainMenu();
                 ledArrow1 = (LEDArrow)FormHelper.Devices[0];
                 nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
             }
+            /*FormMainMenu formMain = new FormMainMenu();
+            var frm = (FormMainMenu)this.Owner;
+            if (frm != null)
+            {
+                frm.btnSzerkesztes_Click(sender, e);
+            }*/
+           
             nyilSzerkForm.Show();
         }
 
@@ -189,8 +201,8 @@ namespace Thesis_project.Forms
 
             Button lampaButton = new Button();
            
-            lampaButton.Width = 100;
-            lampaButton.Height = 100;
+            lampaButton.Width = 200;
+            lampaButton.Height = 200;
             lampaButton.Location = location;
             lampaButton.BackColor = Color.White;
             lampaButton.FlatStyle = FlatStyle.Flat;
@@ -207,6 +219,7 @@ namespace Thesis_project.Forms
             LEDLight ledLight1;
             if (FormHelper.Devices[0] is LEDLight)
             {
+                FormMainMenu formMain = new FormMainMenu();
                 ledLight1 = (LEDLight)FormHelper.Devices[0];
                 lampaSzerkForm = new FormLampaSzerk(ref ledLight1);
             }
@@ -219,8 +232,8 @@ namespace Thesis_project.Forms
           
             hangszoroButton.Location = location;
 
-            hangszoroButton.Width = 100;
-            hangszoroButton.Height = 100;
+            hangszoroButton.Width = 200;
+            hangszoroButton.Height = 200;
             /*hangszoroButton.Location = location;*/
             hangszoroButton.Image = Image.FromFile(@"img\speaker-filled-audio-tool.png");
 

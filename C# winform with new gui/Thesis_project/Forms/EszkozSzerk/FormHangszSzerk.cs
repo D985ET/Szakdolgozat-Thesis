@@ -19,6 +19,10 @@ namespace Thesis_project.Forms.EszkozSzerk
         {
             this.speakerToSzerk = speakerToSzerk;
             InitializeComponent();
+            //kinézet:
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
+            Application.EnableVisualStyles();
             LoadTheme();
             SzerkHangsz();
         }

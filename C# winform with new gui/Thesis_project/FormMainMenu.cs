@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SLFormHelper;
+using Thesis_project.Forms;
+using Thesis_project.Forms.EszkozSzerk;
 
 namespace Thesis_project
 {
@@ -17,6 +19,8 @@ namespace Thesis_project
         private Random vsz;
         private int tempIndex;
         private Form activeForm;
+     
+
 
         //CTOR
         public FormMainMenu()
@@ -24,7 +28,12 @@ namespace Thesis_project
             InitializeComponent();
             vsz = new Random();
             btnCloseChildForm.Visible = false;
-     
+            //kinézet:
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
+            Application.EnableVisualStyles();
+         
+
         }
 
         //Methods
@@ -104,6 +113,7 @@ namespace Thesis_project
             {
                 ActivateButton(btnSender);
                 activeForm = childForm;
+                Console.WriteLine("Openchildform cucos");
                 childForm.TopLevel = false;
                 childForm.FormBorderStyle = FormBorderStyle.None;
                 childForm.Dock = DockStyle.Fill;
@@ -136,10 +146,35 @@ namespace Thesis_project
         {
             OpenChildForm(new Forms.FormBetoltes(), sender);
         }
-
-        private void btnSzerkesztes_Click(object sender, EventArgs e)
+    
+        public void btnSzerkesztes_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormSzerkesztes(), sender);
+            
+            if (FormHelper.Devices[0] is LEDArrow)
+            {
+                LEDArrow ledArrow1;
+                FormNyilSzerk nyilSzerkForm; //ny
+                ledArrow1 = (LEDArrow)FormHelper.Devices[0];
+                nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
+                OpenChildForm(new Forms.FormNyilSzerk(ref ledArrow1), sender);
+            }
+            if (FormHelper.Devices[0] is LEDLight)
+            {
+                LEDLight ledLight1;
+                FormLampaSzerk lampaSzerkForm; //ny
+                ledLight1 = (LEDLight)FormHelper.Devices[0];
+                lampaSzerkForm = new FormLampaSzerk(ref ledLight1);
+                OpenChildForm(new Forms.FormLampaSzerk(ref ledLight1), sender);
+            }
+            if (FormHelper.Devices[0] is Speaker)
+            {
+                Speaker speaker1;
+                FormHangszSzerk hangSzerkForm;
+                speaker1 = (Speaker)FormHelper.Devices[0];
+                hangSzerkForm = new FormHangszSzerk(ref speaker1);
+                OpenChildForm(new Forms.EszkozSzerk.FormHangszSzerk(ref speaker1), sender);
+            }
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)

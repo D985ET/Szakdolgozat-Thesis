@@ -23,6 +23,10 @@ namespace Thesis_project.Forms
         {
             this.arrowToSzerk = arrowToSzerk;
             InitializeComponent();
+            //kinézet:
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
+            Application.EnableVisualStyles();
             LoadTheme();
             SzerkNyil();
         }

@@ -17,8 +17,14 @@ namespace Thesis_project.Forms
         public FormMentes()
         {
             InitializeComponent();
+            //kinézet:
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
+            Application.EnableVisualStyles();
             LoadTheme();
+
             Mentes();
+
         }
         private void LoadTheme()
         {

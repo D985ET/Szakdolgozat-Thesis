@@ -24,7 +24,7 @@
 	\institute{Matematikai és Informatikai Intézet}
 	\title{Informatikai eszközökkel támogatott sport és egészségfejlesztés}
 	\author{Sipos Levente\\Szak: Programtervező informatikus BSc\\Specializáció: Szoftverfejlesztő informatikus}
-	\supervisor{Dr. Király Roland\\beosztás}
+	\supervisor{Dr. Király Roland\\docens}
 	\city{Eger}
 	\date{2022}
 	\begin{titlepage}
@@ -88,19 +88,21 @@
 	\end{enumerate}
 	\subsection*{Módszer lényege}
 	Az a személy aki használja ezt, nála külön dolgozik a két kar, külön dolgozik a két láb és ezáltal folyamatosan kapcsoljuk át a két agyféltekét.
+	Továbbá, a könnyen és egyszerűen felismerhető hang, szín, és ábra jelzések az esetlegesen a fogyatékossággal élő emberek számára se jelenthet akadályt.
 	\\
-	Különféle álló helyzetek (alapállás, mellső középtartás, magastartás) képesek segíteni abban, hogy az idegpályákon lévő átkapcsolódási pontok (szinapszisok) száma növekedjen. Fiatalabb korban a szinapszisok számát, későbbiekben az átkapcsolódási pontok erejét növeli.
-	 Továbbá, ez által a módszer által gyorsabban megértjük az elvégzendő  feladatot, feladatokat és akár gyorsabban is végrehajthatjuk azokat.
+	Különféle álló helyzetek (alapállás, mellső középtartás, magas tartás) képesek segíteni abban, hogy az idegpályákon lévő átkapcsolódási pontok (szinapszisok) száma növekedjen. Fiatalabb korban a szinapszisok számát, későbbiekben az átkapcsolódási pontok erejét növeli.
+	Sokféle betegség felmerülhet az olyan embereknél akiknek ez a módszer alkalmas lehet, a könnyen felismerhető és megérthető eszközök.
+	Továbbá, ez által a módszer által gyorsabban megértjük az elvégzendő  feladatot, feladatokat és akár gyorsabban is végrehajthatjuk azokat.
 	  %szellemi leépüléssel küzdő, szép korúak számára is segítséget nyújthat, mivel a változatos mozgás, és a különböző ingerek ki- és be- kapcsolása növeli az agy alap működését.
 	 \\
-	  Gyakorlati tapasztalatunk szerint a módszer hasznosan alkalmazható általános helyzetű, HH és HHH helyzetű és beteg gyerekeknél is. Kutatásaink és mért eredményeink ezt támasztják alá.
+	Gyakorlati tapasztalatunk szerint a módszer hasznosan alkalmazható általános helyzetű, HH és HHH helyzetű és beteg gyerekeknél is. Kutatásaink és mért eredményeink ezt támasztják alá.
 	A módszert kis helyen és minden korosztálynál lehet alkalmazni, de a teljesség érdekében, a módszer intelligens szobával együtt működik hatékonyan.
 	
 	
 	\subsection*{Intelligens szoba röviden}
-	Egy olyan helység, melynek mind a négy falán, oldalán különböző jeladókat helyezünk el.
-	Ezek különböző fények, színek, pontok, nyilak és hangok. Ezek külön, vagy együttes jelére kell különböző, speciális koordinációfejlesztő feladatokat végrehajtani.
-	A különböző színek más és más feladatokat tartalmaznak. Nyilak felvillanására, különböző hangokra pedig irányváltásokat kell végrehajtani.
+	Az intelligens szoba kifejezés egy olyan helység, melynek mind a négy falán, vagy oldalán különböző jeladókat helyezünk el.
+	Ezek különböző eszközök melyek típusai lehetnek: fények, színek, nyilak és hangok. Ezek külön, vagy együttesen kiküldött jeleire különböző, illetve speciális koordinációfejlesztő feladatokat végrehajtani. Minden egyes különböző szín, és fényjelzés, más és más feladatokat tartalmaznak.
+	Ez azt jelenti, hogy adott esetben egy piros lámpa színe emlékeztethet arra, hogy a piros szín jelentése szimbolikus hatással bír.Melyet az adott ember köthet a már mindennapos életben tapasztaltakhoz. Nyilak felvillanására, különböző hangokra pedig más érzékeket váltunk ki mint például a fényjelzés esetén. Ilyenkor irányváltásokat kell végrehajtani amik máris komplikálják egy kicsit az adott mozdulatokat.
 	\\
 	Ezzel a módszerrel és az intelligens szobával együttesen tudjuk a mozgáson keresztül úgy stimulálni az agyat, hogy a legrövidebb idő alatt a legtöbbször átkapcsoljuk. ( 200-szor, 300-szor, 400-szor, stb. )
 	\par
@@ -169,6 +171,7 @@
 		1.fejezet: Milyen technológiákat használunk, milyen nyelv, architektúrák, kapcsolási rajz, interface, ui, meg ezek hogyan néznek ki.
 	\end{comment}
 	\chapter*{1.fejezet}
+	\subsection{C\# fejlődése}
 	A szakdolgozatom projektje C\# nyelven íródik amely a legjobban alkalmazkodik az ilyen felületek leimplementálásához. \\
 	A C\# nyelv alapvetően a Microsoft által kifejlesztett objektumorientált programozási nyelv.
 	Ezentúl ez egy egyszerű, modern programozási nyelv amely egybeköti a C és a C++ nyelv erejét az új applikáció fejlesztésével egybekötve. \cite{hejlsberg2003c}
@@ -181,6 +184,7 @@
 	\\
 	A projektem során azért választottam a Windows Forms Application-t mivel a különböző eszközök(gombok, címkék) amelyek az ezen alkalmazásban megtalálhatóak elősegítik a felhasználó számára a könnyed olvashatóságot és feltérképezés lehetőségét. Az alkalmazás hasonló módon elkészülhetett volna konzolos felületre is, de mivel ez a felhasználó és az esetlegesen laikus ügyfél számára is nehezen érthető, ezért az ablakos alkalmazás a támogatott.
 	\\ 
+	\subsection*{DLL}
 	C\#-ban lehetőség van úgynevezett DLL-ek használatára is. A DLL(Dynamic Link Library) mint olyan az egy kisebb programok összessége, amelyeket nagyobb programok könnyűszerrel be tudnak importálni a saját projektjükbe. Ezen kisebb programokhoz vagy DLL fájlokhoz, hozzátartozik leírás is amelyek általában minden egyes függvényeknél, illetve metódusoknál megjegyezhető. Ennek oka, hogy az a fejlesztő aki használja a DLL-t
 	nagyobb belátást kapjon arról hogy az adott metódus, miként és hogyan működik.
 	\\
@@ -188,7 +192,9 @@
 	\\
 	Ezentúl, a működtettet eszközökkel való kommunikációt Delphi programozási nyelvben volt szükséges megírni amely a DLL alapját képezte. 
 	\\
+	\subsection*{eszközök}
 	Háromféle eszközt működtetünk, lámpát, nyilakat szimbolizáló lámpa, illetve egy hangszóró.
+	Ezen eszközöknek önálló tápellátással rendelkeznek, melyek közötti kapcsolatot 4 pólusú RJ típusú csatlakozókkal felszerelt kábelen keresztül lehet biztosítani. Az egyes egységeket láncszerűen kell egymás után kapcsolni, melyeket vagy individuálisan vagy kollektívan lehet kötni a vezérlő számítógéphez. Ezen összekötéshez szükséges egy USB 2.0-ás nyomtatókábel, melynek az USB-B-s fele az eszközbe csatlakozik, és az USB-A-s fele pedig a tápot biztosító és programot futtató számítógépbe.
 	\\  
 	A hangszóró adott hangszínt le tud játszani, amelyeket különbőző hosszúságig illetve hangerősségbe tudunk működtetni.
 	Az ehhez tartozó kapcsolási rajzok megtalálhatóak a [\ref{fig:hangsz1}],[\ref{fig:hangsz2}],[\ref{fig:hangsz3}] ábrák alatt.
@@ -294,6 +300,9 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	\end{comment}
 	\chapter*{2.fejezet}
 	A jelenlegi fejezetben magáról a kódról és a felhasználó élményről szeretnék beszélni.
+	A korábbi fejezetekben már említést tettem azon kapcsán, hogy az alkalmazást a C\# programozási nyelvben írom. Ezenfelül, egy olyan asztali alkalmazást szerettem volna készíteni amely apelláló lehet a felhasználó számára. Továbbá, a megjelenéstől, és a küllemtől eltekintve fontosnak tartom azt is, hogy egyszerű legyen az alkalmazás használata.
+	\\
+	A felületnek fontos jellemzője, hogy reszponzív legyen. Amikor a "reszponzív" kifejezést használjuk akkor a "reszponzív kinézetet" értjük. Ez azt jelenti, hogy az adott alkalmazás elérhető és alkalmazkodó legyen mindenféle eszközön. Akár itt értjük azokat az eszközöket amelyeknél nincsen kifejezetten sok beépített periféria, ilyenek például a okostelefon, tablet. Az ilyen eszközök során, fontos azt megoldani, hogy az alkalmazásban lévő objektumok(gombok, címkék) könnyen észlelhető, és elérhető lehessen a felhasználó számára. 
 	\begin{comment}
 		3.fejezet(vége): kitekintés, milyen más rendszerek vannak még, és ahhoz képest ez mit tud, vannak hasonló szoftverek, vannak tréner szoftverek, de a mienk az spec képzésre alkalmas
 		- szoftver és a hardvert hozzákellett fejleszteni, ez egy prototípus.

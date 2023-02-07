@@ -16,6 +16,10 @@ namespace Thesis_project.Forms
         {
             InitializeComponent();
             LoadTheme();
+            //kinézet:
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
+            Application.EnableVisualStyles();
         }
         private void LoadTheme()
         {

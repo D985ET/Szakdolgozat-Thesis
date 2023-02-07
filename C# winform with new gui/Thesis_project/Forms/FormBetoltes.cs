@@ -17,6 +17,10 @@ namespace Thesis_project.Forms
         public FormBetoltes()
         {
             InitializeComponent();
+            //kinézet:
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
+            Application.EnableVisualStyles();
             LoadTheme();
             Betoltes();
         }
