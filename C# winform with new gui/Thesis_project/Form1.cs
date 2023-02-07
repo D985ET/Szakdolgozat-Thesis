@@ -57,8 +57,6 @@ namespace Thesis_project
         {
             try
             {
-
-
                 if (btnSender != null)
                 {
                     if (currentButton != (Button)btnSender)
@@ -104,15 +102,11 @@ namespace Thesis_project
             }
             try
             {
-
-
                 ActivateButton(btnSender);
                 activeForm = childForm;
                 childForm.TopLevel = false;
                 childForm.FormBorderStyle = FormBorderStyle.None;
                 childForm.Dock = DockStyle.Fill;
-               
-              
             }
             catch(Exception ex) 
             {

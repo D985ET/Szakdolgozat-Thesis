@@ -15,7 +15,16 @@ namespace Thesis_project.Forms
     public partial class FormInditas : Form
     {
 
-        bool dev485Set = false;
+        bool dev485Set;
+        public void setDev485(bool dev485Set)
+        {
+     
+            this.dev485Set = dev485Set;
+        }
+        public bool getDev485()
+        {
+            return this.dev485Set;
+        }
         
         public FormInditas()
         {
@@ -26,7 +35,7 @@ namespace Thesis_project.Forms
 
         //ez az összes formba megy majd
        
-        private void LoadTheme()
+        public void LoadTheme()
         {
             foreach (Control btns in this.Controls)
             {
@@ -42,13 +51,13 @@ namespace Thesis_project.Forms
             if(dev485Set == false)
             {
                Res.Text = FormHelper.CallFelmeres().ToString();
-              
-                dev485Set = true;
+
+                setDev485(true);
                 Gombokat_Kirak();
             }
 
         }
-        private void Gombokat_Kirak()
+        public void Gombokat_Kirak()
         {
 
             Point p = new Point(0, 0);
@@ -131,13 +140,25 @@ namespace Thesis_project.Forms
 
         //buttonok kirakása attól függően hogy mik.
    
-        private void nyilatKirak(Point location)
+        public void nyilatKirak(Point location)
         {
 
             Button arrowButton = new Button();
 
-            
-            arrowButton.Location = location;
+            try
+            {
+                if(location.X < 0 || location.Y < 0)
+                {
+                    throw new Exception("A paraméterben kapott érték nem megfelelő");
+                }
+                arrowButton.Location = location;
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception("A paraméterben kapott érték nem megfelelő",e);
+            }
+           
 
             arrowButton.Width = 100;
             arrowButton.Height = 100;

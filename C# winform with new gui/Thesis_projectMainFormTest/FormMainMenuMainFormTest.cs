@@ -18,6 +18,7 @@ namespace Thesis_project.MainFormTest
             FormMainMenu formMain = new FormMainMenu();
             try
             {
+
                 formMain.OpenChildForm(null,null);
             }
             catch (Exception e)

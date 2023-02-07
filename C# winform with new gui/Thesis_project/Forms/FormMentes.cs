@@ -37,17 +37,25 @@ namespace Thesis_project.Forms
         string fileContent = string.Empty;
         string filePath = string.Empty;
 
-        private void Mentes()
+        public void Mentes()
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = "c:\\";
-            saveFileDialog.Filter = "JSON files (*.json)|*.json";
-            saveFileDialog.FilterIndex = 2;
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            try
             {
-                //Get the path of specified file
-                filePath = saveFileDialog.FileName;
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.InitialDirectory = "c:\\";
+                saveFileDialog.Filter = "JSON files (*.json)|*.json";
+                saveFileDialog.FilterIndex = 2;
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = saveFileDialog.FileName;
+                }
             }
+            catch (Exception e)
+            {
+                throw new Exception("Probléma volt a fájl mentése során! ", e);
+            }
+
             MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
             FormHelper.UnloadDeviceSettings(filePath);//kiment
         }
