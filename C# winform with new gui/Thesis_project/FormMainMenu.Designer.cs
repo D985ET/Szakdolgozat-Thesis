@@ -45,9 +45,11 @@ namespace Thesis_project
             this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPanel = new System.Windows.Forms.Panel();
+            this.eszlelteszkLbl = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
+            this.panelDesktopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -71,7 +73,7 @@ namespace Thesis_project
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -92,7 +94,7 @@ namespace Thesis_project
             this.btnSzerkesztés.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSzerkesztés.FlatAppearance.BorderSize = 0;
             this.btnSzerkesztés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSzerkesztés.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnSzerkesztés.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSzerkesztés.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSzerkesztés.Image = ((System.Drawing.Image)(resources.GetObject("btnSzerkesztés.Image")));
             this.btnSzerkesztés.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -113,7 +115,7 @@ namespace Thesis_project
             this.btnBetöltés.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBetöltés.FlatAppearance.BorderSize = 0;
             this.btnBetöltés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBetöltés.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnBetöltés.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnBetöltés.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnBetöltés.Image = ((System.Drawing.Image)(resources.GetObject("btnBetöltés.Image")));
             this.btnBetöltés.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,7 +136,7 @@ namespace Thesis_project
             this.btnMentés.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMentés.FlatAppearance.BorderSize = 0;
             this.btnMentés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMentés.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnMentés.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnMentés.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMentés.Image = ((System.Drawing.Image)(resources.GetObject("btnMentés.Image")));
             this.btnMentés.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,7 +157,7 @@ namespace Thesis_project
             this.btnInditás.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInditás.FlatAppearance.BorderSize = 0;
             this.btnInditás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInditás.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInditás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInditás.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnInditás.Image = ((System.Drawing.Image)(resources.GetObject("btnInditás.Image")));
             this.btnInditás.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -274,21 +276,34 @@ namespace Thesis_project
             // 
             this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Myanmar Text", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(311, 23);
+            this.lblTitle.Location = new System.Drawing.Point(292, 17);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(80, 37);
+            this.lblTitle.Size = new System.Drawing.Size(165, 48);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "HOME";
+            this.lblTitle.Text = "Üdvözöllek";
             // 
             // panelDesktopPanel
             // 
+            this.panelDesktopPanel.Controls.Add(this.eszlelteszkLbl);
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopPanel.Location = new System.Drawing.Point(200, 80);
             this.panelDesktopPanel.Name = "panelDesktopPanel";
             this.panelDesktopPanel.Size = new System.Drawing.Size(734, 503);
             this.panelDesktopPanel.TabIndex = 2;
+            // 
+            // eszlelteszkLbl
+            // 
+            this.eszlelteszkLbl.AutoSize = true;
+            this.eszlelteszkLbl.Dock = System.Windows.Forms.DockStyle.Left;
+            this.eszlelteszkLbl.Font = new System.Drawing.Font("Myanmar Text", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eszlelteszkLbl.ForeColor = System.Drawing.Color.Black;
+            this.eszlelteszkLbl.Location = new System.Drawing.Point(0, 0);
+            this.eszlelteszkLbl.Name = "eszlelteszkLbl";
+            this.eszlelteszkLbl.Size = new System.Drawing.Size(225, 48);
+            this.eszlelteszkLbl.TabIndex = 2;
+            this.eszlelteszkLbl.Text = "Észlelt eszközök";
             // 
             // FormMainMenu
             // 
@@ -306,6 +321,8 @@ namespace Thesis_project
             this.panelLogo.PerformLayout();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
+            this.panelDesktopPanel.ResumeLayout(false);
+            this.panelDesktopPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -327,6 +344,7 @@ namespace Thesis_project
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelDesktopPanel;
         private System.Windows.Forms.Button btnCloseChildForm;
+        private System.Windows.Forms.Label eszlelteszkLbl;
     }
 }
 

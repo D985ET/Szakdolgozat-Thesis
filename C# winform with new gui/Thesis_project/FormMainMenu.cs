@@ -32,7 +32,8 @@ namespace Thesis_project
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.WindowState = FormWindowState.Maximized;
             Application.EnableVisualStyles();
-         
+            byte dbDev = (byte)(SLFormHelper.FormHelper.Devices.Count()+1);
+            eszlelteszkLbl.Text += ": " + dbDev.ToString() + " db";
 
         }
 
@@ -55,6 +56,7 @@ namespace Thesis_project
                 throw new Exception("A color nem lehet null vagy üres! ",e);
                
             }
+            
             return ColorTranslator.FromHtml(color);
             
             

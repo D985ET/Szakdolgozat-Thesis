@@ -65,10 +65,16 @@ namespace Thesis_project.Forms
                     fileContent = reader.ReadToEnd();
                 }
             }
+            else
+            {
+                throw new Exception("A betöltés megszakításra került!");
+            }
+
             MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
         
             FormHelper.LoadDeviceSettings(filePath); //1 ütem
             Console.WriteLine(FormHelper.Devices[0]);
+           
         }
 
     }

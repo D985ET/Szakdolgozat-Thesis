@@ -41,25 +41,30 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(386, 13);
+            this.label1.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(317, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.Size = new System.Drawing.Size(172, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lámpa színe:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(37, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(163, 79);
             this.label2.TabIndex = 1;
             this.label2.Text = "Azonosító:";
             // 
             // lampaBtnZold
             // 
-            this.lampaBtnZold.Location = new System.Drawing.Point(297, 169);
+            this.lampaBtnZold.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lampaBtnZold.Font = new System.Drawing.Font("Myanmar Text", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lampaBtnZold.Location = new System.Drawing.Point(297, 179);
             this.lampaBtnZold.Name = "lampaBtnZold";
             this.lampaBtnZold.Size = new System.Drawing.Size(112, 68);
             this.lampaBtnZold.TabIndex = 4;
@@ -69,7 +74,9 @@
             // 
             // lampaBtnUres
             // 
-            this.lampaBtnUres.Location = new System.Drawing.Point(415, 29);
+            this.lampaBtnUres.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lampaBtnUres.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lampaBtnUres.Location = new System.Drawing.Point(415, 39);
             this.lampaBtnUres.Name = "lampaBtnUres";
             this.lampaBtnUres.Size = new System.Drawing.Size(112, 208);
             this.lampaBtnUres.TabIndex = 5;
@@ -79,7 +86,9 @@
             // 
             // lampaBtnKek
             // 
-            this.lampaBtnKek.Location = new System.Drawing.Point(297, 99);
+            this.lampaBtnKek.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lampaBtnKek.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lampaBtnKek.Location = new System.Drawing.Point(297, 109);
             this.lampaBtnKek.Name = "lampaBtnKek";
             this.lampaBtnKek.Size = new System.Drawing.Size(112, 68);
             this.lampaBtnKek.TabIndex = 6;
@@ -89,7 +98,9 @@
             // 
             // lampaBtnPir
             // 
-            this.lampaBtnPir.Location = new System.Drawing.Point(297, 29);
+            this.lampaBtnPir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lampaBtnPir.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lampaBtnPir.Location = new System.Drawing.Point(297, 39);
             this.lampaBtnPir.Name = "lampaBtnPir";
             this.lampaBtnPir.Size = new System.Drawing.Size(112, 68);
             this.lampaBtnPir.TabIndex = 7;
@@ -107,6 +118,8 @@
             // 
             // lampaMentBtn
             // 
+            this.lampaMentBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lampaMentBtn.Font = new System.Drawing.Font("Myanmar Text", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lampaMentBtn.Location = new System.Drawing.Point(191, 326);
             this.lampaMentBtn.Name = "lampaMentBtn";
             this.lampaMentBtn.Size = new System.Drawing.Size(409, 112);
@@ -117,10 +130,12 @@
             // 
             // aktSzinLamp
             // 
+            this.aktSzinLamp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.aktSzinLamp.AutoSize = true;
-            this.aktSzinLamp.Location = new System.Drawing.Point(339, 266);
+            this.aktSzinLamp.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aktSzinLamp.Location = new System.Drawing.Point(306, 259);
             this.aktSzinLamp.Name = "aktSzinLamp";
-            this.aktSzinLamp.Size = new System.Drawing.Size(70, 13);
+            this.aktSzinLamp.Size = new System.Drawing.Size(171, 48);
             this.aktSzinLamp.TabIndex = 11;
             this.aktSzinLamp.Text = "Aktuális szín:";
             // 

@@ -115,6 +115,9 @@
     <EmbeddedResource Include="Forms\EszkozSzerk\FormLampaSzerk.resx">
       <DependentUpon>FormLampaSzerk.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBetoltes.resx">
+      <DependentUpon>FormBetoltes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormInditas.resx">
       <DependentUpon>FormInditas.cs</DependentUpon>
     </EmbeddedResource>

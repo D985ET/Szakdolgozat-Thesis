@@ -54,3 +54,4 @@ D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\ob
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.csproj.CopyComplete
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.exe
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.pdb
+D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormBetoltes.resources

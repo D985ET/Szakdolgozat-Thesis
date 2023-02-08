@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Thesis_project.Forms
 {
@@ -21,7 +22,7 @@ namespace Thesis_project.Forms
             //kinézet:
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.WindowState = FormWindowState.Maximized;
-            Application.EnableVisualStyles();
+            //Application.EnableVisualStyles();
             LoadTheme();
             SzerkLampa();
         }
@@ -40,9 +41,19 @@ namespace Thesis_project.Forms
         }
         private void SzerkLampa()
         {
+            lampaAzLbl.Font = new Font("Myanmar Text", 20);
+            lampaAzLbl.ForeColor = Color.Black;
+            lampaAzLbl.Anchor = AnchorStyles.None;
+            lampaAzLbl.Dock = DockStyle.None;
             lampaAzLbl.Text = lightToSzerk.Azonos.ToString();
+            
+            aktSzinLamp.Font = new Font("Myanmar Text", 20);
+            aktSzinLamp.ForeColor = Color.Black;
+            aktSzinLamp.Anchor = AnchorStyles.None;
+            aktSzinLamp.Dock = DockStyle.None;
             aktSzinLamp.Text = lightToSzerk.Color.ToString();
-          
+   
+
         }
         private void lampaBtnPir_Click(object sender, EventArgs e)
         {
