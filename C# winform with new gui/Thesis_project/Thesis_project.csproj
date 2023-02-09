@@ -124,6 +124,9 @@
     <EmbeddedResource Include="Forms\EszkozSzerk\FormNyilSzerk.resx">
       <DependentUpon>FormNyilSzerk.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSzerkesztes.resx">
+      <DependentUpon>FormSzerkesztes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  9 FEB 2023 15:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  9 FEB 2023 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -822,18 +822,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--315
 
 [13
 
-] Excluding 'comment' comment. [14] Excluding 'comment' comment. [15
+] [14] Excluding 'comment' comment. [15] Excluding 'comment' comment.
+[16
 
-]
-Excluding 'comment' comment. [16
+] Excluding 'comment' comment. [17
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-69.
+79.
 
 (D:\Program Files\MikTex\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (main.bbl [17
+) (main.bbl [18
 
 ]
 Underfull \hbox (badness 6396) in paragraph at lines 4--8
@@ -847,21 +847,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 ulallo _ az _
  []
 
-) Excluding 'comment' comment. [18
+) Excluding 'comment' comment. [19
 
 ] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [19
+ [20
 
 ] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 62824E1A2D2D2E7716D2D5672CC1511D;488.
  ) 
 Here is how much of TeX's memory you used:
- 15765 strings out of 476375
- 255614 string characters out of 5798785
+ 15766 strings out of 476375
+ 255621 string characters out of 5798785
  1894299 words of memory out of 5000000
  35764 multiletter control sequences out of 15000+600000
  563401 words of font info for 78 fonts, out of 8000000 for 9000
@@ -872,9 +872,9 @@ x/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTex/fonts/type1/public/
 lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/Pro
 gram Files/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fon
 ts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (21 pages, 715249 bytes).
+Output written on main.pdf (22 pages, 716612 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

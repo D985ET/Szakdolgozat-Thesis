@@ -71,10 +71,6 @@ namespace Thesis_project
             
             return ColorTranslator.FromHtml(color);
             
-            
-           
-          
-
         }
         public void ActivateButton(object btnSender)
         {
@@ -163,8 +159,8 @@ namespace Thesis_project
     
         public void btnSzerkesztes_Click(object sender, EventArgs e)
         {
-            
-            if (FormHelper.Devices[0] is LEDArrow)
+            //Ha nem sikerül a több eszközös
+            /*if (FormHelper.Devices[0] is LEDArrow)
             {
                 LEDArrow ledArrow1;
                 FormNyilSzerk nyilSzerkForm; //ny
@@ -187,7 +183,8 @@ namespace Thesis_project
                 speaker1 = (Speaker)FormHelper.Devices[0];
                 hangSzerkForm = new FormHangszSzerk(ref speaker1);
                 OpenChildForm(new Forms.EszkozSzerk.FormHangszSzerk(ref speaker1), sender);
-            }
+            }*/
+            OpenChildForm(new Forms.FormSzerkesztes(), sender);
 
         }
 
