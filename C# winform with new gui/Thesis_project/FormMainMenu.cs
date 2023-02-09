@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -35,7 +36,18 @@ namespace Thesis_project
             byte dbDev = (byte)(SLFormHelper.FormHelper.Devices.Count()+1);
             eszlelteszkLbl.Text += ": " + dbDev.ToString() + " db";
 
+            this.Text = string.Empty; //a border teteje ne adjon semmi szöveget
+            this.ControlBox = false;
+            //így már lehet oldalra kitenni
+           // this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
+        //DRAG 
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
 
         //Methods
         public Color SelectThemeColor()
@@ -309,6 +321,36 @@ namespace Thesis_project
             {
                 FormHelper.CallOpen(this.Handle);
             }
+        }
+
+        //DRAG
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnCloseTop_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaximizeTop_Click(object sender, EventArgs e)
+        {
+            if(WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.Size = this.MinimumSize;
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnMinimizeTop_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

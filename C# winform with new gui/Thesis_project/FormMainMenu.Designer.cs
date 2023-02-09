@@ -46,6 +46,9 @@ namespace Thesis_project
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPanel = new System.Windows.Forms.Panel();
             this.eszlelteszkLbl = new System.Windows.Forms.Label();
+            this.btnCloseTop = new System.Windows.Forms.Button();
+            this.btnMaximizeTop = new System.Windows.Forms.Button();
+            this.btnMinimizeTop = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -64,7 +67,7 @@ namespace Thesis_project
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 583);
+            this.panelMenu.Size = new System.Drawing.Size(200, 611);
             this.panelMenu.TabIndex = 0;
             // 
             // btnExit
@@ -103,7 +106,7 @@ namespace Thesis_project
             this.btnSzerkesztés.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnSzerkesztés.Size = new System.Drawing.Size(200, 100);
             this.btnSzerkesztés.TabIndex = 4;
-            this.btnSzerkesztés.Text = " Feladatsor Szerkesztése";
+            this.btnSzerkesztés.Text = " Feladatsor Szerkesztés";
             this.btnSzerkesztés.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSzerkesztés.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSzerkesztés.UseVisualStyleBackColor = false;
@@ -124,7 +127,7 @@ namespace Thesis_project
             this.btnBetöltés.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnBetöltés.Size = new System.Drawing.Size(200, 100);
             this.btnBetöltés.TabIndex = 3;
-            this.btnBetöltés.Text = " Feladatsor Betöltése";
+            this.btnBetöltés.Text = " Feladatsor Betöltés";
             this.btnBetöltés.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBetöltés.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBetöltés.UseVisualStyleBackColor = false;
@@ -251,13 +254,17 @@ namespace Thesis_project
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelTitleBar.Controls.Add(this.btnMinimizeTop);
+            this.panelTitleBar.Controls.Add(this.btnMaximizeTop);
+            this.panelTitleBar.Controls.Add(this.btnCloseTop);
             this.panelTitleBar.Controls.Add(this.btnCloseChildForm);
             this.panelTitleBar.Controls.Add(this.lblTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(200, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(734, 80);
+            this.panelTitleBar.Size = new System.Drawing.Size(984, 80);
             this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // btnCloseChildForm
             // 
@@ -274,11 +281,11 @@ namespace Thesis_project
             // 
             // lblTitle
             // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Myanmar Text", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(292, 17);
+            this.lblTitle.Location = new System.Drawing.Point(417, 17);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(165, 48);
             this.lblTitle.TabIndex = 0;
@@ -290,13 +297,12 @@ namespace Thesis_project
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopPanel.Location = new System.Drawing.Point(200, 80);
             this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(734, 503);
+            this.panelDesktopPanel.Size = new System.Drawing.Size(984, 531);
             this.panelDesktopPanel.TabIndex = 2;
             // 
             // eszlelteszkLbl
             // 
             this.eszlelteszkLbl.AutoSize = true;
-            this.eszlelteszkLbl.Dock = System.Windows.Forms.DockStyle.Left;
             this.eszlelteszkLbl.Font = new System.Drawing.Font("Myanmar Text", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eszlelteszkLbl.ForeColor = System.Drawing.Color.Black;
             this.eszlelteszkLbl.Location = new System.Drawing.Point(0, 0);
@@ -305,16 +311,64 @@ namespace Thesis_project
             this.eszlelteszkLbl.TabIndex = 2;
             this.eszlelteszkLbl.Text = "Észlelt eszközök";
             // 
+            // btnCloseTop
+            // 
+            this.btnCloseTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloseTop.FlatAppearance.BorderSize = 0;
+            this.btnCloseTop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseTop.Font = new System.Drawing.Font("Bauhaus 93", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseTop.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCloseTop.Location = new System.Drawing.Point(954, 0);
+            this.btnCloseTop.Name = "btnCloseTop";
+            this.btnCloseTop.Size = new System.Drawing.Size(30, 30);
+            this.btnCloseTop.TabIndex = 2;
+            this.btnCloseTop.Text = "✖";
+            this.btnCloseTop.UseVisualStyleBackColor = true;
+            this.btnCloseTop.Click += new System.EventHandler(this.btnCloseTop_Click);
+            // 
+            // btnMaximizeTop
+            // 
+            this.btnMaximizeTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizeTop.FlatAppearance.BorderSize = 0;
+            this.btnMaximizeTop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximizeTop.Font = new System.Drawing.Font("Bauhaus 93", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaximizeTop.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnMaximizeTop.Location = new System.Drawing.Point(918, 0);
+            this.btnMaximizeTop.Name = "btnMaximizeTop";
+            this.btnMaximizeTop.Size = new System.Drawing.Size(30, 30);
+            this.btnMaximizeTop.TabIndex = 3;
+            this.btnMaximizeTop.Text = "O";
+            this.btnMaximizeTop.UseVisualStyleBackColor = true;
+            this.btnMaximizeTop.Click += new System.EventHandler(this.btnMaximizeTop_Click);
+            // 
+            // btnMinimizeTop
+            // 
+            this.btnMinimizeTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizeTop.FlatAppearance.BorderSize = 0;
+            this.btnMinimizeTop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizeTop.Font = new System.Drawing.Font("Bauhaus 93", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimizeTop.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnMinimizeTop.Location = new System.Drawing.Point(882, 0);
+            this.btnMinimizeTop.Name = "btnMinimizeTop";
+            this.btnMinimizeTop.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimizeTop.TabIndex = 4;
+            this.btnMinimizeTop.Text = "-̶--";
+            this.btnMinimizeTop.UseVisualStyleBackColor = true;
+            this.btnMinimizeTop.Click += new System.EventHandler(this.btnMinimizeTop_Click);
+            // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 583);
+            this.ClientSize = new System.Drawing.Size(1184, 611);
             this.Controls.Add(this.panelDesktopPanel);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.MinimumSize = new System.Drawing.Size(1200, 650);
             this.Name = "FormMainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
@@ -345,6 +399,9 @@ namespace Thesis_project
         private System.Windows.Forms.Panel panelDesktopPanel;
         private System.Windows.Forms.Button btnCloseChildForm;
         private System.Windows.Forms.Label eszlelteszkLbl;
+        private System.Windows.Forms.Button btnMinimizeTop;
+        private System.Windows.Forms.Button btnMaximizeTop;
+        private System.Windows.Forms.Button btnCloseTop;
     }
 }
 

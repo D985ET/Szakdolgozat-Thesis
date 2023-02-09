@@ -312,12 +312,35 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	Kutatásom során találkoztam egy olyan dizájn formával ami kifejezetten szépnek és modernnek bizonyult számomra.\cite{modernUI} 
 	Maga a felület több részből épül fel.
 	\\
-	\subsection{A Formról általánosan}
-	A képernyőket próbáltam megoldani az előzőekben említett módon, hogy reszponzív lehessen vagyis mindenféle képernyőn hasonlóan jól és szépen megjelenhessen. Ehhez kutatásom során találtam egy megoldást amely szerint, ha az adott Form-nak a méretét(Size) beállítom az elsődleges képernyőnek a méretére, illetve a képernyő állapot nevű változót is egyenlővé teszem a "FormWindowState" enumból a Maximized értékére akkor a képernyő ideális, kinagyított állapotba kerül. A módszer, megoldást nyújthat arra, hogy a képernyőn teljes méretbe jelenjen meg minden egyes objektum amit az adott képernyőre helyeztünk. 
+	\subsection*{A Formról általánosan}
+	A képernyőket próbáltam megoldani az előzőekben említett módon, hogy reszponzív lehessen vagyis mindenféle képernyőn hasonlóan jól és szépen megjelenhessen. Ehhez kutatásom során találtam egy megoldást amely szerint, ha az adott Form-nak a méretét(Size) beállítom az elsődleges képernyőnek a méretére, illetve a képernyő állapot nevű változót is egyenlővé teszem a "FormWindowState" enumból a Maximized értékére akkor a képernyő ideális, kinagyított állapotba kerül. A módszer, megoldást nyújthat arra, hogy a képernyőn teljes méretbe jelenjen meg minden egyes objektum amit az adott képernyőre helyeztünk. Ezen beállításokat az adott Formnak a konstruktorában hívjuk meg.
 	\subsection*{Form Main Menu}
-	Az első Form a főmenü vagyis amikor a felhasználó megnyitja az alkalmazást akkor ez az első képernyő ami számára megjelenik. 
-	Ezen képernyőn egy üdvözlő üzenetet kap, majd az észlelt eszközök darabszámát is látni fogja amely ugyanúgy megjelenik a képernyőn.
-	\subsubsection*{címkék}
+	Az első Form, a főmenü, vagyis amikor a felhasználó megnyitja az alkalmazást akkor ez az első képernyő ami számára megjelenik. 
+	Ezen képernyőn egy üdvözlő üzenetet kap, majd az észlelt eszközök darabszámát is látni fogja, amely ugyanúgy megjelenik a képernyőn.
+	Az üdvözlő üzenet, a fejlécen, a Form tetején jelenítjük meg amely egy Panel segítségével kapott színes hátteret.
+	\\
+	Ezen kívül még egy oldalsávból is áll a kezdőképernyőnk amely navigációt és könnyebb tájékozódást jelenthet a felhasználó számára.
+	Ebben a sávban gombok helyezkednek el amelyeknek, külön hátterük, és ikonjuk van. Ezek mind hozzájárulhatnak a felhasználó-barát szemléletmódhoz.
+	\\
+	A navigáció sávban megtalálhatjuk a következő gombokat:
+	\begin{itemize}
+		\item Indítás
+		\item Feladatsor Mentés
+		\item Feladatsor Betöltés
+		\item Feladatsor Szerkesztés
+		\item Kilépés
+	\end{itemize}
+	Az indítás gomb...
+	\\
+	A Feladatsor Mentés gomb...
+	\\
+	A Feladatsor Betöltés gomb...
+	\\
+	A Feladatsor Szerkesztés gomb...
+	\\
+	A Kilépés gombot arra használhatja a felhasználó
+	
+	\subsubsection*{Címkék}
 	A címke kiíratását úgy tudtam megoldani, hogy az adott Form-on belül a Toolbox nevezetű eszközt használva, kiválasztottam a "Label" ikont amely segítségével szövegeket/stringeket tudunk kiíratni. Persze ezt akár a kódon belül, Design nézet nélkül is meglehet oldani, de jelen helyzetben a Design nézetféle megoldást tartottam hasznosabbnak. Ezt követően a kódon belül ennek a címkének, a Text változójához hozzáadtam a kívánt szöveget, meg az eszközök darabszámát is, mint változót.
 	\\
 	Az eszközökről az adatokat a DLL-ből kaptam amelyet Nagy-Tóth Bence készített. A DLL neve SLFormHelper amelyen belül sok adatot érhetünk el az eszközzel kapcsolatosan. %ide kellene azeszközzel kapcsolatos dolgok hogy miket lehet lekérni az SLDLL-ből

@@ -43,13 +43,13 @@ namespace Thesis_project.Forms
         {
             lampaAzLbl.Font = new Font("Myanmar Text", 20);
             lampaAzLbl.ForeColor = Color.Black;
-            lampaAzLbl.Anchor = AnchorStyles.None;
+            lampaAzLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left;
             lampaAzLbl.Dock = DockStyle.None;
             lampaAzLbl.Text = lightToSzerk.Azonos.ToString();
             
             aktSzinLamp.Font = new Font("Myanmar Text", 20);
             aktSzinLamp.ForeColor = Color.Black;
-            aktSzinLamp.Anchor = AnchorStyles.None;
+            aktSzinLamp.Anchor = AnchorStyles.Top;
             aktSzinLamp.Dock = DockStyle.None;
             aktSzinLamp.Text = lightToSzerk.Color.ToString();
    
