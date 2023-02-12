@@ -43,6 +43,7 @@
 		leírom hogy miről szól, (nem kötelező), 2 rész -> probléma felvetés, mi a motiváció, kontextus, előremutatva a dolgozatban hol miről fogsz beszélni.(1.fejezetben befogom mutatni a kódolást)
 	\end{comment}
 	\chapter*{Bevezetés}
+	\section*{Bevezetés}
 	A tanulmányaim során sok olyan tárgyat tanulhattam amelyek segítettek belátást nyerni, hogy valójában melyik is az az irányágazat az informatikán belül, amely felkeltette az érdeklődésemet. Az utolsó félévekben tanulhattam robotikát a Robotika alapjai nevezetű tárgy következtében, amely közelebb vitt engem a gépközeli programozás világába. Továbbá C\# nyelvben elég biztos tudást szerezhettem a Szolgáltatás Orientált Programozás, Magasszintű programozási nyelvek I. és II. című tárgyakon.
 	\par
 	Szakdolgozatom tematikájául szerettem volna egy olyan témát választani, melynek a későbbiekben másoknak tudok segítséget nyújtani az informatikai szaktudásommal.
@@ -349,8 +350,15 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 		%ide kéne egy cite a kövi alfejezetre
 	alfejezetben fejtem ki.
 	\\
-	A Kilépés gombot arra használhatja a felhasználó
+	A Kilépés gombot arra használhatja a felhasználó, hogy az alkalmazást terminálni tudja. Ez a problémát egy gomb segítségével oldottam meg. A gombnak van egy olyan eseménye, hogy "MouseDown" amely segítségével egy olyan eseményt tudunk kiváltani amely akkor történik meg amikor a felhasználó lenyomja a gombot a bal egérgomb segítségével.
+	Ehhez az "event"-hez kötöttem egy Exit() metódust ami az Application osztáynak az egyik metódusa. Ez a metódus bezárja az applikációt, és befejezi a program futását. 
+	\subsection{Form Mentés}
 	
+	\subsection{Form Betöltés}
+	\subsection{Form Szerkesztés}
+	\subsubsection{Form Hangszoró Szerkesztés}
+	\subsubsection{Form Lámpa Szerkesztés}
+	\subsubsection{Form Nyíl Szerkesztés}
 	\subsubsection*{Címkék}
 	A címke kiíratását úgy tudtam megoldani, hogy az adott Form-on belül a Toolbox nevezetű eszközt használva, kiválasztottam a "Label" ikont amely segítségével szövegeket/stringeket tudunk kiíratni. Persze ezt akár a kódon belül, Design nézet nélkül is meglehet oldani, de jelen helyzetben a Design nézetféle megoldást tartottam hasznosabbnak. Ezt követően a kódon belül ennek a címkének, a Text változójához hozzáadtam a kívánt szöveget, meg az eszközök darabszámát is, mint változót.
 	\\
