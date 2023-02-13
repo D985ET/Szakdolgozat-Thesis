@@ -42,8 +42,8 @@
 	\begin{comment}
 		leírom hogy miről szól, (nem kötelező), 2 rész -> probléma felvetés, mi a motiváció, kontextus, előremutatva a dolgozatban hol miről fogsz beszélni.(1.fejezetben befogom mutatni a kódolást)
 	\end{comment}
-	\chapter*{Bevezetés}
-	\section*{Bevezetés}
+	\chapter{Bevezetés}
+
 	A tanulmányaim során sok olyan tárgyat tanulhattam amelyek segítettek belátást nyerni, hogy valójában melyik is az az irányágazat az informatikán belül, amely felkeltette az érdeklődésemet. Az utolsó félévekben tanulhattam robotikát a Robotika alapjai nevezetű tárgy következtében, amely közelebb vitt engem a gépközeli programozás világába. Továbbá C\# nyelvben elég biztos tudást szerezhettem a Szolgáltatás Orientált Programozás, Magasszintű programozási nyelvek I. és II. című tárgyakon.
 	\par
 	Szakdolgozatom tematikájául szerettem volna egy olyan témát választani, melynek a későbbiekben másoknak tudok segítséget nyújtani az informatikai szaktudásommal.
@@ -75,7 +75,7 @@
 	\begin{comment}
 	Bevezető2: Rendszer amit kidolgozott Somodi László, mi a szerepe, mi a célja, mit vállaltam én? -> frontend
 	\end{comment}
-	\chapter*{Bevezető 2}
+	\chapter*{Háttérelmélet}
 	\par
 	A témában jártas, és a "Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok óvodától a felnőtt korig" \cite{SLaszlo} című könyv írója, Somodi László, segített belátást nyerni az egészségügyi és a morális lényegességébe a projektnek. \\ Elmondása szerint a mozgásfejlesztés és az agyi kapacitás fejlesztése, kéz a kézben jár. Ezt a mozgásfejlesztést úgy érhetjük el, ha az adott személynek utasításokat adunk ki, hogy adott jelzésre (szín, hang, irány) és ezek kombinációjára, milyen mozgást kell végeznie.
 	\par 
@@ -172,8 +172,10 @@
 		1.fejezet: Milyen technológiákat használunk, milyen nyelv, architektúrák, kapcsolási rajz, interface, ui, meg ezek hogyan néznek ki.
 	\end{comment}
 	\chapter*{1.fejezet}
-	\subsection{C\# fejlődése}
-	A szakdolgozatom projektje C\# nyelven íródik amely a legjobban alkalmazkodik az ilyen felületek leimplementálásához. \\
+	\section{C\# fejlődése}
+
+	A szakdolgozatom projektje C\# nyelven íródik amely a legjobban alkalmazkodik az ilyen felületek leimplementálásához. 
+	
 	A C\# nyelv alapvetően a Microsoft által kifejlesztett objektumorientált programozási nyelv.
 	Ezentúl ez egy egyszerű, modern programozási nyelv amely egybeköti a C és a C++ nyelv erejét az új applikáció fejlesztésével egybekötve. \cite{hejlsberg2003c}
 	\\ 
@@ -211,7 +213,7 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	
 	\centering
 	\includegraphics[page=1,width=0.5\textwidth]{SLH}
-	\caption{hangszóró kapcsolási rajz \#1}
+	\caption[Hangszoró]{hangszóró kapcsolási rajz \#1}
 	\label{fig:hangsz1}
 	
 	\end{figure}
@@ -219,7 +221,7 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 		\centering
 		\includegraphics[page=2,width=0.5\textwidth]{SLH}
 		
-		\caption{hangszóró kapcsolási rajz \#2}
+		\caption[Hangszoró]{hangszóró kapcsolási rajz \#2}
 		\label{fig:hangsz2}
 	\end{figure}
 	\begin{figure}[h!]
@@ -227,7 +229,7 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 		\centering
 		\includegraphics[page=3,width=0.5\textwidth]{SLH}
 		
-		\caption{hangszóró kapcsolási rajz \#3}
+		\caption[Hangszoró]{hangszóró kapcsolási rajz \#3}
 		\label{fig:hangsz3}\medskip
 	\end{figure} 
 
@@ -300,6 +302,7 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 		2.fejezet: Melyik részét csinálom én? Mit csináltunk, és hogyan ui-t kellett fejleszteni, milyen lépésekből állt, képernyőképekkel.
 	\end{comment}
 	\chapter*{2.fejezet}
+	\section{Felület tervezése}
 	A jelenlegi fejezetben magáról a kódról és a felhasználó élményről szeretnék beszélni.
 	A korábbi fejezetekben már említést tettem azon kapcsán, hogy az alkalmazást a C\# programozási nyelvben írom. Ezenfelül, egy olyan asztali alkalmazást szerettem volna készíteni amely apelláló lehet a felhasználó számára. Továbbá, a megjelenéstől, és a küllemtől eltekintve fontosnak tartom azt is, hogy egyszerű legyen az alkalmazás használata.
 	\\
@@ -315,6 +318,8 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	\\
 	\subsection*{A Formról általánosan}
 	A képernyőket próbáltam megoldani az előzőekben említett módon, hogy reszponzív lehessen vagyis mindenféle képernyőn hasonlóan jól és szépen megjelenhessen. Ehhez kutatásom során találtam egy megoldást amely szerint, ha az adott Form-nak a méretét(Size) beállítom az elsődleges képernyőnek a méretére, illetve a képernyő állapot nevű változót is egyenlővé teszem a "FormWindowState" enumból a Maximized értékére akkor a képernyő ideális, kinagyított állapotba kerül. A módszer, megoldást nyújthat arra, hogy a képernyőn teljes méretbe jelenjen meg minden egyes objektum amit az adott képernyőre helyeztünk. Ezen beállításokat az adott Formnak a konstruktorában hívjuk meg.
+		\subsubsection*{Címkék}
+	A címke kiíratását úgy tudtam megoldani, hogy az adott Form-on belül a Toolbox nevezetű eszközt használva, kiválasztottam a "Label" ikont amely segítségével szövegeket/stringeket tudunk kiíratni. Persze ezt akár a kódon belül, Design nézet nélkül is meglehet oldani, de jelen helyzetben a Design nézetféle megoldást tartottam hasznosabbnak. Ezt követően a kódon belül ennek a címkének, a Text változójához hozzáadtam a kívánt szöveget, meg az eszközök darabszámát is, mint változót.
 	\subsection*{Form Main Menu}
 	Az első Form, a főmenü, vagyis amikor a felhasználó megnyitja az alkalmazást akkor ez az első képernyő ami számára megjelenik. 
 	Ezen képernyőn egy üdvözlő üzenetet kap, majd az észlelt eszközök darabszámát is látni fogja, amely ugyanúgy megjelenik a képernyőn.
@@ -335,33 +340,30 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	%még nem tom mi kéne ide
 	\\
 	A Feladatsor Mentés gomb...
-	Ennek a gombnak a segítségével a jelenlegi eszközöknek a beállításait mentheti el a felhasználó, amennyiben számára az eszközök elérhetőek. A funkció kifejtését és a megoldását a későbbiekben, a Form Mentés %ide kéne egy cite a kövi alfejezetre
-	alfejezetben fejteném ki.
+	Ennek a gombnak a segítségével a jelenlegi eszközöknek a beállításait mentheti el a felhasználó, amennyiben számára az eszközök elérhetőek. A funkció kifejtését és a megoldását a későbbiekben, a Form Mentés \ref{Form Mentes} alfejezetben fejteném ki.
 	\\
 	A Feladatsor Betöltés gomb...
 	A gomb használatával a felhasználó képes betölteni adott eszközökhöz tárolt adatokat, mint például: adott lámpákhoz tartozó LED-ek színét, vagy adott nyilakat ábrázoló eszközöknek a színét illetve irányát, vagy esetlegesen a hangszínt, hangerősséget, és még a hanghosszt adott hangszórók esetén.
-	Ezeknek kifejtését a Form Betöltés című 
-	%ide kéne egy cite a kövi alfejezetre
+	Ezeknek kifejtését a Form Betöltés című \ref{Form Betoltes}
 	alfejezetben fejtem ki.
 	\\
 	A Feladatsor Szerkesztés gomb...
 	Ezen gomb használatával a felhasználó tudja szerkeszteni a már ismert eszközöket. Akár az adott lámpákhoz tartozó LED-ek színét, vagy adott nyilakat ábrázoló eszközöknek a színét, illetve azok irányát, vagy esetlegesen a hangszínt, hangerősséget, és még a hanghosszt adott hangszórók esetén.
-	Ezeknek a kifejtését a Form Szerkesztés című 
-		%ide kéne egy cite a kövi alfejezetre
-	alfejezetben fejtem ki.
+	Ezeknek a kifejtését a Form Szerkesztés című \ref{Form Szerkesztes}	alfejezetben fejtem ki.
 	\\
 	A Kilépés gombot arra használhatja a felhasználó, hogy az alkalmazást terminálni tudja. Ez a problémát egy gomb segítségével oldottam meg. A gombnak van egy olyan eseménye, hogy "MouseDown" amely segítségével egy olyan eseményt tudunk kiváltani amely akkor történik meg amikor a felhasználó lenyomja a gombot a bal egérgomb segítségével.
 	Ehhez az "event"-hez kötöttem egy Exit() metódust ami az Application osztáynak az egyik metódusa. Ez a metódus bezárja az applikációt, és befejezi a program futását. 
 	\subsection{Form Mentés}
+	\label{Form Mentes}
 	
 	\subsection{Form Betöltés}
+	\label{Form Betoltes}
 	\subsection{Form Szerkesztés}
+	\label{Form Szerkesztes}
 	\subsubsection{Form Hangszoró Szerkesztés}
 	\subsubsection{Form Lámpa Szerkesztés}
 	\subsubsection{Form Nyíl Szerkesztés}
-	\subsubsection*{Címkék}
-	A címke kiíratását úgy tudtam megoldani, hogy az adott Form-on belül a Toolbox nevezetű eszközt használva, kiválasztottam a "Label" ikont amely segítségével szövegeket/stringeket tudunk kiíratni. Persze ezt akár a kódon belül, Design nézet nélkül is meglehet oldani, de jelen helyzetben a Design nézetféle megoldást tartottam hasznosabbnak. Ezt követően a kódon belül ennek a címkének, a Text változójához hozzáadtam a kívánt szöveget, meg az eszközök darabszámát is, mint változót.
-	\\
+
 	Az eszközökről az adatokat a DLL-ből kaptam amelyet Nagy-Tóth Bence készített. A DLL neve SLFormHelper amelyen belül sok adatot érhetünk el az eszközzel kapcsolatosan. %ide kellene azeszközzel kapcsolatos dolgok hogy miket lehet lekérni az SLDLL-ből
 	
 	
@@ -381,11 +383,25 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 		- miért jó ez? Működés közben videókat kéne csinálni. Érdemes lenne titkosítani.
 	\end{comment}
 	\chapter*{Összegzés}
-	
+	Jelenlegi projekt során, ablakos applikációt tudtunk készíteni amely segítségével szakemberek illetve edzők könnyedén és egyszerűen használhatják a különféle eszközöket, arra, hogy a mozdulatsorok automatizálását elvégezzék.
 
-
+	Nagyon örültünk, hogy egy kis betekintést nyerhettünk az egészségfejlesztés világába, Somodi László gondolatain keresztül amelyet a vele való beszélgetéseinkből, valamint \textit{,,Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok óvodától a felnőtt korig''} című alkotásában leírt gondolatokból szereztük.
 	
-	\verb*|#TODO|: Összefoglalás...
+	Személy szerint kíváncsisággal töltött el az a gondolat, hogy az informatikával mint olyannal képesek vagyunk segíteni felebarátainkon legjobb tudásunk szerint, amellyel az Isten megáldott bennünket.
+	
+	Örömömre szolgált, hogy Somodi László minket bízott meg elméleteit kivitelező szoftveres háttérrel. Szakdolgozatunk nem csupán arról szól, hogy amit megtanultunk a gyakorlatban azt kamatoztassuk, és bizonyítsunk másoknak, hanem ezzel a projekttel sok olyan ember számára tudunk további segítséget nyújtani akik rászorulnak az ilyesfajta segítségre.
+	
+	Munkánkat több tudományág összehangolt kutatómunkája segítette elő, ezen okból kifolyólag szerteágazónak is nevezhetnénk a projekt összeállítását.
+	
+	Ami a programozási elméletet és ennek gyakorlati vonatkozásait illeti, Dr. Király Roland Tanár Úr segített bennünket, a projekt elindulásában, mivel, hogy annak idején ő tervezte az alapprogramnak a felépítését és struktúráját. Emellett, konzultációk során is segített gondolatokat nyerni és ezeket a program szerves részévé tenni.
+
+\verb*|#TODO|: Saját kitekintés mik vannak ilyen hasonlók
+	
+	\begin{comment}
+		Mint minden szoftverre és emberi termékre jellemző, a megoldásaink természetesen nem mondhatóak tökéletesnek, programunk épp annyira időnként karbantartásra és további fejlesztésekre szorulhat. Érdekes volt felfedezni a gRPC és a Proto-nyelv kapcsán a \ref{grpc} fejezetben, hogy ötször-hatszor jobb teljesítmény érhető el az adatok bináris módon történő szerializációjával a szöveges formátumokhoz képest -- jelen állás szerint mégis az utóbbi megoldás számít elterjedtebbnek --, én azt gondolom, hogy mindenképp érdemes lenne munkánkat esetleg egy másik szakdolgozat keretein belül a gRPC irányába elmozdítani.
+	\end{comment}
+
+	\chapter*{Köszönetnyílvánítás}
 	\bibliographystyle{plain}
 	\bibliography{references}
 	\begin{comment}

@@ -1,10 +1,12 @@
 \select@language {magyar} \contentsline {chapter}{Bevezetés}{1}{chapter*.1}%
 \select@language {magyar} \contentsline {chapter}{Elméleti háttér}{1}{chapter*.1}%
 \select@language {magyar} \contentsline {chapter}{Összegzés}{1}{chapter*.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {0.0.1}C\# fejlődése}{6}{subsection.0.0.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {0.0.2}Form Mentés}{15}{subsection.0.0.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {0.0.3}Form Betöltés}{15}{subsection.0.0.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {0.0.4}Form Szerkesztés}{15}{subsection.0.0.4}%
-\select@language {magyar} \contentsline {subsubsection}{Form Hangszoró Szerkesztés}{15}{section*.15}%
-\select@language {magyar} \contentsline {subsubsection}{Form Lámpa Szerkesztés}{15}{section*.16}%
-\select@language {magyar} \contentsline {subsubsection}{Form Nyíl Szerkesztés}{15}{section*.17}%
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Bevezetés}{1}{chapter.1}%
+\select@language {magyar} \contentsline {section}{\numberline {1.1}C\# fejlődése}{6}{section.1.1}%
+\select@language {magyar} \contentsline {section}{\numberline {1.2}Felület tervezése}{13}{section.1.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.1}Form Mentés}{15}{subsection.1.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.2}Form Betöltés}{15}{subsection.1.2.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.3}Form Szerkesztés}{15}{subsection.1.2.3}%
+\select@language {magyar} \contentsline {subsubsection}{Form Hangszoró Szerkesztés}{15}{section*.14}%
+\select@language {magyar} \contentsline {subsubsection}{Form Lámpa Szerkesztés}{15}{section*.15}%
+\select@language {magyar} \contentsline {subsubsection}{Form Nyíl Szerkesztés}{15}{section*.16}%
