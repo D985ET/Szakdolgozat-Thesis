@@ -329,12 +329,39 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	
 	Itt találunk számos eszközt amelyek bármelyikét használhatjuk a formunkon. Ilyenek például a buttonok vagyis a gombok, vagy a Labelek vagyis a címkék és továbbá elérhetőek még maguk a panelek vagy alpanelek is. Az eszközökről később a  Eszközök [\ref{Eszkozok}] című alfejezetben tárgyalok.
 	
-	Amikor elhelyeztük a kívánt kelléket a formon akkor lehetőségünk van többféle beállításra az adott tárgynál. ezek közé tartozik az az opció amikor egy adott objektumnak a hátterét, címét és még sok más tulajdonságát lehet változtatni a kiválasztott eszköznek. Ezentúl még adott eszköznek lehetnek eseményei is amelyek egy adott impulzus alapján (például: bal klikk lenyomása egy gombbon) kiváltanak egy másik akár látható akár nem látható reakciót a programon belül. Ezekről bővebben az Eszközök című [\ref{Eszkozok}] alfejezetben írok.
+	Amikor elhelyeztük a kívánt kelléket a formon akkor lehetőségünk van többféle beállításra az adott tárgynál. ezek közé tartozik az az opció amikor egy adott objektumnak a hátterét, címét és még sok más tulajdonságát lehet változtatni a kiválasztott eszköznek. Ezentúl még adott eszköznek lehetnek eseményei is amelyek egy adott impulzus alapján (például: bal klikk lenyomása egy gombbon) kiváltanak egy másik akár látható akár nem látható reakciót a programon belül. Ezekről bővebben az Eszközök című [\ref{EszkozLista}] alfejezetben írok.
 	
 	\subsubsection*{Alap kód nézet}
-	
-	\subsection{Eszközök}
-		\label{Eszkozok}
+	A Designer vagy tervezői nézet mellett a programozóknak alkotott nézet is megtalálható a WinForm applikáción belül. Ez a nézet az alap kódolói nézet, amely ugyanolyan fontossággal bír mint a Designer nézet.
+	\\
+	Amíg a Designer nézetben főleg azon volt a hangsúly hogy a Form-nak vagyis a képernyőnek a nézetét kialakítsuk, megformázzuk. Ezzel ellentétben a kódolói nézetben nem feltétlen látjuk azonnal a kívánt produktumot, mivel ez csak indításkor jelenik meg számunkra, amikor "\textit{lebuildeljük}" a programunkat. Ezt az indítást akár a gyorsbillenytű (\textbf{F5}) segítségével tehetjük meg, vagy a zöld nyílra kattintva a lap tetején.
+	\\
+	A kódolói nézetben a programozónak lehetősége van minden C\# specifikus elem kihasználására. Alapvetően a minden egyes Gyermek Form örökli a Szülő Form minden public, illetve protected metódusát és mezőjét. 
+	\\
+	A Formoknál mindig van egy inicializáló konstruktor, amely meghívja a(z) \textit{
+	InitializeComponent()} nevű metódust amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Egyúttal, ez a metódus alapozza meg a gombok, címkék, esemény kezelők és még több ilyesfajta objektumoknak a későbbi beillesztését és használatát.
+\\
+Ezen kívül, ez a metódus megkeresi a betöltődő Képernyő(Window) és a Felhasználó Vezérlő(UserControl) XAML-jéhez tartozó URI-t.
+\\
+Majd átadja azt a System.Windows.Application.LoadComponent() nevezetű statikus metódusnak.
+Ezt követően, a LoadComponent() nevezetű metódus betölti az átadott URI-n található XAML-fájlt, és átalakítja azt az XAML-fájl gyökéreleme által megadott objektum példányává.
+\\
+Az \textbf{XAML}(angolul: Extensible Application Markup Language) mint olyan alapvetően egy deklaratív nyelv, amely XML alapján képződött.
+Emellett az XAML főleg az olyan típusú eszközök programozásánál használatos amikor felhasználói felületet kell készíteni és programozni. Ilyenek például a Windows Presentation Foundation (WPF) amely sok hasonlósággal rendelkezik a Windows Forms-hoz is.
+\\
+Az \textbf{URI}(angolul:Uniform Resource Identifier) \cite{uri}
+\\
+Az \textbf{U} egységesség(Uniform) számos előnnyel jár. Lehetővé teszi a különböző típusú
+erőforrás-azonosítók ugyanabban a kontextusban használhatók, még akkor is, ha
+az erőforrások eléréséhez használt mechanizmusok különbözhetnek.
+\\
+Az \textbf{R} olyan a specifikáció amely, nem korlátozza annak körét, hogy mi lehet az erőforrás. Az "erőforrás" kifejezés inkább általános értelemben használatos mindenre, ami URI-val azonosítható. Ilyenek lehetnek az elektronikus anyagok, képek, egy adott információról kapott forrás valamilyen következetes céllal.
+\\
+Az \textbf{I} az azonosító megtestesíti azokat az információkat, amelyek ahhoz szükségesek, hogy az azonosított dolgot megkülönböztessék az olyan azonosított dolgoktól amelyek az információk hatáskörébe tartoznak.
+Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztessenek egy erőforrást az összes többi erőforrástól, attól függetlenül, hogy az milyen célra lett kihelyezve.  
+	\subsection{Eszköz Lista}
+		\label{EszkozLista}
+		Az eszközök listáját használhatjuk a Designer nézetben. Ezzel az módszerrel, könnyedén tudjuk mozgatni az adott eszközöket. Ilyenek például a gomb, címke, panel
 	\subsubsection*{Gombok}
 	\label{Gombok}
 	\subsubsection*{Címkék}
