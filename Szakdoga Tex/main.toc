@@ -4,10 +4,16 @@
 \select@language {magyar} \contentsline {chapter}{\numberline {1}Bevezetés}{1}{chapter.1}%
 \select@language {magyar} \contentsline {section}{\numberline {1.1}C\# fejlődése}{6}{section.1.1}%
 \select@language {magyar} \contentsline {section}{\numberline {1.2}Felület tervezése}{13}{section.1.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.2.1}Eszköz Lista}{15}{subsection.1.2.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.2.2}Form Mentés}{17}{subsection.1.2.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.2.3}Form Betöltés}{17}{subsection.1.2.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.2.4}Form Szerkesztés}{17}{subsection.1.2.4}%
-\select@language {magyar} \contentsline {subsubsection}{Form Hangszoró Szerkesztés}{17}{section*.19}%
-\select@language {magyar} \contentsline {subsubsection}{Form Lámpa Szerkesztés}{17}{section*.20}%
-\select@language {magyar} \contentsline {subsubsection}{Form Nyíl Szerkesztés}{17}{section*.21}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.1}Eszköztár}{15}{subsection.1.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{Gombok}{16}{section*.14}%
+\select@language {magyar} \contentsline {subsubsection}{Címkék}{16}{section*.15}%
+\select@language {magyar} \contentsline {subsubsection}{Panel}{16}{section*.16}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.2}Delegatek}{16}{subsection.1.2.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.3}Események}{17}{subsection.1.2.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.4}A Formról általánosan}{17}{subsection.1.2.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.5}Form Mentés}{19}{subsection.1.2.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.6}Form Betöltés}{19}{subsection.1.2.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.7}Form Szerkesztés}{19}{subsection.1.2.7}%
+\select@language {magyar} \contentsline {subsubsection}{Form Hangszoró Szerkesztés}{19}{section*.18}%
+\select@language {magyar} \contentsline {subsubsection}{Form Lámpa Szerkesztés}{19}{section*.19}%
+\select@language {magyar} \contentsline {subsubsection}{Form Nyíl Szerkesztés}{19}{section*.20}%
