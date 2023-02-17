@@ -373,11 +373,19 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	\\
 	Ezentúl még a gombok hasznosnak bizonyulnak sok különböző helyzetben is mivel a gomboknak és más objektumoknak is, léteznek úgynevezett eseményei. Ezen eseményeket (Angolul: "Event") a felhasználó ki tudja váltani különböző cselekedetekkel. Ilyen esemény lehet példaként az amikor a felhasználó a bal egér gombbal kattint a gomb felületére, ezzel kiváltva egy eseményt ami bekövetkezik ezen okból kifolyólag.
 	\\
-	Programozói nézetből egy gomb event kialakítása többféle módon történhet. Amikor kihelyezzük a használni kívánt gombot akkor lehetőségünk van, vagy a jobb alsó sarokban megjelenő "\textit{Properties}" nevezetű ablakon belül navigálni vagy egyszerű módon csak kétszer kattintunk a gombbra, ezzel a programunk legenerál számunkra egy "xyz\_Click()" metódust.
+	Tervezői nézetből egy gomb esemény kialakítása többféle módon történhet. Amikor kihelyezzük a használni kívánt gombot akkor lehetőségünk van, vagy a jobb alsó sarokban megjelenő "\textit{Properties}" nevezetű ablakon belül navigálni vagy egyszerű módon csak kétszer kattintunk a létrehozott gombra, ezzel a programunk legenerál számunkra egy "xyz\_Click()" metódust.
 	Az elsőnek említett módban, a "\textit{Properties}" nevezetű ablakon belül, az apró villám ikonra kell kattintanunk, amely az adott objektumhoz tartozó események listáját tárja szemünk elé. Ez megkönnyítheti a kereséseinket, hogy éppen az adott objektumra milyen események lehetségesek. További információt majd a \ref{Eventek}  fejezetben fejtenék ki.
 	\subsubsection{Címkék}
-	
 	\label{Címkék}
+	A címkék általánosságban megtalálhatóak minden programban felületén. Ilyenek például az üdvözlő üzenetek, címek, szöveges magyarázatok.
+	%ide akár lehetne ezekről ilyen képeket is betenni a címkékről
+	A címkék alapvetően nem arra szolgálnak, hogy a felhasználó tudjon kommunikálni a programozóval/programmal, hanem arra, hogy a fejlesztő tudja továbbítani a programozó által írt szöveges üzeneteket a felhasználó számára. Hasznos lehet olyankor amikor a felhasználóval tudatni akarunk olyan információkat amelyek a  program működéséhez releváns volna. Ennek egy példája amikor egy adott gombnak a funkcióit szeretnénk leírni, ilyenkor a címke arra szolgál, hogy feliratozzuk az adott funkciókat a programunkon belül.
+	\\
+	  Természetesen mind a kétféle nézetben(designer/kód) elérhető számunkra a címkék használata, de meg kell fontolnunk, hogy kód nézetben alapvetően nem látjuk azonnal azt amit a felhasználó is látni fog, ezért talán nehézségekbe ütközhetünk ilyenkor ha manuális szeretnénk kód formájában megadni a címke paramétereit, beállításait. Amennyiben designer nézetben helyezzük el a címkénket könnyebben és rugalmasabban tudunk a programunkkal dolgozni, de sajnos ennek is megvannak a hátrányai, ha a program futási idejében szeretnénk változtatni akkor használnunk kell a kód nézetet is amellyel kiegészítve megtudjuk oldani ezeket a felmerülő problémákat is. Ebből kifolyólag hasznos lehet a designer nézet és a kód nézet együttes dinamikus használata.
+	  \\
+	  Mivel a címkék is szövegek/stringek ezért egy adott címkének el lehet érni a szöveg formátumát sok más beállításával együtt. Ilyenkor ha stringet szeretnénk esetlegesen konkatenálni, abban az esetben az adott label-nek a \textit{Text} nevezetű property-jét kell lekérdeznünk. Majd ezt követően használhatjuk a címkénk szöveg adására, illetve kiegészítésére.
+	\\
+	Későbbiek során természetesen ez a funkció is szerves részét alakítja az elkészült programnak.
 	\subsubsection{Panel}
 	\label{Panel}
 	\subsection{Delegatek}
@@ -388,16 +396,20 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	\\
 	A delegatek deklarálásához szükséges a \textbf{delegate} kulcsszó amelyet követően meg kell adni a visszatérési értéket és a delegate nevét és paraméterét.
 	\\ 
-	Ezt követően meg kell írnunk a hivatkozni kívánt metódust, majd ezek után a delegatet és a metódust összekötjük úgy, hogy a delegatet lepéldányosítjuk és a new kulcsszót és a delegat nevét követően paraméterben megadjuk a kívánt metódust. 
+	Ezt követően meg kell írnunk a hivatkozni kívánt metódust, majd ezek után a delegatet és a metódust összekötjük úgy, hogy a delegatet lepéldányosítjuk és a new kulcsszót és a delegate nevét követően paraméterben megadjuk a kívánt metódust. 
+	\\
+	A delegatekre a későbbiek során csak az eventek során lesz szükségünk, mivel az eventek alapját képzik a delegate-k
 	\subsection{Események}
 	\label{Eventek}
 	Az események vagy eventek \cite{evinC} a C\# nyelven belül, olyan mechanizmusok, amelyeket az osztályok használnak értesítések vagy üzenetek küldésére más osztályoknak. Az események számos alkalmazás létfontosságú részét képezik, és tökéletes módja annak, hogy rugalmas és bővíthető alkalmazásokat hozzunk létre.
 	\\
+	\subsubsection{Esemény készítése}
 	Ahhoz hogy egy eseményt megalakítsunk szükség van egy kiadóra, aki az eseményt létrehozza, majd az esemény fogadásához és kezeléséhez elengedhetetlen egy fogadó is aki feliratkozik az esemény fogadására.
-	\\
+	
+	\subsubsection{Esemény a gyakorlatban}
 	Az event emellett általában a megfigyelő tervezési mintával kapcsolatban használják. Amikor ugyanis egy ilyen esemény bekövetkezik a feliratkozott figyelők csoportja meg lesz szólítva és ezzel kapnak információt a bekövetkezett eseményről. Azok az objektumok amelyek "érdekeltek" abban, hogy fogadjanak értesítéseket az eseményről, azok regisztrálnak egy delegate példányra az eseményhez.
 	Egy esemény mindig a vele együtt elérhető delegattel van definiálva. 
-	Az esemény mindig egy delegattel kell együtt használni.
+	Az eseményt mindig egy delegattel kell együtt használni.
 	\\
 	Egy esemény értéke \textbf{null}, ha nincs regisztrált/feliratkoztatott figyelője/hallgatója.
 	
