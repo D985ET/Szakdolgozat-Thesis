@@ -374,7 +374,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Ezentúl még a gombok hasznosnak bizonyulnak sok különböző helyzetben is mivel a gomboknak és más objektumoknak is, léteznek úgynevezett eseményei. Ezen eseményeket (Angolul: "Event") a felhasználó ki tudja váltani különböző cselekedetekkel. Ilyen esemény lehet példaként az amikor a felhasználó a bal egér gombbal kattint a gomb felületére, ezzel kiváltva egy eseményt ami bekövetkezik ezen okból kifolyólag.
 	\\
 	Tervezői nézetből egy gomb esemény kialakítása többféle módon történhet. Amikor kihelyezzük a használni kívánt gombot akkor lehetőségünk van, vagy a jobb alsó sarokban megjelenő "\textit{Properties}" nevezetű ablakon belül navigálni vagy egyszerű módon csak kétszer kattintunk a létrehozott gombra, ezzel a programunk legenerál számunkra egy "xyz\_Click()" metódust.
-	Az elsőnek említett módban, a "\textit{Properties}" nevezetű ablakon belül, az apró villám ikonra kell kattintanunk, amely az adott objektumhoz tartozó események listáját tárja szemünk elé. Ez megkönnyítheti a kereséseinket, hogy éppen az adott objektumra milyen események lehetségesek. További információt majd a \ref{Eventek}  fejezetben fejtenék ki.
+	Az elsőnek említett módban, a "\textit{Properties}" nevezetű ablakon belül, az apró villám ikonra kell kattintanunk, amely az adott objektumhoz tartozó események listáját tárja szemünk elé. Ez megkönnyítheti a kereséseinket, hogy éppen az adott objektumra milyen események lehetségesek. További információt majd a \ref{esemenyformban} fejezetben fejtenék ki.
 	\subsubsection{Címkék}
 	\label{Címkék}
 	A címkék általánosságban megtalálhatóak minden programban felületén. Ilyenek például az üdvözlő üzenetek, címek, szöveges magyarázatok.
@@ -388,6 +388,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Későbbiek során természetesen ez a funkció is szerves részét alakítja az elkészült programnak.
 	\subsubsection{Panel}
 	\label{Panel}
+	
 	\subsection{Delegatek}
 	\label{Delegateek}
 	A delegatek a C\# nyelven belül, mindig egy hivatkozás. Egy olyan hivatkozás amely mutat egy metódusra. Amennyiben egy delegatet hívunk akkor a hivatkozott metódus lesz meghívva. A delegateknek megvan minden szükséges információjuk ahhoz, hogy hívják egy adott egyedi névvel és visszatérési típussal ellátott metódust vagy metódusokat.
@@ -402,6 +403,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	\subsection{Események}
 	\label{Eventek}
 	Az események vagy eventek \cite{evinC} a C\# nyelven belül, olyan mechanizmusok, amelyeket az osztályok használnak értesítések vagy üzenetek küldésére más osztályoknak. Az események számos alkalmazás létfontosságú részét képezik, és tökéletes módja annak, hogy rugalmas és bővíthető alkalmazásokat hozzunk létre.
+	Az elkészített alkalmazás is számos helyen alkalmaz, eventeket amelyek általában gombok lenyomásakor történnek meg
 	\\
 	\subsubsection{Esemény készítése}
 	Ahhoz hogy egy eseményt megalakítsunk szükség van egy kiadóra, aki az eseményt létrehozza, majd az esemény fogadásához és kezeléséhez elengedhetetlen egy fogadó is aki feliratkozik az esemény fogadására.
@@ -412,7 +414,16 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Az eseményt mindig egy delegattel kell együtt használni.
 	\\
 	Egy esemény értéke \textbf{null}, ha nincs regisztrált/feliratkoztatott figyelője/hallgatója.
-	
+	\subsubsection{Esemény működtetése a formban}
+	\label{esemenyformban}
+	Egy Formban általában alap eszközökre vagy objektumokra hozhatunk létre eseményeket, ilyenek például egy gombra való kattintás, vagy esetlegesen egy textbox nevezetű elem amelybe éppen megváltoztattuk a szöveg tartalmát.
+	Számos lehetőségünk van az ilyen eszközökből kiváltani eseményeket.
+	Az események létrehozásáról már a \ref{Gombok} számú fejezetben említést tettem.
+	Miután elkészítettük ezeket az eseményeket akár a "Properties" ablakban akár másféle módon utána a létrehozott metódusunk egy \textbf{private} láthatósági móddal rendelkező metódus lesz, amelynek visszatérési értéke \textbf{void} vagyis visszatérési értékkel nem rendelkezik. 
+	\\
+	Ezentúl, paramétereiben kettő objektumot kap meg a metódus, egyrészt egy \textbf{object sender} amely az eseményt kiváltó vezérlőre/objektumra való hivatkozást tartalmazza. Tegyük fel, hogy egy képernyőn több gomb van. Ezek a gombok tartalmazhatnak egy címkét, amely leírja, hogy mit kell tennie a gombra kattintva. Ezáltal az összes \textbf{"Click"} eseményt lehetséges lekezelni ugyanazzal a handlerrel.
+	Emellett egy \textbf{EventArgs e} objektumot amely az eseményadatokat tartalmazó osztályok alaposztályát képviseli, és egy olyan értéket biztosít, amelyet az eseményadatokat nem tartalmazó eseményekhez kell használni. 
+	\cite{eventobjargs}
 	
 	\subsection{A Formról általánosan}
 	A képernyőket próbáltam megoldani az előzőekben említett módon, hogy reszponzív lehessen vagyis mindenféle képernyőn hasonlóan jól és szépen megjelenhessen. Ehhez kutatásom során találtam egy megoldást amely szerint, ha az adott Form-nak a méretét(Size) beállítom az elsődleges képernyőnek a méretére, illetve a képernyő állapot nevű változót is egyenlővé teszem a "FormWindowState" enumból a Maximized értékére akkor a képernyő ideális, kinagyított állapotba kerül. A módszer, megoldást nyújthat arra, hogy a képernyőn teljes méretbe jelenjen meg minden egyes objektum amit az adott képernyőre helyeztünk. Ezen beállításokat az adott Formnak a konstruktorában hívjuk meg.
