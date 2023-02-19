@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -388,6 +389,105 @@ namespace Thesis_project.Forms
             speaker1.AddSound(Pitch.C_OKTAV1, volume: 63, length: 200);*/
             string json_source = FormHelper.DevicesToJSON();
             FormHelper.CallSetTurnForEachDevice(ref json_source);
+        }
+
+        private void timeMilisecBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            //only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void kekespiroslamp_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+            for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
+            {
+                
+               
+
+                if (FormHelper.Devices[i] is LEDLight)
+                {
+                    LEDLight ledlight1;
+                    ledlight1 = (LEDLight)FormHelper.Devices[0];
+                    ledlight1.Color = Color.Blue;
+                }
+                if (FormHelper.Devices[i] is Speaker)
+                {
+                    Speaker speaker1;
+
+                    if (timeElapsed == timeMilisecBox.Value)
+                    {
+                        speaker1 = (Speaker)FormHelper.Devices[i]; //itt baj van, mert egy hangtömböt kéne kiküldeni
+                        speaker1.AddSound(Pitch.C_OKTAV1, volume: 63, length: 200);
+                    }
+                }
+                byte turn = 1;
+                string json_source = FormHelper.DevicesToJSON();
+                FormHelper.CallSetTurnForEachDevice(ref json_source);
+
+                /* LEDLight ledlight1;
+                 if (FormHelper.Devices[0] is LEDLight)
+                 {
+                     ledlight1 = (LEDLight)FormHelper.Devices[0];
+                     ledlight1.Color = Color.Blue;
+
+                 }
+
+                 byte turn = 1;
+                 string json_source = FormHelper.DevicesToJSON();
+                 FormHelper.CallSetTurnForEachDevice(ref json_source);*/
+            }
+        }
+        private int timeElapsed = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timeElapsed = timeElapsed + 100;
+            for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
+            {
+                 //100-al növelem
+                if (FormHelper.Devices[i] is LEDLight)
+                {
+                    LEDLight ledlight1;
+                    if (timeElapsed == timeMilisecBox.Value)
+                    {
+                        ledlight1 = (LEDLight)FormHelper.Devices[i];
+                        ledlight1.Color = Color.Black;
+                    }
+                    if (timeElapsed == timeMilisecBox.Value + 1000)
+                    {
+                        ledlight1 = (LEDLight)FormHelper.Devices[i];
+                        ledlight1.Color = Color.Green;
+                    }
+
+                }
+                //speaker
+                if (FormHelper.Devices[i] is Speaker)
+                {
+                    Speaker speaker1;
+                   
+                    if (timeElapsed == timeMilisecBox.Value)
+                    {
+                        speaker1 = (Speaker)FormHelper.Devices[i]; //itt baj van, mert egy hangtömböt kéne kiküldeni
+                        speaker1.ClearSounds();
+                    }
+                    if (timeElapsed == timeMilisecBox.Value + 1000)
+                    {
+                        speaker1 = (Speaker)FormHelper.Devices[i]; //itt baj van, mert egy hangtömböt kéne kiküldeni
+                        speaker1.AddSound(Pitch.E, volume: 63, length: 200);
+                    }
+                   
+                }
+                byte turn = 1;
+                string json_source = FormHelper.DevicesToJSON();
+                FormHelper.CallSetTurnForEachDevice(ref json_source);
+            }
         }
     }
 }

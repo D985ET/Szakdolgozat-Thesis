@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  18 FEB 2023 10:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  19 FEB 2023 18:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-02>
+L3 programming layer <2023-01-24>
 (D:\Program Files\MikTex\tex/latex/thesis-ekf\thesis-ekf.cls
 Document Class: thesis-ekf 2021/08/12 v4.2 Thesis class for Eszterhazy Karoly C
 atholic University (Eger, Hungary)
@@ -706,7 +706,7 @@ LaTeX Info: Redefining \cal on input line 577.
 LaTeX Info: Redefining \mit on input line 578.
 )
 Package hyperref Info: Option `pageanchor' set `false' on input line 26.
-<eszterhazy-logo-hu.pdf, id=58, 256.07971pt x 88.04292pt>
+<eszterhazy-logo-hu.pdf, id=70, 256.07971pt x 88.04292pt>
 File: eszterhazy-logo-hu.pdf Graphic file (type pdf)
 <use eszterhazy-logo-hu.pdf>
 Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 34.
@@ -763,17 +763,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--201
 [6
 
 ]
-<./images//SLH.pdf, id=140, page=1, 597.23125pt x 845.1575pt>
+<./images//SLH.pdf, id=155, page=1, 597.23125pt x 845.1575pt>
 File: ./images//SLH.pdf Graphic file (type pdf)
 <use ./images//SLH.pdf, page 1>
 Package pdftex.def Info: ./images//SLH.pdf , page1 used on input line 218.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-<./images//SLH.pdf, id=141, page=2, 597.23125pt x 845.1575pt>
+<./images//SLH.pdf, id=156, page=2, 597.23125pt x 845.1575pt>
 File: ./images//SLH.pdf Graphic file (type pdf)
 <use ./images//SLH.pdf, page 2>
 Package pdftex.def Info: ./images//SLH.pdf , page2 used on input line 225.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-<./images//SLH.pdf, id=142, page=3, 597.23125pt x 845.1575pt>
+<./images//SLH.pdf, id=157, page=3, 597.23125pt x 845.1575pt>
 File: ./images//SLH.pdf Graphic file (type pdf)
 <use ./images//SLH.pdf, page 3>
 Package pdftex.def Info: ./images//SLH.pdf , page3 used on input line 233.
@@ -788,22 +788,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images//SLL.pdf, id=143, page=1, 845.1575pt x 597.23125pt>
+<./images//SLL.pdf, id=158, page=1, 845.1575pt x 597.23125pt>
 File: ./images//SLL.pdf Graphic file (type pdf)
 <use ./images//SLL.pdf, page 1>
 Package pdftex.def Info: ./images//SLL.pdf , page1 used on input line 244.
 (pdftex.def)             Requested size: 220.50887pt x 155.82324pt.
-<./images//SLL.pdf, id=144, page=2, 597.23125pt x 845.1575pt>
+<./images//SLL.pdf, id=159, page=2, 597.23125pt x 845.1575pt>
 File: ./images//SLL.pdf Graphic file (type pdf)
 <use ./images//SLL.pdf, page 2>
 Package pdftex.def Info: ./images//SLL.pdf , page2 used on input line 253.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-<./images//SLL.pdf, id=145, page=3, 597.23125pt x 845.1575pt>
+<./images//SLL.pdf, id=160, page=3, 597.23125pt x 845.1575pt>
 File: ./images//SLL.pdf Graphic file (type pdf)
 <use ./images//SLL.pdf, page 3>
 Package pdftex.def Info: ./images//SLL.pdf , page3 used on input line 262.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-<./images//SLN.pdf, id=146, page=1, 845.1575pt x 597.23125pt>
+<./images//SLN.pdf, id=161, page=1, 845.1575pt x 597.23125pt>
 File: ./images//SLN.pdf Graphic file (type pdf)
 <use ./images//SLN.pdf, page 1>
 Package pdftex.def Info: ./images//SLN.pdf , page1 used on input line 274.
@@ -811,7 +811,7 @@ Package pdftex.def Info: ./images//SLN.pdf , page1 used on input line 274.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images//SLN.pdf, id=147, page=2, 597.23125pt x 845.1575pt>
+<./images//SLN.pdf, id=162, page=2, 597.23125pt x 845.1575pt>
 File: ./images//SLN.pdf Graphic file (type pdf)
 <use ./images//SLN.pdf, page 2>
 Package pdftex.def Info: ./images//SLN.pdf , page2 used on input line 281.
@@ -819,7 +819,7 @@ Package pdftex.def Info: ./images//SLN.pdf , page2 used on input line 281.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images//SLN.pdf, id=148, page=3, 597.23125pt x 845.1575pt>
+<./images//SLN.pdf, id=163, page=3, 597.23125pt x 845.1575pt>
 File: ./images//SLN.pdf Graphic file (type pdf)
 <use ./images//SLN.pdf, page 3>
 Package pdftex.def Info: ./images//SLN.pdf , page3 used on input line 288.
@@ -847,32 +847,32 @@ LaTeX Warning: Citation `uri' on page 14 undefined on input line 355.
 
 [14] [15] [16]
 
-LaTeX Warning: Citation `evinC' on page 17 undefined on input line 405.
+LaTeX Warning: Citation `evinC' on page 17 undefined on input line 412.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--408
+Underfull \hbox (badness 10000) in paragraph at lines 412--415
 
  []
 
 [17]
 
-LaTeX Warning: Citation `eventobjargs' on page 18 undefined on input line 426.
+LaTeX Warning: Citation `eventobjargs' on page 18 undefined on input line 433.
 
-[18] [19] Excluding 'comment' comment. [20] Excluding 'comment' comment.
-[21
+[18] [19] [20] Excluding 'comment' comment. [21] Excluding 'comment' comment.
+[22
 
-] Excluding 'comment' comment. [22
+] Excluding 'comment' comment. [23
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-06.
+24.
 
 (D:\Program Files\MikTex\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) Excluding 'comment' comment.
-[23
+[24
 
-] (main.bbl [24
+] (main.bbl [25
 
 ]
 Underfull \hbox (badness 6396) in paragraph at lines 4--8
@@ -894,37 +894,37 @@ I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-) Excluding 'comment' comment. [25
+) Excluding 'comment' comment. [26
 
 ] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [26
+ [27
 
 ] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: ED5A4716A94C3FEE733ADE63972987A3;1939.
+(rerunfilecheck)             Checksum: D8EA2EFCD415711F75B1267D6DEFEA01;2626.
  ) 
 Here is how much of TeX's memory you used:
- 16309 strings out of 476374
- 264124 string characters out of 5798664
- 1894340 words of memory out of 5000000
- 36274 multiletter control sequences out of 15000+600000
+ 16324 strings out of 476375
+ 264269 string characters out of 5798785
+ 1894299 words of memory out of 5000000
+ 36276 multiletter control sequences out of 15000+600000
  569414 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 78i,12n,81p,833b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,12n,81p,833b,521s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}<D:/Program Files/MikTe
 x/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTex/fonts/type1/public/
 lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/Pro
 gram Files/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fon
 ts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (28 pages, 751986 bytes).
+Output written on main.pdf (29 pages, 757509 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 361 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

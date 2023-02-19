@@ -335,14 +335,14 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	Amikor elhelyeztük a kívánt kelléket a formon akkor lehetőségünk van többféle beállításra az adott tárgynál. ezek közé tartozik az az opció amikor egy adott objektumnak a hátterét, címét és még sok más tulajdonságát lehet változtatni a kiválasztott eszköznek. Ezentúl még adott eszköznek lehetnek eseményei is amelyek egy adott impulzus alapján (például: bal klikk lenyomása egy gombbon) kiváltanak egy másik akár látható akár nem látható reakciót a programon belül. Ezekről bővebben az Eszközök című [\ref{EszkozLista}] alfejezetben írok.
 	
 	\subsubsection*{Alap kód nézet}
+	
 	A Designer vagy tervezői nézet mellett a programozóknak alkotott nézet is megtalálható a WinForm applikáción belül. Ez a nézet az alap kódolói nézet, amely ugyanolyan fontossággal bír mint a Designer nézet.
 	\\
 	Amíg a Designer nézetben főleg azon volt a hangsúly hogy a Form-nak vagyis a képernyőnek a nézetét kialakítsuk, megformázzuk. Ezzel ellentétben a kódolói nézetben nem feltétlen látjuk azonnal a kívánt produktumot, mivel ez csak indításkor jelenik meg számunkra, amikor "\textit{lebuildeljük}" a programunkat. Ezt az indítást akár a gyorsbillenytű (\textbf{F5}) segítségével tehetjük meg, vagy a zöld nyílra kattintva a lap tetején.
 	\\
 	A kódolói nézetben a programozónak lehetősége van minden C\# specifikus elem kihasználására. Alapvetően a minden egyes Gyermek Form örökli a Szülő Form minden public, illetve protected metódusát és mezőjét. 
 	\\
-	A Formoknál mindig van egy inicializáló konstruktor, amely meghívja a(z) \textit{
-	InitializeComponent()} nevű metódust amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Egyúttal, ez a metódus alapozza meg a gombok, címkék, esemény kezelők és még több ilyesfajta objektumoknak a későbbi beillesztését és használatát.
+	A Formoknál mindig van egy inicializáló konstruktor, amely meghívja a(z) \textit{InitializeComponent()} nevű metódust amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Egyúttal, ez a metódus alapozza meg a gombok, címkék, esemény kezelők és még több ilyesfajta objektumoknak a későbbi beillesztését és használatát.
 \\
 Ezen kívül, ez a metódus megkeresi a betöltődő Képernyő(Window) és a Felhasználó Vezérlő(UserControl) XAML-jéhez tartozó URI-t.
 \\
@@ -388,7 +388,14 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Későbbiek során természetesen ez a funkció is szerves részét alakítja az elkészült programnak.
 	\subsubsection{Panel}
 	\label{Panel}
-	
+	A formnak mint olyannak léteznek paneljei. Ezen panelek hasznosnak bizonyulnak sok szempontból. Legfőképpen a háttér díszítéséhez, objektumok összegzésére lehet használatos. Jelen alkalmazásban is két fő részében használom a projektnek. 
+	Oldalsávhoz használtam fel a panelt, illetve a fejléchez. 
+	\\
+	Ahhoz, hogy a panel fejléc illetve oldalsávként funkcionáljunk néhány beállítást kellett elvégezni a panelen. A fejléc kialakítását az úgynevezett \textbf{Dock} nevezetű beállítással lehet konfigurálni. 
+	 \\
+	 A Dock abban segít hogy egy adott objektumot a képernyő egy adott részére helyezze, feltűzze. A megoldás segít abban, hogy reszponzív maradjon a felület, és egy szép kialakítást biztosít számunkra a megjelenítést illetően.
+	 \\
+	 Az oldalsávot is hasonlóképpen lehet megoldani, mindösszesen a Dock beállítást kell bal vagy éppen jobb oldalira konfigurálni, és ezzel a képernyő oldalához illeszti a panelt.
 	\subsection{Delegatek}
 	\label{Delegateek}
 	A delegatek a C\# nyelven belül, mindig egy hivatkozás. Egy olyan hivatkozás amely mutat egy metódusra. Amennyiben egy delegatet hívunk akkor a hivatkozott metódus lesz meghívva. A delegateknek megvan minden szükséges információjuk ahhoz, hogy hívják egy adott egyedi névvel és visszatérési típussal ellátott metódust vagy metódusokat.
@@ -403,7 +410,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	\subsection{Események}
 	\label{Eventek}
 	Az események vagy eventek \cite{evinC} a C\# nyelven belül, olyan mechanizmusok, amelyeket az osztályok használnak értesítések vagy üzenetek küldésére más osztályoknak. Az események számos alkalmazás létfontosságú részét képezik, és tökéletes módja annak, hogy rugalmas és bővíthető alkalmazásokat hozzunk létre.
-	Az elkészített alkalmazás is számos helyen alkalmaz, eventeket amelyek általában gombok lenyomásakor történnek meg
+	Az elkészített alkalmazás is számos helyen alkalmaz, eventeket amelyek általában gombok lenyomásakor történnek meg.
 	\\
 	\subsubsection{Esemény készítése}
 	Ahhoz hogy egy eseményt megalakítsunk szükség van egy kiadóra, aki az eseményt létrehozza, majd az esemény fogadásához és kezeléséhez elengedhetetlen egy fogadó is aki feliratkozik az esemény fogadására.
@@ -433,7 +440,13 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Az első Form, a főmenü, vagyis amikor a felhasználó megnyitja az alkalmazást akkor ez az első képernyő ami számára megjelenik. 
 	Ezen képernyőn egy üdvözlő üzenetet kap, majd az észlelt eszközök darabszámát is látni fogja, amely ugyanúgy megjelenik a képernyőn.
 	Az üdvözlő üzenet, a fejlécen, a Form tetején jelenítjük meg amely egy Panel segítségével kapott színes hátteret.
-	\\
+	\subsubsection{Konstruktor}
+	A kezdő menünek a konstruktora sok adatot tartalmaz a formmal kapcsolatban. Alapvetően az első és legfontosabb elem az a \textit{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. 
+	\subsubsection{SelectThemeColor}
+	\subsubsection{ActivateButton}
+	\subsubsection{DisableButton}
+	\subsubsection{OpenChildForm}
+	\subsubsection{Reset}
 	Ezen kívül még egy oldalsávból is áll a kezdőképernyőnk amely navigációt és könnyebb tájékozódást jelenthet a felhasználó számára.
 	Ebben a sávban gombok helyezkednek el amelyeknek, külön hátterük, és ikonjuk van. Ezek mind hozzájárulhatnak a felhasználó-barát szemléletmódhoz.
 	\\
@@ -464,13 +477,18 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Ehhez az "event"-hez kötöttem egy Exit() metódust ami az Application osztáynak az egyik metódusa. Ez a metódus bezárja az applikációt, és befejezi a program futását. 
 	\subsection{Form Mentés}
 	\label{Form Mentes}
+	\subsubsection{Konstruktor}
+	\subsubsection{LoadTheme}
+	\subsubsection{Mentes}
 	\subsection{Form Betöltés}
 	\label{Form Betoltes}
+	\subsubsection{Konstruktor}
 	\subsection{Form Szerkesztés}
 	\label{Form Szerkesztes}
-	\subsubsection{Form Hangszoró Szerkesztés}
-	\subsubsection{Form Lámpa Szerkesztés}
-	\subsubsection{Form Nyíl Szerkesztés}
+	\subsubsection{Konstruktor}
+	\subsection{Form Hangszoró Szerkesztés}
+	\subsection{Form Lámpa Szerkesztés}
+	\subsection{Form Nyíl Szerkesztés}
 
 	Az eszközökről az adatokat a DLL-ből kaptam amelyet Nagy-Tóth Bence készített. A DLL neve SLFormHelper amelyen belül sok adatot érhetünk el az eszközzel kapcsolatosan. %ide kellene azeszközzel kapcsolatos dolgok hogy miket lehet lekérni az SLDLL-ből
 	
