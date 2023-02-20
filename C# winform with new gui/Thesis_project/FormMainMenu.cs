@@ -55,13 +55,15 @@ namespace Thesis_project
             string color;
             try
             {
-                int index = vsz.Next(ThemeColor.ColorList.Count);
+               
+                int index = vsz.Next(SzinTema.getColorList().Count);
                 while (tempIndex == index)
                 {
-                    index = vsz.Next(ThemeColor.ColorList.Count);
+                    index = vsz.Next(SzinTema.getColorList().Count);
                 }
                 tempIndex = index;
-                color = ThemeColor.ColorList[index];
+                color = SzinTema.getColorList()[index];
+                /*color = SzinTema.ColorList[index];*/
             }
             catch(Exception e)
             {
@@ -87,9 +89,9 @@ namespace Thesis_project
                         currentButton.ForeColor = Color.White;
                         currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         panelTitleBar.BackColor = color;
-                        panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3f);
-                        ThemeColor.PrimaryColor = color;
-                        ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3f);
+                        panelLogo.BackColor = SzinTema.ChangeColorBrightness(color, -0.3f); //
+                        SzinTema.PrimaryColor = color;
+                        SzinTema.SecondaryColor = SzinTema.ChangeColorBrightness(color, -0.3f);
                         btnCloseChildForm.Visible = true;
                     }
                 }

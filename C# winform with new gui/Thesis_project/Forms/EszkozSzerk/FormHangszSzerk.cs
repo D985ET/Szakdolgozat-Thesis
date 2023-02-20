@@ -53,9 +53,9 @@ namespace Thesis_project.Forms.EszkozSzerk
                 if (btns.GetType() == typeof(Button))
                 {
                     Button btn = (Button)btns;
-                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.BackColor = SzinTema.PrimaryColor;
                     btn.ForeColor = Color.Black; //ezt visszakell rakni majd white-ra
-                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                    btn.FlatAppearance.BorderColor = SzinTema.SecondaryColor;
                 }
             }
         }

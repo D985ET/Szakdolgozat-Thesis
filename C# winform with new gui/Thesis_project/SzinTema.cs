@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Thesis_project
 {
-    public class ThemeColor
+    public class SzinTema
     {
         public static Color PrimaryColor { get; set; }
         public static Color SecondaryColor { get; set; }
-        public static List<string> ColorList = new List<string>() { "#3F51B5",
+        private static List<string> ColorList = new List<string>() { "#3F51B5",
                                                                     "#009688",
                                                                     "#FF5722",
                                                                     "#607D8B",
@@ -38,6 +38,10 @@ namespace Thesis_project
                                                                     "#43B76E",
                                                                     "#7BCFE9",
                                                                     "#B71C46"};
+        public static List<string> getColorList()
+        {
+            return ColorList;
+        }
   
         public static Color ChangeColorBrightness(Color color, float correctionFactor)
         {

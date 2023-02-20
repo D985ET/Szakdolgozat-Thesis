@@ -434,15 +434,26 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	
 	\subsection{A Formról általánosan}
 	A képernyőket próbáltam megoldani az előzőekben említett módon, hogy reszponzív lehessen vagyis mindenféle képernyőn hasonlóan jól és szépen megjelenhessen. Ehhez kutatásom során találtam egy megoldást amely szerint, ha az adott Form-nak a méretét(Size) beállítom az elsődleges képernyőnek a méretére, illetve a képernyő állapot nevű változót is egyenlővé teszem a "FormWindowState" enumból a Maximized értékére akkor a képernyő ideális, kinagyított állapotba kerül. A módszer, megoldást nyújthat arra, hogy a képernyőn teljes méretbe jelenjen meg minden egyes objektum amit az adott képernyőre helyeztünk. Ezen beállításokat az adott Formnak a konstruktorában hívjuk meg.
-
+	\\
 	A címke kiíratását úgy tudtam megoldani, hogy az adott Form-on belül a Toolbox nevezetű eszközt használva, kiválasztottam a "Label" ikont amely segítségével szövegeket/stringeket tudunk kiíratni. Természetesen ezt akár a kódon belül, Design nézet nélkül is meglehet oldani, de jelen helyzetben a Design nézetféle megoldást tartottam hasznosabbnak. Ezt követően a kódon belül ennek a címkének, a Text változójához hozzáadtam a kívánt szöveget, meg az eszközök darabszámát is, mint változót.
+
+
+
+	\subsection{SzinTema osztály}
+	A \textbf{SzinTema} nevezetű osztály egy külön készített nem beépített osztály, amely a színváltozásokat és az alap színkódokat tárolja el.
+	A színkódokat egy Listában tároljuk el amelyből majd a későbbiekben a Form Main Menu Form választja ki a megfelelő színeket. Ehhez a listához van egy \textbf{getColorList()} metódusa is amely a listának az elérésére szolgál. 
+	\\
+	A másik metódus az a \textbf{ChangeColorBrightness()} metódus amely paraméterében vár egy \textbf{Color} példányt illetve egy korrekció faktort amely a színek korrigálását fogja végezni, ezzel elérve a várt színárnyalatokat. Amennyiben túl sötét lenne a szín vagyis a korrekció faktor nagyobb lenne mint 0 akkor a színét kivilágosítjuk, ellenkező esetben a korrekciófaktort növeljük 1-el és megszorozzuk őket a piros, zöld, illetve a kék színértékekkel. Ezt követően visszatérési értékként visszaadjuk a megkapott színt mint visszatérési érték. 
 	\subsection*{Form Main Menu}
 	Az első Form, a főmenü, vagyis amikor a felhasználó megnyitja az alkalmazást akkor ez az első képernyő ami számára megjelenik. 
 	Ezen képernyőn egy üdvözlő üzenetet kap, majd az észlelt eszközök darabszámát is látni fogja, amely ugyanúgy megjelenik a képernyőn.
 	Az üdvözlő üzenet, a fejlécen, a Form tetején jelenítjük meg amely egy Panel segítségével kapott színes hátteret.
 	\subsubsection{Konstruktor}
-	A kezdő menünek a konstruktora sok adatot tartalmaz a formmal kapcsolatban. Alapvetően az első és legfontosabb elem az a \textit{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. 
+	A kezdő menünek a konstruktora sok adatot tartalmaz a formmal kapcsolatban. Alapvetően az első és legfontosabb elem az a \textit{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására.
+	\\
+	 A kinézethez nagyban hozzájárult a(z) \textbf{EnableVisualStyles()} nevezetű metódus amely a(z) \textbf{Application} osztály egy metódusa. Az említett metódus akár félreérthető lehet, mivel első gondolatra lehetséges, hogy a fejlesztő arra asszociál, hogy a metódus segíti a Form-ban lévő objektumokat, vizuálisan kirajzolni. Valójában amikor ez a metódus fut, akkor a beépített Windows rendszer témájától függően alakítja az említett gombokat, címkéket, és további objektumokat. Amennyiben a használt gép beépített stílusok nélkül fut abban az esetben a felhasználó nem fog semmilyen változást észlelni a program/felület használatakor.
 	\subsubsection{SelectThemeColor}
+	
 	\subsubsection{ActivateButton}
 	\subsubsection{DisableButton}
 	\subsubsection{OpenChildForm}
@@ -475,6 +486,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	\\
 	A Kilépés gombot arra használhatja a felhasználó, hogy az alkalmazást terminálni tudja. Ez a problémát egy gomb segítségével oldottam meg. A gombnak van egy olyan eseménye, hogy "MouseDown" amely segítségével egy olyan eseményt tudunk kiváltani amely akkor történik meg amikor a felhasználó lenyomja a gombot a bal egérgomb segítségével.
 	Ehhez az "event"-hez kötöttem egy Exit() metódust ami az Application osztáynak az egyik metódusa. Ez a metódus bezárja az applikációt, és befejezi a program futását. 
+
 	\subsection{Form Mentés}
 	\label{Form Mentes}
 	\subsubsection{Konstruktor}
