@@ -57,11 +57,11 @@ namespace Thesis_project
             {
                
                 int index = vsz.Next(SzinTema.getColorList().Count);
-                while (tempIndex == index)
+                while (tempIndex == index) //amíg egyenlő addig randomoljuk, ez azért kell hogy mindig más színt kapjunk, mert ha az előző szín megegyezik akkor nem jó
                 {
                     index = vsz.Next(SzinTema.getColorList().Count);
                 }
-                tempIndex = index;
+                tempIndex = index;//elmentjük a tempindex-be, és így nem kapjuk meg az előző értéket
                 color = SzinTema.getColorList()[index];
                 /*color = SzinTema.ColorList[index];*/
             }
@@ -71,8 +71,8 @@ namespace Thesis_project
                
             }
             
-            return ColorTranslator.FromHtml(color);
-            
+            return ColorTranslator.FromHtml(color); //"#0000ff" -> [A=255, R=0, G=0, B=255]
+
         }
         public void ActivateButton(object btnSender)
         {
@@ -89,7 +89,7 @@ namespace Thesis_project
                         currentButton.ForeColor = Color.White;
                         currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         panelTitleBar.BackColor = color;
-                        panelLogo.BackColor = SzinTema.ChangeColorBrightness(color, -0.3f); //
+                        panelLogo.BackColor = SzinTema.ChangeColorBrightness(color, -0.3f); 
                         SzinTema.PrimaryColor = color;
                         SzinTema.SecondaryColor = SzinTema.ChangeColorBrightness(color, -0.3f);
                         btnCloseChildForm.Visible = true;
@@ -104,10 +104,11 @@ namespace Thesis_project
         }
         private void DisableButton()
         {
-            foreach (Control previousBtn in panelMenu.Controls)
-            {
-                if (previousBtn.GetType() == typeof(Button))
+            foreach (Control previousBtn in panelMenu.Controls) //amikor rákattintok a buttonra beszínezi olyannal ami éppen a témaszíne,
+            {                                                  
+                if (previousBtn.GetType() == typeof(Button)) //és miután másikra kattintok el is tűnik ilyenkor kell eltűntetni a másik buttonrol
                 {
+                    
                     previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
                     previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

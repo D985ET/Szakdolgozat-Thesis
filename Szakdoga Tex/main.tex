@@ -452,13 +452,32 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	A kezdő menünek a konstruktora sok adatot tartalmaz a formmal kapcsolatban. Alapvetően az első és legfontosabb elem az a \textit{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására.
 	\\
 	 A kinézethez nagyban hozzájárult a(z) \textbf{EnableVisualStyles()} nevezetű metódus amely a(z) \textbf{Application} osztály egy metódusa. Az említett metódus akár félreérthető lehet, mivel első gondolatra lehetséges, hogy a fejlesztő arra asszociál, hogy a metódus segíti a Form-ban lévő objektumokat, vizuálisan kirajzolni. Valójában amikor ez a metódus fut, akkor a beépített Windows rendszer témájától függően alakítja az említett gombokat, címkéket, és további objektumokat. Amennyiben a használt gép beépített stílusok nélkül fut abban az esetben a felhasználó nem fog semmilyen változást észlelni a program/felület használatakor.
-	\subsubsection{SelectThemeColor}
+	\subsubsection{SelectThemeColor metódus}
+	A \textbf{SelectThemeColor()} metódus egy adott oldal fejlécének a színét fogja beállítani. A következő sorokban ezt taglalnám, miként és hogyan teszi ezt. 
+	\\
+	Elsőnek beállítunk egy index nevezetű változót ami egy véletlenszerűen választott értéket választ a \textbf{SzinTema} nevezetű osztály \textbf{ColorList} listájából. A véletlenszerű kiválasztást a \textbf{Random} osztály \textbf{Next} metódusával érjük el, amely a jelenlegi helyzetben egy 0-tól a \textbf{lista.Count}-ig megy ami a listának a teljes hosszát tartalmazza, vagyis azt, hogy a listában mennyi elem szerepel. 
+	\\
+	Ezt követően megvizsgáljuk a metóduson kívül létrehozott \textbf{tempIndex} nevezetű értékünket és a most megkapott \textbf{index} nevezetű változónkat, és ameddig a két érték megegyezik egymással addig léptetünk az \textbf{index} változón. Ez a ciklus ez azért szükséges, mivel ha nem létezne ez a lépés akkor első belépésünk után ugyanazokat a színeket kapnánk mindegyik képernyő esetén. 
+	\\
+	Majd a \textbf{tempIndex} változónkba eltároljuk az \textbf{index} nevezetű változónk értékét, majd ezután a visszatéréshez szükséges \textbf{color} változónkba eltároljuk az \textbf{index} helyen található, szín kódját. Majd az így kapott értékkel térünk vissza, melyet a(z) \textbf{ColorTranslator} osztály \textbf{FromHtml()} nevezetű metódusán keresztül fordítunk át tényleges \textbf{ARGB} színként.
 	
-	\subsubsection{ActivateButton}
-	\subsubsection{DisableButton}
-	\subsubsection{OpenChildForm}
-	\subsubsection{Reset}
-	Ezen kívül még egy oldalsávból is áll a kezdőképernyőnk amely navigációt és könnyebb tájékozódást jelenthet a felhasználó számára.
+	
+	\subsubsection{ActivateButton metódus}
+	A(z) \textbf{ActivateButton()} paraméterében vár egy \textbf{btnSender} nevezetű objekt típusú változót, emellett visszatérési értéke a metódusnak nincsen. A \textbf{btnSender} változót megvizsgáljuk hogy a benne lévő érték üres-e vagyis \textbf{null} értékkel egyenlő-e vagy sem. Amennyiben van a változóban érték, ekkor megvizsgáljuk hogy a metóduson kívül létrehozott \textbf{currentButton} változónkkal megegyezik-e a paraméterben kapott változó. Amennyiben a két érték nem egyezik akkor meghívjuk a \textbf{DisableButton()} nevezetű metódusunkat amelynek a kifejtését a \ref{Disablebuttonlabel} számú alfejezetben írom le.
+	\\
+	 Majd ezután egy átmeneti \textbf{color} változóba elmentjük a \textbf{SelectThemeColor()} metódusból származó szín értékét. Ezt követően a \textbf{currentButton} változót beállítjuk a paraméterben kapott változójaként, majd ennek a \textbf{currentButton} változó beállításait konfiguráljuk. Ezt követően a fejléc színét is beállítjuk a kapott \textbf{color} változóra, és a \textbf{SzinTema} nevezetű osztály elsődleges (angolul: primary) változóját beállítjuk a \textbf{color} változóra majd ahhoz illesztve a másodlagos (angolul: secondary) szín értékét beállítjuk a \textbf{ChangeColorBrightness()} nevezetű metódusnak az értékére, melyet a \textbf{color} változó és a korrekció faktor alapján számít ki.
+	 \\
+	 Végül a gombot amely az alaphelyzetbe állítását végzi a formnak, azt a gombot igazra (angolul:True) állítjuk.
+	\subsubsection{DisableButton metódus}
+	\label{Disablebuttonlabel}
+	\subsubsection{OpenChildForm metódus}
+	\subsubsection{Reset metódus}
+	A \textbf{Reset} metódus meghívja a \textbf{DisableButton()} nevezetű metódust mely...
+	\\
+	Ezt követően a címhez tartozó címke \textbf{Text} változóját átírjuk \textbf{HOME}-ra, és mindent alapbeállításokra állítunk. Ezek tartalmazzák a címke átírása mellett a háttérszín alapszínre állítását, illetve a gyermek formot bezáró gomb láthatóságának false-ra vagyis hamisra állítását is.
+	\\
+	\subsubsection{Oldalsáv}
+	Az alap formunk még egy oldalsávból is áll a kezdőképernyőnk amely navigációt és könnyebb tájékozódást jelenthet a felhasználó számára.
 	Ebben a sávban gombok helyezkednek el amelyeknek, külön hátterük, és ikonjuk van. Ezek mind hozzájárulhatnak a felhasználó-barát szemléletmódhoz.
 	\\
 	A navigáció sávban megtalálhatjuk a következő gombokat:
