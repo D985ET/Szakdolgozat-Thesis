@@ -470,9 +470,16 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	 Végül a gombot amely az alaphelyzetbe állítását végzi a formnak, azt a gombot igazra (angolul:True) állítjuk.
 	\subsubsection{DisableButton metódus}
 	\label{Disablebuttonlabel}
+	A \textbf{DisableButton} metódus azért képezi fontos részét az alkalmazásnak mert amikor a felhasználó navigál a gombok között akkor kattintásával megváltoztatja az adott gombnak a háttérszínét is. Ez a funkció színesebbé teszi a formot és felhasználó barátibb lesz a rendszer maga. Ebben a metódusban ezt a színváltoztatást úgy érhetjük el, hogy a \textbf{panelMenu}-nek a \textbf{Controls} mezőjét végigjárjuk egy ciklussal és megvizsgáljuk, hogy az adott \textbf{Control} típusú változónak a típusa az gomb-e.
+	Amennyiben a bool értéke a feltételnél Igaz abban az esetben az adott gombnak a háttérszínét és szövegtípusát megváltoztatjuk.
+	\\
+	Ellenkező esetben ha a feltétel kiértékelésénél Hamis értéket kapunk akkor nem változtatjuk meg az adott \textbf{Control} típusú változó értékeit.
+	\\ 
+	Ez a feltétel kiértékelés azért fontos mivel ha nem vizsgálnánk meg azt hogy az adott \textbf{Control} típusú objektum gomb-e, akkor az összes gombnak a színezése változatlan állapotba maradna.
 	\subsubsection{OpenChildForm metódus}
+	Az \textbf{OpenChildForm()} metódust arra fogjuk használni, hogy előző formban lévő adatokat, színeket átadjuk a másik következő formnak. Amikor rákattint a felhasználó az adott gombra, akkor ezt az eljárást hívjuk meg melynek paramétereiben megadjuk a kívánt formnak az objektumát, és a \textbf{sender}-t amely a gombnyomás metódus paraméteréből származik. A jelenlegi eljárásban, az éppen aktív formnak értékül adjuk a kattintáskor megadott form értékét. Ezt követően a paraméterben kapott form beállításait változtatjuk, majd megjelenítjük ezen formot. 
 	\subsubsection{Reset metódus}
-	A \textbf{Reset} metódus meghívja a \textbf{DisableButton()} nevezetű metódust mely...
+	A \textbf{Reset} metódus meghívja a \textbf{DisableButton()} nevezetű metódust mely alaphelyzetbe állítja az oldalsávban lévő gombok színét, és stringjük méretét.
 	\\
 	Ezt követően a címhez tartozó címke \textbf{Text} változóját átírjuk \textbf{HOME}-ra, és mindent alapbeállításokra állítunk. Ezek tartalmazzák a címke átírása mellett a háttérszín alapszínre állítását, illetve a gyermek formot bezáró gomb láthatóságának false-ra vagyis hamisra állítását is.
 	\\

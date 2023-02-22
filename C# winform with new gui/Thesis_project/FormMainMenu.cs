@@ -126,7 +126,6 @@ namespace Thesis_project
             {
                 ActivateButton(btnSender);
                 activeForm = childForm;
-                Console.WriteLine("Openchildform cucos");
                 childForm.TopLevel = false;
                 childForm.FormBorderStyle = FormBorderStyle.None;
                 childForm.Dock = DockStyle.Fill;
