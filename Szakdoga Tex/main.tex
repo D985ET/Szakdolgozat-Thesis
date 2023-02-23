@@ -445,6 +445,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	\\
 	A másik metódus az a \textbf{ChangeColorBrightness()} metódus amely paraméterében vár egy \textbf{Color} példányt illetve egy korrekció faktort amely a színek korrigálását fogja végezni, ezzel elérve a várt színárnyalatokat. Amennyiben túl sötét lenne a szín vagyis a korrekció faktor nagyobb lenne mint 0 akkor a színét kivilágosítjuk, ellenkező esetben a korrekciófaktort növeljük 1-el és megszorozzuk őket a piros, zöld, illetve a kék színértékekkel. Ezt követően visszatérési értékként visszaadjuk a megkapott színt mint visszatérési érték. 
 	\subsection*{Form Main Menu}
+	\label{FormMainmenu}
 	Az első Form, a főmenü, vagyis amikor a felhasználó megnyitja az alkalmazást akkor ez az első képernyő ami számára megjelenik. 
 	Ezen képernyőn egy üdvözlő üzenetet kap, majd az észlelt eszközök darabszámát is látni fogja, amely ugyanúgy megjelenik a képernyőn.
 	Az üdvözlő üzenet, a fejlécen, a Form tetején jelenítjük meg amely egy Panel segítségével kapott színes hátteret.
@@ -515,9 +516,41 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 
 	\subsection{Form Mentés}
 	\label{Form Mentes}
+	A \textbf{Form Main Menu}-n kívül az összes másik formot az \textbf{OpenChildForm()} metódussal hívunk, így a feladatsor mentésre is kialakított formot is ezzel a metódussal hívjuk. Alapvetően, a mentés form arra lesz hivatott, hogy azokat az eszközöket amelyek érzékelve vannak a rendszer által kimentse, egy JSON file-ba.
+	\\
+	A JSON azért optimális fájl formátum mivel közismert és tökéletes arra, hogy átmeneti adatot tároljunk benne. 
+	\\
+	Ilyen átmeneti adat lehet egy felhasználó által generált adat, vagy például a jelenlegi helyzetben az eszközök beállításai. 
+	\\
+	A mentést a \textbf{Feladatsor Mentése} gomb megnyomásával válthatja ki a felhasználó. Ezt követően pedig ki kell választania a felhasználónak, hogy hova szeretné elmenteni a \textbf{JSON} fájlban eltárolt eszközök adatait.
+	\\
+	A mentés azért is lehet optimális funkció mert ha a későbbiekben szükségünk volna egy adott beállításra, akkor lementjük az eszközök adatait és amikor újra szükségünk lesz betöltjük azokat a \textbf{Feladatsorok Betöltése} gombbal. Későbbiekben a betöltésről a \ref{Form Betoltes}
 	\subsubsection{Konstruktor}
-	\subsubsection{LoadTheme}
+	A mentés formnak a konstruktora hasonlóképpen épül fel mint a \ref{FormMainmenu} fejezetben lévő konstruktor is. Az \textbf{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Beállítjuk a form méretét az elsődleges képernyő teljes méretére, majd ezt követően a form képernyő állapotát maximalizáljuk vagyis kinagyítjuk. A nagyítás változót a \textbf{FormWindowState} nevezetű \textbf{enum}-ból vesszük.
+	\\
+	Majd meghívunk egy \textbf{LoadTheme()} eljárást amelyet a következő szekcióban fejtenék ki részletesebben. 
+	\\
+	Miután meghívtuk a \textbf{LoadTheme()} metódust utána a \textbf{Mentes()} nevezetű eljárást hívjuk meg amely magát a fájl mentését végzi el. Erről a metódusról későbbi alfejezetben írnék.
+	\subsubsection{LoadTheme metódus}
+	A \textbf{LoadTheme()} hasonló a \ref{FormMainmenu} fejezetben lévő \textbf{DisableButton()} metódushoz, mivel a feltétel és a ciklus leimplementálása ugyanúgy fog történni. 
+	\\
+	Az eljárás egy ciklussal kezdődik amely végigiterál a \textbf{Controls} kollekción majd egy feltétel vizsgálatban megvizsgálja, hogy az adott elem gomb típusú-e. Amennyiben az adott elem gomb akkor létrehozunk egy új gomb változót melynek értékül adjuk a megtalált gombot. Ezek után a gombnak a háttérszínét és elő színét is beállítjuk a kívánt színre. 
+	\\
+	Majd a szélén lévő színnek az értékét is beállítjuk a másodlagos szín értékére amelyet a \textbf{SzinTema} osztályból kapunk meg.
 	\subsubsection{Mentes}
+	A \textbf{Mentes()} metódus számunkra ebben a formban a legfontosabb lesz mivel ez alakítja a \textbf{FormMentes}-nek a lényegét. 
+	\\
+	A mentéshez az úgynevezett \textbf{SaveFileDialog} nevezetű osztályt fogjuk használni. 
+	\\
+	Amikor a felhasználó elszeretne menteni egy vagy esetlegesen több eszköznek a beállításait akkor a \textbf{SaveFileDialog} segít kiválasztani a mentési helyet és a fájlnevet is. Hasonló a működése az \textbf{OpenFileDialog}-hoz amelyet a betöltés formnál fogunk használni. A \textbf{SaveFileDialog} egy általános Windows "párbeszédpanel" burkolatba van becsomagolva ami lehetővé teszi azt, hogy a felhasználó tudjon kommunikálni a rendszerrel.
+	\\
+	A legelső lépés ahhoz, hogy elérjük azt, hogy menteni lehessen, kell számunkra egy új példány a \textbf{SaveFileDialog}-ból. Ezt követően pedig beállíthatunk néhány opcionális beállítást. Ilyenek például az, hogy amikor megnyitja a felhasználó a mentést akkor melyik könyvtárból induljon ki a kezdeti megnyitáskor. 
+	\\
+	Lehetséges \textbf{Filtereket}, szűrőket is hozzáadni az opciókhoz amelyek segítségével bebiztosíthatjuk a programunkat, hogy csakis \textbf{JSON} fájlokat tudjon elmenteni.
+	\\
+	Ezt követően megvizsgáljuk, hogy a felhasználó az \textbf{OK} gombra nyomott-e és nem szakította meg a mentés folyamatát. Amennyiben a mentés során minden lefutott akkor elmentjük a fájl elérési útját és kiíratjuk azt a képernyőre.
+	\\
+	Majd ezután meghívjuk a beépített függvényt amelyet a \textbf{FormHelper} DLL-ből kaptunk meg, és átadjuk neki a fájl elérési útját.
 	\subsection{Form Betöltés}
 	\label{Form Betoltes}
 	\subsubsection{Konstruktor}
