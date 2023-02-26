@@ -553,7 +553,19 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Majd ezután meghívjuk a beépített függvényt amelyet a \textbf{FormHelper} DLL-ből kaptunk meg, és átadjuk neki a fájl elérési útját.
 	\subsection{Form Betöltés}
 	\label{Form Betoltes}
+	A feladatsorok vagyis az eszközök beállításához tartózó konfigurációkat meghívó formot is a \textbf{OpenChildForm()} nevezetű metóduson hívunk meg. A betöltés form alapvetően arra lesz hasznos számunkra, hogy azon az eszközök alapján amelyek éppen csatlakoztatva vannak a rendszerünkhöz, betöltsünk hozzájuk egy adott konfigurációt.
+	\\
+	Ezen konfigurációkat, úgy tudjuk betölteni, hogyha van, egy vagy több eszközbeállításokat tartalmazó JSON fájlunk, amelyet be tud tölteni a rendszer. Majd ezt követően le is tudjuk ellenőrizni hogy a megadott konfiguráció helyes-e amit beakartunk tölteni.
+	\\ 
+	Majd tudjuk használni ezeket a beállításokat és lehetőségünk van természetesen kimenteni ezeket az adatokat is.
 	\subsubsection{Konstruktor}
+	A betöltés formnak a konstruktora vagyis a belépési pontjában megtalálhatunk hasonlóságokat az előző formokkal együtt nézve.
+	\\
+	 Az \textbf{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Beállítjuk a form méretét az elsődleges képernyő teljes méretére, majd ezt követően a form képernyő állapotát maximalizáljuk vagyis kinagyítjuk. A nagyítás változót a \textbf{FormWindowState} nevezetű \textbf{enum}-ból vesszük.
+	\\
+	Majd meghívunk egy \textbf{LoadTheme()} eljárást amelyet a következő szekcióban fejtenék ki részletesebben. 
+	\\
+	Miután meghívtuk a \textbf{LoadTheme()} metódust utána a \textbf{Betoltes()} nevezetű eljárást hívjuk meg amely magát a fájl mentését végzi el. Erről a metódusról későbbi alfejezetben írnék.
 	\subsection{Form Szerkesztés}
 	\label{Form Szerkesztes}
 	\subsubsection{Konstruktor}
