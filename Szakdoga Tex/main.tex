@@ -537,7 +537,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Az eljárás egy ciklussal kezdődik amely végigiterál a \textbf{Controls} kollekción majd egy feltétel vizsgálatban megvizsgálja, hogy az adott elem gomb típusú-e. Amennyiben az adott elem gomb akkor létrehozunk egy új gomb változót melynek értékül adjuk a megtalált gombot. Ezek után a gombnak a háttérszínét és elő színét is beállítjuk a kívánt színre. 
 	\\
 	Majd a szélén lévő színnek az értékét is beállítjuk a másodlagos szín értékére amelyet a \textbf{SzinTema} osztályból kapunk meg.
-	\subsubsection{Mentes}
+	\subsubsection{Mentes metódus}
 	A \textbf{Mentes()} metódus számunkra ebben a formban a legfontosabb lesz mivel ez alakítja a \textbf{FormMentes}-nek a lényegét. 
 	\\
 	A mentéshez az úgynevezett \textbf{SaveFileDialog} nevezetű osztályt fogjuk használni. 
@@ -566,6 +566,31 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Majd meghívunk egy \textbf{LoadTheme()} eljárást amelyet a következő szekcióban fejtenék ki részletesebben. 
 	\\
 	Miután meghívtuk a \textbf{LoadTheme()} metódust utána a \textbf{Betoltes()} nevezetű eljárást hívjuk meg amely magát a fájl mentését végzi el. Erről a metódusról későbbi alfejezetben írnék.
+	\subsubsection{LoadTheme metódus}
+	A \textbf{LoadTheme} metódus ugyanúgy működik mint a Mentés formban lévő LoadTheme metódus.
+	Emellett hasonló a \ref{FormMainmenu} fejezetben lévő \textbf{DisableButton()} metódushoz, mivel a feltétel és a ciklus leimplementálása ugyanúgy fog történni. 
+	\\
+	Az eljárás egy ciklussal kezdődik amely végigiterál a \textbf{Controls} kollekción majd egy feltétel vizsgálatban megvizsgálja, hogy az adott elem gomb típusú-e. Amennyiben az adott elem gomb akkor létrehozunk egy új gomb változót melynek értékül adjuk a megtalált gombot. Ezek után a gombnak a háttérszínét és elő színét is beállítjuk a kívánt színre. 
+	\\
+	Majd a szélén lévő színnek az értékét is beállítjuk a másodlagos szín értékére amelyet a \textbf{SzinTema} osztályból kapunk meg.
+	\subsubsection{Betoltes metódus}
+	A \textbf{Betoltes()} metódus kicsit máshogyan fog kinézni mint a \ref{Form Mentes} fejezetben lévő \textbf{Mentes()} metódus. Ezen metódus képezi a Betöltés magját, mivel itt érhetjük el azt, hogy betudjunk tölteni egy adott eszközhöz, vagy eszközökhöz a beállításokat. 
+	\\
+	A betöltés algoritmusához a(z) \textbf{OpenFileDialog} nevezetű osztályból fogunk használni metódusokat és mezőket. Hasonló módon mint a \textbf{SaveFileDialog} osztálynál itt sem tudunk örökölni ebből az osztályból ezért ahhoz hogy tudjuk a \textbf{public} láthatósági szinttel ellátott metódusait és objektumait használni ezért szükségünk lesz egy úgynevezett \textbf{HAS-A} kapcsolatra.
+	\\
+	A \textbf{HAS-A} kapcsolat szimplán annyit takar, hogy egy osztálynak van egy másik osztályhoz tartozó objektuma, ami jelen esetben az \textbf{OpenFileDialog} osztályt takarja. Így leimplementáljuk vagyis meghívjuk az \textbf{OpenFileDialog} osztályt, és egy objektumán keresztül hívogatjuk meg a publikus metódusait és mezőit.
+	\\
+	Miután meghívtuk az OpenFileDialog osztályt azután tudjuk használni a mezőit és metódusait a leimplementált objektumán keresztül.
+	Ezen részben az \textbf{InitialDirectory}-t vagyis a kezdő könyvtárat állítjuk be, mely a felhasználót a gomb megnyomásakor az adott könyvtárba helyezi el. Ebből a könyvtárból tud navigálni tovább, és keresheti meg a betölteni kívánt fájlt. 
+	\\
+	Majd a további beállítások a \textbf{Filter} mely segít abban, hogy csak azokat a fájlokat tudja leszűrni amelyeket tud fogadni a rendszer.
+	És még más további beállításokat is tudunk konfigurálni.
+	\\
+	A beállításokat követően megvizsgáljuk, hogy a felhasználó sikeresen és helyesen betöltötte-e a fájlt, amennyiben igen akkor a beépített \textbf{OpenFileDialog} osztály \textbf{OpenFile()} metódusával megnyitjuk ezt a fájlt, és beolvassuk az elejétől a végéig a megkapott JSON fájlt.
+	\\
+	A végső lépés, hogy a \textbf{FormHelper} DLL-ből a \textbf{LoadDeviceSettings()} metódust meghívjuk. Paraméterében vár egy elérési utat amelyet az \textbf{OpenFileDialog} osztálynak a \textbf{FileName} mezőjében kaphatjuk meg.
+	\\
+	Ezekkel a lépésekkel sikeresen betöltöttünk konfigurációkat az eszközeinkhez.
 	\subsection{Form Szerkesztés}
 	\label{Form Szerkesztes}
 	\subsubsection{Konstruktor}
