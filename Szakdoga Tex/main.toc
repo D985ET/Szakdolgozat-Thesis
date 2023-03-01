@@ -30,8 +30,10 @@
 \select@language {magyar} \contentsline {subsubsection}{Konstruktor}{25}{section*.31}%
 \select@language {magyar} \contentsline {subsubsection}{LoadTheme metódus}{25}{section*.32}%
 \select@language {magyar} \contentsline {subsubsection}{Betoltes metódus}{26}{section*.33}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.2.8}Form Szerkesztés}{27}{subsection.1.2.8}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.8}Form Szerkesztés}{26}{subsection.1.2.8}%
 \select@language {magyar} \contentsline {subsubsection}{Konstruktor}{27}{section*.34}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.2.9}Form Hangszoró Szerkesztés}{27}{subsection.1.2.9}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.2.10}Form Lámpa Szerkesztés}{27}{subsection.1.2.10}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.2.11}Form Nyíl Szerkesztés}{27}{subsection.1.2.11}%
+\select@language {magyar} \contentsline {subsubsection}{LoadTheme metódus}{27}{section*.35}%
+\select@language {magyar} \contentsline {subsubsection}{Gombokat\_Kirak metódus}{27}{section*.36}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.9}Form Hangszoró Szerkesztés}{28}{subsection.1.2.9}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.10}Form Lámpa Szerkesztés}{28}{subsection.1.2.10}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.11}Form Nyíl Szerkesztés}{28}{subsection.1.2.11}%

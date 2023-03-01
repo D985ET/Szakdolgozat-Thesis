@@ -20,6 +20,7 @@
 \usepackage{bigstrut}
 
 %algorithm
+\usepackage{algorithm}
 \usepackage{algpseudocode}
 
 
@@ -593,7 +594,55 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Ezekkel a lépésekkel sikeresen betöltöttünk konfigurációkat az eszközeinkhez.
 	\subsection{Form Szerkesztés}
 	\label{Form Szerkesztes}
+	Az eszközökhöz tartozó szerkesztés képernyőt ebben a formban jelenítjük meg. Ehhez a formhoz szükségünk lesz még több formra is, amelyek ilyen alképernyőként funkcionálnak majd programunkban.
+	\\
+	Ebből a képernyőből fogunk navigálni attól függően, hogy éppen milyen eszköz van éppen csatlakoztatva a rendszerbe. Eleinte ez a megoldás még csak egyedüli eszközöknél működik, de későbbiekben az a funkció, amely arra alkalmas, hogy több eszközt is tudjunk szerkeszteni egyszerre, hozzáadásra kerülhet.
+	\\
+	A kód felépítése a következő alfejezetekben lesz tárgyalva.
 	\subsubsection{Konstruktor}
+	A főszerkesztés formnak a konstruktora, vagyis a belépési pontjában megtalálhatunk hasonlóságokat az előző formokkal együtt nézve.
+	\\
+	Az \textbf{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Beállítjuk a form méretét az elsődleges képernyő teljes méretére, majd ezt követően a form képernyő állapotát maximalizáljuk vagyis kinagyítjuk. A nagyítás változót a \textbf{FormWindowState} nevezetű \textbf{enum}-ból vesszük.
+	\\
+	Majd meghívunk egy \textbf{LoadTheme()} eljárást amelyet a következő szekcióban fejtenék ki részletesebben. 
+	\subsubsection{LoadTheme metódus}
+	A \textbf{LoadTheme} metódus hasonlóképpen fog festeni mint a többi formban lévő \textbf{LoadTheme()} metódus azzal a kivétellel, hogy egy \textbf{Gombokat\_Kirak()} metódust hívunk meg, amiről következő alfejezetben beszélnék.
+	\\
+	Emellett hasonló a \ref{FormMainmenu} fejezetben lévő \textbf{DisableButton()} metódushoz, mivel a feltétel és a ciklus leimplementálása ugyanúgy fog történni. 
+	\\
+	Az eljárás egy ciklussal kezdődik amely végigiterál a \textbf{Controls} kollekción majd egy feltétel vizsgálatban megvizsgálja, hogy az adott elem gomb típusú-e. Amennyiben az adott elem gomb akkor létrehozunk egy új gomb változót melynek értékül adjuk a megtalált gombot. Ezek után a gombnak a háttérszínét és elő színét is beállítjuk a kívánt színre. 
+	\\
+	Majd a szélén lévő színnek az értékét is beállítjuk a másodlagos szín értékére amelyet a \textbf{SzinTema} osztályból kapunk meg.
+	\subsubsection{Gombokat\_Kirak metódus}
+	Ez a metódus arra lesz hivatott, hogy azon eszközöket amelyeket felismer és érzékel a rendszer megjelenítse a formon mint nyomógombot.
+	\\
+	Ezt több lépésben fogjuk elérni.
+	\begin{algorithm}
+		
+		\caption{Gombok megjelenítésére alkalmas eszközönként}\label{alg:cap}
+		\begin{algorithmic}
+			\Procedure{Gombok\_Kirak}{ }
+			\State $Point \ p \gets new \  Point(0,0)$
+			\For{$ i \gets 0 \ to \ FormHelper.Devices.Count$}
+				\For{$ j \gets 0 \ to \ 1$}
+					\If{$FormHelper.Devices[i].GetType()\! = \!typeof(LEDArrow)$}
+					\\
+					$\qquad \qquad \qquad $ nyilatKirak(p)
+					\EndIf
+					\If{$FormHelper.Devices[i].GetType() = typeof(LEDLight)$}
+						\\
+					$\qquad \qquad  \qquad $ lampatKirak(p)
+					\EndIf
+					\If{$FormHelper.Devices[i].GetType() = typeof(Speaker)$}
+						\\
+					$\qquad \qquad \qquad $ hangszoroKirak(p)
+					\EndIf
+				\EndFor
+			\EndFor
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+
 	\subsection{Form Hangszoró Szerkesztés}
 	\subsection{Form Lámpa Szerkesztés}
 	\subsection{Form Nyíl Szerkesztés}
@@ -656,5 +705,5 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	\end{comment}
 	% Aláírt, szkennelt nyilatkozat beillesztése a szakdolgozat végére
 	%\includepdf{nyilatkozat.pdf}
-		\listoffigures
+	\listoffigures
 \end{document}

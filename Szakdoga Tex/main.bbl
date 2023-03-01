@@ -6,15 +6,31 @@ Európában egyedülálló az időseket segítő gondosóra program.
   \url{http://medicalonline.hu/informatika/cikk/europaban_egyedulallo_az_idoseket_segito_gondosora_program}.
 \newblock Accessed: 2023-01-26.
 
+\bibitem{evinC}
+Events in csharp.
+\newblock
+  \url{https://code-maze.com/csharp-events/#:~:text=Events%20in%20C%23%20are%20a,something%20they%20listen%20to%20happens.}
+\newblock Accessed: 2023-02-16.
+
+\bibitem{eventobjargs}
+"object sender" and "eventargs e".
+\newblock
+  \url{https://stackoverflow.com/questions/14479143/what-is-the-use-of-object-sender-and-eventargs-e-parameters}.
+
+\bibitem{uri}
+Tim Berners-Lee, Roy Fielding, and Larry Masinter.
+\newblock Uniform resource identifier (uri): Generic syntax.
+\newblock 2005.
+
 \bibitem{modernUI}
 RJ~Code~Advance EN.
 \newblock {Modern Flat UI, Random MultiColor, Highlight button-Active Form,
-  WinForm, C#, V-0.1}.
+  WinForm, CSharp, V-0.1}.
 \newblock \url{https://youtu.be/BtOEztT1Qzk}, 2020.
 
 \bibitem{hejlsberg2003c}
 Anders Hejlsberg, Scott Wiltamuth, and Peter Golde.
-\newblock {\em C\# language specification}.
+\newblock {\em CSharp language specification}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., 2003.
 
 \bibitem{SLaszlo}

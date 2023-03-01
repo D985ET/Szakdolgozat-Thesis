@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  27 FEB 2023 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  1 MAR 2023 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,6 +528,21 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 Package: bigstrut 2021/03/15 v2.8 Provide larger struts in tabulars
 \bigstrutjot=\dimen196
 )
+(D:\Program Files\MikTex\tex/latex/algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(D:\Program Files\MikTex\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count307
+\float@exts=\toks35
+\float@box=\box59
+\@float@everytoks=\toks36
+\@floatcapt=\box60
+)
+\@float@every@algorithm=\toks37
+\c@algorithm=\count308
+)
 (D:\Program Files\MikTex\tex/latex/algorithmicx\algpseudocode.sty
 Package: algpseudocode 
 
@@ -535,15 +550,15 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count307
-\c@ALG@rem=\count308
-\c@ALG@nested=\count309
+\c@ALG@line=\count309
+\c@ALG@rem=\count310
+\c@ALG@nested=\count311
 \ALG@tlm=\skip65
 \ALG@thistlm=\skip66
-\c@ALG@Lnr=\count310
-\c@ALG@blocknr=\count311
-\c@ALG@storecount=\count312
-\c@ALG@tmpcounter=\count313
+\c@ALG@Lnr=\count312
+\c@ALG@blocknr=\count313
+\c@ALG@storecount=\count314
+\c@ALG@tmpcounter=\count315
 \ALG@tmplength=\skip67
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -556,30 +571,30 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 (D:\Program Files\MikTex\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count314
-\l__pdf_internal_box=\box59
+\l__color_backend_stack_int=\count316
+\l__pdf_internal_box=\box61
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-Package hyperref Info: Link coloring OFF on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+Package hyperref Info: Link coloring OFF on input line 27.
 
 (main.out) (main.out)
 \@outlinefile=\write4
@@ -621,66 +636,66 @@ Package hyperref Info: Link coloring OFF on input line 26.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-6.
+7.
 (D:\Program Files\MikTex\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<ot1.cmap>>
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-6.
+7.
 
 (D:\Program Files\MikTex\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<oml.cmap>>
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-26.
+27.
 
 (D:\Program Files\MikTex\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<oms.cmap>>
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-26.
+27.
 
 (D:\Program Files\MikTex\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 26.
+(Font)              <12> on input line 27.
 <<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 26.
+(Font)              <8> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 26.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+(Font)              <6> on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 
 
 (D:\Program Files\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 
 
 (D:\Program Files\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 26.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 27.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 26.
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 27.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 26.
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 27.
 
 (D:\Program Files\MikTex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
+\scratchcounter=\count317
 \scratchdimen=\dimen197
-\scratchbox=\box60
-\nofMPsegments=\count316
-\nofMParguments=\count317
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count318
+\scratchbox=\box62
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count320
 \MPscratchDim=\dimen198
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
-\everyMPtoPDFconversion=\toks36
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks39
 ) (D:\Program Files\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -705,14 +720,14 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 LaTeX Info: Redefining \cal on input line 577.
 LaTeX Info: Redefining \mit on input line 578.
 )
-Package hyperref Info: Option `pageanchor' set `false' on input line 26.
+Package hyperref Info: Option `pageanchor' set `false' on input line 27.
 <eszterhazy-logo-hu.pdf, id=74, 256.07971pt x 88.04292pt>
 File: eszterhazy-logo-hu.pdf Graphic file (type pdf)
 <use eszterhazy-logo-hu.pdf>
-Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 34.
+Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 35.
 (pdftex.def)             Requested size: 256.07907pt x 88.0427pt.
 
-Overfull \hbox (11.97958pt too wide) in paragraph at lines 34--34
+Overfull \hbox (11.97958pt too wide) in paragraph at lines 35--35
  []| []  [] [] 
  []
 
@@ -728,7 +743,7 @@ Overfull \hbox (11.97958pt too wide) in paragraph at lines 34--34
 [1
 
 ]
-Package hyperref Info: Option `pageanchor' set `true' on input line 37.
+Package hyperref Info: Option `pageanchor' set `true' on input line 38.
  Excluding 'comment' comment.
 1. fejezet.
 [1
@@ -737,26 +752,32 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 37.
 ] Excluding 'comment' comment. [2] [3
 
 ]
-Overfull \hbox (1.69691pt too wide) in paragraph at lines 159--161
+Overfull \hbox (1.69691pt too wide) in paragraph at lines 160--162
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Excluding 'comment' comment. Excluding 'comment' comment. [4] [5]
-Overfull \hbox (10.12099pt too wide) in paragraph at lines 182--193
+Excluding 'comment' comment. Excluding 'comment' comment. [4] [5
+pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.178 	\chapter
+               *{1.fejezet}]
+Overfull \hbox (10.12099pt too wide) in paragraph at lines 183--194
 \T1/lmr/m/n/12 App-li-ká-ció(Console App-li-ca-ti-on), a Win-dows Forms App-li-
 ca-ti-on, il-let-ve a WPF(Windows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--193
+Underfull \hbox (badness 10000) in paragraph at lines 183--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--201
+Underfull \hbox (badness 10000) in paragraph at lines 195--202
 
  []
 
@@ -766,17 +787,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--201
 <./images//SLH.pdf, id=160, page=1, 597.23125pt x 845.1575pt>
 File: ./images//SLH.pdf Graphic file (type pdf)
 <use ./images//SLH.pdf, page 1>
-Package pdftex.def Info: ./images//SLH.pdf , page1 used on input line 218.
+Package pdftex.def Info: ./images//SLH.pdf , page1 used on input line 219.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
 <./images//SLH.pdf, id=161, page=2, 597.23125pt x 845.1575pt>
 File: ./images//SLH.pdf Graphic file (type pdf)
 <use ./images//SLH.pdf, page 2>
-Package pdftex.def Info: ./images//SLH.pdf , page2 used on input line 225.
+Package pdftex.def Info: ./images//SLH.pdf , page2 used on input line 226.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
 <./images//SLH.pdf, id=162, page=3, 597.23125pt x 845.1575pt>
 File: ./images//SLH.pdf Graphic file (type pdf)
 <use ./images//SLH.pdf, page 3>
-Package pdftex.def Info: ./images//SLH.pdf , page3 used on input line 233.
+Package pdftex.def Info: ./images//SLH.pdf , page3 used on input line 234.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
 
 
@@ -791,22 +812,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./images//SLL.pdf, id=163, page=1, 845.1575pt x 597.23125pt>
 File: ./images//SLL.pdf Graphic file (type pdf)
 <use ./images//SLL.pdf, page 1>
-Package pdftex.def Info: ./images//SLL.pdf , page1 used on input line 244.
+Package pdftex.def Info: ./images//SLL.pdf , page1 used on input line 245.
 (pdftex.def)             Requested size: 220.50887pt x 155.82324pt.
 <./images//SLL.pdf, id=164, page=2, 597.23125pt x 845.1575pt>
 File: ./images//SLL.pdf Graphic file (type pdf)
 <use ./images//SLL.pdf, page 2>
-Package pdftex.def Info: ./images//SLL.pdf , page2 used on input line 253.
+Package pdftex.def Info: ./images//SLL.pdf , page2 used on input line 254.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
 <./images//SLL.pdf, id=165, page=3, 597.23125pt x 845.1575pt>
 File: ./images//SLL.pdf Graphic file (type pdf)
 <use ./images//SLL.pdf, page 3>
-Package pdftex.def Info: ./images//SLL.pdf , page3 used on input line 262.
+Package pdftex.def Info: ./images//SLL.pdf , page3 used on input line 263.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
 <./images//SLN.pdf, id=166, page=1, 845.1575pt x 597.23125pt>
 File: ./images//SLN.pdf Graphic file (type pdf)
 <use ./images//SLN.pdf, page 1>
-Package pdftex.def Info: ./images//SLN.pdf , page1 used on input line 274.
+Package pdftex.def Info: ./images//SLN.pdf , page1 used on input line 275.
 (pdftex.def)             Requested size: 220.50887pt x 155.82324pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -814,7 +835,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./images//SLN.pdf, id=167, page=2, 597.23125pt x 845.1575pt>
 File: ./images//SLN.pdf Graphic file (type pdf)
 <use ./images//SLN.pdf, page 2>
-Package pdftex.def Info: ./images//SLN.pdf , page2 used on input line 281.
+Package pdftex.def Info: ./images//SLN.pdf , page2 used on input line 282.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -822,17 +843,70 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./images//SLN.pdf, id=168, page=3, 597.23125pt x 845.1575pt>
 File: ./images//SLN.pdf Graphic file (type pdf)
 <use ./images//SLN.pdf, page 3>
-Package pdftex.def Info: ./images//SLN.pdf , page3 used on input line 288.
+Package pdftex.def Info: ./images//SLN.pdf , page3 used on input line 289.
 (pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [7] [8 <./images//SLH.pdf> <./images//SLH.pdf>]
-[9 <./images//SLH.pdf> <./images//SLL.pdf, page is rotated 90 degrees>]
-[10 <./images//SLL.pdf> <./images//SLL.pdf>] [11 <./images//SLN.pdf, page is ro
-tated 90 degrees> <./images//SLN.pdf>] [12 <./images//SLN.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 309--322
+Excluding 'comment' comment. [7] [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.308 	\chapter
+               *{2.fejezet}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.308 	\chapter
+               *{2.fejezet} <./images//SLH.pdf> <./images//SLH.pdf>] [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.308 	\chapter
+               *{2.fejezet}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.308 	\chapter
+               *{2.fejezet} <./images//SLH.pdf> <./images//SLL.pdf, page is rot
+ated 90 degrees>] [10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.308 	\chapter
+               *{2.fejezet}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.308 	\chapter
+               *{2.fejezet} <./images//SLL.pdf> <./images//SLL.pdf>] [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.308 	\chapter
+               *{2.fejezet}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.308 	\chapter
+               *{2.fejezet} <./images//SLN.pdf, page is rotated 90 degrees> <./
+images//SLN.pdf>] [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.9}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.308 	\chapter
+               *{2.fejezet} <./images//SLN.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 310--323
 
  []
 
@@ -840,56 +914,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--322
 
 ]
 
-LaTeX Warning: Reference `Eszkozok' on page 14 undefined on input line 333.
-
-
-LaTeX Warning: Citation `uri' on page 14 undefined on input line 355.
+LaTeX Warning: Reference `Eszkozok' on page 14 undefined on input line 334.
 
 [14] [15] [16]
-
-LaTeX Warning: Citation `evinC' on page 17 undefined on input line 412.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 412--415
+Underfull \hbox (badness 10000) in paragraph at lines 413--416
 
  []
 
-[17]
-
-LaTeX Warning: Citation `eventobjargs' on page 18 undefined on input line 433.
-
-[18] [19]
-Overfull \hbox (2.71156pt too wide) in paragraph at lines 453--456
+[17] [18] [19]
+Overfull \hbox (2.71156pt too wide) in paragraph at lines 454--457
 \T1/lmr/m/n/12 A ki-né-zet-hez nagy-ban hoz-zá-já-rult a(z) \T1/lmr/bx/n/12 En-
 ab-le-Vi-su-alSty-les() \T1/lmr/m/n/12 ne-ve-ze-t¶ me-tó-dus amely
  []
 
 [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 483--487
+Underfull \hbox (badness 10000) in paragraph at lines 484--488
 
  []
 
 [22] [23] [24] [25]
-Overfull \hbox (17.35701pt too wide) in paragraph at lines 577--594
+Overfull \hbox (17.35701pt too wide) in paragraph at lines 578--595
 \T1/lmr/m/n/12 A be-ál-lí-tá-so-kat kö-ve-t®-en meg-vizs-gál-juk, hogy a fel-ha
 sz-ná-ló si-ke-re-sen és he-lye-sen betöltötte-
  []
 
-[26] Excluding 'comment' comment. [27] Excluding 'comment' comment. [28
+[26]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 622.
+ [27] Excluding 'comment' comment. [28] Excluding 'comment' comment.
+[29
 
-]
-Excluding 'comment' comment. [29
+] Excluding 'comment' comment. [30
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-32.
+81.
 
 (D:\Program Files\MikTex\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) Excluding 'comment' comment.
-[30
+[31
 
-] (main.bbl [31
+] (main.bbl [32
 
 ]
 Underfull \hbox (badness 6396) in paragraph at lines 4--8
@@ -903,21 +969,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 ulallo _ az _
  []
 
-! You can't use `macro parameter character #' in horizontal mode.
-l.12   WinForm, C#
-                  , V-0.1}.
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
 
-) Excluding 'comment' comment. [32
+Overfull \hbox (5.41737pt too wide) in paragraph at lines 16--19
+\T1/lmtt/m/n/12 14479143 / what-[]is-[]the-[]use-[]of-[]object-[]sender-[]and-[
+]eventargs-[]e-[]parameters$[]\T1/lmr/m/n/12 . 
+ []
+
+) Excluding 'comment' comment. [33
 
 ] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [33
+ [34
 
 ] (main.aux)
 
@@ -927,21 +991,25 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 30D4A36E365AA9F57CCE4F8FC4F784D2;2818.
  ) 
 Here is how much of TeX's memory you used:
- 16337 strings out of 476375
- 264414 string characters out of 5798785
+ 16500 strings out of 476375
+ 267210 string characters out of 5798785
  1894299 words of memory out of 5000000
- 36279 multiletter control sequences out of 15000+600000
- 569414 words of font info for 80 fonts, out of 8000000 for 9000
+ 36426 multiletter control sequences out of 15000+600000
+ 572209 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  78i,12n,81p,833b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}<D:/Program Files/MikTe
-x/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTex/fonts/type1/public/
-lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/Pro
-gram Files/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fon
-ts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (35 pages, 778074 bytes).
+{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}{D:/Program Files/MikTe
+x/fonts/enc/dvips/lm/lm-rm.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-m
+athsy.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-mathit.enc}<D:/Program
+ Files/MikTex/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTex/fonts/t
+ype1/public/lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmmi1
+2.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/Program File
+s/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fonts/type1/
+public/lm/lmsy10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmtt12.pfb>
+
+Output written on main.pdf (36 pages, 803283 bytes).
 PDF statistics:
- 402 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
+ 435 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

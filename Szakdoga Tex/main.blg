@@ -6,46 +6,49 @@ The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
 Warning--to sort, need author or key in MTI
+Warning--to sort, need author or key in evinC
+Warning--to sort, need author or key in eventobjargs
+Warning--empty journal in uri
 Warning--empty journal in SLaszlo
-You've used 4 entries,
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            519 strings with 4638 characters,
-and the built_in function-call counts, 966 in all, are:
-= -- 90
-> -- 33
+            531 strings with 5077 characters,
+and the built_in function-call counts, 1563 in all, are:
+= -- 146
+> -- 53
 < -- 1
-+ -- 14
-- -- 10
-* -- 41
-:= -- 157
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 16
++ -- 23
+- -- 16
+* -- 68
+:= -- 243
+add.period$ -- 20
+call.type$ -- 7
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 44
-empty$ -- 91
-format.name$ -- 10
-if$ -- 213
+cite$ -- 12
+duplicate$ -- 68
+empty$ -- 154
+format.name$ -- 16
+if$ -- 347
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 3
-newline$ -- 23
-num.names$ -- 6
-pop$ -- 35
+int.to.str$ -- 7
+missing$ -- 4
+newline$ -- 37
+num.names$ -- 8
+pop$ -- 61
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 22
 quote$ -- 0
-skip$ -- 33
+skip$ -- 53
 stack$ -- 0
-substring$ -- 26
-swap$ -- 10
+substring$ -- 41
+swap$ -- 12
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
-warning$ -- 2
-while$ -- 7
-width$ -- 5
-write$ -- 41
-(There were 2 warnings)
+type$ -- 26
+warning$ -- 5
+while$ -- 9
+width$ -- 8
+write$ -- 66
+(There were 5 warnings)
