@@ -55,7 +55,6 @@ namespace Thesis_project.Forms
             
             if(dev485Set == false)
             {
-               Res.Text = FormHelper.CallFelmeres().ToString();
 
                 setDev485(true);
                 Gombokat_Kirak();

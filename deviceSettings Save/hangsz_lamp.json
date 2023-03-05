@@ -1,0 +1,15 @@
+[
+  {
+    "devices": [
+      {
+        "type": "L",
+        "settings": "255|0|0"
+      },
+      {
+        "type": "H",
+        "settings": ""
+      }
+    ],
+    "time": 2000
+  }
+]

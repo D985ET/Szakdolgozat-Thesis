@@ -54,6 +54,7 @@ namespace Thesis_project.Forms
             }
             if (dev485Set == false)
             {
+               
                 setDev485(true);
                 Gombokat_Kirak();
             }
@@ -65,6 +66,7 @@ namespace Thesis_project.Forms
 
             Point p = new Point(0, 0);
             bool elsosor = false;
+           
 
             for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
             {
