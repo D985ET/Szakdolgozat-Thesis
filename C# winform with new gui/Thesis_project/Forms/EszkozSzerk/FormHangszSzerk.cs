@@ -18,15 +18,26 @@ namespace Thesis_project.Forms.EszkozSzerk
         public FormHangszSzerk(ref Speaker speakerToSzerk)
         {
             this.speakerToSzerk = speakerToSzerk;
+            if(speakerToSzerk == null)
+            {
+                DefaultPitch();
+            }
+           
             InitializeComponent();
             //kinézet:
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.WindowState = FormWindowState.Maximized;
             Application.EnableVisualStyles();
+            
+                speakerToSzerk.AddSound(Pitch.C_OKTAV4, 63, 2000);
             LoadTheme();
             SzerkHangsz();
         }
         private int pitchEnumCount = Enum.GetNames(typeof(Pitch)).Length;
+        private void DefaultPitch()
+        {
+            speakerToSzerk.AddSound(Pitch.C_OKTAV4, 63, 300);
+        }
         private void SzerkHangsz()
         {
             hangszAzLbl.Text = speakerToSzerk.Azonos.ToString();

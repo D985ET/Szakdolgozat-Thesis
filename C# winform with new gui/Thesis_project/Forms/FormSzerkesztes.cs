@@ -23,12 +23,13 @@ namespace Thesis_project.Forms
         public FormSzerkesztes()
         {
             InitializeComponent();
-            LoadTheme();
+          
 
             //kinézet:
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.WindowState = FormWindowState.Maximized;
             Application.EnableVisualStyles();
+            LoadTheme();
         }
         public void setDev485(bool dev485Set)
         {
@@ -237,13 +238,20 @@ namespace Thesis_project.Forms
         private void hangszoroButton_Click(object sender, EventArgs e)
         {
             Speaker speaker1;
-
-            if (FormHelper.Devices[0] is Speaker)
+            for (int i = 0; i < FormHelper.Devices.Count; i++)
             {
-                speaker1 = (Speaker)FormHelper.Devices[0];
-                hangSzerkForm = new FormHangszSzerk(ref speaker1);
+                if (FormHelper.Devices[i] is Speaker)
+                {
+                    speaker1 = (Speaker)FormHelper.Devices[i];
+                    speaker1.AddSound(Pitch.H_OKTAV3, 63, 300);
+                    hangSzerkForm = new FormHangszSzerk(ref speaker1);
+                    hangSzerkForm.Show();
+                }
+             
             }
-            hangSzerkForm.Show();
+          
+            
+     
         }
 
     }

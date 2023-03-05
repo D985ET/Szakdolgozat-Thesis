@@ -72,6 +72,7 @@ namespace Thesis_project.Forms
             {
                 Console.WriteLine();
                 Console.WriteLine(SLFormHelper.FormHelper.Devices[i].GetType().Name);
+                Console.WriteLine(SLFormHelper.FormHelper.Devices[i]);
                 Eszközöknevei.Text += SLFormHelper.FormHelper.Devices[i].GetType().Name + "\n";
                 for (int j = 0; j < 1; j++)
                 {
@@ -86,6 +87,7 @@ namespace Thesis_project.Forms
                     }
                     if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(Speaker))
                     {
+
                         hangszoroKirak(p);
                     }
                     if (SLFormHelper.FormHelper.Devices.Count > 9 && elsosor == true) /* SLFormHelper.FormHelper.Devices.Count > 6*/

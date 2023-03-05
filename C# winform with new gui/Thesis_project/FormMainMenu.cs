@@ -186,6 +186,7 @@ namespace Thesis_project
                 hangSzerkForm = new FormHangszSzerk(ref speaker1);
                 OpenChildForm(new Forms.EszkozSzerk.FormHangszSzerk(ref speaker1), sender);
             }*/
+            
             OpenChildForm(new Forms.FormSzerkesztes(), sender);
 
         }
