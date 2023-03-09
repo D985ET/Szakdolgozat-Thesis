@@ -22,8 +22,10 @@ namespace Thesis_project.Forms.EszkozSzerk
            
             InitializeComponent();
             //kinézet:
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            this.WindowState = FormWindowState.Maximized;
+            /* this.Size = Screen.PrimaryScreen.WorkingArea.Size;*/
+            this.Width = 800;
+            this.Height = 500;
+           /* this.WindowState = FormWindowState.Minimized;*/
             Application.EnableVisualStyles();
             
             

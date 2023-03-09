@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 461);
             this.Controls.Add(this.btnHangMent);
             this.Controls.Add(this.hangszAzLbl);
             this.Controls.Add(this.aktHanghosszLBl);
@@ -178,6 +178,7 @@
             this.Controls.Add(this.timeMilisecBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pitchComboBox);
+            this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "FormHangszSzerk";
             this.Text = "FormHangszSzerk";
             ((System.ComponentModel.ISupportInitialize)(this.timeMilisecBox)).EndInit();

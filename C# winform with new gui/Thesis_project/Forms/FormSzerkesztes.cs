@@ -131,7 +131,7 @@ namespace Thesis_project.Forms
                     else //6 alatt fut le
                     {
                         p.Y = 0;
-                        p.X = p.X + 100;
+                        p.X = p.X + 500;
                     }
 
                 }
@@ -157,8 +157,8 @@ namespace Thesis_project.Forms
             }
 
 
-            arrowButton.Width = 200;
-            arrowButton.Height = 200;
+            arrowButton.Width = 500;
+            arrowButton.Height = 500;
 
             arrowButton.BackColor = Color.White;
             arrowButton.Image = Image.FromFile(@"img\right-arrow.png");
@@ -194,8 +194,8 @@ namespace Thesis_project.Forms
 
             Button lampaButton = new Button();
 
-            lampaButton.Width = 200;
-            lampaButton.Height = 200;
+            lampaButton.Width = 500;
+            lampaButton.Height = 500;
             lampaButton.Location = location;
             lampaButton.BackColor = Color.White;
             lampaButton.FlatStyle = FlatStyle.Flat;
@@ -225,11 +225,11 @@ namespace Thesis_project.Forms
 
             hangszoroButton.Location = location;
 
-            hangszoroButton.Width = 200;
-            hangszoroButton.Height = 200;
+            hangszoroButton.Width = 500;
+            hangszoroButton.Height = 500;
             /*hangszoroButton.Location = location;*/
             hangszoroButton.Image = Image.FromFile(@"img\speaker-filled-audio-tool.png");
-
+            hangszoroButton.BackColor = Color.White;
             hangszoroButton.FlatStyle = FlatStyle.Flat;
             hangszoroButton.FlatAppearance.BorderSize = 0;
             /*hangszoroButton.Text = "HANGSZORO";//TODO IMA*/

@@ -182,7 +182,7 @@ namespace Thesis_project.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 461);
             this.Controls.Add(this.nyilAktIrany);
             this.Controls.Add(this.nyilSzinAkt);
             this.Controls.Add(this.nyilSzerkBoth);
@@ -197,6 +197,7 @@ namespace Thesis_project.Forms
             this.Controls.Add(this.nyilAz);
             this.Controls.Add(this.btnMentNyil);
             this.Controls.Add(this.nyilAzLbl);
+            this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "FormNyilSzerk";
             this.Text = "FormNyilSzerk";
             this.ResumeLayout(false);

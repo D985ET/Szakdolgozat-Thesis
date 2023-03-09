@@ -119,7 +119,7 @@
             // 
             this.lampaMentBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lampaMentBtn.Font = new System.Drawing.Font("Myanmar Text", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lampaMentBtn.Location = new System.Drawing.Point(191, 326);
+            this.lampaMentBtn.Location = new System.Drawing.Point(191, 337);
             this.lampaMentBtn.Name = "lampaMentBtn";
             this.lampaMentBtn.Size = new System.Drawing.Size(409, 112);
             this.lampaMentBtn.TabIndex = 9;
@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 461);
             this.Controls.Add(this.aktSzinLamp);
             this.Controls.Add(this.lampaMentBtn);
             this.Controls.Add(this.lampaAzLbl);
@@ -152,6 +152,7 @@
             this.Controls.Add(this.lampaBtnZold);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "FormLampaSzerk";
             this.Text = "FormLampaSzerk";
             this.ResumeLayout(false);
