@@ -35,6 +35,7 @@ namespace Thesis_project.Forms
             this.WindowState = FormWindowState.Maximized;
             Application.EnableVisualStyles();
             LoadTheme();
+            panel1.AutoScroll = true;
             panel1.Width = Screen.PrimaryScreen.WorkingArea.Width;
             panel1.Height = Screen.PrimaryScreen.WorkingArea.Height;
         }
@@ -57,6 +58,9 @@ namespace Thesis_project.Forms
             if(dev485Set == false)
             {
                 setDev485(true);
+                Gombokat_Kirak();
+                Gombokat_Kirak();
+                Gombokat_Kirak();
                 Gombokat_Kirak();
                 Gombokat_Kirak();
               
