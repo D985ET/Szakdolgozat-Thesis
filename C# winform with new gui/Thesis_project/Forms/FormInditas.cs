@@ -59,10 +59,7 @@ namespace Thesis_project.Forms
             {
                 setDev485(true);
                 Gombokat_Kirak();
-                Gombokat_Kirak();
-                Gombokat_Kirak();
-                Gombokat_Kirak();
-                Gombokat_Kirak();
+              
               
             }
 
@@ -251,6 +248,11 @@ namespace Thesis_project.Forms
                 utemTimer.Enabled = false;
             }
             i++;
+        }
+
+        private void btnNewUtem_Click(object sender, EventArgs e)
+        {
+            Gombokat_Kirak();
         }
 
 

@@ -101,7 +101,7 @@
             this.lampaBtnPir.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lampaBtnPir.Location = new System.Drawing.Point(297, 39);
             this.lampaBtnPir.Name = "lampaBtnPir";
-            this.lampaBtnPir.Size = new System.Drawing.Size(112, 68);
+            this.lampaBtnPir.Size = new System.Drawing.Size(112, 64);
             this.lampaBtnPir.TabIndex = 7;
             this.lampaBtnPir.Text = "Piros";
             this.lampaBtnPir.UseVisualStyleBackColor = true;

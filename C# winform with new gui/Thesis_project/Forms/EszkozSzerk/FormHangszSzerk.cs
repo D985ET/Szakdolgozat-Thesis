@@ -36,8 +36,27 @@ namespace Thesis_project.Forms.EszkozSzerk
   
         private void SzerkHangsz()
         {
-            hangszAzLbl.Text = speakerToSzerk.Azonos.ToString();
 
+            hangszAzLbl.Text = speakerToSzerk.Azonos.ToString();
+            hangszAzLbl.Font = new Font("Myanmar Text", 20);
+            hangszAzLbl.ForeColor = Color.Black;
+            hangszAzLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            hangszAzLbl.Dock = DockStyle.None;
+
+            lblHangero.Font = new Font("Myanmar Text", 20);
+            lblHangero.ForeColor = Color.Black;
+            lblHangero.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            lblHangero.Dock = DockStyle.None;
+
+            lblHanghossz.Font = new Font("Myanmar Text", 20);
+            lblHanghossz.ForeColor = Color.Black;
+            lblHanghossz.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            lblHanghossz.Dock = DockStyle.None;
+
+            lblHangszin.Font = new Font("Myanmar Text", 20);
+            lblHangszin.ForeColor = Color.Black;
+            lblHangszin.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            lblHangszin.Dock = DockStyle.None;
             foreach (Pitch pitches in Enum.GetValues(typeof(Pitch)))
             {
                 pitchComboBox.Items.Add(pitches);
