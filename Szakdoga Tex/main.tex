@@ -643,9 +643,29 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 		\end{algorithmic}
 	\end{algorithm}
 
-	\subsection{Form Hangszoró Szerkesztés}
+	\subsection{Form Hangszóró Szerkesztés}
+	A különböző eszközökhöz tartozó szerkesztési formokat, külön képernyő segítségével oldottuk meg, amelyek mint egyfajta \textit{"gyermek"} form-ként is szolgálnak az előző \ref{Form Szerkesztes} fejezet számára.
+	
+	%ide kéne kép
+	\begin{figure}[h!]	
+	\centering
+	\includegraphics[page=1,width=0.5\textwidth]{hangsz_form}
+	\caption[Hangszoro form]{hangszóróhoz tartozó form}
+	\label{fig:hangszform}
+	\end{figure}
+
+	A hangszóró form ahogyan a nevéből is adódik a hangszóró eszköznek a szerkesztésére alkalmas képernyő ahol az adott hangszóróhoz tartozó beállításokat állíthatjuk be.
+	A képernyőn megtalálhatjuk a hangszórónak az egyedi azonosítóját mint egy információ alapú adat. Ezen felül az aktuális hangerőt, hangszínt, és hanghosszt. Mindezek alap állapotban valamilyen kezdőértékkel rendelkeznek, kivéve a hangszín mezőt.
+	\\
+	A hangerőt lehetőség szerint maximum 63-as hangerősségig tudjuk állítani, amely természetesen az adott frekvencián kiadott hangszín hangerejét fogja beállítani.
+	\\
+	Ezután a hangszínt tudunk beállítani a felsorolásban található adatokból.
+	\\
+	Majd végül a hanghossz betudjuk állítani mindezt milliszekundumban ezért ha például 1 másodpercig szeretnénk, hogy hangozzon az adott hangszín amit megadunk az eszközünknek akkor 1000 értékre kell beállítanunk a hanghossz változót.
 	\subsection{Form Lámpa Szerkesztés}
+	A különböző eszközökhöz tartozó szerkesztési formokat, külön képernyő segítségével oldottuk meg, amelyek mint egyfajta \textit{"gyermek"} form-ként is szolgálnak az előző \ref{Form Szerkesztes} fejezet számára.
 	\subsection{Form Nyíl Szerkesztés}
+	A különböző eszközökhöz tartozó szerkesztési formokat, külön képernyő segítségével oldottuk meg, amelyek mint egyfajta \textit{"gyermek"} form-ként is szolgálnak az előző \ref{Form Szerkesztes} fejezet számára.
 
 	Az eszközökről az adatokat a DLL-ből kaptam amelyet Nagy-Tóth Bence készített. A DLL neve SLFormHelper amelyen belül sok adatot érhetünk el az eszközzel kapcsolatosan. %ide kellene azeszközzel kapcsolatos dolgok hogy miket lehet lekérni az SLDLL-ből
 	
