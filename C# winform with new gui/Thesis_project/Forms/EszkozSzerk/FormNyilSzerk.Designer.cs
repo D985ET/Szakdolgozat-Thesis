@@ -151,7 +151,7 @@ namespace Thesis_project.Forms
             this.nyilSzerkBal.Font = new System.Drawing.Font("Myanmar Text", 20.25F);
             this.nyilSzerkBal.Location = new System.Drawing.Point(620, 48);
             this.nyilSzerkBal.Name = "nyilSzerkBal";
-            this.nyilSzerkBal.Size = new System.Drawing.Size(112, 68);
+            this.nyilSzerkBal.Size = new System.Drawing.Size(168, 68);
             this.nyilSzerkBal.TabIndex = 9;
             this.nyilSzerkBal.Text = "Balra";
             this.nyilSzerkBal.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@ namespace Thesis_project.Forms
             this.nyilSzerkJobb.Font = new System.Drawing.Font("Myanmar Text", 20.25F);
             this.nyilSzerkJobb.Location = new System.Drawing.Point(620, 122);
             this.nyilSzerkJobb.Name = "nyilSzerkJobb";
-            this.nyilSzerkJobb.Size = new System.Drawing.Size(112, 68);
+            this.nyilSzerkJobb.Size = new System.Drawing.Size(168, 68);
             this.nyilSzerkJobb.TabIndex = 10;
             this.nyilSzerkJobb.Text = "Jobbra";
             this.nyilSzerkJobb.UseVisualStyleBackColor = true;
@@ -175,9 +175,9 @@ namespace Thesis_project.Forms
             this.nyilSzerkBoth.Font = new System.Drawing.Font("Myanmar Text", 20.25F);
             this.nyilSzerkBoth.Location = new System.Drawing.Point(620, 198);
             this.nyilSzerkBoth.Name = "nyilSzerkBoth";
-            this.nyilSzerkBoth.Size = new System.Drawing.Size(112, 68);
+            this.nyilSzerkBoth.Size = new System.Drawing.Size(168, 68);
             this.nyilSzerkBoth.TabIndex = 11;
-            this.nyilSzerkBoth.Text = "Balra és jobbra";
+            this.nyilSzerkBoth.Text = "Kétirányba";
             this.nyilSzerkBoth.UseVisualStyleBackColor = true;
             this.nyilSzerkBoth.Click += new System.EventHandler(this.nyilSzerkBoth_Click);
             // 

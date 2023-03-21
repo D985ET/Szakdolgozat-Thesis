@@ -655,7 +655,9 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	\end{figure}
 
 	A hangszóró form ahogyan a nevéből is adódik a hangszóró eszköznek a szerkesztésére alkalmas képernyő ahol az adott hangszóróhoz tartozó beállításokat állíthatjuk be.
-	A képernyőn megtalálhatjuk a hangszórónak az egyedi azonosítóját mint egy információ alapú adat. Ezen felül az aktuális hangerőt, hangszínt, és hanghosszt. Mindezek alap állapotban valamilyen kezdőértékkel rendelkeznek, kivéve a hangszín mezőt.
+	A képernyőn megtalálhatjuk a hangszórónak az egyedi azonosítóját amely alapból egy négyjegyű hexadecimális szám amelyet a \textit{"JSON"}, szöveges formátumon keresztül, már egy ötjegyű decimális formában kerül átadásra, de mint háttéradat, hexadecimális számként tekintünk rá. A JSON-né alakítást(szerializációt) Nagy-Tóth Bence szaktársam implementálta le.
+	 
+	Továbbá, a képernyőn beállíthatjuk a hangerőt, hangszínt, és hanghosszt. Mindezek alap állapotban valamilyen kezdőértékkel rendelkeznek, kivéve a hangszín mezőt.
 	\\
 	A hangerőt lehetőség szerint maximum 63-as hangerősségig tudjuk állítani, amely természetesen az adott frekvencián kiadott hangszín hangerejét fogja beállítani.
 	\\
@@ -664,29 +666,71 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Majd végül a hanghossz betudjuk állítani mindezt milliszekundumban ezért ha például 1 másodpercig szeretnénk, hogy hangozzon az adott hangszín amit megadunk az eszközünknek akkor 1000 értékre kell beállítanunk a hanghossz változót.
 	\subsection{Form Lámpa Szerkesztés}
 	A különböző eszközökhöz tartozó szerkesztési formokat, külön képernyő segítségével oldottuk meg, amelyek mint egyfajta \textit{"gyermek"} form-ként is szolgálnak az előző \ref{Form Szerkesztes} fejezet számára.
+	\begin{figure}[h!]	
+		\centering
+		\includegraphics[page=1,width=0.5\textwidth]{lamp_form}
+		\caption[Lampa form]{lámpához tartozó form}
+		\label{fig:lampaform}
+	\end{figure}
+	A lámpa form ahogyan a fenti \ref{fig:lampaform} ábra is mutatja a géphez csatlakoztatott lámpa eszköz paramétereit konfigurálja be.
+	\\
+	A képernyőn megtalálható a lámpa azonosítója amely alapból egy négyjegyű hexadecimális szám amelyet a \textit{"JSON"}-ben már egy ötjegyű decimális formában kerül átadásra, de mint háttéradat hexadecimális számként tekintünk rá. Ezt a művelet Nagy-Tóth Bence szaktársam implementálta le.
+	\\
+	A képernyőn továbbá lehetőségünk van arra is, hogy a lámpának a színét változtassuk, piros, kék, vagy zöld színre.
+	Természetesen, ki is tudjuk kapcsolni a lámpát, ekkor az \textit{"Üres"} gombbra kattintva az eszközre kimegy egy \textbf{RGB(0,0,0)} értékekkel ellátott jel.
+	\\
+	Az \textit{"Aktuális szín: "} címke a lámpa eszköz aktuális beállítását/színét hivatott jelezni a felhasználó számára.
+	\\
+	A \textit{"Mentés"} nevezetű gombbal tudjuk azt ellenőrizni, hogy a lámpánk valóban helyes jelet kap.
+	
+	
 	\subsection{Form Nyíl Szerkesztés}
 	A különböző eszközökhöz tartozó szerkesztési formokat, külön képernyő segítségével oldottuk meg, amelyek mint egyfajta \textit{"gyermek"} form-ként is szolgálnak az előző \ref{Form Szerkesztes} fejezet számára.
-
-	Az eszközökről az adatokat a DLL-ből kaptam amelyet Nagy-Tóth Bence készített. A DLL neve SLFormHelper amelyen belül sok adatot érhetünk el az eszközzel kapcsolatosan. %ide kellene azeszközzel kapcsolatos dolgok hogy miket lehet lekérni az SLDLL-ből
 	
-	
+	\begin{figure}[h!]	
+		\centering
+		\includegraphics[page=1,width=0.5\textwidth]{nyíl_form}
+		\caption[nyil form]{nyíl tartozó form}
+		\label{fig:nyilform}
+	\end{figure}
+	A nyíl form a \ref{fig:nyilform} ábrán látható képernyőn található meg, amely képernyőt csak akkor tudunk elérni, hogyha a csatlakoztatott eszközeink közé nyíl eszköz is tartozik.
+	\\
+	A képernyőn megtalálható a nyílAzonosító amely alapból egy négyjegyű hexadecimális szám amelyet a \textit{"JSON"}-ben már egy ötjegyű decimális formában kerül átadásra, de mint háttéradat hexadecimális számként tekintünk rá. Ezt a művelet Nagy-Tóth Bence szaktársam implementálta le. 
+	\\
+	A képernyőn továbbá lehetőségünk van a nyíl színét, irányát konfigurálni. A nyíl színét háromféle színre tudjuk állítani csakúgy mint a lámpánál.
+	 A színek lehetnek:
+	\begin{enumerate}
+		\centering
+		\item Piros (RGB(255,0,0))
+		\item Kék (RGB(0,0,255))
+		\item Zöld (RGB(0,255,0))
+	\end{enumerate} 
 
+	A nyíl irányát is lehet változtatni, balra, jobbra, vagy akár mindkét irányba is lehetséges. Ez mindösszesen annyit jelent az eszköz számára, hogy a nyílban lévő LED-ek más és más pozícióban kapnak feszültséget.
+	\\
+	A nyilak ellenőrzésére a \textit{Mentés} gombot kell lenyomni, amely egy esemény hatására, a nyíl eszköznek kiküldi a megfelelő konfigurációkat .
+	
 	\begin{comment}
 		3.fejezet(vége): kitekintés, milyen más rendszerek vannak még, és ahhoz képest ez mit tud, vannak hasonló szoftverek, vannak tréner szoftverek, de a mienk az spec képzésre alkalmas
-		- szoftver és a hardvert hozzákellett fejleszteni, ez egy prototípus.
+		- szoftver és a hardvert hozzákellett fejleszteni, ez egy prototípus. Miért nem lehet ennek hasonló változata
+		Még kiegészíteni valamivel.
 	\end{comment}
-	\chapter*{3.fejezet}
+	\chapter*{Kitekintés}
+	A rendszer amit kiépítettünk, azon okból egyedülálló mivel a hardveres háttere specifikusan épül fel, és jelen állapotában az SLDLL képes vezérelni ezen eszközök helyes működését.
+	\\
+	Lehetséges ötletek, az eszközök felhasználására, akár az lehetne, hogy mintegy közlekedési lámpa szimulálása amely három lámpa egységes összekötéséből és vezérléséből állna. Emellett, ha megtoldanánk egy hangszóró eszközzel is akkor egy hangjelzéses, átkelő lámpát is tudnánk ezzel szimulálni.
+	Mindezek az ötletek jelenlegi projektnek nem képezik szerves részét, de jövőbeni használatra, és továbbfejlesztésre, mindenképpen alkalmas lehet.
 	\begin{comment}
 		4.fejezet: (future works) továbbiakban milyen kimenetele lesz, ebből szabadalom lesz, az ötletgazda szeretné ezt kiadni olyan módon hogy piaci termék legyen. 
 		- Teljesen más technológia
 	\end{comment}
-	\chapter*{4.fejezet}
+	
 	\begin{comment}
 		5.fejezet:  összefoglaló, melyik fejezetben miről beszéltünk, miket sikerült elérni(pl 1.fejezetben említetteket megcsináltam, iylenek), Mi az EREDMÉNY! miért fontos, 
 		- miért jó ez? Működés közben videókat kéne csinálni. Érdemes lenne titkosítani.
 	\end{comment}
-	\chapter*{Összegzés}
-	Jelenlegi projekt során, ablakos applikációt tudtunk készíteni amely segítségével szakemberek illetve edzők könnyedén és egyszerűen használhatják a különféle eszközöket, arra, hogy a mozdulatsorok automatizálását elvégezzék.
+	\chapter*{Végkitekintés}
+	Jelenlegi projekt során, ablakos applikációt tudtunk készíteni amely segítségével három fajta eszközt tudunk vezérelni akár önállóan egy eszközt, vagy együttesen 2 vagy 3 eszközt.
 
 	Nagyon örültünk, hogy egy kis betekintést nyerhettünk az egészségfejlesztés világába, Somodi László gondolatain keresztül amelyet a vele való beszélgetéseinkből, valamint \textit{,,Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok óvodától a felnőtt korig''} című alkotásában leírt gondolatokból szereztük.
 	
@@ -705,6 +749,14 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	\end{comment}
 
 	\chapter*{Köszönetnyílvánítás}
+	Szeretném köszönetemet ezúton is kifejezni a konzulensemnek, Dr.Király Roland Tanár Úrnak, aki lehetővé tette ezen téma feldolgozását.
+	Továbbá, szeretném megköszönni, kedves barátomnak és szaktársamnak, Nagy-Tóth Bencének a sok fáradságos munkáját, amely alapját képezte a programomnak. 
+	\\
+	Végső soron, Istennek szeretném hálámat kifejezni, mivel a tudásomat és a kitartásomat, Tőle nyerhetem mindennap. 
+	
+
+	
+
 	\bibliographystyle{plain}
 	\bibliography{references}
 	\begin{comment}
