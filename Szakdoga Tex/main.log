@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  21 MAR 2023 19:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  27 MAR 2023 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,7 +721,7 @@ LaTeX Info: Redefining \cal on input line 577.
 LaTeX Info: Redefining \mit on input line 578.
 )
 Package hyperref Info: Option `pageanchor' set `false' on input line 27.
-<eszterhazy-logo-hu.pdf, id=74, 256.07971pt x 88.04292pt>
+<eszterhazy-logo-hu.pdf, id=108, 256.07971pt x 88.04292pt>
 File: eszterhazy-logo-hu.pdf Graphic file (type pdf)
 <use eszterhazy-logo-hu.pdf>
 Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 35.
@@ -749,254 +749,135 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 38.
 [1
 
 
-] Excluding 'comment' comment. [2] [3
+] Excluding 'comment' comment. [2]
+2. fejezet.
+[3
 
 ]
-Overfull \hbox (1.69691pt too wide) in paragraph at lines 160--162
+Overfull \hbox (1.69691pt too wide) in paragraph at lines 166--168
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Excluding 'comment' comment. Excluding 'comment' comment. [4] [5
-pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}) h
+[4] Excluding 'comment' comment. [5
+pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.178 	\chapter
-               *{1.fejezet}]
-Overfull \hbox (10.12099pt too wide) in paragraph at lines 183--194
+l.187 	\chapter
+               {Szakdolgozatom elaborÃ¡lÃ¡sa}]
+3. fejezet.
+
+Overfull \hbox (10.12099pt too wide) in paragraph at lines 192--203
 \T1/lmr/m/n/12 App-li-ká-ció(Console App-li-ca-ti-on), a Win-dows Forms App-li-
 ca-ti-on, il-let-ve a WPF(Windows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--194
+Underfull \hbox (badness 10000) in paragraph at lines 192--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--202
+Underfull \hbox (badness 10000) in paragraph at lines 204--211
 
  []
 
 [6
 
-]
-<./images//SLH.pdf, id=160, page=1, 597.23125pt x 845.1575pt>
-File: ./images//SLH.pdf Graphic file (type pdf)
-<use ./images//SLH.pdf, page 1>
-Package pdftex.def Info: ./images//SLH.pdf , page1 used on input line 219.
-(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-<./images//SLH.pdf, id=161, page=2, 597.23125pt x 845.1575pt>
-File: ./images//SLH.pdf Graphic file (type pdf)
-<use ./images//SLH.pdf, page 2>
-Package pdftex.def Info: ./images//SLH.pdf , page2 used on input line 226.
-(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-<./images//SLH.pdf, id=162, page=3, 597.23125pt x 845.1575pt>
-File: ./images//SLH.pdf Graphic file (type pdf)
-<use ./images//SLH.pdf, page 3>
-Package pdftex.def Info: ./images//SLH.pdf , page3 used on input line 234.
-(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./images//SLL.pdf, id=163, page=1, 845.1575pt x 597.23125pt>
-File: ./images//SLL.pdf Graphic file (type pdf)
-<use ./images//SLL.pdf, page 1>
-Package pdftex.def Info: ./images//SLL.pdf , page1 used on input line 245.
-(pdftex.def)             Requested size: 220.50887pt x 155.82324pt.
-<./images//SLL.pdf, id=164, page=2, 597.23125pt x 845.1575pt>
-File: ./images//SLL.pdf Graphic file (type pdf)
-<use ./images//SLL.pdf, page 2>
-Package pdftex.def Info: ./images//SLL.pdf , page2 used on input line 254.
-(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-<./images//SLL.pdf, id=165, page=3, 597.23125pt x 845.1575pt>
-File: ./images//SLL.pdf Graphic file (type pdf)
-<use ./images//SLL.pdf, page 3>
-Package pdftex.def Info: ./images//SLL.pdf , page3 used on input line 263.
-(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-<./images//SLN.pdf, id=166, page=1, 845.1575pt x 597.23125pt>
-File: ./images//SLN.pdf Graphic file (type pdf)
-<use ./images//SLN.pdf, page 1>
-Package pdftex.def Info: ./images//SLN.pdf , page1 used on input line 275.
-(pdftex.def)             Requested size: 220.50887pt x 155.82324pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images//SLN.pdf, id=167, page=2, 597.23125pt x 845.1575pt>
-File: ./images//SLN.pdf Graphic file (type pdf)
-<use ./images//SLN.pdf, page 2>
-Package pdftex.def Info: ./images//SLN.pdf , page2 used on input line 282.
-(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images//SLN.pdf, id=168, page=3, 597.23125pt x 845.1575pt>
-File: ./images//SLN.pdf Graphic file (type pdf)
-<use ./images//SLN.pdf, page 3>
-Package pdftex.def Info: ./images//SLN.pdf , page3 used on input line 289.
-(pdftex.def)             Requested size: 220.50887pt x 312.04568pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+] [7] Excluding 'comment' comment. Excluding 'comment' comment.
 Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [7] [8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 	\chapter
-               *{2.fejezet}
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 	\chapter
-               *{2.fejezet} <./images//SLH.pdf> <./images//SLH.pdf>] [9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 	\chapter
-               *{2.fejezet}
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 	\chapter
-               *{2.fejezet} <./images//SLH.pdf> <./images//SLL.pdf, page is rot
-ated 90 degrees>] [10
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 	\chapter
-               *{2.fejezet}
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.6}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 	\chapter
-               *{2.fejezet} <./images//SLL.pdf> <./images//SLL.pdf>] [11
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.7}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 	\chapter
-               *{2.fejezet}
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.8}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 	\chapter
-               *{2.fejezet} <./images//SLN.pdf, page is rotated 90 degrees> <./
-images//SLN.pdf>] [12
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.9}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 	\chapter
-               *{2.fejezet} <./images//SLN.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 310--323
+Underfull \hbox (badness 10000) in paragraph at lines 324--337
 
  []
 
-[13
+[8]
 
-]
+LaTeX Warning: Reference `Eszkozok' on page 9 undefined on input line 348.
 
-LaTeX Warning: Reference `Eszkozok' on page 14 undefined on input line 334.
-
-[14] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 413--416
+[9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 427--430
 
  []
 
-[17] [18] [19]
-Overfull \hbox (2.71156pt too wide) in paragraph at lines 454--457
+[12] [13] [14]
+Overfull \hbox (2.71156pt too wide) in paragraph at lines 468--471
 \T1/lmr/m/n/12 A ki-né-zet-hez nagy-ban hoz-zá-já-rult a(z) \T1/lmr/bx/n/12 En-
 ab-le-Vi-su-alSty-les() \T1/lmr/m/n/12 ne-ve-ze-t¶ me-tó-dus amely
  []
 
-[20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 484--488
+[15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 498--502
 
  []
 
-[22] [23] [24] [25]
-Overfull \hbox (17.35701pt too wide) in paragraph at lines 578--595
+[17] [18] [19] [20]
+Overfull \hbox (17.35701pt too wide) in paragraph at lines 592--609
 \T1/lmr/m/n/12 A be-ál-lí-tá-so-kat kö-ve-t®-en meg-vizs-gál-juk, hogy a fel-ha
 sz-ná-ló si-ke-re-sen és he-lye-sen betöltötte-
  []
 
-[26]
+[21]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 622.
- [27]
-<./images//hangsz_form.png, id=325, 601.4972pt x 346.29375pt>
+put line 636.
+ [22]
+<./images//hangsz_form.png, id=312, 601.4972pt x 346.29375pt>
 File: ./images//hangsz_form.png Graphic file (type png)
 <use ./images//hangsz_form.png>
-Package pdftex.def Info: ./images//hangsz_form.png  used on input line 652.
+Package pdftex.def Info: ./images//hangsz_form.png  used on input line 666.
 (pdftex.def)             Requested size: 220.50887pt x 126.95363pt.
- [28
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.10})
- has been already used, duplicate ignored
+ [23
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.667 	\subsection
+l.681 	\subsection
                   {Form LÃ¡mpa SzerkesztÃ©s} <./images//hangsz_form.png>]
-<./images//lamp_form.png, id=338, 599.99156pt x 345.54094pt>
+<./images//lamp_form.png, id=326, 599.99156pt x 345.54094pt>
 File: ./images//lamp_form.png Graphic file (type png)
 <use ./images//lamp_form.png>
-Package pdftex.def Info: ./images//lamp_form.png  used on input line 671.
+Package pdftex.def Info: ./images//lamp_form.png  used on input line 685.
 (pdftex.def)             Requested size: 220.50887pt x 126.99399pt.
-<./images//nyÃ­l_form.png, id=341, 600.74437pt x 347.04657pt>
+<./images//nyÃ­l_form.png, id=329, 600.74437pt x 347.04657pt>
 File: ./images//nyÃ­l_form.png Graphic file (type png)
 <use ./images//nyÃ­l_form.png>
-Package pdftex.def Info: ./images//nyÃ­l_form.png  used on input line 692.
+Package pdftex.def Info: ./images//nyÃ­l_form.png  used on input line 706.
 (pdftex.def)             Requested size: 220.50887pt x 127.38847pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.11})
- has been already used, duplicate ignored
+[24
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.703 		\centering
+l.717 		\centering
                    <./images//lamp_form.png>] Excluding 'comment' comment.
-[30
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.12})
- has been already used, duplicate ignored
+[25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.718 	\chapter
+l.733 	\chapter
                *{KitekintÃ©s} <./images//nyÃ­l_form.png>]
-Excluding 'comment' comment. Excluding 'comment' comment. [31
+Excluding 'comment' comment. Excluding 'comment' comment. [26
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
-45.
+60.
 
 (D:\Program Files\MikTex\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) Excluding 'comment' comment.
-[32
+[27
 
-] (main.bbl [33
+] (main.bbl [28
 
 ]
-Underfull \hbox (badness 6396) in paragraph at lines 4--8
+Underfull \hbox (badness 4913) in paragraph at lines 4--8
 []\T1/lmr/m/n/12 Európában egye-dül-ál-ló az id®-se-ket se-gí-t® gon-do-só-ra p
 rog-ram.  []$\T1/lmtt/m/n/12 http :
  []
@@ -1008,34 +889,52 @@ ulallo _ az _
  []
 
 
-Overfull \hbox (5.41737pt too wide) in paragraph at lines 16--19
+Overfull \hbox (11.29236pt too wide) in paragraph at lines 16--19
 \T1/lmtt/m/n/12 14479143 / what-[]is-[]the-[]use-[]of-[]object-[]sender-[]and-[
 ]eventargs-[]e-[]parameters$[]\T1/lmr/m/n/12 . 
  []
 
-) Excluding 'comment' comment. [34
 
-] (main.lof)
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
+[]\T1/lmr/m/n/12 Theydiffer.  Dif-fe-ren-ce bet-ween usb type-a and usb type-b.
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
+\T1/lmr/m/it/12 They-dif-fer\T1/lmr/m/n/12 , Ja-nu-ary 4, 2016.  []$\T1/lmtt/m/
+n/12 https : / / www . etechnophiles . com /
+ []
+
+
+Underfull \hbox (badness 7433) in paragraph at lines 67--72
+[]\T1/lmr/m/n/12 Unknown.  Know the dif-fe-ren-ce rj9, rj11, rj12, rj45, rj48 p
+i-no-ut.
+ []
+
+[29
+
+]) Excluding 'comment' comment. [30] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [35
+ [31
 
 ] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 693D61C3AC99ABD1A25E43A8F50E4A0E;2821.
+(rerunfilecheck)             Checksum: 744EFE91B337EC2147E03C995F7D9838;4883.
  ) 
 Here is how much of TeX's memory you used:
- 16536 strings out of 476375
- 268013 string characters out of 5798785
- 1894299 words of memory out of 5000000
- 36456 multiletter control sequences out of 15000+600000
+ 16479 strings out of 476375
+ 266840 string characters out of 5798785
+ 1896299 words of memory out of 5000000
+ 36406 multiletter control sequences out of 15000+600000
  572209 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 78i,12n,81p,833b,525s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,12n,81p,833b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}{D:/Program Files/MikTe
 x/fonts/enc/dvips/lm/lm-rm.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-m
 athsy.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-mathit.enc}<D:/Program
@@ -1045,9 +944,9 @@ ype1/public/lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmmi1
 s/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fonts/type1/
 public/lm/lmsy10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmtt12.pfb>
 
-Output written on main.pdf (37 pages, 836249 bytes).
+Output written on main.pdf (33 pages, 325280 bytes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 118 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 448 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

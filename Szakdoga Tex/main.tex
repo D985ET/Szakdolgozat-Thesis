@@ -33,22 +33,14 @@
 	\date{2022}
 	\begin{titlepage}
 		\maketitle
-	\end{titlepage}
-	
+	\end{titlepage}	
 	\tableofcontents
-
-	\addcontentsline{toc}{chapter}{Bevezetés}
-	\addcontentsline{toc}{chapter}{Elméleti háttér}
-	\addcontentsline{toc}{chapter}{Összegzés}
-
-
-
 	\begin{comment}
 		leírom hogy miről szól, (nem kötelező), 2 rész -> probléma felvetés, mi a motiváció, kontextus, előremutatva a dolgozatban hol miről fogsz beszélni.(1.fejezetben befogom mutatni a kódolást)
 	\end{comment}
 	\chapter{Bevezetés}
 
-	A tanulmányaim során sok olyan tárgyat tanulhattam amelyek segítettek belátást nyerni, hogy valójában melyik is az az irányágazat az informatikán belül, amely felkeltette az érdeklődésemet. Az utolsó félévekben tanulhattam robotikát a Robotika alapjai nevezetű tárgy következtében, amely közelebb vitt engem a gépközeli programozás világába. Továbbá C\# nyelvben elég biztos tudást szerezhettem a Szolgáltatás Orientált Programozás, Magasszintű programozási nyelvek I. és II. című tárgyakon.
+	A tanulmányaim során sok olyan tárgyat tanulhattam amelyek segítettek belátást nyerni, hogy valójában melyik is az az irányágazat az informatikán belül, amely felkeltette az érdeklődésemet. Az utolsó félévekben tanulhattam robotikát, a Robotika alapjai nevezetű tárgy következtében, amely közelebb vitt engem a gépközeli programozás világába. Továbbá C\# nyelvben elég biztos tudást szerezhettem a Szolgáltatás Orientált Programozás, Magasszintű programozási nyelvek I. és II. című tárgyakon.
 	\par
 	Szakdolgozatom tematikájául szerettem volna egy olyan témát választani, melynek a későbbiekben másoknak tudok segítséget nyújtani az informatikai szaktudásommal.
 	Mint keresztény hívő ember, úgy gondolom, hogy az emberi létünk egyik fő feladat és mozgatórúgója az az, hogy segítsünk embertársainkon azokkal a technikákkal és tudásokkal amelyek számunkra megadattak. Ezért örömmel tölt el az a lehetőség, hogy tanulmányaimat ennek a segítségére fordíthatom. 
@@ -67,10 +59,16 @@
 	Ezen eszközök leptikus területeket érintenek, vizuális illetve akusztikus hatások közreműködésével.
 	\\
 	A projekt fontossága az, hogy ezen eszközök segítséget tudjanak nyújtani, esetleg kiváltsák a beszédnek a szolgálatát. Ahol már beszéd nem elegendő ott ezen eszközök segíthetik a mozgásában fejlődésre szoruló egyéneket. Mind a fiatalok mind a szépkorúak számára hasznos gyakorlat lehet.
-	\\ 
+	\par
 	A digitális fejlődéssel egyre több eszköz segíti az arra rászorulókat, például a mostanság kutatásban lévő gondosóra, program amely a szociális segítésben vesz részt az idősgondozásban.\cite{MTI}
+	\par
+	Emellett kutatásom során találkoztam a szakdolgozatom témájához hasonló projekttel is, amely a zene és a dallamok segítségét veszik elő, mint egy "segédeszközt" amelyet szaknyelven "Zeneterápinak" hívnak.\cite{zsofia2021zeneterapia}
 	\\
-	A cél az embereknek a fizikai illetve mentális állapotának elősegítése.
+	Az erről szóló cikk, "A zeneterápia útjai: Traumától az újratanuláson keresztül az inklúzióig" 2.1-es fejezet 2.1.1 "Zeneterápia" című alfejezetében így ír a szerző:
+	„Zeneterápia során a képzett zeneterapeuta egy tervezett folyamatban használja a zenét vagy a zenei elemeket (hang, ritmus, dallam, harmónia) annak érdekében, hogy elősegítse a kommunikációt, kapcsolatokat, tanulást, kifejezést, mobilizációt, szervezést, szerveződést."
+	\par
+	Továbbá, egy másik cikk alapján \cite{erdelyiilonademensbetegek}
+	A mi célunk is az embereknek a fizikai illetve mentális állapotának elősegítése, csak ugyan mint az előző mondatokban leírt idézet alapján, mi is fontosnak tartjuk ezeket az értékeket.
 	\par 
 	
 	Alapvetően a következő fejezetekben azt szeretném részletezni, hogy milyen technológiákat használunk, és emellett milyen programozási nyelven készül a projekt. \\ 
@@ -79,11 +77,12 @@
 	\begin{comment}
 	Bevezető2: Rendszer amit kidolgozott Somodi László, mi a szerepe, mi a célja, mit vállaltam én? -> frontend
 	\end{comment}
-	\chapter*{Háttérelmélet}
+	\chapter{Szakdolgozatom elméleti alapjai}
+	\section{Háttérelméleti forrás}
 	\par
 	A témában jártas, és a "Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok óvodától a felnőtt korig" \cite{SLaszlo} című könyv írója, Somodi László, segített belátást nyerni az egészségügyi és a morális lényegességébe a projektnek. \\ Elmondása szerint a mozgásfejlesztés és az agyi kapacitás fejlesztése, kéz a kézben jár. Ezt a mozgásfejlesztést úgy érhetjük el, ha az adott személynek utasításokat adunk ki, hogy adott jelzésre (szín, hang, irány) és ezek kombinációjára, milyen mozgást kell végeznie.
 	\par 
-	\subsection*{Gyakorlati haszna}
+	\subsection{Gyakorlati haszna}
 	Az agy mentális funkcióinak erősítése, speciális koordinációfejlesztő gyakorlatokkal is lehetséges melynek a három komponense a következő: 
 	\begin{enumerate}
 	 
@@ -91,7 +90,7 @@
 			\item	A második komponens a hardver, ami a mozgáshoz és a gyakorláshoz szükséges időzítést, jelzéseket adja, és vezérli az aktivitást, amit a koncepció előír.
 			\item	A harmadik komponens a hardvert meghajtó, és így a feladatokat közvetlenül irányító, programozható, tanítható szoftver.
 	\end{enumerate}
-	\subsection*{Módszer lényege}
+	\subsection{Módszer létfontossága}
 	Az a személy aki használja ezt, nála külön dolgozik a két kar, külön dolgozik a két láb és ezáltal folyamatosan kapcsoljuk át a két agyféltekét.
 	Továbbá, a könnyen és egyszerűen felismerhető hang, szín, és ábra jelzések az esetlegesen a fogyatékossággal élő emberek számára se jelenthet akadályt.
 	\\
@@ -100,22 +99,23 @@
 	Továbbá, ez által a módszer által gyorsabban megértjük az elvégzendő  feladatot, feladatokat és akár gyorsabban is végrehajthatjuk azokat.
 	  %szellemi leépüléssel küzdő, szép korúak számára is segítséget nyújthat, mivel a változatos mozgás, és a különböző ingerek ki- és be- kapcsolása növeli az agy alap működését.
 	 \\
-	Gyakorlati tapasztalatunk szerint a módszer hasznosan alkalmazható általános helyzetű, HH és HHH helyzetű és beteg gyerekeknél is. Kutatásaink és mért eredményeink ezt támasztják alá.
+	Elméletből következhet az, hogy a módszer hasznosan alkalmazható általános, és akár hátrányos helyzetű gyerekeknél és felnőtteknél is egyaránt.
 	A módszert kis helyen és minden korosztálynál lehet alkalmazni, de a teljesség érdekében, a módszer intelligens szobával együtt működik hatékonyan.
 	
 	
-	\subsection*{Intelligens szoba röviden}
+	\subsection{Intelligens szoba röviden}
 	Az intelligens szoba kifejezés egy olyan helység, melynek mind a négy falán, vagy oldalán különböző jeladókat helyezünk el.
 	Ezek különböző eszközök melyek típusai lehetnek: fények, színek, nyilak és hangok. Ezek külön, vagy együttesen kiküldött jeleire különböző, illetve speciális koordinációfejlesztő feladatokat végrehajtani. Minden egyes különböző szín, és fényjelzés, más és más feladatokat tartalmaznak.
 	Ez azt jelenti, hogy adott esetben egy piros lámpa színe emlékeztethet arra, hogy a piros szín jelentése szimbolikus hatással bír.Melyet az adott ember köthet a már mindennapos életben tapasztaltakhoz. Nyilak felvillanására, különböző hangokra pedig más érzékeket váltunk ki mint például a fényjelzés esetén. Ilyenkor irányváltásokat kell végrehajtani amik máris komplikálják egy kicsit az adott mozdulatokat.
 	\\
-	Ezzel a módszerrel és az intelligens szobával együttesen tudjuk a mozgáson keresztül úgy stimulálni az agyat, hogy a legrövidebb idő alatt a legtöbbször átkapcsoljuk. ( 200-szor, 300-szor, 400-szor, stb. )
+	Ezzel a módszerrel és az intelligens szobával együttesen tudjuk a mozgáson keresztül úgy stimulálni az agyat, hogy a legrövidebb idő alatt a legtöbbször átkapcsoljuk. (200-szor, 300-szor, 400-szor, stb.)
 	\par
-	\subsection*{Automatizálás célja}
+	\subsection{Automatizálás célja}
 	A fentebb említettek automatizálására készül a projekt, amely különböző informatikai eszközökkel valósítja meg a színek, hangok, és nyilak megjelenítését, illetve érzékeltetését. 
 	A hardver komponensek. A hardver több egymáshoz tetszőlegesen kapcsolható smart box, amelyek képesek fényjelzések, fénnyel képzett ábrák, valamint hangjelzések kiadására. A smart box-okat szoftveresen lehet vezérelni, így azok képesek a koncepció alapján összetett mozgások, vagy komplex feladatsorok irányítására.
 	Ennek egy példája a \pageref{table:egyedzesterv}. oldalon található táblázat amely az automatizálásra létrehozott "edzéstervet" mutat be.[\ref{table:egyedzesterv}]
-	\begin{table}[h]
+	\\
+	\begin{table}[h!]
 		\centering
 		\caption{Egy adott edzésterv}
 		\scalebox{0.7}
@@ -160,22 +160,25 @@
 		}
 		\label{table:egyedzesterv}%
 	\end{table}%
-	
-	\begin{comment}
-		Itt még lehetne kicsit beszélni a Somodi Lászlós dologokról.
-	\end{comment}
 
-	Alapvetően, a projekten sok személy részt vett, a hardver lefejlesztésében és 
-	összeszerelésében, Keresztes Péter Tanár úr. \\
-	A back-end és ezeknek a hardvereknek a mögöttes működtetését, valamint a Delphi és a C\# nyelvek közötti kapcsolat megoldását, Nagy-Tóth Bence, barátom és szaktársam készítette el.
-	\\
-	Én ezeknek a hardvereknek a működtetéséhez a felületet írtam, amin keresztül lehet különféle módon, változatos ütemekben vezérelni a fentebb említett eszközöket. Ezt C\# nyelven írtam ami a felhasználói felület írására kellően alkalmas.
+	\par
+	Alapvetően, a projekten több tudományágban ismerős,és érdekelt személy vett részt.
+	\begin{itemize}
+		\item A back-end és ezeknek a hardvereknek a mögöttes működtetését, valamint a Delphi és a C\# nyelvek közötti kapcsolat megoldását, Nagy-Tóth Bence, barátom és szaktársam készítette el.
+		\item A hardver lefejlesztésében és összeszerelésében, Keresztes Péter Tanár úr. 
+		\item A példaprogramot Delphi-ben Dr. Király Roland Tanár úr fejlesztette le. 
+		\item Elméleti háttér kidolgozásában és kutatásában, Somodi László UEFA "A" licences labdarúgó szakedző.
+	\end{itemize}
+
+	
+	Én ezeknek a hardvereknek a működtetéséhez a felületet írtam, amin keresztül lehet különféle módon, %változatos ütemekben vezérelni a fentebb említett eszközöket. 
+	Ezt C\# nyelven írtam ami egy friss és modern felhasználói felület írására és elkészítésére megfelelő.
 	
 	
 	\begin{comment}
 		1.fejezet: Milyen technológiákat használunk, milyen nyelv, architektúrák, kapcsolási rajz, interface, ui, meg ezek hogyan néznek ki.
 	\end{comment}
-	\chapter*{1.fejezet}
+	\chapter{Szakdolgozatom elaborálása}
 	\section{C\# fejlődése}
 
 	A szakdolgozatom projektje C\# nyelven íródik amely a legjobban alkalmazkodik az ilyen felületek leimplementálásához. 
@@ -187,31 +190,35 @@
 	Ezentúl, még hasonlóságokat is fedezhetünk fel például a Java nyelvben, amely egyezést mutat számos helyen.
 	Mint például az osztályok deklarálása, metódusok illetve függvények létrehozása. Emellett a mezők szintaxisa is megegyező.
 	\\
-	A C\#-ban még sok más opciónk is van programok fejlesztésére, ilyen például a Konzolos Applikáció(Console Application), a Windows Forms Application, illetve a WPF(Windows Presentation Foundation). Ezen utóbbi kettő applikáció segítségével ablakos illetve asztali alkalmazásokat készíthetünk.
+	A C\#-ban még sok más opciónk is van programok fejlesztésére, ilyen például a Konzolos Applikáció(Console Application), a Windows Forms Application, illetve a WPF(Windows Presentation Foundation). Ezen utóbbi kettő applikáció segítségével ablakos illetve asztali alkalmazásokat készíthetünk. \cite{almeida2018visual}
 	\\
 	A projektem során azért választottam a Windows Forms Application-t mivel a különböző eszközök(gombok, címkék) amelyek az ezen alkalmazásban megtalálhatóak elősegítik a felhasználó számára a könnyed olvashatóságot és feltérképezés lehetőségét. Az alkalmazás hasonló módon elkészülhetett volna konzolos felületre is, de mivel ez a felhasználó és az esetlegesen laikus ügyfél számára is nehezen érthető, ezért az ablakos alkalmazás a támogatott.
 	\\ 
-	\subsection*{DLL}
+	\subsection{Dynamic Link Library mint erőforrás}
 	C\#-ban lehetőség van úgynevezett DLL-ek használatára is. A DLL(Dynamic Link Library) mint olyan az egy kisebb programok összessége, amelyeket nagyobb programok könnyűszerrel be tudnak importálni a saját projektjükbe. Ezen kisebb programokhoz vagy DLL fájlokhoz, hozzátartozik leírás is amelyek általában minden egyes függvényeknél, illetve metódusoknál megjegyezhető. Ennek oka, hogy az a fejlesztő aki használja a DLL-t
-	nagyobb belátást kapjon arról hogy az adott metódus, miként és hogyan működik.
+	nagyobb belátást kapjon arról hogy az adott metódus, miként és hogyan működik.\cite{benlutkevich}
 	\\
 	A projekthez a DLL-t, Nagy-Tóth Bence hallgatótársam szolgáltatja amelyben számos metódus meg lett írva, ezeket felhasználva a fő applikáció működésre bírható.
 	\\
 	Ezentúl, a működtettet eszközökkel való kommunikációt Delphi programozási nyelvben volt szükséges megírni amely a DLL alapját képezte. 
 	\\
-	\subsection*{eszközök}
+	\subsection{A projekthez tartozó eszközök}
 	Háromféle eszközt működtetünk, lámpát, nyilakat szimbolizáló lámpa, illetve egy hangszóró.
-	Ezen eszközöknek önálló tápellátással rendelkeznek, melyek közötti kapcsolatot 4 pólusú RJ típusú csatlakozókkal felszerelt kábelen keresztül lehet biztosítani. Az egyes egységeket láncszerűen kell egymás után kapcsolni, melyeket vagy individuálisan vagy kollektívan lehet kötni a vezérlő számítógéphez. Ezen összekötéshez szükséges egy USB 2.0-ás nyomtatókábel, melynek az USB-B-s fele az eszközbe csatlakozik, és az USB-A-s fele pedig a tápot biztosító és programot futtató számítógépbe.
+	\\
+	Ezen eszközöknek önálló tápellátással rendelkeznek, melyek közötti kapcsolatot 4 pólusú RJ típusú csatlakozókkal felszerelt kábelen keresztül lehet biztosítani. Ezek közül is az RJ 9-es változatát használjuk amely egy 4 eres csatlakozó, amibe csak a középső kettő(piros,zöld) vezetékeket kötjük be. \\
+	Alapvetően az RJ9 vezetékes telefonokba használják, a telefon készülék és a kagyló közötti adatátvitel céljából.\cite{RJ9ok}
+	Az egyes egységeket láncszerűen kell egymás után kapcsolni, melyeket vagy individuálisan vagy kollektívan lehet kötni a vezérlő számítógéphez. Ezen összekötéshez szükséges egy USB 2.0-ás nyomtatókábel, melynek az USB-B-s fele az eszközbe csatlakozik, és az USB-A-s fele pedig a tápot biztosító és programot futtató számítógépbe.
+\\
+	A szabványos-A típusú USB csatlakozó, amely nagyrészt arra használatos hogy más USB bemenettel rendelkező eszközöket meghajtson. Ilyen például az USB-hub amely laptopoknál több USB portot szolgáltat.
+	A szabványos-B típusú USB csatlakozó, amely főleg a perifériák vezérlése érdekében használatos. Ilyen perifériák például a nyomtatók, és a billentyűzetek. \cite{typeab}
 	\\  
-	A hangszóró adott hangszínt le tud játszani, amelyeket különbőző hosszúságig illetve hangerősségbe tudunk működtetni.
-	Az ehhez tartozó kapcsolási rajzok megtalálhatóak a [\ref{fig:hangsz1}],[\ref{fig:hangsz2}],[\ref{fig:hangsz3}] ábrák alatt.
+	A hangszóró adott hangszínt le tud játszani, amelyeket különböző hosszúságig illetve hangerősségbe tudunk működtetni.
 	\par
 	A lámpa egy olyan eszköz lesz amelyen különböző színben tud világítani a LED, különböző időközönként. Természetesen a világítás hosszát is be lehet állítani különböző eszközökhöz.
-	Az ehhez tartozó kapcsolási rajzot a [\ref{fig:lamp1}],[\ref{fig:lamp2}],[\ref{fig:lamp3}] ábrák alatt.
 	\par
 	A nyíl egy olyan eszköz lesz amelyen különböző színben tud világítani a LED-ek összessége, illetve különböző irányba tud mutatni a LED-ek által kialakított alakzat.  Természetesen  világítás hosszát is be lehet állítani különböző eszközökhöz, különböző időközönként.
-Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref{fig:nyil3}] ábrák alatt található.\medskip
-\\
+
+\begin{comment}
 	%Hangszóró:
 	\begin{figure}[h!]
 	
@@ -221,6 +228,7 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	\label{fig:hangsz1}
 	
 	\end{figure}
+
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[page=2,width=0.5\textwidth]{SLH}
@@ -228,6 +236,7 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 		\caption[Hangszoró]{hangszóró kapcsolási rajz \#2}
 		\label{fig:hangsz2}
 	\end{figure}
+
 	\begin{figure}[h!]
 	
 		\centering
@@ -237,9 +246,8 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 		\label{fig:hangsz3}\medskip
 	\end{figure} 
 
-
 	%lámpa
-	\begin{figure}[t]
+	\begin{figure}[h!]
 	
 		\centering
 		\includegraphics[page=1,width=0.5\textwidth]{SLL}
@@ -248,7 +256,8 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 			\label{fig:lamp1}
 	
 	\end{figure}
-	\begin{figure}[t]
+
+	\begin{figure}[h!]
 	
 		\centering
 		\includegraphics[page=2,width=0.5\textwidth]{SLL}
@@ -257,7 +266,8 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 		\label{fig:lamp2}
 	
 	\end{figure}
-	\begin{figure}[t]
+
+	\begin{figure}[h!]
 		
 		\centering
 		\includegraphics[page=3,width=0.5\textwidth]{SLL}
@@ -270,29 +280,28 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 
 
 	%nyíl
-	\begin{figure}[h]
+	\begin{figure}[h!]
 		\centering
 		\includegraphics[page=1,width=0.5\textwidth]{SLN}
 		
 		\caption{nyíl kapcsolási rajz \#1}
 		\label{fig:nyil1}
 	\end{figure}
-	\begin{figure}[h]
+	\begin{figure}[h!]
 		\centering
 		\includegraphics[page=2,width=0.5\textwidth]{SLN}
 		
 		\caption{nyíl kapcsolási rajz \#2}
 		\label{fig:nyil2}
 	\end{figure}
-	\begin{figure}[h]
+	\begin{figure}[h!]
 		\centering
 		\includegraphics[page=3,width=0.5\textwidth]{SLN}
-		
 		\caption{nyíl kapcsolási rajz \#3}
 		\label{fig:nyil3}
 	\end{figure}
 
-
+\end{comment}
 
 
 	\begin{comment}
@@ -305,7 +314,6 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	\begin{comment}
 		2.fejezet: Melyik részét csinálom én? Mit csináltunk, és hogyan ui-t kellett fejleszteni, milyen lépésekből állt, képernyőképekkel.
 	\end{comment}
-	\chapter*{2.fejezet}
 	\section{Felület tervezése}
 	A jelenlegi fejezetben magáról a kódról és a felhasználó élményről szeretnék beszélni.
 	A korábbi fejezetekben már említést tettem azon kapcsán, hogy az alkalmazást a C\# programozási nyelvben írom. Ezenfelül, egy olyan asztali alkalmazást szerettem volna készíteni amely apelláló lehet a felhasználó számára. Továbbá, a megjelenéstől, és a küllemtől eltekintve fontosnak tartom azt is, hogy egyszerű legyen az alkalmazás használata.
@@ -320,12 +328,12 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	Kutatásom során találkoztam egy olyan dizájn formával ami kifejezetten szépnek és modernnek bizonyult számomra.\cite{modernUI} 
 	Maga a felület több részből épül fel.
 	\\
-	\subsection*{Windows Form}
+	\subsection{Windows Form}
 	A Windows Forms-on belül számtalan lehetőségünk van a felületünk megtervezésére. Lehetőségünk van nézetet választani az egyik amely az alap tervezői nézet, és emellett természetesen az alkalmazásunkat kód formájában is megírhatjuk. Számomra a kettő nézet ugyanolyan releváns a projekt szempontjából, mivel a tervezői nézetben, ténylegesen átláthatjuk, hogy a felhasználó mit fog látni mint végtermék.
 	
 	Amikor a kódnézőben tartózkodunk akkor természetesen eltudjuk érni a ugyanazokat az eszközöket amelyeket a Designer nézetben is.
 	Ebben a szekcióban, különböző működési elveket és formai adatokat írhatunk le amelyek meghatároznak különböző objektumokat a form-on belül. 
-	\subsubsection*{Designer nézet}
+	\subsubsection{Designer nézet}
 	A nézet választás fontos, és egyben jár a programozás részével is, mivel amikor akár egy gombbot akár egy címkét helyezünk be a képernyőbe akkor is a háttérben történnek változások a kódban is.
 	
 	A tervezői nézetben egy üres formra építhetünk különböző objektumokat.
@@ -335,7 +343,7 @@ Az ehhez tartozó kapcsolási rajzot a [\ref{fig:nyil1}],[\ref{fig:nyil2}],[\ref
 	\\
 	Amikor elhelyeztük a kívánt kelléket a formon akkor lehetőségünk van többféle beállításra az adott tárgynál. ezek közé tartozik az az opció amikor egy adott objektumnak a hátterét, címét és még sok más tulajdonságát lehet változtatni a kiválasztott eszköznek. Ezentúl még adott eszköznek lehetnek eseményei is amelyek egy adott impulzus alapján (például: bal klikk lenyomása egy gombbon) kiváltanak egy másik akár látható akár nem látható reakciót a programon belül. Ezekről bővebben az Eszközök című [\ref{EszkozLista}] alfejezetben írok.
 	
-	\subsubsection*{Alap kód nézet}
+	\subsubsection{Alap kód nézet}
 	
 	A Designer vagy tervezői nézet mellett a programozóknak alkotott nézet is megtalálható a WinForm applikáción belül. Ez a nézet az alap kódolói nézet, amely ugyanolyan fontossággal bír mint a Designer nézet.
 	\\
@@ -445,7 +453,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	A színkódokat egy Listában tároljuk el amelyből majd a későbbiekben a Form Main Menu Form választja ki a megfelelő színeket. Ehhez a listához van egy \textbf{getColorList()} metódusa is amely a listának az elérésére szolgál. 
 	\\
 	A másik metódus az a \textbf{ChangeColorBrightness()} metódus amely paraméterében vár egy \textbf{Color} példányt illetve egy korrekció faktort amely a színek korrigálását fogja végezni, ezzel elérve a várt színárnyalatokat. Amennyiben túl sötét lenne a szín vagyis a korrekció faktor nagyobb lenne mint 0 akkor a színét kivilágosítjuk, ellenkező esetben a korrekciófaktort növeljük 1-el és megszorozzuk őket a piros, zöld, illetve a kék színértékekkel. Ezt követően visszatérési értékként visszaadjuk a megkapott színt mint visszatérési érték. 
-	\subsection*{Form Main Menu}
+	\subsection{Form Main Menu}
 	\label{FormMainmenu}
 	Az első Form, a főmenü, vagyis amikor a felhasználó megnyitja az alkalmazást akkor ez az első képernyő ami számára megjelenik. 
 	Ezen képernyőn egy üdvözlő üzenetet kap, majd az észlelt eszközök darabszámát is látni fogja, amely ugyanúgy megjelenik a képernyőn.
@@ -715,6 +723,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 		- szoftver és a hardvert hozzákellett fejleszteni, ez egy prototípus. Miért nem lehet ennek hasonló változata
 		Még kiegészíteni valamivel.
 	\end{comment}
+
 	\chapter*{Kitekintés}
 	A rendszer amit kiépítettünk, azon okból egyedülálló mivel a hardveres háttere specifikusan épül fel, és jelen állapotában az SLDLL képes vezérelni ezen eszközök helyes működését.
 	\\
@@ -752,7 +761,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 	Szeretném köszönetemet ezúton is kifejezni a konzulensemnek, Dr.Király Roland Tanár Úrnak, aki lehetővé tette ezen téma feldolgozását.
 	Továbbá, szeretném megköszönni, kedves barátomnak és szaktársamnak, Nagy-Tóth Bencének a sok fáradságos munkáját, amely alapját képezte a programomnak. 
 	\\
-	Végső soron, Istennek szeretném hálámat kifejezni, mivel a tudásomat és a kitartásomat, Tőle nyerhetem mindennap. 
+	Végső soron, Istennek szeretném hálámat kifejezni, mivel a tudásomat és a kitartásomat, Tőle nyerhettem. 
 	
 
 	

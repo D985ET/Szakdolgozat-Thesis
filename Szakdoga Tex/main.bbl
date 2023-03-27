@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{MTI}
 Európában egyedülálló az időseket segítő gondosóra program.
@@ -17,6 +17,11 @@ Events in csharp.
 \newblock
   \url{https://stackoverflow.com/questions/14479143/what-is-the-use-of-object-sender-and-eventargs-e-parameters}.
 
+\bibitem{almeida2018visual}
+Fernando Almeida.
+\newblock Visual c\# .net: Console applications and windows forms.
+\newblock {\em no. July}, page~63, 2018.
+
 \bibitem{uri}
 Tim Berners-Lee, Roy Fielding, and Larry Masinter.
 \newblock Uniform resource identifier (uri): Generic syntax.
@@ -33,10 +38,42 @@ Anders Hejlsberg, Scott Wiltamuth, and Peter Golde.
 \newblock {\em CSharp language specification}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., 2003.
 
+\bibitem{erdelyiilonademensbetegek}
+ERDÉLYI ILONA.
+\newblock Különleges memóriaterápia segíti a demens betegeket.
+\newblock 2017.06.05.
+
+\bibitem{benlutkevich}
+Ben Lutkevich.
+\newblock dynamic link library (dll).
+\newblock {\em Tech Target}, Last updated: November 2021.
+\newblock
+  \url{https://www.techtarget.com/searchwindowsserver/definition/dynamic-link-library-DLL}.
+
 \bibitem{SLaszlo}
 Somodi László.
 \newblock Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok
   óvodától a felnőtt korig.
 \newblock page 186, 2003.
+
+\bibitem{typeab}
+Theydiffer.
+\newblock Difference between usb type-a and usb type-b.
+\newblock {\em Theydiffer}, January 4, 2016.
+\newblock
+  \url{https://www.etechnophiles.com/difference-rj9-rj11-rj12-rj45-rj48/}.
+
+\bibitem{RJ9ok}
+Unknown.
+\newblock Know the difference rj9, rj11, rj12, rj45, rj48 pinout.
+\newblock {\em eTechnophiles}, Last visited: 2023.03.27.
+\newblock
+  \url{https://www.etechnophiles.com/difference-rj9-rj11-rj12-rj45-rj48/}.
+
+\bibitem{zsofia2021zeneterapia}
+Fekete Zs{\'o}fia.
+\newblock A zeneter{\'a}pia {\'u}tjai: Traum{\'a}t{\'o}l az
+  {\'u}jratanul{\'a}son kereszt{\"u}l az inkl{\'u}zi{\'o}ig.
+\newblock 2021.
 
 \end{thebibliography}
