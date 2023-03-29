@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  27 MAR 2023 18:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  29 MAR 2023 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -743,7 +743,7 @@ Overfull \hbox (11.97958pt too wide) in paragraph at lines 35--35
 [1
 
 ]
-Package hyperref Info: Option `pageanchor' set `true' on input line 38.
+Package hyperref Info: Option `pageanchor' set `true' on input line 37.
  Excluding 'comment' comment.
 1. fejezet.
 [1
@@ -753,35 +753,21 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 38.
 2. fejezet.
 [3
 
-]
-Overfull \hbox (1.69691pt too wide) in paragraph at lines 166--168
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4] Excluding 'comment' comment. [5
-pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.187 	\chapter
-               {Szakdolgozatom elaborÃ¡lÃ¡sa}]
+] Excluding 'comment' comment. [4] Excluding 'comment' comment. [5]
 3. fejezet.
 
-Overfull \hbox (10.12099pt too wide) in paragraph at lines 192--203
+Overfull \hbox (10.12099pt too wide) in paragraph at lines 143--154
 \T1/lmr/m/n/12 App-li-ká-ció(Console App-li-ca-ti-on), a Win-dows Forms App-li-
 ca-ti-on, il-let-ve a WPF(Windows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--203
+Underfull \hbox (badness 10000) in paragraph at lines 143--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--211
+Underfull \hbox (badness 10000) in paragraph at lines 155--162
 
  []
 
@@ -789,61 +775,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--211
 
 ] [7] Excluding 'comment' comment. Excluding 'comment' comment.
 Excluding 'comment' comment. Excluding 'comment' comment.
-Underfull \hbox (badness 10000) in paragraph at lines 324--337
+
+LaTeX Warning: Citation `rjcode' on page 8 undefined on input line 287.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--289
 
  []
 
 [8]
 
-LaTeX Warning: Reference `Eszkozok' on page 9 undefined on input line 348.
+LaTeX Warning: Reference `Eszkozok' on page 9 undefined on input line 300.
 
 [9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 427--430
+Underfull \hbox (badness 10000) in paragraph at lines 379--382
 
  []
 
 [12] [13] [14]
-Overfull \hbox (2.71156pt too wide) in paragraph at lines 468--471
+Overfull \hbox (2.71156pt too wide) in paragraph at lines 420--423
 \T1/lmr/m/n/12 A ki-né-zet-hez nagy-ban hoz-zá-já-rult a(z) \T1/lmr/bx/n/12 En-
 ab-le-Vi-su-alSty-les() \T1/lmr/m/n/12 ne-ve-ze-t¶ me-tó-dus amely
  []
 
 [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 498--502
+Underfull \hbox (badness 10000) in paragraph at lines 450--454
 
  []
 
 [17] [18] [19] [20]
-Overfull \hbox (17.35701pt too wide) in paragraph at lines 592--609
+Overfull \hbox (17.35701pt too wide) in paragraph at lines 544--561
 \T1/lmr/m/n/12 A be-ál-lí-tá-so-kat kö-ve-t®-en meg-vizs-gál-juk, hogy a fel-ha
 sz-ná-ló si-ke-re-sen és he-lye-sen betöltötte-
  []
 
 [21]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 636.
+put line 588.
  [22]
-<./images//hangsz_form.png, id=312, 601.4972pt x 346.29375pt>
+<./images//hangsz_form.png, id=311, 601.4972pt x 346.29375pt>
 File: ./images//hangsz_form.png Graphic file (type png)
 <use ./images//hangsz_form.png>
-Package pdftex.def Info: ./images//hangsz_form.png  used on input line 666.
+Package pdftex.def Info: ./images//hangsz_form.png  used on input line 618.
 (pdftex.def)             Requested size: 220.50887pt x 126.95363pt.
  [23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.681 	\subsection
+l.633 	\subsection
                   {Form LÃ¡mpa SzerkesztÃ©s} <./images//hangsz_form.png>]
-<./images//lamp_form.png, id=326, 599.99156pt x 345.54094pt>
+<./images//lamp_form.png, id=325, 599.99156pt x 345.54094pt>
 File: ./images//lamp_form.png Graphic file (type png)
 <use ./images//lamp_form.png>
-Package pdftex.def Info: ./images//lamp_form.png  used on input line 685.
+Package pdftex.def Info: ./images//lamp_form.png  used on input line 637.
 (pdftex.def)             Requested size: 220.50887pt x 126.99399pt.
-<./images//nyÃ­l_form.png, id=329, 600.74437pt x 347.04657pt>
+<./images//nyÃ­l_form.png, id=328, 600.74437pt x 347.04657pt>
 File: ./images//nyÃ­l_form.png Graphic file (type png)
 <use ./images//nyÃ­l_form.png>
-Package pdftex.def Info: ./images//nyÃ­l_form.png  used on input line 706.
+Package pdftex.def Info: ./images//nyÃ­l_form.png  used on input line 658.
 (pdftex.def)             Requested size: 220.50887pt x 127.38847pt.
 
 
@@ -854,20 +844,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.717 		\centering
+l.669 		\centering
                    <./images//lamp_form.png>] Excluding 'comment' comment.
 [25
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.733 	\chapter
+l.685 	\chapter
                *{KitekintÃ©s} <./images//nyÃ­l_form.png>]
 Excluding 'comment' comment. Excluding 'comment' comment. [26
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
-60.
+12.
 
 (D:\Program Files\MikTex\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -894,27 +884,35 @@ Overfull \hbox (11.29236pt too wide) in paragraph at lines 16--19
 ]eventargs-[]e-[]parameters$[]\T1/lmr/m/n/12 . 
  []
 
+! You can't use `macro parameter character #' in horizontal mode.
+l.27 \newblock The good and the bad of c#
+                                          programming, 2021.OktÃ³ber.29.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--70
 []\T1/lmr/m/n/12 Theydiffer.  Dif-fe-ren-ce bet-ween usb type-a and usb type-b.
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--70
 \T1/lmr/m/it/12 They-dif-fer\T1/lmr/m/n/12 , Ja-nu-ary 4, 2016.  []$\T1/lmtt/m/
 n/12 https : / / www . etechnophiles . com /
  []
 
+[29
 
-Underfull \hbox (badness 7433) in paragraph at lines 67--72
+]
+Underfull \hbox (badness 7433) in paragraph at lines 72--77
 []\T1/lmr/m/n/12 Unknown.  Know the dif-fe-ren-ce rj9, rj11, rj12, rj45, rj48 p
 i-no-ut.
  []
 
-[29
-
-]) Excluding 'comment' comment. [30] (main.lof)
+) Excluding 'comment' comment. [30] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -928,13 +926,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 744EFE91B337EC2147E03C995F7D9838;4883.
  ) 
 Here is how much of TeX's memory you used:
- 16479 strings out of 476375
- 266840 string characters out of 5798785
- 1896299 words of memory out of 5000000
- 36406 multiletter control sequences out of 15000+600000
+ 16478 strings out of 476375
+ 266822 string characters out of 5798785
+ 1862299 words of memory out of 5000000
+ 36405 multiletter control sequences out of 15000+600000
  572209 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 78i,12n,81p,833b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,8n,81p,833b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}{D:/Program Files/MikTe
 x/fonts/enc/dvips/lm/lm-rm.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-m
 athsy.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-mathit.enc}<D:/Program
@@ -944,9 +942,9 @@ ype1/public/lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmmi1
 s/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fonts/type1/
 public/lm/lmsy10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmtt12.pfb>
 
-Output written on main.pdf (33 pages, 325280 bytes).
+Output written on main.pdf (33 pages, 323578 bytes).
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
+ 449 PDF objects out of 1000 (max. 8388607)
  111 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

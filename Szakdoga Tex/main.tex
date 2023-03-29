@@ -112,57 +112,14 @@
 	\par
 	\subsection{Automatizálás célja}
 	A fentebb említettek automatizálására készül a projekt, amely különböző informatikai eszközökkel valósítja meg a színek, hangok, és nyilak megjelenítését, illetve érzékeltetését. 
-	A hardver komponensek. A hardver több egymáshoz tetszőlegesen kapcsolható smart box, amelyek képesek fényjelzések, fénnyel képzett ábrák, valamint hangjelzések kiadására. A smart box-okat szoftveresen lehet vezérelni, így azok képesek a koncepció alapján összetett mozgások, vagy komplex feladatsorok irányítására.
+	A hardver komponensek. A hardver több egymáshoz tetszőlegesen kapcsolható smart box, amelyek közül van amely képes fényjelzések kiadására, továbbá van olyan eszköz is amely képes nyilakat képezni ábra szerűen, legutolsó sorban pedig az utolsó féle eszköz képes hangjelzések kiadására. A smart box-okat szoftveresen lehet vezérelni, így azok képesek a koncepció alapján összetett mozgások, vagy komplex feladatsorok irányítására.
+	\begin{comment}
 	Ennek egy példája a \pageref{table:egyedzesterv}. oldalon található táblázat amely az automatizálásra létrehozott "edzéstervet" mutat be.[\ref{table:egyedzesterv}]
+	\end{comment}
 	\\
-	\begin{table}[h!]
-		\centering
-		\caption{Egy adott edzésterv}
-		\scalebox{0.7}
-		{
-			\begin{tabular}{|rrrrlrrrrr|}
-				\hline
-				\multicolumn{1}{|l|}{\textbf{helyzet}} & \multicolumn{1}{l|}{\textbf{egység típusa}} & \multicolumn{1}{l|}{\textbf{jel száma}} & \multicolumn{1}{l|}{\textbf{szín}} & \multicolumn{1}{l|}{\textbf{hang}} & \multicolumn{1}{l|}{\textbf{irány}} &       &       & \multicolumn{1}{l}{\textbf{fenntartási idő}} & \multicolumn{1}{l|}{\textbf{irány}} \bigstrut\\
-				\hline
-				&       &       &       &       &       &       &       &       &  \bigstrut[t]\\
-				&       &       &       &       &       &       &       &       &  \\
-				\multicolumn{1}{|c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{6} & \multicolumn{1}{c}{7} & \multicolumn{1}{c}{8} &       &  \\
-				\multicolumn{1}{|c}{lámpa} & \multicolumn{1}{c}{lámpa} & \multicolumn{1}{c}{hang} & \multicolumn{1}{c}{lámpa} & \multicolumn{1}{c}{nyíl} & \multicolumn{1}{c}{lámpa} & \multicolumn{1}{c}{lámpa} & \multicolumn{1}{c}{nyíl} &       &  \\
-				&       &       &       &       &       &       &       &       &  \\
-				\multicolumn{1}{|l}{szemben} &       &       &       &       &       &       &       &       &  \bigstrut[b]\\
-				\cline{1-2}\cline{7-7}    \rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c|}{\textcolor[rgb]{ .2,  .6,  .4}{zöld}} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  0,  0}piros} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  0}sárga} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c|}{\cellcolor[rgb]{ .2,  .4,  1}kék} & \multicolumn{1}{l|}{\cellcolor[rgb]{ 1,  1,  1}fehér} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} \bigstrut\\
-				\cline{1-2}\cline{7-7}    \rowcolor[rgb]{ 0,  0,  0}       &       &       &       &       &       &       &       &       &  \bigstrut\\
-				\cline{2-2}    \multicolumn{1}{|r|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  0,  0}1 piros} &       &       &       &       &       &       & \multicolumn{1}{c}{16"} &  \bigstrut\\
-				\cline{2-2}\cline{4-4}          &       & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  1,  0}2 sárga} &       &       &       &       & \multicolumn{1}{c}{1"} &  \bigstrut[t]\\
-				&       & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  1,  0}2 sárga} &       &       &       &       & \multicolumn{1}{c}{16"} &  \bigstrut[b]\\
-				\cline{1-1}\cline{4-4}    \rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c|}{1 zöld} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  1}1"} & \cellcolor[rgb]{ 1,  1,  1} \bigstrut[t]\\
-				\rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c|}{1 zöld} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  1}16"} & \cellcolor[rgb]{ 1,  1,  1} \bigstrut[b]\\
-				\cline{1-1}\cline{6-6}          &       &       &       & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ .2,  .4,  1}1 kék} &       &       & \multicolumn{1}{c}{1"} &  \bigstrut[t]\\
-				&       &       &       & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ .2,  .4,  1}1 kék} &       &       & \multicolumn{1}{c}{8"} &  \bigstrut[b]\\
-				\cline{4-4}\cline{6-6}          &       & \multicolumn{1}{r|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  1,  0}2 sárga} &       &       &       &       & \multicolumn{1}{c}{1"} &  \bigstrut[t]\\
-				&       & \multicolumn{1}{r|}{} & \multicolumn{1}{c|}{\cellcolor[rgb]{ 1,  1,  0}2 sárga} &       &       &       &       & \multicolumn{1}{c}{16"} &  \bigstrut[b]\\
-				\cline{4-4}\cline{7-7}          &       &       &       &       & \multicolumn{1}{r|}{} & \multicolumn{1}{c|}{1 fehér} &       & \multicolumn{1}{c}{1"} &  \bigstrut[t]\\
-				&       &       &       &       & \multicolumn{1}{r|}{} & \multicolumn{1}{c|}{1 fehér} &       & \multicolumn{1}{c}{4"} &  \bigstrut[b]\\
-				\cline{3-3}\cline{7-7}          & \multicolumn{1}{r|}{} & \multicolumn{1}{l|}{3 - 1 bip} &       &       &       &       &       &       & \multicolumn{1}{l|}{ford. jobbra} \bigstrut\\
-				\cline{3-3}    \rowcolor[rgb]{ 0,  0,  0}       &       &       &       &       &       &       &       &       &  \bigstrut[t]\\
-				& \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  0,  0}4 piros} &       &       &       &       &       &       & \multicolumn{1}{c}{8"} &  \\
-				\rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c}{5 zöld} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  1}1"} & \cellcolor[rgb]{ 1,  1,  1} \\
-				\rowcolor[rgb]{ .6,  .8,  0} \multicolumn{1}{|c}{5 zöld} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \cellcolor[rgb]{ 1,  1,  1} & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  1}8"} & \cellcolor[rgb]{ 1,  1,  1} \\
-				&       &       &       &       &       & \multicolumn{1}{l}{4 fehér} &       & \multicolumn{1}{c}{1"} &  \\
-				&       &       &       &       &       & \multicolumn{1}{l}{4 fehér} &       & \multicolumn{1}{c}{8"} &  \\
-				&       &       & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  0}4 sárga} &       &       &       &       & \multicolumn{1}{c}{1"} &  \\
-				&       &       & \multicolumn{1}{c}{\cellcolor[rgb]{ 1,  1,  0}4 sárga} &       &       &       &       & \multicolumn{1}{c}{8"} &  \\
-				&       & \multicolumn{1}{l}{hang semleges} &       &       &       &       &       & \multicolumn{1}{c}{1"} &  \\
-				&       & \multicolumn{1}{l}{hang semleges} &       &       &       &       &       & \multicolumn{1}{c}{8"} &  \\
-				&       &       &       & zöld nyíl &       &       &       &       &  \bigstrut[b]\\
-				\hline
-			\end{tabular}%
-		}
-		\label{table:egyedzesterv}%
-	\end{table}%
-
-	\par
-	Alapvetően, a projekten több tudományágban ismerős,és érdekelt személy vett részt.
+	Alapvetően, a projekten több tudományágban ismerős, és érdekelt személy vett részt. 
+	\\
+	Ezek a személyek a következők:
 	\begin{itemize}
 		\item A back-end és ezeknek a hardvereknek a mögöttes működtetését, valamint a Delphi és a C\# nyelvek közötti kapcsolat megoldását, Nagy-Tóth Bence, barátom és szaktársam készítette el.
 		\item A hardver lefejlesztésében és összeszerelésében, Keresztes Péter Tanár úr. 
@@ -171,7 +128,7 @@
 	\end{itemize}
 
 	
-	Én ezeknek a hardvereknek a működtetéséhez a felületet írtam, amin keresztül lehet különféle módon, %változatos ütemekben vezérelni a fentebb említett eszközöket. 
+	Én ezeknek a hardvereknek a működtetéséhez a felületet írtam, amin keresztül lehet különféle módon, vezérelni a fentebb említett eszközöket. %változatos ütemekben vezérelni a fentebb említett eszközöket. 
 	Ezt C\# nyelven írtam ami egy friss és modern felhasználói felület írására és elkészítésére megfelelő.
 	
 	
@@ -315,21 +272,22 @@
 		2.fejezet: Melyik részét csinálom én? Mit csináltunk, és hogyan ui-t kellett fejleszteni, milyen lépésekből állt, képernyőképekkel.
 	\end{comment}
 	\section{Felület tervezése}
-	A jelenlegi fejezetben magáról a kódról és a felhasználó élményről szeretnék beszélni.
-	A korábbi fejezetekben már említést tettem azon kapcsán, hogy az alkalmazást a C\# programozási nyelvben írom. Ezenfelül, egy olyan asztali alkalmazást szerettem volna készíteni amely apelláló lehet a felhasználó számára. Továbbá, a megjelenéstől, és a küllemtől eltekintve fontosnak tartom azt is, hogy egyszerű legyen az alkalmazás használata.
+	A jelenlegi fejezetben magáról a lefejlesztett kódról és a nagyobb felhasználói élmény eléréséhez szükséges dizájn elemek bemutatásáról szeretnék beszélni.
+	A korábbi fejezetekben már említést tettem azon kapcsán, hogy az alkalmazást a C\# programozási nyelvben írom. Ezenfelül, egy olyan asztali alkalmazást szerettem volna készíteni amely apelláló lehet a felhasználó számára. Továbbá, a megjelenéstől, és a küllemtől eltekintve fontosnak tartom azt is, hogy amennyire csak lehet egyszerű legyen az alkalmazás használata.
 	\\
-	Az elkészített szoftver, főleg Windows operációs rendszerrel rendelkező eszközre készül, ez abból is következik, hogy a C\# nyelv kifejezetten a Windows alapú operációs rendszereket támogatja, illetve talán ez a legelterjedtebb operációs rendszer.
+	Az elkészített szoftver, főleg Windows operációs rendszerrel rendelkező eszközre készül,emellett természetesen a .NET környezet támogatja a Linux, MacOS, Android illetve az IOS platformokat is, de fejlesztés szempontjából a Windows operációs rendszer tűnt a legkényelmesebbnek, emellett talán a Windows az egyik legelterjedtebb operációs rendszer. \cite{altexsoft}
 	Miután telepítettük a szoftvert azután USB port-on keresztül lehet kommunikálni az adott eszközökkel.
 	\\
 	%ide még kell az hogy idegen szó a reszponzív szóval bekéne hivatkozni
-	A felületnek fontos jellemzője, hogy reszponzív legyen. Amikor a "reszponzív" kifejezést használjuk akkor a "reszponzív kinézetet" értjük. Ez azt jelenti, hogy az adott alkalmazás elérhető és alkalmazkodó legyen mindenféle eszközön. Akár itt értjük azokat az eszközöket amelyeknél nincsen kifejezetten sok beépített periféria, ilyenek például a okos telefonok, tabletek. Az ilyen eszközök során, fontos azt megoldani, hogy az alkalmazásban lévő objektumok(gombok, címkék) könnyen észlelhetőek, és elérhetőek lehessenek a felhasználó számára. 
+	A felületnek fontos jellemzője, hogy reszponzív legyen. Amikor a "reszponzív" kifejezést használjuk akkor a "reszponzív kinézetet" is értjük. Ez azt jelenti, hogy az adott alkalmazás elérhető és alkalmazkodó legyen mindenféle eszközön. Akár itt értjük azokat az eszközöket amelyeknél nincsen kifejezetten sok beépített periféria, ilyenek például a okos telefonok, tabletek. Az ilyen eszközök során, fontos azt megoldani, hogy az alkalmazásban lévő objektumok(gombok, címkék) könnyen észlelhetőek, és elérhetőek lehessenek a felhasználó számára. 
 	Mivel esetlegesen alacsony felbontású képernyőn vagy kis méretű kijelzőn ezek a funkciók nem feltétlen működnének. 
 	\\
 	Kutatásom során találkoztam egy olyan dizájn formával ami kifejezetten szépnek és modernnek bizonyult számomra.\cite{modernUI} 
-	Maga a felület több részből épül fel.
+	Ezt a kinézetet egy nyílt forráskód és videó alapján készítettem, amely segítségemre volt a kinézet elképzelésében.
+	Maga a felület több részből épül fel. \cite{rjcode}
 	\\
 	\subsection{Windows Form}
-	A Windows Forms-on belül számtalan lehetőségünk van a felületünk megtervezésére. Lehetőségünk van nézetet választani az egyik amely az alap tervezői nézet, és emellett természetesen az alkalmazásunkat kód formájában is megírhatjuk. Számomra a kettő nézet ugyanolyan releváns a projekt szempontjából, mivel a tervezői nézetben, ténylegesen átláthatjuk, hogy a felhasználó mit fog látni mint végtermék.
+	A Windows Forms-on belül számtalan lehetőségünk van a felületünk  megtervezésére. Lehetőségünk van nézetet választani az egyik amely az alap tervezői nézet, és emellett természetesen az alkalmazásunkat kód formájában is megírhatjuk. Számomra a kettő nézet ugyanolyan releváns a projekt szempontjából, mivel a tervezői nézetben, ténylegesen átláthatjuk, hogy a felhasználó mit fog látni mint végtermék.
 	
 	Amikor a kódnézőben tartózkodunk akkor természetesen eltudjuk érni a ugyanazokat az eszközöket amelyeket a Designer nézetben is.
 	Ebben a szekcióban, különböző működési elveket és formai adatokat írhatunk le amelyek meghatároznak különböző objektumokat a form-on belül. 

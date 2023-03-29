@@ -14,7 +14,7 @@
 \select@language {magyar} \contentsline {subsubsection}{Designer nézet}{9}{section*.2}%
 \select@language {magyar} \contentsline {subsubsection}{Alap kód nézet}{9}{section*.3}%
 \select@language {magyar} \contentsline {subsection}{\numberline {3.2.2}Eszköztár}{10}{subsection.3.2.2}%
-\select@language {magyar} \contentsline {subsubsection}{Gombok}{10}{section*.4}%
+\select@language {magyar} \contentsline {subsubsection}{Gombok}{11}{section*.4}%
 \select@language {magyar} \contentsline {subsubsection}{Címkék}{11}{section*.5}%
 \select@language {magyar} \contentsline {subsubsection}{Panel}{12}{section*.6}%
 \select@language {magyar} \contentsline {subsection}{\numberline {3.2.3}Delegatek}{12}{subsection.3.2.3}%

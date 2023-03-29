@@ -22,6 +22,11 @@ Fernando Almeida.
 \newblock Visual c\# .net: Console applications and windows forms.
 \newblock {\em no. July}, page~63, 2018.
 
+\bibitem{altexsoft}
+altexsoft.
+\newblock The good and the bad of c# programming, 2021.Október.29.
+\newblock \url{https://www.altexsoft.com/blog/c-sharp-pros-and-cons//}.
+
 \bibitem{uri}
 Tim Berners-Lee, Roy Fielding, and Larry Masinter.
 \newblock Uniform resource identifier (uri): Generic syntax.
