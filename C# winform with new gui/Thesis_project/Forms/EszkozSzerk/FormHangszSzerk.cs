@@ -23,9 +23,8 @@ namespace Thesis_project.Forms.EszkozSzerk
             InitializeComponent();
             //kinézet:
             /* this.Size = Screen.PrimaryScreen.WorkingArea.Size;*/
-            this.Width = 800;
-            this.Height = 500;
-           /* this.WindowState = FormWindowState.Minimized;*/
+            this.ControlBox = false;
+            /* this.WindowState = FormWindowState.Minimized;*/
             Application.EnableVisualStyles();
             
             
@@ -104,10 +103,14 @@ namespace Thesis_project.Forms.EszkozSzerk
             Console.WriteLine(pitchComboBox.SelectedItem);
             selectedPitch = (Pitch)pitchComboBox.SelectedItem;
         }
-
-        private void btnHangMent_Click(object sender, EventArgs e)
+        private void btnCloseTop_Click(object sender, EventArgs e)
         {
-            if(pitchComboBox.SelectedItem == null)
+            this.Close();
+        }
+
+        private void btnHangMent_Click_1(object sender, EventArgs e)
+        {
+            if (pitchComboBox.SelectedItem == null)
             {
                 aktHszinLbl.Text = "Válasszon ki hangszínt!";
                 aktHszinLbl.BackColor = Color.Red;

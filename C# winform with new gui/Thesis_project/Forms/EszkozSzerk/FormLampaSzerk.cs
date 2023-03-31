@@ -54,9 +54,11 @@ namespace Thesis_project.Forms
             aktSzinLamp.Anchor = AnchorStyles.Top;
             aktSzinLamp.Dock = DockStyle.None;
             aktSzinLamp.Text = lightToSzerk.Color.ToString();
-   
-
+           
+            ColorPickerBox.BackColor = lightToSzerk.Color;
+            aktSzinLamp.Text = ColorPickerBox.BackColor.ToString();
         }
+        /*
         private void lampaBtnPir_Click(object sender, EventArgs e)
         {
             lightToSzerk.Color = Color.Red;
@@ -81,15 +83,24 @@ namespace Thesis_project.Forms
             lightToSzerk.Color = Color.Black;
             aktSzinLamp.Text = "Üres!";
 
-        }
+        }*/
 
         private void lampaMentBtn_Click(object sender, EventArgs e)
         {
-            byte turn = 1;
+            
             string json_source = FormHelper.DevicesToJSON();
             FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
         }
 
-        
+        private void ColorPickerBox_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorPicker = new ColorDialog();
+            if(colorPicker.ShowDialog() == DialogResult.OK)
+            {
+                ColorPickerBox.BackColor = colorPicker.Color; //megjelenik a color dialog cuccos
+            }
+            lightToSzerk.Color = ColorPickerBox.BackColor;
+            aktSzinLamp.Text = ColorPickerBox.BackColor.Name;
+        }
     }
 }

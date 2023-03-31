@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnCloseTop = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.timeMilisecBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hangeroNumUp)).BeginInit();
             this.SuspendLayout();
@@ -127,6 +128,7 @@
             this.btnHangMent.TabIndex = 21;
             this.btnHangMent.Text = "Mentés";
             this.btnHangMent.UseVisualStyleBackColor = true;
+            this.btnHangMent.Click += new System.EventHandler(this.btnHangMent_Click_1);
             // 
             // label1
             // 
@@ -158,12 +160,28 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "hanghossz:";
             // 
+            // btnCloseTop
+            // 
+            this.btnCloseTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloseTop.FlatAppearance.BorderSize = 0;
+            this.btnCloseTop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseTop.Font = new System.Drawing.Font("Bauhaus 93", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseTop.ForeColor = System.Drawing.Color.Black;
+            this.btnCloseTop.Location = new System.Drawing.Point(215, 1);
+            this.btnCloseTop.Name = "btnCloseTop";
+            this.btnCloseTop.Size = new System.Drawing.Size(28, 24);
+            this.btnCloseTop.TabIndex = 25;
+            this.btnCloseTop.Text = "✖";
+            this.btnCloseTop.UseVisualStyleBackColor = true;
+            this.btnCloseTop.Click += new System.EventHandler(this.btnCloseTop_Click);
+            // 
             // FormHangszSzerk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(246, 282);
+            this.Controls.Add(this.btnCloseTop);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -195,5 +213,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCloseTop;
     }
 }

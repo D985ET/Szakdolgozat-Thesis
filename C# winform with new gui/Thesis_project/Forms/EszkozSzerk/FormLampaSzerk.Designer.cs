@@ -28,34 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lampaBtnZold = new System.Windows.Forms.Button();
-            this.lampaBtnUres = new System.Windows.Forms.Button();
-            this.lampaBtnKek = new System.Windows.Forms.Button();
-            this.lampaBtnPir = new System.Windows.Forms.Button();
             this.lampaAzLbl = new System.Windows.Forms.Label();
             this.lampaMentBtn = new System.Windows.Forms.Button();
             this.aktSzinLamp = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            this.ColorPickerBox = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorPickerBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(317, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 48);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Lámpa színe:";
             // 
             // label2
             // 
@@ -65,54 +45,6 @@
             this.label2.Size = new System.Drawing.Size(163, 43);
             this.label2.TabIndex = 1;
             this.label2.Text = "Azonosító:";
-            // 
-            // lampaBtnZold
-            // 
-            this.lampaBtnZold.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lampaBtnZold.Font = new System.Drawing.Font("Myanmar Text", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lampaBtnZold.Location = new System.Drawing.Point(297, 179);
-            this.lampaBtnZold.Name = "lampaBtnZold";
-            this.lampaBtnZold.Size = new System.Drawing.Size(112, 68);
-            this.lampaBtnZold.TabIndex = 4;
-            this.lampaBtnZold.Text = "Zöld";
-            this.lampaBtnZold.UseVisualStyleBackColor = true;
-            this.lampaBtnZold.Click += new System.EventHandler(this.lampaBtnZold_Click);
-            // 
-            // lampaBtnUres
-            // 
-            this.lampaBtnUres.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lampaBtnUres.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lampaBtnUres.Location = new System.Drawing.Point(92, 39);
-            this.lampaBtnUres.Name = "lampaBtnUres";
-            this.lampaBtnUres.Size = new System.Drawing.Size(112, 208);
-            this.lampaBtnUres.TabIndex = 5;
-            this.lampaBtnUres.Text = "Üres";
-            this.lampaBtnUres.UseVisualStyleBackColor = true;
-            this.lampaBtnUres.Click += new System.EventHandler(this.lampaBtnUres_Click);
-            // 
-            // lampaBtnKek
-            // 
-            this.lampaBtnKek.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lampaBtnKek.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lampaBtnKek.Location = new System.Drawing.Point(297, 109);
-            this.lampaBtnKek.Name = "lampaBtnKek";
-            this.lampaBtnKek.Size = new System.Drawing.Size(112, 68);
-            this.lampaBtnKek.TabIndex = 6;
-            this.lampaBtnKek.Text = "Kék";
-            this.lampaBtnKek.UseVisualStyleBackColor = true;
-            this.lampaBtnKek.Click += new System.EventHandler(this.lampaBtnKek_Click);
-            // 
-            // lampaBtnPir
-            // 
-            this.lampaBtnPir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lampaBtnPir.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lampaBtnPir.Location = new System.Drawing.Point(297, 39);
-            this.lampaBtnPir.Name = "lampaBtnPir";
-            this.lampaBtnPir.Size = new System.Drawing.Size(112, 64);
-            this.lampaBtnPir.TabIndex = 7;
-            this.lampaBtnPir.Text = "Piros";
-            this.lampaBtnPir.UseVisualStyleBackColor = true;
-            this.lampaBtnPir.Click += new System.EventHandler(this.lampaBtnPir_Click);
             // 
             // lampaAzLbl
             // 
@@ -139,85 +71,57 @@
             this.aktSzinLamp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.aktSzinLamp.AutoSize = true;
             this.aktSzinLamp.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aktSzinLamp.Location = new System.Drawing.Point(306, 259);
+            this.aktSzinLamp.Location = new System.Drawing.Point(183, 283);
             this.aktSzinLamp.Name = "aktSzinLamp";
             this.aktSzinLamp.Size = new System.Drawing.Size(171, 48);
             this.aktSzinLamp.TabIndex = 11;
             this.aktSzinLamp.Text = "Aktuális szín:";
             // 
-            // trackBar1
+            // ColorPickerBox
             // 
-            this.trackBar1.Location = new System.Drawing.Point(551, 58);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(153, 45);
-            this.trackBar1.TabIndex = 12;
+            this.ColorPickerBox.BackColor = System.Drawing.Color.Transparent;
+            this.ColorPickerBox.Location = new System.Drawing.Point(351, 258);
+            this.ColorPickerBox.Name = "ColorPickerBox";
+            this.ColorPickerBox.Size = new System.Drawing.Size(127, 73);
+            this.ColorPickerBox.TabIndex = 16;
+            this.ColorPickerBox.TabStop = false;
+            this.ColorPickerBox.Click += new System.EventHandler(this.ColorPickerBox_Click);
             // 
-            // trackBar2
+            // label1
             // 
-            this.trackBar2.Location = new System.Drawing.Point(551, 120);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(153, 45);
-            this.trackBar2.TabIndex = 13;
-            // 
-            // trackBar3
-            // 
-            this.trackBar3.Location = new System.Drawing.Point(551, 179);
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(153, 45);
-            this.trackBar3.TabIndex = 14;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(510, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "label3";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(302, 228);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Kattints a dobozra a váltáshoz";
             // 
             // FormLampaSzerk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 461);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.trackBar3);
-            this.Controls.Add(this.trackBar2);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ColorPickerBox);
             this.Controls.Add(this.aktSzinLamp);
             this.Controls.Add(this.lampaMentBtn);
             this.Controls.Add(this.lampaAzLbl);
-            this.Controls.Add(this.lampaBtnPir);
-            this.Controls.Add(this.lampaBtnKek);
-            this.Controls.Add(this.lampaBtnUres);
-            this.Controls.Add(this.lampaBtnZold);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "FormLampaSzerk";
             this.Text = "FormLampaSzerk";
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorPickerBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button lampaBtnZold;
-        private System.Windows.Forms.Button lampaBtnUres;
-        private System.Windows.Forms.Button lampaBtnKek;
-        private System.Windows.Forms.Button lampaBtnPir;
         private System.Windows.Forms.Label lampaAzLbl;
         private System.Windows.Forms.Button lampaMentBtn;
         private System.Windows.Forms.Label aktSzinLamp;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.TrackBar trackBar2;
-        private System.Windows.Forms.TrackBar trackBar3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox ColorPickerBox;
+        private System.Windows.Forms.Label label1;
     }
 }
