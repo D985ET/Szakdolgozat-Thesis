@@ -91,7 +91,7 @@ namespace Thesis_project.Forms
                 p.X = p.X + 300; 
 
             }
-            p.Y = p.Y + 300;
+            p.Y = p.Y + 310;
             p.X = 0;
            
               
@@ -142,21 +142,26 @@ namespace Thesis_project.Forms
         {
             belelepettVMelyikbe = true;
             LEDArrow ledArrow1;
+            for (int i = 0; i < FormHelper.Devices.Count; i++)
+            {
+                if (FormHelper.Devices[i] is LEDArrow)
+                {
+                    FormMainMenu formMain = new FormMainMenu();
+                    ledArrow1 = (LEDArrow)FormHelper.Devices[i];
+                    nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
+                    nyilSzerkForm.Show();
+                }
+            }
+            /*
             if (FormHelper.Devices[0] is LEDArrow)
             {
                 FormMainMenu formMain = new FormMainMenu();
-                ledArrow1 = (LEDArrow)FormHelper.Devices[0];
+                ledArrow1 = (LEDArrow)FormHelper.Devices[i];
                 nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
-            }
-            /*FormMainMenu formMain = new FormMainMenu();
-            var frm = (FormMainMenu)this.Owner;
-            if (frm != null)
-            {
-                frm.btnSzerkesztes_Click(sender, e);
             }*/
-           
-            nyilSzerkForm.Show();
-        }
+               
+
+            }
 
 
 
@@ -173,6 +178,7 @@ namespace Thesis_project.Forms
             lampaButton.BackColor = Color.White;
             lampaButton.FlatStyle = FlatStyle.Flat;
             lampaButton.FlatAppearance.BorderSize = 0;
+            
             //lampaButton.Text = "LAMPA";//TODO IMAGE
             lampaButton.Image = Image.FromFile(@"img\lamp.png");
            
@@ -184,13 +190,17 @@ namespace Thesis_project.Forms
         {
             belelepettVMelyikbe = true;
             LEDLight ledLight1;
-            if (FormHelper.Devices[0] is LEDLight)
+            for (int i = 0; i < FormHelper.Devices.Count; i++)
             {
-                FormMainMenu formMain = new FormMainMenu();
-                ledLight1 = (LEDLight)FormHelper.Devices[0];
-                lampaSzerkForm = new FormLampaSzerk(ref ledLight1);
+                if (FormHelper.Devices[i] is LEDLight)
+                {
+                    FormMainMenu formMain = new FormMainMenu();
+                    ledLight1 = (LEDLight)FormHelper.Devices[i];
+                    lampaSzerkForm = new FormLampaSzerk(ref ledLight1);
+                    lampaSzerkForm.Show();
+                }
             }
-            lampaSzerkForm.Show();
+            
         }
 
 
@@ -213,6 +223,7 @@ namespace Thesis_project.Forms
             hangszoroButton.Click += hangszoroButton_Click;
         }
         FormHangszSzerk hangSzerkForm;
+        
         private void hangszoroButton_Click(object sender, EventArgs e)
         {
             belelepettVMelyikbe = true;
@@ -236,10 +247,25 @@ namespace Thesis_project.Forms
             btnFuttatas.Enabled = false;
             utemTimer.Enabled = true;
             utemTimer.Interval = (int)nUPTimer.Value;
+            for (int i = 0; i < FormHelper.Devices.Count; i++)
+            {
+                if (FormHelper.Devices[i] is Speaker)
+                {
+                   
+                }
+                if (FormHelper.Devices[i] is Speaker)
+                {
 
-           
-        
-            //ez futtatja le a színt és a directiont
+                }
+                if (FormHelper.Devices[i] is Speaker)
+                {
+
+                }
+              
+            }
+
+
+                    //ez futtatja le a színt és a directiont
         }
 
         private void utemTimer_Tick(object sender, EventArgs e)

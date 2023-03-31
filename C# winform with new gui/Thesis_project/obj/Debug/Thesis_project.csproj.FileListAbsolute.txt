@@ -39,7 +39,6 @@ D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bi
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\Thesis_project.pdb
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\SLFormHelper.dll
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\Newtonsoft.Json.dll
-D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\SLFormHelper.pdb
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\bin\Debug\Newtonsoft.Json.xml
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.csprojAssemblyReference.cache
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.FormMainMenu.resources
@@ -55,3 +54,5 @@ D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\ob
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.pdb
 D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormBetoltes.resources
 D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormSzerkesztes.resources
+D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormBetoltes.resources
+D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormSzerkesztes.resources

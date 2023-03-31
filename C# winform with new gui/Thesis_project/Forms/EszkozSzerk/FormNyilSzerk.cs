@@ -15,19 +15,14 @@ namespace Thesis_project.Forms
     {
         private LEDArrow arrowToSzerk;
         //FORMHOZ:
-        private Button currentButton;
-        private Random vsz;
-        private int tempIndex;
-        private Form activeForm;
         public FormNyilSzerk(ref LEDArrow arrowToSzerk)
         {
             this.arrowToSzerk = arrowToSzerk;
             InitializeComponent();
             //kinézet:
             /*this.Size = Screen.PrimaryScreen.WorkingArea.Size;*/
-            this.Width = 800;
-            this.Height = 500;
-           /* this.WindowState = FormWindowState.Minimized;*/
+            this.ControlBox = false;
+            /* this.WindowState = FormWindowState.Minimized;*/
             Application.EnableVisualStyles();
             LoadTheme();
             SzerkNyil();
@@ -53,58 +48,46 @@ namespace Thesis_project.Forms
             nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
         }
 
-        private void nyilSzerkR_Click(object sender, EventArgs e)
+        private void btnMentNyil_Click_1(object sender, EventArgs e)
         {
-            arrowToSzerk.Color = Color.Red;
-            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
-        }
-
-        private void nyilSzerkB_Click(object sender, EventArgs e)
-        {
-            arrowToSzerk.Color = Color.Blue;
-            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
-        }
-
-        private void nyilSzerkG_Click(object sender, EventArgs e)
-        {
-            arrowToSzerk.Color = Color.Green;
-            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
-          
-        }
-
-        private void nyilSzerkDefault_Click(object sender, EventArgs e)
-        {
-            arrowToSzerk.Color = Color.Black;
-            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
-        }
-
-        private void nyilSzerkBal_Click(object sender, EventArgs e)
-        {
-            arrowToSzerk.Direction = Direction.LEFT;
-            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
-        }
-
-        private void nyilSzerkJobb_Click(object sender, EventArgs e)
-        {
-            arrowToSzerk.Direction = Direction.RIGHT;
-            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
-        }
-
-        private void nyilSzerkBoth_Click(object sender, EventArgs e)
-        {
-            arrowToSzerk.Direction = Direction.BOTH;
-            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
-        }
-
-        private void btnMentNyil_Click(object sender, EventArgs e)
-        {
-            
             byte turn = 1;
             string json_source = FormHelper.DevicesToJSON();
 
             FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt és a directiont
         }
 
-     
+        private void nyilSzerkBal_Click_1(object sender, EventArgs e)
+        {
+            arrowToSzerk.Direction = Direction.LEFT;
+            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+        }
+
+        private void nyilSzerkJobb_Click_1(object sender, EventArgs e)
+        {
+            arrowToSzerk.Direction = Direction.RIGHT;
+            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+        }
+
+        private void nyilSzerkBoth_Click_1(object sender, EventArgs e)
+        {
+            arrowToSzerk.Direction = Direction.BOTH;
+            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+        }
+
+        private void ColorPickerBox_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorPicker = new ColorDialog();
+            if (colorPicker.ShowDialog() == DialogResult.OK)
+            {
+                ColorPickerBox.BackColor = colorPicker.Color; //megjelenik a color dialog cuccos
+            }
+            arrowToSzerk.Color = ColorPickerBox.BackColor;
+            nyilSzinAkt.Text = ColorPickerBox.BackColor.Name;
+        }
+
+        private void btnCloseTop_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

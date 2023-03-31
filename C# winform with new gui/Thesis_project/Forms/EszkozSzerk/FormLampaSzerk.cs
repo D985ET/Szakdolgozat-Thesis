@@ -21,9 +21,8 @@ namespace Thesis_project.Forms
             InitializeComponent();
             //kinézet:
             /* this.Size = Screen.PrimaryScreen.WorkingArea.Size;*/
-            this.Width = 800;
-            this.Height = 500;
-           /* this.WindowState = FormWindowState.Minimized;*/
+            this.ControlBox = false;
+            /* this.WindowState = FormWindowState.Minimized;*/
             //Application.EnableVisualStyles();
             LoadTheme();
             SzerkLampa();
@@ -43,17 +42,17 @@ namespace Thesis_project.Forms
         }
         private void SzerkLampa()
         {
-            lampaAzLbl.Font = new Font("Myanmar Text", 20);
-            lampaAzLbl.ForeColor = Color.Black;
-            lampaAzLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-            lampaAzLbl.Dock = DockStyle.None;
-            lampaAzLbl.Text = lightToSzerk.Azonos.ToString();
+            //lampaAzLbl.Font = new Font("Myanmar Text", 20);
+            //lampaAzLbl.ForeColor = Color.Black;
+            //lampaAzLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            //lampaAzLbl.Dock = DockStyle.None;
+            //lampaAzLbl.Text = lightToSzerk.Azonos.ToString();
             
-            aktSzinLamp.Font = new Font("Myanmar Text", 20);
-            aktSzinLamp.ForeColor = Color.Black;
-            aktSzinLamp.Anchor = AnchorStyles.Top;
-            aktSzinLamp.Dock = DockStyle.None;
-            aktSzinLamp.Text = lightToSzerk.Color.ToString();
+            //aktSzinLamp.Font = new Font("Myanmar Text", 20);
+            //aktSzinLamp.ForeColor = Color.Black;
+            //aktSzinLamp.Anchor = AnchorStyles.Top;
+            //aktSzinLamp.Dock = DockStyle.None;
+            //aktSzinLamp.Text = lightToSzerk.Color.ToString();
            
             ColorPickerBox.BackColor = lightToSzerk.Color;
             aktSzinLamp.Text = ColorPickerBox.BackColor.ToString();
@@ -101,6 +100,11 @@ namespace Thesis_project.Forms
             }
             lightToSzerk.Color = ColorPickerBox.BackColor;
             aktSzinLamp.Text = ColorPickerBox.BackColor.Name;
+        }
+
+        private void btnCloseTop_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
