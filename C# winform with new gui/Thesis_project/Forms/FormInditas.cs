@@ -236,7 +236,10 @@ namespace Thesis_project.Forms
             btnFuttatas.Enabled = false;
             utemTimer.Enabled = true;
             utemTimer.Interval = (int)nUPTimer.Value;
-            
+
+           
+        
+            //ez futtatja le a színt és a directiont
         }
 
         private void utemTimer_Tick(object sender, EventArgs e)

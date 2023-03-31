@@ -37,6 +37,13 @@
             this.lampaAzLbl = new System.Windows.Forms.Label();
             this.lampaMentBtn = new System.Windows.Forms.Button();
             this.aktSzinLamp = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -75,7 +82,7 @@
             // 
             this.lampaBtnUres.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lampaBtnUres.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lampaBtnUres.Location = new System.Drawing.Point(415, 39);
+            this.lampaBtnUres.Location = new System.Drawing.Point(92, 39);
             this.lampaBtnUres.Name = "lampaBtnUres";
             this.lampaBtnUres.Size = new System.Drawing.Size(112, 208);
             this.lampaBtnUres.TabIndex = 5;
@@ -138,11 +145,45 @@
             this.aktSzinLamp.TabIndex = 11;
             this.aktSzinLamp.Text = "Aktuális szín:";
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(551, 58);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(153, 45);
+            this.trackBar1.TabIndex = 12;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Location = new System.Drawing.Point(551, 120);
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(153, 45);
+            this.trackBar2.TabIndex = 13;
+            // 
+            // trackBar3
+            // 
+            this.trackBar3.Location = new System.Drawing.Point(551, 179);
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(153, 45);
+            this.trackBar3.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(510, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "label3";
+            // 
             // FormLampaSzerk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 461);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.trackBar3);
+            this.Controls.Add(this.trackBar2);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.aktSzinLamp);
             this.Controls.Add(this.lampaMentBtn);
             this.Controls.Add(this.lampaAzLbl);
@@ -155,6 +196,9 @@
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "FormLampaSzerk";
             this.Text = "FormLampaSzerk";
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +215,9 @@
         private System.Windows.Forms.Label lampaAzLbl;
         private System.Windows.Forms.Button lampaMentBtn;
         private System.Windows.Forms.Label aktSzinLamp;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.Label label3;
     }
 }

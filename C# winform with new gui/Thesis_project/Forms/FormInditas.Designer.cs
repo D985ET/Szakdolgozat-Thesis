@@ -88,9 +88,9 @@ namespace Thesis_project.Forms
             // 
             // btnFuttatas
             // 
-            this.btnFuttatas.Location = new System.Drawing.Point(569, 12);
+            this.btnFuttatas.Location = new System.Drawing.Point(620, 69);
             this.btnFuttatas.Name = "btnFuttatas";
-            this.btnFuttatas.Size = new System.Drawing.Size(219, 111);
+            this.btnFuttatas.Size = new System.Drawing.Size(168, 53);
             this.btnFuttatas.TabIndex = 8;
             this.btnFuttatas.Text = "Futtatás";
             this.btnFuttatas.UseVisualStyleBackColor = true;
@@ -140,12 +140,12 @@ namespace Thesis_project.Forms
             // 
             this.panel1.Location = new System.Drawing.Point(12, 128);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 321);
+            this.panel1.Size = new System.Drawing.Size(776, 251);
             this.panel1.TabIndex = 11;
             // 
             // btnNewUtem
             // 
-            this.btnNewUtem.Location = new System.Drawing.Point(395, 69);
+            this.btnNewUtem.Location = new System.Drawing.Point(287, 385);
             this.btnNewUtem.Name = "btnNewUtem";
             this.btnNewUtem.Size = new System.Drawing.Size(168, 53);
             this.btnNewUtem.TabIndex = 12;

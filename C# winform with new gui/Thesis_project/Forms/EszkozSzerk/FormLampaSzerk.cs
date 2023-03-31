@@ -89,5 +89,7 @@ namespace Thesis_project.Forms
             string json_source = FormHelper.DevicesToJSON();
             FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
         }
+
+        
     }
 }

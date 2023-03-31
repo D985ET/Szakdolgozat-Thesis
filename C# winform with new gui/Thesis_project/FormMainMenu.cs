@@ -33,8 +33,8 @@ namespace Thesis_project
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.WindowState = FormWindowState.Maximized;
             Application.EnableVisualStyles();
-            byte dbDev = (byte)(SLFormHelper.FormHelper.Devices.Count()+1);
-            eszlelteszkLbl.Text += ": " + dbDev.ToString() + " db";
+            
+           
             if(open == false)
             {
                 FormHelper.CallOpen(this.Handle);
