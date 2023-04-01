@@ -187,12 +187,12 @@ namespace Thesis_project.Forms
 
             nyilSzerkForm.Show();
         }
-
+        Button lampaButton;
         private void lampatKirak(Point location)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
 
-            Button lampaButton = new Button();
+            lampaButton = new Button();
 
             lampaButton.Width = 500;
             lampaButton.Height = 500;
@@ -214,7 +214,7 @@ namespace Thesis_project.Forms
             {
                 FormMainMenu formMain = new FormMainMenu();
                 ledLight1 = (LEDLight)FormHelper.Devices[0];
-                lampaSzerkForm = new FormLampaSzerk(ref ledLight1);
+                lampaSzerkForm = new FormLampaSzerk(ref ledLight1, ref lampaButton);
             }
             lampaSzerkForm.Show();
         }

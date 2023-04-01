@@ -63,6 +63,7 @@ namespace Thesis_project.Forms
             }
 
             MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
+
             FormHelper.UnloadDeviceSettings(filePath);//kiment
         }
 

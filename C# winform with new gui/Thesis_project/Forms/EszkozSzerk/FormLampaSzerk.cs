@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,9 +16,11 @@ namespace Thesis_project.Forms
     public partial class FormLampaSzerk : Form
     {
         private LEDLight lightToSzerk;
-        public FormLampaSzerk(ref LEDLight lightToSzerk)
+        private Button lightButton;
+        public FormLampaSzerk(ref LEDLight lightToSzerk, ref Button lightButton)
         {
             this.lightToSzerk = lightToSzerk;
+            this.lightButton = lightButton;
             InitializeComponent();
             //kinézet:
             /* this.Size = Screen.PrimaryScreen.WorkingArea.Size;*/
@@ -86,11 +89,13 @@ namespace Thesis_project.Forms
 
         private void lampaMentBtn_Click(object sender, EventArgs e)
         {
-            
-            string json_source = FormHelper.DevicesToJSON();
-            FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
-        }
 
+            //string json_source = FormHelper.DevicesToJSON();
+            //FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
+            //MessageBox.Show("Sikeresen beállítva");
+        }
+        public static Color[] colors = new Color[3];
+        byte counter = 1;
         private void ColorPickerBox_Click(object sender, EventArgs e)
         {
             ColorDialog colorPicker = new ColorDialog();
@@ -98,8 +103,12 @@ namespace Thesis_project.Forms
             {
                 ColorPickerBox.BackColor = colorPicker.Color; //megjelenik a color dialog cuccos
             }
-            lightToSzerk.Color = ColorPickerBox.BackColor;
+           //lightToSzerk.Color = ColorPickerBox.BackColor;
             aktSzinLamp.Text = ColorPickerBox.BackColor.Name;
+            colors[int.Parse(lightButton.Tag.ToString())] = ColorPickerBox.BackColor;
+            Console.WriteLine(int.Parse(lightButton.Tag.ToString()));
+            Console.WriteLine(lightButton.Tag.ToString());
+            Console.WriteLine(colors[int.Parse(lightButton.Tag.ToString())]);
         }
 
         private void btnCloseTop_Click(object sender, EventArgs e)

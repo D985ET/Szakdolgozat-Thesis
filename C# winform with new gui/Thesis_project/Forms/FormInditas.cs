@@ -17,6 +17,7 @@ namespace Thesis_project.Forms
     {
 
         bool dev485Set;
+        sbyte newUtemCounter = 0;
         public void setDev485(bool dev485Set)
         {
      
@@ -165,19 +166,20 @@ namespace Thesis_project.Forms
 
 
 
-
+        Button lampaButton;
         private void lampatKirak(Point location)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
-
-            Button lampaButton = new Button();
+            
+            lampaButton = new Button();
            
             lampaButton.Width = 300;
-            lampaButton.Height =300;
+            lampaButton.Height = 300;
             lampaButton.Location = location;
             lampaButton.BackColor = Color.White;
             lampaButton.FlatStyle = FlatStyle.Flat;
             lampaButton.FlatAppearance.BorderSize = 0;
+            lampaButton.Tag = newUtemCounter;
             
             //lampaButton.Text = "LAMPA";//TODO IMAGE
             lampaButton.Image = Image.FromFile(@"img\lamp.png");
@@ -186,17 +188,18 @@ namespace Thesis_project.Forms
             lampaButton.Click += LampaButton_Click;
         }
         FormLampaSzerk lampaSzerkForm;
+        LEDLight ledLight1;
         private void LampaButton_Click(object sender, EventArgs e)
         {
             belelepettVMelyikbe = true;
-            LEDLight ledLight1;
+            
             for (int i = 0; i < FormHelper.Devices.Count; i++)
             {
                 if (FormHelper.Devices[i] is LEDLight)
                 {
                     FormMainMenu formMain = new FormMainMenu();
                     ledLight1 = (LEDLight)FormHelper.Devices[i];
-                    lampaSzerkForm = new FormLampaSzerk(ref ledLight1);
+                    lampaSzerkForm = new FormLampaSzerk(ref ledLight1, ref lampaButton);
                     lampaSzerkForm.Show();
                 }
             }
@@ -240,6 +243,7 @@ namespace Thesis_project.Forms
 
             }
         }
+        
 
         int i = 0;
         private void btnFuttatas_Click(object sender, EventArgs e)
@@ -247,41 +251,36 @@ namespace Thesis_project.Forms
             btnFuttatas.Enabled = false;
             utemTimer.Enabled = true;
             utemTimer.Interval = (int)nUPTimer.Value;
-            for (int i = 0; i < FormHelper.Devices.Count; i++)
+            for (int i = 0; i < FormLampaSzerk.colors.Length; i++)
             {
-                if (FormHelper.Devices[i] is Speaker)
-                {
-                   
-                }
-                if (FormHelper.Devices[i] is Speaker)
-                {
-
-                }
-                if (FormHelper.Devices[i] is Speaker)
-                {
-
-                }
-              
+                Console.WriteLine(FormLampaSzerk.colors[i]);
             }
 
 
-                    //ez futtatja le a színt és a directiont
+
+            //ez futtatja le a színt és a directiont
         }
 
         private void utemTimer_Tick(object sender, EventArgs e)
         {
-            if (i == 2) //kilépési feltétel, két ütem fut le.
+            if (i == newUtemCounter) //kilépési feltétel, két ütem fut le.
             {
                 i = 0; //reset
                 btnFuttatas.Enabled = true;
                 utemTimer.Enabled = false;
             }
+            ledLight1.Color = FormLampaSzerk.colors[i];
+          
+            string json_source = FormHelper.DevicesToJSON();//átalakítja az ezsközbeállításokat JSON-é
+            FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
             i++;
         }
-
+       
         private void btnNewUtem_Click(object sender, EventArgs e)
         {
+            newUtemCounter++;//0-től indul
             Gombokat_Kirak();
+            
         }
 
 
