@@ -17,7 +17,7 @@ namespace Thesis_project.Forms
     {
 
         bool dev485Set;
-        sbyte newUtemCounter = 0;
+      
         public void setDev485(bool dev485Set)
         {
      
@@ -36,10 +36,28 @@ namespace Thesis_project.Forms
             this.WindowState = FormWindowState.Maximized;
             Application.EnableVisualStyles();
             LoadTheme();
-            panel1.AutoScroll = true;
-            panel1.Width = Screen.PrimaryScreen.WorkingArea.Width;
-            panel1.Height = Screen.PrimaryScreen.WorkingArea.Height;
-        }
+            dataGridInditas.Width = Screen.PrimaryScreen.WorkingArea.Width-20;
+            dataGridInditas.Height = Screen.PrimaryScreen.WorkingArea.Height-20;
+            dataGridInditas.AllowUserToAddRows = false;
+            
+            for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
+            {
+                DataGridViewButtonColumn column = new DataGridViewButtonColumn();
+                column.Name = string.Format("Eszköz_{0}", i);
+                column.HeaderText = string.Format("Eszköz_{0}", i);
+                column.Resizable = DataGridViewTriState.False;
+                dataGridInditas.Columns.Add(column);
+            }
+            DataGridViewRow newRow = new DataGridViewRow();
+            
+            dataGridInditas.Rows.Add(newRow);
+           
+          
+
+                /* panel1.AutoScroll = true;
+                 panel1.Width = Screen.PrimaryScreen.WorkingArea.Width;
+                 panel1.Height = Screen.PrimaryScreen.WorkingArea.Height;*/
+            }
 
         //ez az összes formba megy majd
        
@@ -76,7 +94,7 @@ namespace Thesis_project.Forms
                 Console.WriteLine();
                 Console.WriteLine(SLFormHelper.FormHelper.Devices[i].GetType().Name);
                 Console.WriteLine(SLFormHelper.FormHelper.Devices[i]);
-                Eszközöknevei.Text += SLFormHelper.FormHelper.Devices[i].GetType().Name + "\n";
+                
                 if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDArrow))
                 {
                     nyilatKirak(p);
@@ -104,7 +122,6 @@ namespace Thesis_project.Forms
 
         //buttonok kirakása attól függően hogy mik.
 
-        bool belelepettVMelyikbe = false;
 
 
         public void nyilatKirak(Point location)
@@ -135,24 +152,30 @@ namespace Thesis_project.Forms
             arrowButton.FlatStyle = FlatStyle.Flat;
             arrowButton.FlatAppearance.BorderSize = 0;
 
-            panel1.Controls.Add(arrowButton);
-            arrowButton.Click += ArrowButton_Click;
+            DataGridViewRow newRow = new DataGridViewRow();
+            newRow.Cells.Add(new DataGridViewButtonCell());
+            dataGridInditas.Rows.Add(newRow);
+            
+            /* panel1.Controls.Add(arrowButton);*/
+
         }
-        private FormNyilSzerk nyilSzerkForm; //nyil kirakás új form Clickre.
+        private FormNyilSzerk nyilSzerkForm; //nyil kirakás új form Clickre
+        LEDArrow ledArrow1;
         private void ArrowButton_Click(object sender, EventArgs e)
         {
-            belelepettVMelyikbe = true;
-            LEDArrow ledArrow1;
-            for (int i = 0; i < FormHelper.Devices.Count; i++)
-            {
-                if (FormHelper.Devices[i] is LEDArrow)
-                {
-                    FormMainMenu formMain = new FormMainMenu();
-                    ledArrow1 = (LEDArrow)FormHelper.Devices[i];
-                    nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
-                    nyilSzerkForm.Show();
-                }
-            }
+           
+            
+            //for (int i = 0; i < FormHelper.Devices.Count; i++)
+            //{
+            //    if (FormHelper.Devices[i] is LEDArrow)
+            //    {
+            //        FormMainMenu formMain = new FormMainMenu();
+            //        ledArrow1 = (LEDArrow)FormHelper.Devices[i];
+            //        nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
+            //        nyilSzerkForm.Show();
+            //    }
+            //}
+
             /*
             if (FormHelper.Devices[0] is LEDArrow)
             {
@@ -167,6 +190,7 @@ namespace Thesis_project.Forms
 
 
         Button lampaButton;
+        
         private void lampatKirak(Point location)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
@@ -179,30 +203,39 @@ namespace Thesis_project.Forms
             lampaButton.BackColor = Color.White;
             lampaButton.FlatStyle = FlatStyle.Flat;
             lampaButton.FlatAppearance.BorderSize = 0;
-            lampaButton.Tag = newUtemCounter;
+           /* lampaButton.Tag = newUtemCounter;*/
             
             //lampaButton.Text = "LAMPA";//TODO IMAGE
             lampaButton.Image = Image.FromFile(@"img\lamp.png");
-           
-            panel1.Controls.Add(lampaButton);
-            lampaButton.Click += LampaButton_Click;
+            /*dataGridInditas.Controls.Add(lampaButton);*/
+
+            /*DataGridViewRow newRow = new DataGridViewRow();
+            newRow.Cells.Add(new DataGridViewButtonCell());
+            //dataGridInditas.Rows[dataGridInditas.Rows.Count - 1].Cells.Add(new DataGridViewButtonCell());
+            dataGridInditas.Rows.Add(newRow);*/
+
+            /* panel1.Controls.Add(lampaButton);*/
+            /*lampaButton.Click += LampaButton_Click;*/
         }
         FormLampaSzerk lampaSzerkForm;
         LEDLight ledLight1;
-        private void LampaButton_Click(object sender, EventArgs e)
+        private void LampaButton_Click(object sender, DataGridViewCellEventArgs e)
         {
-            belelepettVMelyikbe = true;
-            
-            for (int i = 0; i < FormHelper.Devices.Count; i++)
-            {
-                if (FormHelper.Devices[i] is LEDLight)
-                {
-                    FormMainMenu formMain = new FormMainMenu();
-                    ledLight1 = (LEDLight)FormHelper.Devices[i];
-                    lampaSzerkForm = new FormLampaSzerk(ref ledLight1, ref lampaButton);
-                    lampaSzerkForm.Show();
-                }
-            }
+            //belelepettVMelyikbe = true;
+            //if (dataGridInditas.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            //{
+            //    for (int i = 0; i < FormHelper.Devices.Count; i++)
+            //    {
+            //        if (FormHelper.Devices[i] is LEDLight)
+            //        {
+            //            FormMainMenu formMain = new FormMainMenu();
+            //            ledLight1 = (LEDLight)FormHelper.Devices[i];
+            //            lampaSzerkForm = new FormLampaSzerk(ref ledLight1, ref lampaButton);
+            //            lampaSzerkForm.Show();
+            //        }
+            //    }
+            //}
+         
             
         }
 
@@ -222,26 +255,30 @@ namespace Thesis_project.Forms
             hangszoroButton.FlatStyle = FlatStyle.Flat;
             hangszoroButton.FlatAppearance.BorderSize = 0;
             /*hangszoroButton.Text = "HANGSZORO";//TODO IMA*/
-            panel1.Controls.Add(hangszoroButton);
-            hangszoroButton.Click += hangszoroButton_Click;
+
+           /* DataGridViewRow newRow = new DataGridViewRow();
+            newRow.Cells.Add(new DataGridViewButtonCell());
+            dataGridInditas.Rows.Add(newRow);*/
+            //dataGridInditas.Rows[dataGridInditas.Rows.Count - 1].Cells.Add(new DataGridViewButtonCell());
+            /*panel1.Controls.Add(hangszoroButton); //itt adom hozzá a panelt*/
+            //hangszoroButton.Click += hangszoroButton_Click;
         }
         FormHangszSzerk hangSzerkForm;
-        
+        Speaker speaker1;
         private void hangszoroButton_Click(object sender, EventArgs e)
         {
-            belelepettVMelyikbe = true;
-            Speaker speaker1;
-            for (int i = 0; i < FormHelper.Devices.Count; i++)
-            {
-                if (FormHelper.Devices[i] is Speaker)
-                {
-                    speaker1 = (Speaker)FormHelper.Devices[i];
-                    speaker1.AddSound(Pitch.H_OKTAV3, 63, 300);
-                    hangSzerkForm = new FormHangszSzerk(ref speaker1);
-                    hangSzerkForm.Show();
-                }
+            
+            //for (int i = 0; i < FormHelper.Devices.Count; i++)
+            //{
+            //    if (FormHelper.Devices[i] is Speaker)
+            //    {
+            //        speaker1 = (Speaker)FormHelper.Devices[i];
+            //        speaker1.AddSound(Pitch.H_OKTAV3, 63, 300);
+            //        hangSzerkForm = new FormHangszSzerk(ref speaker1);
+            //        hangSzerkForm.Show();
+            //    }
 
-            }
+            //}
         }
         
 
@@ -254,7 +291,9 @@ namespace Thesis_project.Forms
             for (int i = 0; i < FormLampaSzerk.colors.Length; i++)
             {
                 Console.WriteLine(FormLampaSzerk.colors[i]);
+
             }
+           
 
 
 
@@ -263,24 +302,68 @@ namespace Thesis_project.Forms
 
         private void utemTimer_Tick(object sender, EventArgs e)
         {
-            if (i == newUtemCounter) //kilépési feltétel, két ütem fut le.
+            if (i == dataGridInditas.Rows.Count) //kilépési feltétel, két ütem fut le.
             {
                 i = 0; //reset
                 btnFuttatas.Enabled = true;
                 utemTimer.Enabled = false;
+                return;
             }
-            ledLight1.Color = FormLampaSzerk.colors[i];
-          
+            if (ledLight1 != null)
+            {
+                ledLight1.Color = FormLampaSzerk.colors[i];
+            }
+            if (speaker1 != null)
+            {
+                speaker1.AddSound(FormHangszSzerk.pitch[i], FormHangszSzerk.hangero[i], FormHangszSzerk.timeMilisec[i]);
+            }
+           
+        
+            /*ledLight1.Color = FormLampaSzerk.colors[i];*/
+
             string json_source = FormHelper.DevicesToJSON();//átalakítja az ezsközbeállításokat JSON-é
             FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
+            speaker1.ClearSounds();
             i++;
         }
        
         private void btnNewUtem_Click(object sender, EventArgs e)
         {
-            newUtemCounter++;//0-től indul
+            DataGridViewRow newRow = new DataGridViewRow();
+            dataGridInditas.Rows.Add(newRow);
             Gombokat_Kirak();
             
+        }
+       
+        private void dataGridInditas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            FormLampaSzerk.rowCount = dataGridInditas.Rows.Count;
+            if (dataGridInditas.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            {
+               
+                if (FormHelper.Devices[e.ColumnIndex] is LEDLight)
+                {
+                    //FormMainMenu formMain = new FormMainMenu();
+                    ledLight1 = (LEDLight)FormHelper.Devices[e.ColumnIndex];
+                    lampaSzerkForm = new FormLampaSzerk(e.RowIndex);
+                    lampaSzerkForm.Show();
+                }
+                if (FormHelper.Devices[e.ColumnIndex] is Speaker)
+                {
+                    speaker1 = (Speaker)FormHelper.Devices[e.ColumnIndex];
+                    hangSzerkForm = new FormHangszSzerk(e.RowIndex);
+                    hangSzerkForm.Show();
+                }
+                if (FormHelper.Devices[e.ColumnIndex] is LEDArrow)
+                {
+                    ledArrow1 = (LEDArrow)FormHelper.Devices[e.ColumnIndex];
+                    nyilSzerkForm = new FormNyilSzerk(e.RowIndex);
+                    nyilSzerkForm.Show();
+                }
+                    //IDE KELL A TÖBBI IF 
+            }
+         
+
         }
 
 

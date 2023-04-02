@@ -15,12 +15,12 @@ namespace Thesis_project.Forms
 {
     public partial class FormLampaSzerk : Form
     {
-        private LEDLight lightToSzerk;
-        private Button lightButton;
-        public FormLampaSzerk(ref LEDLight lightToSzerk, ref Button lightButton)
+  
+        private int rowIndex;
+        public static int rowCount;
+        public FormLampaSzerk(int rowIndex)
         {
-            this.lightToSzerk = lightToSzerk;
-            this.lightButton = lightButton;
+            this.rowIndex = rowIndex;
             InitializeComponent();
             //kinézet:
             /* this.Size = Screen.PrimaryScreen.WorkingArea.Size;*/
@@ -29,6 +29,7 @@ namespace Thesis_project.Forms
             //Application.EnableVisualStyles();
             LoadTheme();
             SzerkLampa();
+            
         }
         private void LoadTheme()
         {
@@ -57,7 +58,7 @@ namespace Thesis_project.Forms
             //aktSzinLamp.Dock = DockStyle.None;
             //aktSzinLamp.Text = lightToSzerk.Color.ToString();
            
-            ColorPickerBox.BackColor = lightToSzerk.Color;
+           /* ColorPickerBox.BackColor = lightToSzerk.Color;*/
             aktSzinLamp.Text = ColorPickerBox.BackColor.ToString();
         }
         /*
@@ -94,8 +95,8 @@ namespace Thesis_project.Forms
             //FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
             //MessageBox.Show("Sikeresen beállítva");
         }
-        public static Color[] colors = new Color[3];
-        byte counter = 1;
+        public static Color[] colors = new Color[rowCount];
+     
         private void ColorPickerBox_Click(object sender, EventArgs e)
         {
             ColorDialog colorPicker = new ColorDialog();
@@ -105,10 +106,11 @@ namespace Thesis_project.Forms
             }
            //lightToSzerk.Color = ColorPickerBox.BackColor;
             aktSzinLamp.Text = ColorPickerBox.BackColor.Name;
-            colors[int.Parse(lightButton.Tag.ToString())] = ColorPickerBox.BackColor;
-            Console.WriteLine(int.Parse(lightButton.Tag.ToString()));
-            Console.WriteLine(lightButton.Tag.ToString());
-            Console.WriteLine(colors[int.Parse(lightButton.Tag.ToString())]);
+            colors[rowIndex] = ColorPickerBox.BackColor;
+            Console.WriteLine(rowIndex);
+            Console.WriteLine(colors[rowIndex]);
+
+         
         }
 
         private void btnCloseTop_Click(object sender, EventArgs e)

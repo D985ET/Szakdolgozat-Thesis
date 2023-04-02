@@ -15,10 +15,12 @@ namespace Thesis_project.Forms.EszkozSzerk
     {
         private Speaker speakerToSzerk;
         private Pitch selectedPitch;
-        public FormHangszSzerk(ref Speaker speakerToSzerk)
+        private int rowIndex;
+        public static int rowCount;
+        public FormHangszSzerk(int rowIndex)
         {
-            this.speakerToSzerk = speakerToSzerk;
-            speakerToSzerk.ClearSounds();
+            this.rowIndex = rowIndex;
+            //speakerToSzerk.ClearSounds();
            
             InitializeComponent();
             //kinézet:
@@ -107,7 +109,9 @@ namespace Thesis_project.Forms.EszkozSzerk
         {
             this.Close();
         }
-
+        public static Pitch[] pitch = new Pitch[rowCount];
+        public static byte[] hangero = new byte[rowCount];
+        public static ushort[] timeMilisec = new ushort[rowCount];
         private void btnHangMent_Click_1(object sender, EventArgs e)
         {
             if (pitchComboBox.SelectedItem == null)
@@ -116,11 +120,10 @@ namespace Thesis_project.Forms.EszkozSzerk
                 aktHszinLbl.BackColor = Color.Red;
                 return;
             }
-            speakerToSzerk.AddSound(selectedPitch, (byte)hangeroNumUp.Value, (ushort)timeMilisecBox.Value);
-            byte turn = 1;
-            string json_source = FormHelper.DevicesToJSON();
-            FormHelper.CallSetTurnForEachDevice(ref json_source); //ez futtatja le a színt
-            speakerToSzerk.ClearSounds();
+            pitch[rowIndex] = selectedPitch;
+            hangero[rowIndex] = (byte)hangeroNumUp.Value;
+            timeMilisec[rowIndex] = (ushort)timeMilisecBox.Value;
+                     
         }
     }
 }

@@ -32,16 +32,15 @@ namespace Thesis_project.Forms
             this.components = new System.ComponentModel.Container();
             this.Res = new System.Windows.Forms.Label();
             this.EszkozokdbTxt = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.Res2 = new System.Windows.Forms.Label();
-            this.Eszközöknevei = new System.Windows.Forms.RichTextBox();
             this.btnFuttatas = new System.Windows.Forms.Button();
             this.utemTimer = new System.Windows.Forms.Timer(this.components);
             this.nUPTimer = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnNewUtem = new System.Windows.Forms.Button();
+            this.dataGridInditas = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.nUPTimer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridInditas)).BeginInit();
             this.SuspendLayout();
             // 
             // Res
@@ -61,15 +60,6 @@ namespace Thesis_project.Forms
             this.EszkozokdbTxt.TabIndex = 4;
             this.EszkozokdbTxt.Text = "Észlelt eszközök: ";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Eszközök nevei:";
-            // 
             // Res2
             // 
             this.Res2.AutoSize = true;
@@ -78,17 +68,9 @@ namespace Thesis_project.Forms
             this.Res2.Size = new System.Drawing.Size(0, 13);
             this.Res2.TabIndex = 2;
             // 
-            // Eszközöknevei
-            // 
-            this.Eszközöknevei.Location = new System.Drawing.Point(103, 57);
-            this.Eszközöknevei.Name = "Eszközöknevei";
-            this.Eszközöknevei.Size = new System.Drawing.Size(100, 63);
-            this.Eszközöknevei.TabIndex = 5;
-            this.Eszközöknevei.Text = "";
-            // 
             // btnFuttatas
             // 
-            this.btnFuttatas.Location = new System.Drawing.Point(620, 69);
+            this.btnFuttatas.Location = new System.Drawing.Point(620, 12);
             this.btnFuttatas.Name = "btnFuttatas";
             this.btnFuttatas.Size = new System.Drawing.Size(168, 53);
             this.btnFuttatas.TabIndex = 8;
@@ -136,16 +118,9 @@ namespace Thesis_project.Forms
             this.label2.TabIndex = 10;
             this.label2.Text = "ütemek közötti idő";
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(12, 128);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 251);
-            this.panel1.TabIndex = 11;
-            // 
             // btnNewUtem
             // 
-            this.btnNewUtem.Location = new System.Drawing.Point(287, 385);
+            this.btnNewUtem.Location = new System.Drawing.Point(201, 16);
             this.btnNewUtem.Name = "btnNewUtem";
             this.btnNewUtem.Size = new System.Drawing.Size(168, 53);
             this.btnNewUtem.TabIndex = 12;
@@ -153,24 +128,32 @@ namespace Thesis_project.Forms
             this.btnNewUtem.UseVisualStyleBackColor = true;
             this.btnNewUtem.Click += new System.EventHandler(this.btnNewUtem_Click);
             // 
+            // dataGridInditas
+            // 
+            this.dataGridInditas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridInditas.Location = new System.Drawing.Point(16, 85);
+            this.dataGridInditas.Name = "dataGridInditas";
+            this.dataGridInditas.Size = new System.Drawing.Size(772, 353);
+            this.dataGridInditas.TabIndex = 0;
+            this.dataGridInditas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridInditas_CellContentClick);
+            // 
             // FormInditas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridInditas);
             this.Controls.Add(this.btnNewUtem);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nUPTimer);
             this.Controls.Add(this.btnFuttatas);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Eszközöknevei);
             this.Controls.Add(this.EszkozokdbTxt);
             this.Controls.Add(this.Res2);
             this.Controls.Add(this.Res);
             this.Name = "FormInditas";
             this.Text = "Gyakorlat";
             ((System.ComponentModel.ISupportInitialize)(this.nUPTimer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridInditas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,14 +162,12 @@ namespace Thesis_project.Forms
         #endregion
         private System.Windows.Forms.Label Res;
         private System.Windows.Forms.Label EszkozokdbTxt;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Res2;
-        private System.Windows.Forms.RichTextBox Eszközöknevei;
         private System.Windows.Forms.Button btnFuttatas;
         private System.Windows.Forms.Timer utemTimer;
         private System.Windows.Forms.NumericUpDown nUPTimer;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnNewUtem;
+        private System.Windows.Forms.DataGridView dataGridInditas;
     }
 }

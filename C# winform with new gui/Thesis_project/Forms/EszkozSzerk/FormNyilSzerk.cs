@@ -13,11 +13,11 @@ namespace Thesis_project.Forms
 {
     public partial class FormNyilSzerk : Form
     {
-        private LEDArrow arrowToSzerk;
-        //FORMHOZ:
-        public FormNyilSzerk(ref LEDArrow arrowToSzerk)
+        private int rowIndex;
+        public static int rowCount;
+        public FormNyilSzerk(int rowIndex)
         {
-            this.arrowToSzerk = arrowToSzerk;
+            this.rowIndex = rowIndex;
             InitializeComponent();
             //kinézet:
             /*this.Size = Screen.PrimaryScreen.WorkingArea.Size;*/
@@ -43,35 +43,32 @@ namespace Thesis_project.Forms
         }
         private void SzerkNyil()
         {
-            nyilAz.Text = arrowToSzerk.Azonos.ToString();
-            nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
-            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+          
+            //nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
+            //nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
         }
-
-        private void btnMentNyil_Click_1(object sender, EventArgs e)
-        {
-            byte turn = 1;
-            string json_source = FormHelper.DevicesToJSON();
-
-            FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt és a directiont
-        }
+        public static Direction[] directions = new Direction[rowCount];
+        public static Color[] colors = new Color[rowCount];
+        Direction selectedDirection;
+        
 
         private void nyilSzerkBal_Click_1(object sender, EventArgs e)
         {
-            arrowToSzerk.Direction = Direction.LEFT;
-            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+            selectedDirection = Direction.LEFT;
+            //nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
         }
 
         private void nyilSzerkJobb_Click_1(object sender, EventArgs e)
         {
-            arrowToSzerk.Direction = Direction.RIGHT;
-            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+            selectedDirection = Direction.RIGHT;
+            //nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
         }
 
         private void nyilSzerkBoth_Click_1(object sender, EventArgs e)
         {
-            arrowToSzerk.Direction = Direction.BOTH;
-            nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
+            selectedDirection = Direction.BOTH;
+            //arrowToSzerk.Direction = Direction.BOTH;
+            //nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
         }
 
         private void ColorPickerBox_Click(object sender, EventArgs e)
@@ -81,13 +78,17 @@ namespace Thesis_project.Forms
             {
                 ColorPickerBox.BackColor = colorPicker.Color; //megjelenik a color dialog cuccos
             }
-            arrowToSzerk.Color = ColorPickerBox.BackColor;
+            colors[rowIndex] = ColorPickerBox.BackColor;
             nyilSzinAkt.Text = ColorPickerBox.BackColor.Name;
         }
 
         private void btnCloseTop_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void btnMentNyil_Click_1(object sender, EventArgs e)
+        {
+            directions[rowIndex] = selectedDirection;
         }
     }
 }

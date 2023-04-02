@@ -171,13 +171,13 @@ namespace Thesis_project.Forms
         private FormNyilSzerk nyilSzerkForm; //nyil kirakás új form Clickre.
         private void ArrowButton_Click(object sender, EventArgs e)
         {
-            LEDArrow ledArrow1;
+            /*LEDArrow ledArrow1;
             if (FormHelper.Devices[0] is LEDArrow)
             {
                 FormMainMenu formMain = new FormMainMenu();
                 ledArrow1 = (LEDArrow)FormHelper.Devices[0];
-                nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
-            }
+                nyilSzerkForm = new FormNyilSzerk();
+            }*/
             /*FormMainMenu formMain = new FormMainMenu();
             var frm = (FormMainMenu)this.Owner;
             if (frm != null)
@@ -209,14 +209,14 @@ namespace Thesis_project.Forms
         FormLampaSzerk lampaSzerkForm;
         private void LampaButton_Click(object sender, EventArgs e)
         {
-            LEDLight ledLight1;
+            /*LEDLight ledLight1;
             if (FormHelper.Devices[0] is LEDLight)
             {
                 FormMainMenu formMain = new FormMainMenu();
                 ledLight1 = (LEDLight)FormHelper.Devices[0];
                 lampaSzerkForm = new FormLampaSzerk(ref ledLight1, ref lampaButton);
             }
-            lampaSzerkForm.Show();
+            lampaSzerkForm.Show();*/
         }
 
         private void hangszoroKirak(Point location)
@@ -239,18 +239,18 @@ namespace Thesis_project.Forms
         FormHangszSzerk hangSzerkForm;
         private void hangszoroButton_Click(object sender, EventArgs e)
         {
-            Speaker speaker1;
-            for (int i = 0; i < FormHelper.Devices.Count; i++)
-            {
-                if (FormHelper.Devices[i] is Speaker)
-                {
-                    speaker1 = (Speaker)FormHelper.Devices[i];
-                    speaker1.AddSound(Pitch.H_OKTAV3, 63, 300);
-                    hangSzerkForm = new FormHangszSzerk(ref speaker1);
-                    hangSzerkForm.Show();
-                }
+        //    Speaker speaker1;
+        //    for (int i = 0; i < FormHelper.Devices.Count; i++)
+        //    {
+        //        if (FormHelper.Devices[i] is Speaker)
+        //        {
+        //            speaker1 = (Speaker)FormHelper.Devices[i];
+        //            speaker1.AddSound(Pitch.H_OKTAV3, 63, 300);
+        //            hangSzerkForm = new FormHangszSzerk(ref speaker1);
+        //            hangSzerkForm.Show();
+        //        }
              
-            }
+        //    }
           
             
      
