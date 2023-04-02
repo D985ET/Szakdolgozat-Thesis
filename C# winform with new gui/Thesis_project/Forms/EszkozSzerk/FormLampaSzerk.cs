@@ -95,7 +95,7 @@ namespace Thesis_project.Forms
             //FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
             //MessageBox.Show("Sikeresen beállítva");
         }
-        public static Color[] colors = new Color[rowCount];
+        public static Color[] colors = new Color[100];
      
         private void ColorPickerBox_Click(object sender, EventArgs e)
         {

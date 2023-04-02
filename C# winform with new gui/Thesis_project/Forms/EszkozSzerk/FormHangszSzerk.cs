@@ -109,9 +109,9 @@ namespace Thesis_project.Forms.EszkozSzerk
         {
             this.Close();
         }
-        public static Pitch[] pitch = new Pitch[rowCount];
-        public static byte[] hangero = new byte[rowCount];
-        public static ushort[] timeMilisec = new ushort[rowCount];
+        public static Pitch[] pitch = new Pitch[100]; //rowCount
+        public static byte[] hangero = new byte[100];
+        public static ushort[] timeMilisec = new ushort[100];
         private void btnHangMent_Click_1(object sender, EventArgs e)
         {
             if (pitchComboBox.SelectedItem == null)

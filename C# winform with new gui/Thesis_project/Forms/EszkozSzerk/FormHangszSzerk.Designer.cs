@@ -94,6 +94,7 @@
             0,
             0,
             0});
+            this.hangeroNumUp.Visible = false;
             // 
             // aktHszinLbl
             // 
@@ -149,6 +150,7 @@
             this.label2.Size = new System.Drawing.Size(60, 16);
             this.label2.TabIndex = 23;
             this.label2.Text = "hangerő:";
+            this.label2.Visible = false;
             // 
             // label3
             // 

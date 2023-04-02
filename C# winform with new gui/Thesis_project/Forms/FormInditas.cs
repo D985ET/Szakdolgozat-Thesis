@@ -315,7 +315,7 @@ namespace Thesis_project.Forms
             }
             if (speaker1 != null)
             {
-                speaker1.AddSound(FormHangszSzerk.pitch[i], FormHangszSzerk.hangero[i], FormHangszSzerk.timeMilisec[i]);
+                speaker1.AddSound(FormHangszSzerk.pitch[i], 63, FormHangszSzerk.timeMilisec[i]);
             }
            
         
@@ -323,7 +323,10 @@ namespace Thesis_project.Forms
 
             string json_source = FormHelper.DevicesToJSON();//átalakítja az ezsközbeállításokat JSON-é
             FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
-            speaker1.ClearSounds();
+            if (speaker1 != null)
+            {
+                speaker1.ClearSounds();
+            }
             i++;
         }
        
