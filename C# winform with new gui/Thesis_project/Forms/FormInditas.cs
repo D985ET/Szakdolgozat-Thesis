@@ -33,18 +33,21 @@ namespace Thesis_project.Forms
             InitializeComponent();
             //kinézet:
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            this.WindowState = FormWindowState.Maximized;
+            /* this.WindowState = FormWindowState.Maximized;*/
+            this.WindowState = FormWindowState.Normal;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             Application.EnableVisualStyles();
             LoadTheme();
-            dataGridInditas.Width = Screen.PrimaryScreen.WorkingArea.Width-20;
-            dataGridInditas.Height = Screen.PrimaryScreen.WorkingArea.Height-20;
+            dataGridInditas.Width = Screen.PrimaryScreen.WorkingArea.Width-970;
+            dataGridInditas.Height = Screen.PrimaryScreen.WorkingArea.Height-600;
             dataGridInditas.AllowUserToAddRows = false;
             
             for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
             {
                 DataGridViewButtonColumn column = new DataGridViewButtonColumn();
                 column.Name = string.Format("Eszköz_{0}", i);
-                column.HeaderText = string.Format("Eszköz_{0}", i);
+                column.HeaderText = string.Format("{0}", FormHelper.Devices[i].GetType().Name);
                 column.Resizable = DataGridViewTriState.False;
                 dataGridInditas.Columns.Add(column);
             }
@@ -108,7 +111,6 @@ namespace Thesis_project.Forms
                     hangszoroKirak(p);
                 }
                 p.X = p.X + 300; 
-
             }
             p.Y = p.Y + 310;
             p.X = 0;

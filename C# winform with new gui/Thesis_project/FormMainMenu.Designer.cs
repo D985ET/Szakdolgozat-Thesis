@@ -350,6 +350,7 @@ namespace Thesis_project
             this.Controls.Add(this.panelDesktopPanel);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.MaximumSize = new System.Drawing.Size(1200, 650);
             this.MinimumSize = new System.Drawing.Size(1200, 650);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

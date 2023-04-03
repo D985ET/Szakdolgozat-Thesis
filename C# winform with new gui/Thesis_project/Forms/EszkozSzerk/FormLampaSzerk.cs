@@ -27,13 +27,13 @@ namespace Thesis_project.Forms
             this.ControlBox = false;
             /* this.WindowState = FormWindowState.Minimized;*/
             //Application.EnableVisualStyles();
-            LoadTheme();
+            /*LoadTheme();*/
             SzerkLampa();
             
         }
         private void LoadTheme()
         {
-            foreach (Control btns in this.Controls)
+            /*foreach (Control btns in this.Controls)
             {
                 if (btns.GetType() == typeof(Button))
                 {
@@ -42,7 +42,7 @@ namespace Thesis_project.Forms
                     btn.ForeColor = Color.Black; //ezt visszakell rakni majd white-ra
                     btn.FlatAppearance.BorderColor = SzinTema.SecondaryColor;
                 }
-            }
+            }*/
         }
         private void SzerkLampa()
         {

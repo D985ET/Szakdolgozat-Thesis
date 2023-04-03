@@ -121,7 +121,7 @@ namespace Thesis_project.Forms.EszkozSzerk
                 return;
             }
             pitch[rowIndex] = selectedPitch;
-            hangero[rowIndex] = (byte)hangeroNumUp.Value;
+           /* hangero[rowIndex] = (byte)hangeroNumUp.Value;*/
             timeMilisec[rowIndex] = (ushort)timeMilisecBox.Value;
                      
         }

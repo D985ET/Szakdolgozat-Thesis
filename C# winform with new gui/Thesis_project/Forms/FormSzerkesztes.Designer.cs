@@ -29,33 +29,47 @@ namespace Thesis_project.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridSzerkesztes = new System.Windows.Forms.DataGridView();
+            this.btnFuttatasSzerk = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridSzerkesztes)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // dataGridSzerkesztes
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Location = new System.Drawing.Point(13, 13);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(775, 425);
-            this.panel1.TabIndex = 0;
+            this.dataGridSzerkesztes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridSzerkesztes.Location = new System.Drawing.Point(16, 59);
+            this.dataGridSzerkesztes.Name = "dataGridSzerkesztes";
+            this.dataGridSzerkesztes.Size = new System.Drawing.Size(610, 353);
+            this.dataGridSzerkesztes.TabIndex = 1;
+            this.dataGridSzerkesztes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridSzerkesztes_CellContentClick);
+            // 
+            // btnFuttatasSzerk
+            // 
+            this.btnFuttatasSzerk.Location = new System.Drawing.Point(238, 10);
+            this.btnFuttatasSzerk.Name = "btnFuttatasSzerk";
+            this.btnFuttatasSzerk.Size = new System.Drawing.Size(168, 43);
+            this.btnFuttatasSzerk.TabIndex = 9;
+            this.btnFuttatasSzerk.Text = "Futtatás";
+            this.btnFuttatasSzerk.UseVisualStyleBackColor = true;
+            this.btnFuttatasSzerk.Click += new System.EventHandler(this.btnFuttatasSzerk_Click);
             // 
             // FormSzerkesztes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(638, 424);
+            this.Controls.Add(this.btnFuttatasSzerk);
+            this.Controls.Add(this.dataGridSzerkesztes);
             this.Name = "FormSzerkesztes";
             this.Text = "FormSzerkesztes";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridSzerkesztes)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridSzerkesztes;
+        private System.Windows.Forms.Button btnFuttatasSzerk;
     }
 }

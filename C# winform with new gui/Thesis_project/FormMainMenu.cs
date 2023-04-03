@@ -30,8 +30,11 @@ namespace Thesis_project
             vsz = new Random();
             btnCloseChildForm.Visible = false;
             //kinézet:
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            this.WindowState = FormWindowState.Maximized;
+          /*  this.Size = Screen.PrimaryScreen.WorkingArea.Size;*/
+            this.WindowState = FormWindowState.Normal;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            //ne lehessen állítani a size-t
             Application.EnableVisualStyles();
             
            

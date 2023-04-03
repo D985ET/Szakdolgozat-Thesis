@@ -26,10 +26,28 @@ namespace Thesis_project.Forms
           
 
             //kinézet:
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            this.WindowState = FormWindowState.Maximized;
+            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Normal;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             Application.EnableVisualStyles();
             LoadTheme();
+            dataGridSzerkesztes.Width = Screen.PrimaryScreen.WorkingArea.Width - 970;
+            dataGridSzerkesztes.Height = Screen.PrimaryScreen.WorkingArea.Height - 600;
+            dataGridSzerkesztes.AllowUserToAddRows = false;
+
+            for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
+            {
+                DataGridViewButtonColumn column = new DataGridViewButtonColumn();
+                column.Name = string.Format("Eszköz_{0}", i);
+                column.HeaderText = string.Format("{0}", FormHelper.Devices[i].GetType().Name);
+                column.Resizable = DataGridViewTriState.False;
+                dataGridSzerkesztes.Columns.Add(column);
+            }
+            DataGridViewRow newRow = new DataGridViewRow();
+
+            dataGridSzerkesztes.Rows.Add(newRow);
         }
         public void setDev485(bool dev485Set)
         {
@@ -88,53 +106,10 @@ namespace Thesis_project.Forms
                     {
                         hangszoroKirak(p);
                     }
-                    if (SLFormHelper.FormHelper.Devices.Count > 9 && elsosor == true) /* SLFormHelper.FormHelper.Devices.Count > 6*/
-                    {
-
-                        if (p.X != 0 && p.Y == 100)
-                        {
-                            p.X = 0;
-                            p.Y = 200;
-                        }
-                        else if (p.X == 0 && p.Y == 200)
-                        {
-                            p.X = p.X + 100;
-                        }
-                        else
-                        {
-                            p.X = p.X + 100;
-                        }
-
-                    }
-                    if (SLFormHelper.FormHelper.Devices.Count > 6 && elsosor == false)/* SLFormHelper.FormHelper.Devices.Count > 6*/
-                    {
-
-                        if (SLFormHelper.FormHelper.Devices.Count == 5)
-                        {
-                            elsosor = true;
-                        }
-                        if (p.X != 0 && p.Y == 0)
-                        {
-                            p.X = 0;
-                            p.Y = 100;
-                        }
-                        else if (p.X == 0 && p.Y == 100)
-                        {
-                            p.X = p.X + 100;
-                        }
-                        else
-                        {
-                            p.X = p.X + 100;
-                        }
-                    }
-
-                    else //6 alatt fut le
-                    {
-                        p.Y = 0;
-                        p.X = p.X + 500;
-                    }
-
+                    p.X = p.X + 300;
                 }
+                p.Y = p.Y + 310;
+                p.X = 0;
             }
         }
         public void nyilatKirak(Point location)
@@ -164,11 +139,14 @@ namespace Thesis_project.Forms
             arrowButton.Image = Image.FromFile(@"img\right-arrow.png");
             arrowButton.FlatStyle = FlatStyle.Flat;
             arrowButton.FlatAppearance.BorderSize = 0;
-
-            panel1.Controls.Add(arrowButton);
-            arrowButton.Click += ArrowButton_Click;
+           /* DataGridViewRow newRow = new DataGridViewRow();
+            newRow.Cells.Add(new DataGridViewButtonCell());
+            dataGridSzerkesztes.Rows.Add(newRow);*/
+            /*panel1.Controls.Add(arrowButton);
+            arrowButton.Click += ArrowButton_Click;*/
         }
         private FormNyilSzerk nyilSzerkForm; //nyil kirakás új form Clickre.
+        LEDArrow ledArrow1;
         private void ArrowButton_Click(object sender, EventArgs e)
         {
             /*LEDArrow ledArrow1;
@@ -185,7 +163,7 @@ namespace Thesis_project.Forms
                 frm.btnSzerkesztes_Click(sender, e);
             }*/
 
-            nyilSzerkForm.Show();
+            /*nyilSzerkForm.Show();*/
         }
         Button lampaButton;
         private void lampatKirak(Point location)
@@ -203,10 +181,11 @@ namespace Thesis_project.Forms
             //lampaButton.Text = "LAMPA";//TODO IMAGE
             lampaButton.Image = Image.FromFile(@"img\lamp.png");
 
-            panel1.Controls.Add(lampaButton);
-            lampaButton.Click += LampaButton_Click;
+           /* panel1.Controls.Add(lampaButton);
+            lampaButton.Click += LampaButton_Click;*/
         }
         FormLampaSzerk lampaSzerkForm;
+        LEDLight ledLight1;
         private void LampaButton_Click(object sender, EventArgs e)
         {
             /*LEDLight ledLight1;
@@ -233,10 +212,11 @@ namespace Thesis_project.Forms
             hangszoroButton.FlatStyle = FlatStyle.Flat;
             hangszoroButton.FlatAppearance.BorderSize = 0;
             /*hangszoroButton.Text = "HANGSZORO";//TODO IMA*/
-            panel1.Controls.Add(hangszoroButton);
-            hangszoroButton.Click += hangszoroButton_Click;
+            /*panel1.Controls.Add(hangszoroButton);
+            hangszoroButton.Click += hangszoroButton_Click;*/
         }
         FormHangszSzerk hangSzerkForm;
+        Speaker speaker1;
         private void hangszoroButton_Click(object sender, EventArgs e)
         {
         //    Speaker speaker1;
@@ -256,5 +236,38 @@ namespace Thesis_project.Forms
      
         }
 
+        private void dataGridSzerkesztes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            FormLampaSzerk.rowCount = dataGridSzerkesztes.Rows.Count;
+            if (dataGridSzerkesztes.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            {
+
+                if (FormHelper.Devices[e.ColumnIndex] is LEDLight)
+                {
+                    //FormMainMenu formMain = new FormMainMenu();
+                    ledLight1 = (LEDLight)FormHelper.Devices[e.ColumnIndex];
+                    lampaSzerkForm = new FormLampaSzerk(e.RowIndex);
+                    lampaSzerkForm.Show();
+                }
+                if (FormHelper.Devices[e.ColumnIndex] is Speaker)
+                {
+                    speaker1 = (Speaker)FormHelper.Devices[e.ColumnIndex];
+                    hangSzerkForm = new FormHangszSzerk(e.RowIndex);
+                    hangSzerkForm.Show();
+                }
+                if (FormHelper.Devices[e.ColumnIndex] is LEDArrow)
+                {
+                    ledArrow1 = (LEDArrow)FormHelper.Devices[e.ColumnIndex];
+                    nyilSzerkForm = new FormNyilSzerk(e.RowIndex);
+                    nyilSzerkForm.Show();
+                }
+                //IDE KELL A TÖBBI IF 
+            }
+        }
+
+        private void btnFuttatasSzerk_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
