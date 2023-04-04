@@ -42,25 +42,37 @@ namespace Thesis_project.Forms
             dataGridInditas.Width = Screen.PrimaryScreen.WorkingArea.Width-970;
             dataGridInditas.Height = Screen.PrimaryScreen.WorkingArea.Height-600;
             dataGridInditas.AllowUserToAddRows = false;
-            
+            dataGridInditas.RowHeadersVisible = false;
+
             for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
             {
                 DataGridViewButtonColumn column = new DataGridViewButtonColumn();
                 column.Name = string.Format("Eszköz_{0}", i);
                 column.HeaderText = string.Format("{0}", FormHelper.Devices[i].GetType().Name);
                 column.Resizable = DataGridViewTriState.False;
+               
                 dataGridInditas.Columns.Add(column);
             }
             DataGridViewRow newRow = new DataGridViewRow();
-            
-            dataGridInditas.Rows.Add(newRow);
-           
-          
+            newRow.Height = 100; //magasság
 
-                /* panel1.AutoScroll = true;
-                 panel1.Width = Screen.PrimaryScreen.WorkingArea.Width;
-                 panel1.Height = Screen.PrimaryScreen.WorkingArea.Height;*/
+            dataGridInditas.Rows.Add(newRow);
+            
+
+            for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
+            {
+                dataGridInditas.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridInditas.Columns[i].Resizable = DataGridViewTriState.False;
+                dataGridInditas.Columns[i].DefaultCellStyle.SelectionBackColor = Color.Black;
+                dataGridInditas.Columns[i].DefaultCellStyle.BackColor = Color.Red;
             }
+
+
+
+            /* panel1.AutoScroll = true;
+             panel1.Width = Screen.PrimaryScreen.WorkingArea.Width;
+             panel1.Height = Screen.PrimaryScreen.WorkingArea.Height;*/
+        }
 
         //ez az összes formba megy majd
        
@@ -155,6 +167,8 @@ namespace Thesis_project.Forms
             arrowButton.FlatAppearance.BorderSize = 0;
 
             DataGridViewRow newRow = new DataGridViewRow();
+            //DataGridViewButtonColumn datagridcolum = new DataGridViewButtonColumn();
+            //datagridcolum.Resizable = DataGridViewTriState.False;
             newRow.Cells.Add(new DataGridViewButtonCell());
             dataGridInditas.Rows.Add(newRow);
             
@@ -335,7 +349,9 @@ namespace Thesis_project.Forms
         private void btnNewUtem_Click(object sender, EventArgs e)
         {
             DataGridViewRow newRow = new DataGridViewRow();
+            newRow.Height = 100;
             dataGridInditas.Rows.Add(newRow);
+
             Gombokat_Kirak();
             
         }
@@ -343,6 +359,10 @@ namespace Thesis_project.Forms
         private void dataGridInditas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             FormLampaSzerk.rowCount = dataGridInditas.Rows.Count;
+           
+                   
+
+
             if (dataGridInditas.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
                
@@ -350,6 +370,7 @@ namespace Thesis_project.Forms
                 {
                     //FormMainMenu formMain = new FormMainMenu();
                     ledLight1 = (LEDLight)FormHelper.Devices[e.ColumnIndex];
+                  /*  dataGridInditas.Columns[e.ColumnIndex].DefaultCellStyle.ForeColor = ledLight1.Color;*/
                     lampaSzerkForm = new FormLampaSzerk(e.RowIndex);
                     lampaSzerkForm.Show();
                 }

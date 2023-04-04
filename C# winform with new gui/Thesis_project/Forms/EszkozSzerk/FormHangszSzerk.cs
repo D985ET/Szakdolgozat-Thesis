@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Thesis_project.Forms.EszkozSzerk
 {
@@ -62,20 +63,21 @@ namespace Thesis_project.Forms.EszkozSzerk
             {
                 pitchComboBox.Items.Add(pitches);
             }
-           
-          
+            pitchComboBox.SelectedIndex = 0;
 
-           /* for (int i = 0; i < pitchEnumCount; i++)
-            {
-                
-                pitchComboBox.Items.Add(pitchEnumCount)
-            }*/
-                
+
+
+            /* for (int i = 0; i < pitchEnumCount; i++)
+             {
+
+                 pitchComboBox.Items.Add(pitchEnumCount)
+             }*/
+
 
         }
         private void LoadTheme()
         {
-            foreach (Control btns in this.Controls)
+            /*foreach (Control btns in this.Controls)
             {
                 if (btns.GetType() == typeof(Button))
                 {
@@ -84,7 +86,7 @@ namespace Thesis_project.Forms.EszkozSzerk
                     btn.ForeColor = Color.Black; //ezt visszakell rakni majd white-ra
                     btn.FlatAppearance.BorderColor = SzinTema.SecondaryColor;
                 }
-            }
+            }*/
         }
         private void timeMilisecBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -93,10 +95,10 @@ namespace Thesis_project.Forms.EszkozSzerk
                 e.Handled = true;
             }
             //only allow one decimal point
-            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
-            {
-                e.Handled = true;
-            }
+            //if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            //{
+            //    e.Handled = true;
+            //}
 
         }
       
@@ -123,6 +125,7 @@ namespace Thesis_project.Forms.EszkozSzerk
             pitch[rowIndex] = selectedPitch;
            /* hangero[rowIndex] = (byte)hangeroNumUp.Value;*/
             timeMilisec[rowIndex] = (ushort)timeMilisecBox.Value;
+            MessageBox.Show("Mentve!");
                      
         }
     }

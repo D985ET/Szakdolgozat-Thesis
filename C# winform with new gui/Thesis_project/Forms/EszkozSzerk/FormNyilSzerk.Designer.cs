@@ -56,13 +56,13 @@ namespace Thesis_project.Forms
             this.nyilSzinAkt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.nyilSzinAkt.Location = new System.Drawing.Point(43, 22);
             this.nyilSzinAkt.Name = "nyilSzinAkt";
-            this.nyilSzinAkt.Size = new System.Drawing.Size(84, 16);
+            this.nyilSzinAkt.Size = new System.Drawing.Size(83, 16);
             this.nyilSzinAkt.TabIndex = 25;
             this.nyilSzinAkt.Text = "Aktuális szin:";
             // 
             // ColorPickerBox
             // 
-            this.ColorPickerBox.BackColor = System.Drawing.Color.Transparent;
+            this.ColorPickerBox.BackColor = System.Drawing.Color.Red;
             this.ColorPickerBox.Location = new System.Drawing.Point(46, 41);
             this.ColorPickerBox.Name = "ColorPickerBox";
             this.ColorPickerBox.Size = new System.Drawing.Size(146, 73);
@@ -110,7 +110,7 @@ namespace Thesis_project.Forms
             this.nyilAktIrany.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.nyilAktIrany.Location = new System.Drawing.Point(43, 146);
             this.nyilAktIrany.Name = "nyilAktIrany";
-            this.nyilAktIrany.Size = new System.Drawing.Size(90, 16);
+            this.nyilAktIrany.Size = new System.Drawing.Size(89, 16);
             this.nyilAktIrany.TabIndex = 30;
             this.nyilAktIrany.Text = "Aktuális irány:";
             // 

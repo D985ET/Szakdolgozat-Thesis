@@ -59,7 +59,7 @@
             // 
             // ColorPickerBox
             // 
-            this.ColorPickerBox.BackColor = System.Drawing.Color.Transparent;
+            this.ColorPickerBox.BackColor = System.Drawing.Color.Red;
             this.ColorPickerBox.Location = new System.Drawing.Point(62, 55);
             this.ColorPickerBox.Name = "ColorPickerBox";
             this.ColorPickerBox.Size = new System.Drawing.Size(146, 73);
@@ -83,7 +83,7 @@
             this.aktSzinLamp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.aktSzinLamp.Location = new System.Drawing.Point(59, 25);
             this.aktSzinLamp.Name = "aktSzinLamp";
-            this.aktSzinLamp.Size = new System.Drawing.Size(84, 16);
+            this.aktSzinLamp.Size = new System.Drawing.Size(83, 16);
             this.aktSzinLamp.TabIndex = 24;
             this.aktSzinLamp.Text = "Aktuális szin:";
             // 

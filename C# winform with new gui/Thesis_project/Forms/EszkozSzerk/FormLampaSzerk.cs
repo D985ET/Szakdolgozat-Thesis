@@ -90,7 +90,8 @@ namespace Thesis_project.Forms
 
         private void lampaMentBtn_Click(object sender, EventArgs e)
         {
-
+           
+            MessageBox.Show("Mentve!");
             //string json_source = FormHelper.DevicesToJSON();
             //FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
             //MessageBox.Show("Sikeresen beállítva");
@@ -100,6 +101,7 @@ namespace Thesis_project.Forms
         private void ColorPickerBox_Click(object sender, EventArgs e)
         {
             ColorDialog colorPicker = new ColorDialog();
+            
             if(colorPicker.ShowDialog() == DialogResult.OK)
             {
                 ColorPickerBox.BackColor = colorPicker.Color; //megjelenik a color dialog cuccos
@@ -109,8 +111,8 @@ namespace Thesis_project.Forms
             colors[rowIndex] = ColorPickerBox.BackColor;
             Console.WriteLine(rowIndex);
             Console.WriteLine(colors[rowIndex]);
+       
 
-         
         }
 
         private void btnCloseTop_Click(object sender, EventArgs e)

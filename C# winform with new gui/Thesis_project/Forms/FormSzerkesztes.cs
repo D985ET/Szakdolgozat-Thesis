@@ -36,6 +36,7 @@ namespace Thesis_project.Forms
             dataGridSzerkesztes.Width = Screen.PrimaryScreen.WorkingArea.Width - 970;
             dataGridSzerkesztes.Height = Screen.PrimaryScreen.WorkingArea.Height - 600;
             dataGridSzerkesztes.AllowUserToAddRows = false;
+            dataGridSzerkesztes.RowHeadersVisible = false;
 
             for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
             {
@@ -46,8 +47,14 @@ namespace Thesis_project.Forms
                 dataGridSzerkesztes.Columns.Add(column);
             }
             DataGridViewRow newRow = new DataGridViewRow();
-
+            newRow.Height = 100; //magasság
             dataGridSzerkesztes.Rows.Add(newRow);
+            for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
+            {
+                dataGridSzerkesztes.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridSzerkesztes.Columns[i].Resizable = DataGridViewTriState.False;
+
+            }
         }
         public void setDev485(bool dev485Set)
         {
@@ -60,7 +67,7 @@ namespace Thesis_project.Forms
         }
         private void LoadTheme()
         {
-            foreach (Control btns in this.Controls)
+            /*foreach (Control btns in this.Controls)
             {
                 if (btns.GetType() == typeof(Button))
                 {
@@ -69,7 +76,7 @@ namespace Thesis_project.Forms
                     btn.ForeColor = Color.Black; //ezt visszakell rakni majd white-ra
                     btn.FlatAppearance.BorderColor = SzinTema.SecondaryColor;
                 }
-            }
+            }*/
             if (dev485Set == false)
             {
                

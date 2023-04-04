@@ -30,7 +30,7 @@ namespace Thesis_project.Forms
       
         private void LoadTheme()
         {
-            foreach (Control btns in this.Controls)
+           /* foreach (Control btns in this.Controls)
             {
                 if (btns.GetType() == typeof(Button))
                 {
@@ -39,7 +39,7 @@ namespace Thesis_project.Forms
                     btn.ForeColor = Color.Black; //ezt visszakell rakni majd white-ra
                     btn.FlatAppearance.BorderColor = SzinTema.SecondaryColor;
                 }
-            }
+            }*/
         }
         private void SzerkNyil()
         {
@@ -89,6 +89,7 @@ namespace Thesis_project.Forms
         private void btnMentNyil_Click_1(object sender, EventArgs e)
         {
             directions[rowIndex] = selectedDirection;
+            MessageBox.Show("Mentve!");
         }
     }
 }
