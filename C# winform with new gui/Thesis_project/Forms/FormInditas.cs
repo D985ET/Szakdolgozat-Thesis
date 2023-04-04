@@ -20,6 +20,7 @@ namespace Thesis_project.Forms
     {
 
         bool dev485Set;
+     
       
         public void setDev485(bool dev485Set)
         {
@@ -56,10 +57,12 @@ namespace Thesis_project.Forms
                
                 dataGridInditas.Columns.Add(column);
             }
+          
             DataGridViewRow newRow = new DataGridViewRow();
             newRow.Height = 100; //magasság
 
             dataGridInditas.Rows.Add(newRow);
+            
             
 
             for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
@@ -389,35 +392,38 @@ namespace Thesis_project.Forms
             File.WriteAllText(jsonPathToFile,JsonConvert.SerializeObject(turnSettings, Newtonsoft.Json.Formatting.Indented));
         }
         public void jsonBolBetoltes(string jsonPathToFile)
-        {
+        { 
+            dataGridInditas.Rows.Clear();
             SerializedTurnSettings[] turnSettings;
-            turnSettings = FormHelper.LoadDeviceSettings(jsonPathToFile);
+            turnSettings = FormHelper.LoadDeviceSettings(jsonPathToFile, out ushort time);
+            nUPTimer.Value = time / 1000;
             for (int i = 0; i < turnSettings.Length; i++)
             {
-               
+
                 for (int j = 0; j < FormHelper.Devices.Count; j++)
                 {
-                    FormHelper.Devices[i].LoadDeviceSettings(turnSettings[j].Devices[i].Settings.Split('|'));
-                    if (turnSettings[i].Devices[i] != null && turnSettings[i].Devices[i].Type == 'L')
+                    //FormHelper.Devices[i].LoadDeviceSettings(turnSettings[j].Devices[i].Settings.Split('|'));
+                    if (turnSettings[i].Devices[j] != null && turnSettings[i].Devices[j].Type == 'L')
                     {
-                        FormLampaSzerk.colors[i] = ((LEDLight)(FormHelper.Devices[i])).Color;
+                        FormLampaSzerk.colors[i] = ((LEDLight)(FormHelper.Devices[j])).Color;
                     }
-                    if (turnSettings[i].Devices[i] != null && turnSettings[i].Devices[i].Type == 'N')
+                    if (turnSettings[i].Devices[j] != null && turnSettings[i].Devices[j].Type == 'N')
                     {
-                        FormNyilSzerk.colors[i] = ((LEDArrow)(FormHelper.Devices[i])).Color;
-                        FormNyilSzerk.directions[i] = ((LEDArrow)(FormHelper.Devices[i])).Direction;
+                        FormNyilSzerk.colors[i] = ((LEDArrow)(FormHelper.Devices[j])).Color;
+                        FormNyilSzerk.directions[i] = ((LEDArrow)(FormHelper.Devices[j])).Direction;
                     }
-                    if (turnSettings[i].Devices[i] != null && turnSettings[i].Devices[i].Type == 'H')
+                    if (turnSettings[i].Devices[j] != null && turnSettings[i].Devices[j].Type == 'H')
                     {
-                        FormHangszSzerk.timeMilisec[i] = ((Speaker)(FormHelper.Devices[i])).Sounds[0].Length;
-                        FormHangszSzerk.pitch[i] = (Pitch)((Speaker)(FormHelper.Devices[i])).Sounds[0].Index;
+                        FormHangszSzerk.timeMilisec[i] = ((Speaker)(FormHelper.Devices[j])).Sounds[0].Length;
+                        FormHangszSzerk.pitch[i] = (Pitch)((Speaker)(FormHelper.Devices[j])).Sounds[0].Index;
                         //speaker1.AddSound(FormHangszSzerk.pitch[i], 63, FormHangszSzerk.timeMilisec[i]);
                     }
-                    DataGridViewRow newRow = new DataGridViewRow();
-                    newRow.Height = 100;
-                    dataGridInditas.Rows.Add(newRow);
+                    
                 }
-     
+                DataGridViewRow newRow = new DataGridViewRow();
+                newRow.Height = 100;
+                dataGridInditas.Rows.Add(newRow);
+
             }
         }
 
