@@ -125,8 +125,8 @@ namespace Thesis_project.Forms.EszkozSzerk
             pitch[rowIndex] = selectedPitch;
            /* hangero[rowIndex] = (byte)hangeroNumUp.Value;*/
             timeMilisec[rowIndex] = (ushort)timeMilisecBox.Value;
-            MessageBox.Show("Mentve!");
-                     
+            this.Close();
+
         }
     }
 }

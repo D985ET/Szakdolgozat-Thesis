@@ -14,7 +14,7 @@ namespace Thesis_project.Forms
 {
     public partial class FormBetoltes : Form
     {
-        public FormBetoltes()
+        public FormBetoltes(FormInditas formInditas)
         {
             InitializeComponent();
             //kinézet:
@@ -23,6 +23,7 @@ namespace Thesis_project.Forms
             Application.EnableVisualStyles();
             LoadTheme();
             Betoltes();
+            formInditas.jsonBolBetoltes(filePath);
         }
         private void LoadTheme()
         {
@@ -56,24 +57,12 @@ namespace Thesis_project.Forms
                 {
                     throw new Exception("A file név üres vagy a file nem létezik!");
                 }
-               
-                //Read the contents of the file into a stream
-                var fileStream = openFileDialog.OpenFile();
-
-                using (StreamReader reader = new StreamReader(fileStream))
-                {
-                    fileContent = reader.ReadToEnd();
-                }
             }
             else
             {
                 throw new Exception("A betöltés megszakításra került!");
             }
 
-            MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
-        
-            FormHelper.LoadDeviceSettings(filePath); //1 ütem
-            Console.WriteLine(FormHelper.Devices[0]);
            
         }
 

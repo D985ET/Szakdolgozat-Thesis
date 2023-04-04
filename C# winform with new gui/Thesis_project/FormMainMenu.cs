@@ -151,20 +151,28 @@ namespace Thesis_project
 
         }
 
-
+        FormInditas formInditas;
         private void btnInditas_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormInditas(),sender);
+            if (formInditas == null)
+            {
+                formInditas = new Forms.FormInditas();
+            }
+            OpenChildForm(formInditas, sender);
         }
 
         private void btnMentes_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormMentes(), sender);
+            OpenChildForm(new Forms.FormMentes(formInditas), sender);
         }
 
         private void btnBetoltes_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormBetoltes(), sender);
+            if(formInditas == null)
+            {
+                formInditas = new Forms.FormInditas();
+            }
+            OpenChildForm(new Forms.FormBetoltes(formInditas), sender);
         }
     
         public void btnSzerkesztes_Click(object sender, EventArgs e)

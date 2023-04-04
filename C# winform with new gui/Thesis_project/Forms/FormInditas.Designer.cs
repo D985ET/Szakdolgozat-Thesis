@@ -84,19 +84,15 @@ namespace Thesis_project.Forms
             // 
             // nUPTimer
             // 
+            this.nUPTimer.DecimalPlaces = 1;
             this.nUPTimer.Increment = new decimal(new int[] {
-            1000,
+            5,
             0,
             0,
-            0});
+            65536});
             this.nUPTimer.Location = new System.Drawing.Point(506, 14);
             this.nUPTimer.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.nUPTimer.Minimum = new decimal(new int[] {
-            1000,
+            10,
             0,
             0,
             0});
@@ -104,7 +100,7 @@ namespace Thesis_project.Forms
             this.nUPTimer.Size = new System.Drawing.Size(120, 20);
             this.nUPTimer.TabIndex = 9;
             this.nUPTimer.Value = new decimal(new int[] {
-            1000,
+            1,
             0,
             0,
             0});
@@ -112,11 +108,11 @@ namespace Thesis_project.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(407, 16);
+            this.label2.Location = new System.Drawing.Point(387, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 13);
+            this.label2.Size = new System.Drawing.Size(116, 13);
             this.label2.TabIndex = 10;
-            this.label2.Text = "ütemek közötti idő";
+            this.label2.Text = "ütemek közötti idő (mp)";
             // 
             // btnNewUtem
             // 

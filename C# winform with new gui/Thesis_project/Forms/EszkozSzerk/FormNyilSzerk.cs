@@ -89,7 +89,7 @@ namespace Thesis_project.Forms
         private void btnMentNyil_Click_1(object sender, EventArgs e)
         {
             directions[rowIndex] = selectedDirection;
-            MessageBox.Show("Mentve!");
+            this.Close();
         }
     }
 }

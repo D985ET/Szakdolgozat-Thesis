@@ -4,10 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using Newtonsoft.Json;
 using SLFormHelper;
 using Thesis_project.Forms.EszkozSzerk;
 
@@ -141,7 +144,7 @@ namespace Thesis_project.Forms
         public void nyilatKirak(Point location)
         {
 
-            Button arrowButton = new Button();
+           /* Button arrowButton = new Button();
 
             try
             {
@@ -166,11 +169,11 @@ namespace Thesis_project.Forms
             arrowButton.FlatStyle = FlatStyle.Flat;
             arrowButton.FlatAppearance.BorderSize = 0;
 
-            DataGridViewRow newRow = new DataGridViewRow();
+            DataGridViewRow newRow = new DataGridViewRow();*/
             //DataGridViewButtonColumn datagridcolum = new DataGridViewButtonColumn();
             //datagridcolum.Resizable = DataGridViewTriState.False;
-            newRow.Cells.Add(new DataGridViewButtonCell());
-            dataGridInditas.Rows.Add(newRow);
+          /*  newRow.Cells.Add(new DataGridViewButtonCell());
+            dataGridInditas.Rows.Add(newRow);*/
             
             /* panel1.Controls.Add(arrowButton);*/
 
@@ -209,7 +212,7 @@ namespace Thesis_project.Forms
         
         private void lampatKirak(Point location)
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
+           /* System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
             
             lampaButton = new Button();
            
@@ -218,11 +221,11 @@ namespace Thesis_project.Forms
             lampaButton.Location = location;
             lampaButton.BackColor = Color.White;
             lampaButton.FlatStyle = FlatStyle.Flat;
-            lampaButton.FlatAppearance.BorderSize = 0;
+            lampaButton.FlatAppearance.BorderSize = 0;*/
            /* lampaButton.Tag = newUtemCounter;*/
             
             //lampaButton.Text = "LAMPA";//TODO IMAGE
-            lampaButton.Image = Image.FromFile(@"img\lamp.png");
+           /* lampaButton.Image = Image.FromFile(@"img\lamp.png");*/
             /*dataGridInditas.Controls.Add(lampaButton);*/
 
             /*DataGridViewRow newRow = new DataGridViewRow();
@@ -259,17 +262,17 @@ namespace Thesis_project.Forms
 
         private void hangszoroKirak(Point location)
         {
-            Button hangszoroButton = new Button();
+            /*Button hangszoroButton = new Button();
           
             hangszoroButton.Location = location;
 
             hangszoroButton.Width = 300;
-            hangszoroButton.Height = 300;
+            hangszoroButton.Height = 300;*/
             /*hangszoroButton.Location = location;*/
-            hangszoroButton.Image = Image.FromFile(@"img\speaker-filled-audio-tool.png");
+            /*hangszoroButton.Image = Image.FromFile(@"img\speaker-filled-audio-tool.png");
             hangszoroButton.BackColor= Color.White;
             hangszoroButton.FlatStyle = FlatStyle.Flat;
-            hangszoroButton.FlatAppearance.BorderSize = 0;
+            hangszoroButton.FlatAppearance.BorderSize = 0;*/
             /*hangszoroButton.Text = "HANGSZORO";//TODO IMA*/
 
            /* DataGridViewRow newRow = new DataGridViewRow();
@@ -303,7 +306,7 @@ namespace Thesis_project.Forms
         {
             btnFuttatas.Enabled = false;
             utemTimer.Enabled = true;
-            utemTimer.Interval = (int)nUPTimer.Value;
+            utemTimer.Interval = (int)(nUPTimer.Value*1000);
             for (int i = 0; i < FormLampaSzerk.colors.Length; i++)
             {
                 Console.WriteLine(FormLampaSzerk.colors[i]);
@@ -329,6 +332,11 @@ namespace Thesis_project.Forms
             {
                 ledLight1.Color = FormLampaSzerk.colors[i];
             }
+            if(ledArrow1 != null)
+            {
+                ledArrow1.Color = FormNyilSzerk.colors[i];
+                ledArrow1.Direction = FormNyilSzerk.directions[i];
+            }
             if (speaker1 != null)
             {
                 speaker1.AddSound(FormHangszSzerk.pitch[i], 63, FormHangszSzerk.timeMilisec[i]);
@@ -345,32 +353,99 @@ namespace Thesis_project.Forms
             }
             i++;
         }
-       
+        public void jsonBeMentes(string jsonPathToFile)
+        {
+            SerializedTurnSettings[] turnSettings = new SerializedTurnSettings[dataGridInditas.Rows.Count];
+           
+            for (int j = 0; j < dataGridInditas.Rows.Count; j++)
+            {
+                if (ledLight1 != null)
+                {
+                    ledLight1.Color = FormLampaSzerk.colors[j];
+                }
+                if (ledArrow1 != null)
+                {
+                    ledArrow1.Color = FormNyilSzerk.colors[j];
+                    ledArrow1.Direction = FormNyilSzerk.directions[j];
+                }
+                if (speaker1 != null)
+                {
+                    speaker1.ClearSounds();
+                    speaker1.AddSound(FormHangszSzerk.pitch[j], 63, FormHangszSzerk.timeMilisec[j]);
+                }
+
+                //Beállítások.
+               
+                turnSettings[j] = new SerializedTurnSettings(devices: new SerializedDeviceSettings[FormHelper.Devices.Count],time: (ushort)(nUPTimer.Value * 1000));
+                for (int i = 0; i < FormHelper.Devices.Count; i++)
+                {
+                    turnSettings[j].Devices[i] = new SerializedDeviceSettings(FormHelper.Devices[i].GetJSONType(), FormHelper.Devices[i].GetJSONSettings());
+                }
+                /*FormHelper.UnloadDeviceSettings((ushort)(nUPTimer.Value * 1000), jsonPathToFile);*/
+                //Elmenti
+                
+            }
+          
+            File.WriteAllText(jsonPathToFile,JsonConvert.SerializeObject(turnSettings, Newtonsoft.Json.Formatting.Indented));
+        }
+        public void jsonBolBetoltes(string jsonPathToFile)
+        {
+            SerializedTurnSettings[] turnSettings;
+            turnSettings = FormHelper.LoadDeviceSettings(jsonPathToFile);
+            for (int i = 0; i < turnSettings.Length; i++)
+            {
+               
+                for (int j = 0; j < FormHelper.Devices.Count; j++)
+                {
+                    FormHelper.Devices[i].LoadDeviceSettings(turnSettings[j].Devices[i].Settings.Split('|'));
+                    if (turnSettings[i].Devices[i] != null && turnSettings[i].Devices[i].Type == 'L')
+                    {
+                        FormLampaSzerk.colors[i] = ((LEDLight)(FormHelper.Devices[i])).Color;
+                    }
+                    if (turnSettings[i].Devices[i] != null && turnSettings[i].Devices[i].Type == 'N')
+                    {
+                        FormNyilSzerk.colors[i] = ((LEDArrow)(FormHelper.Devices[i])).Color;
+                        FormNyilSzerk.directions[i] = ((LEDArrow)(FormHelper.Devices[i])).Direction;
+                    }
+                    if (turnSettings[i].Devices[i] != null && turnSettings[i].Devices[i].Type == 'H')
+                    {
+                        FormHangszSzerk.timeMilisec[i] = ((Speaker)(FormHelper.Devices[i])).Sounds[0].Length;
+                        FormHangszSzerk.pitch[i] = (Pitch)((Speaker)(FormHelper.Devices[i])).Sounds[0].Index;
+                        //speaker1.AddSound(FormHangszSzerk.pitch[i], 63, FormHangszSzerk.timeMilisec[i]);
+                    }
+                    DataGridViewRow newRow = new DataGridViewRow();
+                    newRow.Height = 100;
+                    dataGridInditas.Rows.Add(newRow);
+                }
+     
+            }
+        }
+
         private void btnNewUtem_Click(object sender, EventArgs e)
         {
             DataGridViewRow newRow = new DataGridViewRow();
             newRow.Height = 100;
             dataGridInditas.Rows.Add(newRow);
 
-            Gombokat_Kirak();
+          /*  Gombokat_Kirak();*/
             
         }
-       
+
         private void dataGridInditas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             FormLampaSzerk.rowCount = dataGridInditas.Rows.Count;
-           
-                   
+
+
 
 
             if (dataGridInditas.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
-               
+
                 if (FormHelper.Devices[e.ColumnIndex] is LEDLight)
                 {
                     //FormMainMenu formMain = new FormMainMenu();
                     ledLight1 = (LEDLight)FormHelper.Devices[e.ColumnIndex];
-                  /*  dataGridInditas.Columns[e.ColumnIndex].DefaultCellStyle.ForeColor = ledLight1.Color;*/
+                    /*  dataGridInditas.Columns[e.ColumnIndex].DefaultCellStyle.ForeColor = ledLight1.Color;*/
                     lampaSzerkForm = new FormLampaSzerk(e.RowIndex);
                     lampaSzerkForm.Show();
                 }
@@ -386,43 +461,11 @@ namespace Thesis_project.Forms
                     nyilSzerkForm = new FormNyilSzerk(e.RowIndex);
                     nyilSzerkForm.Show();
                 }
-                    //IDE KELL A TÖBBI IF 
+                //IDE KELL A TÖBBI IF 
             }
-         
+
 
         }
-
-
-
-        //hangszóró
-        /* private void hangszOn_Click(object sender, EventArgs e)
-         {
-             Speaker speaker1;
-             speaker1 = (Speaker)FormHelper.Devices[0]; //itt baj van, mert egy hangtömböt kéne kiküldeni
-
-             speaker1.AddSound(Pitch.E, volume: 63, length: 200);
-             speaker1.AddSound(Pitch.E, volume: 63, length: 200);
-             speaker1.AddSound(Pitch.E_OKTAV1, volume: 63, length: 200);
-             speaker1.AddSound(Pitch.D_OKTAV1, volume: 63, length: 200);
-             speaker1.AddSound(Pitch.E, volume: 63, length: 200);
-             speaker1.AddSound(Pitch.C_OKTAV1, volume: 63, length: 200);
-             speaker1.AddSound(Pitch.E, volume: 63, length: 200);
-             speaker1.AddSound(Pitch.GISZ, volume: 63, length: 200);
-             speaker1.AddSound(Pitch.H_OKTAV1, volume: 63, length: 200);
-             speaker1.AddSound(Pitch.C_OKTAV1, volume: 63, length: 200);
-             byte turn = 1;
-             string json_source = FormHelper.DevicesToJSON();
-
-             FormHelper.CallSetTurnForEachDevice(ref json_source);
-         }*/
-
-
-
-
-
-
-
-
 
 
     }

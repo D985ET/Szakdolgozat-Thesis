@@ -14,7 +14,7 @@ namespace Thesis_project.Forms
 {
     public partial class FormMentes : Form
     {
-        public FormMentes()
+        public FormMentes(FormInditas formInditas)
         {
             InitializeComponent();
             //kinézet:
@@ -22,9 +22,8 @@ namespace Thesis_project.Forms
             this.WindowState = FormWindowState.Maximized;
             Application.EnableVisualStyles();
             LoadTheme();
-
             Mentes();
-
+            formInditas.jsonBeMentes(filePath);
         }
         private void LoadTheme()
         {
@@ -53,7 +52,6 @@ namespace Thesis_project.Forms
                 saveFileDialog.FilterIndex = 2;
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //Get the path of specified file
                     filePath = saveFileDialog.FileName;
                 }
             }
@@ -62,9 +60,9 @@ namespace Thesis_project.Forms
                 throw new Exception("Probléma volt a fájl mentése során! ", e);
             }
 
-            MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
+            //MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
 
-            FormHelper.UnloadDeviceSettings(filePath);//kiment
+           /* FormHelper.UnloadDeviceSettings(filePath);*///kiment
         }
 
     }

@@ -90,8 +90,8 @@ namespace Thesis_project.Forms
 
         private void lampaMentBtn_Click(object sender, EventArgs e)
         {
-           
-            MessageBox.Show("Mentve!");
+
+            this.Close();
             //string json_source = FormHelper.DevicesToJSON();
             //FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
             //MessageBox.Show("Sikeresen beállítva");
