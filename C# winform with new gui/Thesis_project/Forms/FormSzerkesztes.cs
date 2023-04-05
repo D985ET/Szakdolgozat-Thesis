@@ -248,34 +248,62 @@ namespace Thesis_project.Forms
             FormLampaSzerk.rowCount = dataGridSzerkesztes.Rows.Count;
             if (dataGridSzerkesztes.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
-
-                if (FormHelper.Devices[e.ColumnIndex] is LEDLight)
-                {
-                    //FormMainMenu formMain = new FormMainMenu();
-                    ledLight1 = (LEDLight)FormHelper.Devices[e.ColumnIndex];
-                    lampaSzerkForm = new FormLampaSzerk(e.RowIndex);
-                    lampaSzerkForm.Show();
-                }
-                if (FormHelper.Devices[e.ColumnIndex] is Speaker)
-                {
-                    speaker1 = (Speaker)FormHelper.Devices[e.ColumnIndex];
-                    hangSzerkForm = new FormHangszSzerk(e.RowIndex);
-                    hangSzerkForm.Show();
-                }
                 if (FormHelper.Devices[e.ColumnIndex] is LEDArrow)
                 {
                     ledArrow1 = (LEDArrow)FormHelper.Devices[e.ColumnIndex];
                     nyilSzerkForm = new FormNyilSzerk(e.RowIndex);
                     nyilSzerkForm.Show();
                 }
+                else if (FormHelper.Devices[e.ColumnIndex] is LEDLight)
+                {
+                    //FormMainMenu formMain = new FormMainMenu();
+                    ledLight1 = (LEDLight)FormHelper.Devices[e.ColumnIndex];
+                    lampaSzerkForm = new FormLampaSzerk(e.RowIndex);
+                    lampaSzerkForm.Show();
+                }
+                else if (FormHelper.Devices[e.ColumnIndex] is Speaker)
+                {
+                    speaker1 = (Speaker)FormHelper.Devices[e.ColumnIndex];
+                    hangSzerkForm = new FormHangszSzerk(e.RowIndex);
+                    hangSzerkForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("nem létezik ilyen eszköz!");
+                }
+               
                 //IDE KELL A TÖBBI IF 
             }
         }
 
         private void btnFuttatasSzerk_Click(object sender, EventArgs e)
         {
-            
            
+            if (ledLight1 != null)
+            {
+                ledLight1.Color = FormLampaSzerk.colors[0];
+            }
+            if (ledArrow1 != null)
+            {
+                ledArrow1.Color = FormNyilSzerk.colors[0];
+                ledArrow1.Direction = FormNyilSzerk.directions[0];
+            }
+            if (speaker1 != null)
+            {
+                speaker1.AddSound(FormHangszSzerk.pitch[0], 63, FormHangszSzerk.timeMilisec[0]);
+            }
+
+
+            /*ledLight1.Color = FormLampaSzerk.colors[i];*/
+
+            string json_source = FormHelper.DevicesToJSON();//átalakítja az ezsközbeállításokat JSON-é
+            FormHelper.CallSetTurnForEachDevice(ref json_source);//ez futtatja le a színt
+            if (speaker1 != null)
+            {
+                speaker1.ClearSounds();
+            }
+           
+
         }
     }
 }

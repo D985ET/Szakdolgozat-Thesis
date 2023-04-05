@@ -51,6 +51,10 @@ namespace Thesis_project
             this.nyilPanel = new System.Windows.Forms.Panel();
             this.HangszPanel = new System.Windows.Forms.Panel();
             this.lampaPanel = new System.Windows.Forms.Panel();
+            this.funkciokPanel = new System.Windows.Forms.Panel();
+            this.leirasPanel = new System.Windows.Forms.Panel();
+            this.funkciokCimP = new System.Windows.Forms.Panel();
+            this.funkcLeirCim = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -108,7 +112,7 @@ namespace Thesis_project
             this.btnSzerkesztés.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnSzerkesztés.Size = new System.Drawing.Size(200, 100);
             this.btnSzerkesztés.TabIndex = 4;
-            this.btnSzerkesztés.Text = " Feladatsor Szerkesztés";
+            this.btnSzerkesztés.Text = "Eszközök Tesztelése";
             this.btnSzerkesztés.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSzerkesztés.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSzerkesztés.UseVisualStyleBackColor = false;
@@ -129,7 +133,7 @@ namespace Thesis_project
             this.btnBetöltés.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnBetöltés.Size = new System.Drawing.Size(200, 100);
             this.btnBetöltés.TabIndex = 3;
-            this.btnBetöltés.Text = " Feladatsor Betöltés";
+            this.btnBetöltés.Text = "Ütemsor Betöltés";
             this.btnBetöltés.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBetöltés.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBetöltés.UseVisualStyleBackColor = false;
@@ -150,7 +154,7 @@ namespace Thesis_project
             this.btnMentés.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnMentés.Size = new System.Drawing.Size(200, 100);
             this.btnMentés.TabIndex = 2;
-            this.btnMentés.Text = " Feladatsor Mentés";
+            this.btnMentés.Text = "Ütemsor Mentés";
             this.btnMentés.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMentés.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMentés.UseVisualStyleBackColor = false;
@@ -340,6 +344,10 @@ namespace Thesis_project
             // 
             // panelDesktopPanel
             // 
+            this.panelDesktopPanel.Controls.Add(this.funkcLeirCim);
+            this.panelDesktopPanel.Controls.Add(this.funkciokCimP);
+            this.panelDesktopPanel.Controls.Add(this.leirasPanel);
+            this.panelDesktopPanel.Controls.Add(this.funkciokPanel);
             this.panelDesktopPanel.Controls.Add(this.nyilPanel);
             this.panelDesktopPanel.Controls.Add(this.HangszPanel);
             this.panelDesktopPanel.Controls.Add(this.lampaPanel);
@@ -351,24 +359,54 @@ namespace Thesis_project
             // 
             // nyilPanel
             // 
-            this.nyilPanel.Location = new System.Drawing.Point(660, 0);
+            this.nyilPanel.Location = new System.Drawing.Point(660, 6);
             this.nyilPanel.Name = "nyilPanel";
-            this.nyilPanel.Size = new System.Drawing.Size(312, 519);
+            this.nyilPanel.Size = new System.Drawing.Size(312, 361);
             this.nyilPanel.TabIndex = 2;
             // 
             // HangszPanel
             // 
-            this.HangszPanel.Location = new System.Drawing.Point(335, 0);
+            this.HangszPanel.Location = new System.Drawing.Point(335, 6);
             this.HangszPanel.Name = "HangszPanel";
-            this.HangszPanel.Size = new System.Drawing.Size(314, 519);
+            this.HangszPanel.Size = new System.Drawing.Size(314, 361);
             this.HangszPanel.TabIndex = 1;
             // 
             // lampaPanel
             // 
-            this.lampaPanel.Location = new System.Drawing.Point(4, 0);
+            this.lampaPanel.Location = new System.Drawing.Point(20, 6);
             this.lampaPanel.Name = "lampaPanel";
-            this.lampaPanel.Size = new System.Drawing.Size(325, 519);
+            this.lampaPanel.Size = new System.Drawing.Size(309, 361);
             this.lampaPanel.TabIndex = 0;
+            // 
+            // funkciokPanel
+            // 
+            this.funkciokPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.funkciokPanel.Location = new System.Drawing.Point(20, 406);
+            this.funkciokPanel.Name = "funkciokPanel";
+            this.funkciokPanel.Size = new System.Drawing.Size(189, 122);
+            this.funkciokPanel.TabIndex = 3;
+            // 
+            // leirasPanel
+            // 
+            this.leirasPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.leirasPanel.Location = new System.Drawing.Point(216, 407);
+            this.leirasPanel.Name = "leirasPanel";
+            this.leirasPanel.Size = new System.Drawing.Size(756, 121);
+            this.leirasPanel.TabIndex = 4;
+            // 
+            // funkciokCimP
+            // 
+            this.funkciokCimP.Location = new System.Drawing.Point(20, 373);
+            this.funkciokCimP.Name = "funkciokCimP";
+            this.funkciokCimP.Size = new System.Drawing.Size(187, 27);
+            this.funkciokCimP.TabIndex = 5;
+            // 
+            // funkcLeirCim
+            // 
+            this.funkcLeirCim.Location = new System.Drawing.Point(216, 373);
+            this.funkcLeirCim.Name = "funkcLeirCim";
+            this.funkcLeirCim.Size = new System.Drawing.Size(236, 26);
+            this.funkcLeirCim.TabIndex = 6;
             // 
             // FormMainMenu
             // 
@@ -417,6 +455,10 @@ namespace Thesis_project
         private System.Windows.Forms.Panel nyilPanel;
         private System.Windows.Forms.Panel HangszPanel;
         private System.Windows.Forms.Panel lampaPanel;
+        private System.Windows.Forms.Panel funkciokPanel;
+        private System.Windows.Forms.Panel leirasPanel;
+        private System.Windows.Forms.Panel funkcLeirCim;
+        private System.Windows.Forms.Panel funkciokCimP;
     }
 }
 

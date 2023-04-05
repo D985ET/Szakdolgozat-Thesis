@@ -446,8 +446,14 @@ namespace Thesis_project.Forms
 
             if (dataGridInditas.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
-
-                if (FormHelper.Devices[e.ColumnIndex] is LEDLight)
+                if (FormHelper.Devices[e.ColumnIndex] is LEDArrow)
+                {
+                    ledArrow1 = (LEDArrow)FormHelper.Devices[e.ColumnIndex];
+                    nyilSzerkForm = new FormNyilSzerk(e.RowIndex);
+                    nyilSzerkForm.Show();
+                    
+                }
+                else if (FormHelper.Devices[e.ColumnIndex] is LEDLight)
                 {
                     //FormMainMenu formMain = new FormMainMenu();
                     ledLight1 = (LEDLight)FormHelper.Devices[e.ColumnIndex];
@@ -455,18 +461,13 @@ namespace Thesis_project.Forms
                     lampaSzerkForm = new FormLampaSzerk(e.RowIndex);
                     lampaSzerkForm.Show();
                 }
-                if (FormHelper.Devices[e.ColumnIndex] is Speaker)
+                else if (FormHelper.Devices[e.ColumnIndex] is Speaker)
                 {
                     speaker1 = (Speaker)FormHelper.Devices[e.ColumnIndex];
                     hangSzerkForm = new FormHangszSzerk(e.RowIndex);
                     hangSzerkForm.Show();
                 }
-                if (FormHelper.Devices[e.ColumnIndex] is LEDArrow)
-                {
-                    ledArrow1 = (LEDArrow)FormHelper.Devices[e.ColumnIndex];
-                    nyilSzerkForm = new FormNyilSzerk(e.RowIndex);
-                    nyilSzerkForm.Show();
-                }
+              
                 //IDE KELL A TÖBBI IF 
             }
 

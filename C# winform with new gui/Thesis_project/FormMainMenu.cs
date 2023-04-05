@@ -65,6 +65,10 @@ namespace Thesis_project
             panelDesktopPanel.Controls.Add(HangszPanel);
             panelDesktopPanel.Controls.Add(nyilPanel);
             panelDesktopPanel.Controls.Add(lampaPanel);
+            panelDesktopPanel.Controls.Add(funkciokPanel);
+            panelDesktopPanel.Controls.Add(leirasPanel);
+            panelDesktopPanel.Controls.Add(funkciokCimP);
+            panelDesktopPanel.Controls.Add(funkcLeirCim);
             //hangszoró:
             Label hangszoroCimLbl = new Label();
             Label hangszoroLbl = new Label();
@@ -116,7 +120,53 @@ namespace Thesis_project
             lampaPanel.Controls.Add(lampaCimLbl);
             lampaPanel.Controls.Add(lampaLbl);
 
+            //funkciók címe:
+            Label funkciokLbl = new Label();
+            funkciokLbl.Text = "Indítás: \n" +
+                "Ütemsor Mentés:  \n" +
+                "Ütemsor Betöltése:  \n" +
+                "Eszközök Tesztelése:  \n" +
+                "Kilépés:";
+            funkciokLbl.Dock = DockStyle.Fill;
+            funkciokLbl.AutoSize = false;
+            funkciokLbl.TextAlign = ContentAlignment.MiddleCenter;
+            funkciokLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+           
+            funkciokPanel.Controls.Add(funkciokLbl);
+            //funkciok leírasa:
+            Label funkciokLeirasLbl = new Label();
+            funkciokLeirasLbl.Text = "1 vagy több eszköz együttes beállítása, ütemidők szerint.\n" +
+                "Adott eszközök beállításainak elmentése külön fájlba, ütemidővel együtt. \n" +
+                "Adott eszközök beállításainak betöltése külső fájlból. (JSON formátum) \n" +
+                "Egyénileg tesztelhető a különféle eszközök megfelelő működése. \n" +
+                "A projekt bezárása.";
+            funkciokLeirasLbl.Dock = DockStyle.Fill;
+            funkciokLeirasLbl.AutoSize = false;
+            funkciokLeirasLbl.TextAlign = ContentAlignment.MiddleLeft;
+            funkciokLeirasLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+          
+            leirasPanel.Controls.Add(funkciokLeirasLbl);
+            //funkciók cím:
+            Label funkciokCimLbl = new Label();
+            funkciokCimLbl.Text = "Ablakok:";
+            funkciokCimLbl.Dock = DockStyle.Fill;
+            funkciokCimLbl.AutoSize = false;
+            funkciokCimLbl.TextAlign = ContentAlignment.BottomCenter;
+            funkciokCimLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+            funkciokCimP.Controls.Add(funkciokCimLbl);
+            //funkciok leirasa cim:
+            Label funkciokLeirasCimLbl = new Label();
+            funkciokLeirasCimLbl.Text = "Ablakok részletesebb leírása:";
+            funkciokLeirasCimLbl.Dock = DockStyle.Fill;
+            funkciokLeirasCimLbl.AutoSize = false;
+            funkciokLeirasCimLbl.TextAlign = ContentAlignment.BottomLeft;
+            funkciokLeirasCimLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+            funkcLeirCim.Controls.Add(funkciokLeirasCimLbl);
             //Border:
+            funkciokCimP.BorderStyle = BorderStyle.FixedSingle;
+            funkciokLeirasCimLbl.BorderStyle = BorderStyle.FixedSingle;
             HangszPanel.BorderStyle = BorderStyle.FixedSingle;
             nyilPanel.BorderStyle = BorderStyle.FixedSingle;
             lampaPanel.BorderStyle = BorderStyle.FixedSingle;
