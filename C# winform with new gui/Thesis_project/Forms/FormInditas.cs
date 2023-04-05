@@ -440,7 +440,7 @@ namespace Thesis_project.Forms
         private void dataGridInditas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             FormLampaSzerk.rowCount = dataGridInditas.Rows.Count;
-
+            FormNyilSzerk.rowCount = dataGridInditas.Rows.Count;
 
 
 

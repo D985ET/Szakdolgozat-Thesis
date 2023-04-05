@@ -47,8 +47,8 @@ namespace Thesis_project.Forms
             //nyilSzinAkt.Text = arrowToSzerk.Color.ToString();
             //nyilAktIrany.Text = arrowToSzerk.Direction.ToString();
         }
-        public static Direction[] directions = new Direction[rowCount];
-        public static Color[] colors = new Color[rowCount];
+        public static Direction[] directions = new Direction[100];
+        public static Color[] colors = new Color[100];
         Direction selectedDirection;
         
 

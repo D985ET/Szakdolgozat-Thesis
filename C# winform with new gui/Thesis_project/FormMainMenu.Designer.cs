@@ -48,9 +48,13 @@ namespace Thesis_project
             this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPanel = new System.Windows.Forms.Panel();
+            this.nyilPanel = new System.Windows.Forms.Panel();
+            this.HangszPanel = new System.Windows.Forms.Panel();
+            this.lampaPanel = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
+            this.panelDesktopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -336,11 +340,35 @@ namespace Thesis_project
             // 
             // panelDesktopPanel
             // 
+            this.panelDesktopPanel.Controls.Add(this.nyilPanel);
+            this.panelDesktopPanel.Controls.Add(this.HangszPanel);
+            this.panelDesktopPanel.Controls.Add(this.lampaPanel);
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopPanel.Location = new System.Drawing.Point(200, 80);
             this.panelDesktopPanel.Name = "panelDesktopPanel";
             this.panelDesktopPanel.Size = new System.Drawing.Size(984, 531);
             this.panelDesktopPanel.TabIndex = 2;
+            // 
+            // nyilPanel
+            // 
+            this.nyilPanel.Location = new System.Drawing.Point(660, 0);
+            this.nyilPanel.Name = "nyilPanel";
+            this.nyilPanel.Size = new System.Drawing.Size(312, 519);
+            this.nyilPanel.TabIndex = 2;
+            // 
+            // HangszPanel
+            // 
+            this.HangszPanel.Location = new System.Drawing.Point(335, 0);
+            this.HangszPanel.Name = "HangszPanel";
+            this.HangszPanel.Size = new System.Drawing.Size(314, 519);
+            this.HangszPanel.TabIndex = 1;
+            // 
+            // lampaPanel
+            // 
+            this.lampaPanel.Location = new System.Drawing.Point(4, 0);
+            this.lampaPanel.Name = "lampaPanel";
+            this.lampaPanel.Size = new System.Drawing.Size(325, 519);
+            this.lampaPanel.TabIndex = 0;
             // 
             // FormMainMenu
             // 
@@ -361,6 +389,7 @@ namespace Thesis_project
             this.panelLogo.PerformLayout();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
+            this.panelDesktopPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -385,6 +414,9 @@ namespace Thesis_project
         private System.Windows.Forms.Button btnMinimizeTop;
         private System.Windows.Forms.Button btnMaximizeTop;
         private System.Windows.Forms.Button btnCloseTop;
+        private System.Windows.Forms.Panel nyilPanel;
+        private System.Windows.Forms.Panel HangszPanel;
+        private System.Windows.Forms.Panel lampaPanel;
     }
 }
 

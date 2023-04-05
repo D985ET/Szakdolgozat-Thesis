@@ -274,7 +274,8 @@ namespace Thesis_project.Forms
 
         private void btnFuttatasSzerk_Click(object sender, EventArgs e)
         {
-
+            
+           
         }
     }
 }

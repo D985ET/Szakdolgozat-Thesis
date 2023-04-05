@@ -107,7 +107,7 @@ namespace Thesis_project.Forms
                 ColorPickerBox.BackColor = colorPicker.Color; //megjelenik a color dialog cuccos
             }
            //lightToSzerk.Color = ColorPickerBox.BackColor;
-            aktSzinLamp.Text = ColorPickerBox.BackColor.Name;
+            
             colors[rowIndex] = ColorPickerBox.BackColor;
             Console.WriteLine(rowIndex);
             Console.WriteLine(colors[rowIndex]);

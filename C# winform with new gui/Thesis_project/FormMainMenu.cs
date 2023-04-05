@@ -36,9 +36,11 @@ namespace Thesis_project
             this.MinimizeBox = false;
             //ne lehessen állítani a size-t
             Application.EnableVisualStyles();
-            
-           
-            if(open == false)
+            panelBeallitas();
+          
+
+
+            if (open == false)
             {
                 FormHelper.CallOpen(this.Handle);
                 open = true;
@@ -58,6 +60,68 @@ namespace Thesis_project
 
 
         //Methods
+        public void panelBeallitas()
+        {
+            panelDesktopPanel.Controls.Add(HangszPanel);
+            panelDesktopPanel.Controls.Add(nyilPanel);
+            panelDesktopPanel.Controls.Add(lampaPanel);
+            //hangszoró:
+            Label hangszoroCimLbl = new Label();
+            Label hangszoroLbl = new Label();
+            hangszoroCimLbl.Text = "A hangszóró eszköz beállításai: ";
+            hangszoroCimLbl.Dock = DockStyle.Top;
+            hangszoroCimLbl.AutoSize = false;
+            hangszoroCimLbl.TextAlign = ContentAlignment.MiddleCenter;
+            hangszoroCimLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            hangszoroLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            hangszoroLbl.Text = "\n-  hangerő, \n-  hangszín  \n-  hanghossz (mp)";
+            hangszoroLbl.Dock = DockStyle.Fill;
+            hangszoroLbl.AutoSize = false;
+            hangszoroLbl.TextAlign = ContentAlignment.MiddleCenter;
+            HangszPanel.Controls.Add(hangszoroCimLbl);
+            HangszPanel.Controls.Add(hangszoroLbl);
+            HangszPanel.BorderStyle = BorderStyle.FixedSingle;
+            nyilPanel.BorderStyle = BorderStyle.FixedSingle;
+            lampaPanel.BorderStyle = BorderStyle.FixedSingle;
+            //nyíl
+            Label nyilCimLbl = new Label();
+            Label nyilLbl = new Label();
+            nyilCimLbl.Text = "A nyíl eszköz beállításai: ";
+            nyilCimLbl.Dock = DockStyle.Top;
+            nyilCimLbl.AutoSize = false;
+            nyilCimLbl.TextAlign = ContentAlignment.MiddleCenter;
+            nyilCimLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nyilLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nyilLbl.Text = "\n-  nyíl iránya(balra/jobbra/balra-jobbra), \n- szín";
+            nyilLbl.Dock = DockStyle.Fill;
+            nyilLbl.AutoSize = false;
+            nyilLbl.TextAlign = ContentAlignment.MiddleCenter;
+            nyilPanel.Controls.Add(nyilCimLbl);
+            nyilPanel.Controls.Add(nyilLbl);
+
+
+            //lampa
+            Label lampaCimLbl = new Label();
+            Label lampaLbl = new Label();
+            lampaCimLbl.Text = "A lámpa eszköz beállításai: ";
+            lampaCimLbl.Dock = DockStyle.Top;
+            lampaCimLbl.AutoSize = false;
+            lampaCimLbl.TextAlign = ContentAlignment.MiddleCenter;
+            lampaCimLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lampaLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lampaLbl.Text = "\n- szín";
+            lampaLbl.Dock = DockStyle.Fill;
+            lampaLbl.AutoSize = false;
+            lampaLbl.TextAlign = ContentAlignment.MiddleCenter;
+            lampaPanel.Controls.Add(lampaCimLbl);
+            lampaPanel.Controls.Add(lampaLbl);
+
+            //Border:
+            HangszPanel.BorderStyle = BorderStyle.FixedSingle;
+            nyilPanel.BorderStyle = BorderStyle.FixedSingle;
+            lampaPanel.BorderStyle = BorderStyle.FixedSingle;
+
+        }
         public Color SelectThemeColor()
         {
             string color;
@@ -268,5 +332,7 @@ namespace Thesis_project
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+    
     }
 }
