@@ -151,17 +151,65 @@
 	\\
 	A projektem során azért választottam a Windows Forms Application-t mivel a különböző eszközök(gombok, címkék) amelyek az ezen alkalmazásban megtalálhatóak elősegítik a felhasználó számára a könnyed olvashatóságot és feltérképezés lehetőségét. Az alkalmazás hasonló módon elkészülhetett volna konzolos felületre is, de mivel ez a felhasználó és az esetlegesen laikus ügyfél számára is nehezen érthető, ezért az ablakos alkalmazás a támogatott.
 	\\ 
-	\subsection{Dynamic Link Library mint erőforrás}
+	\section{Dynamic Link Library mint erőforrás}
 	C\#-ban lehetőség van úgynevezett DLL-ek használatára is. A DLL(Dynamic Link Library) mint olyan az egy kisebb programok összessége, amelyeket nagyobb programok könnyűszerrel be tudnak importálni a saját projektjükbe. Ezen kisebb programokhoz vagy DLL fájlokhoz, hozzátartozik leírás is amelyek általában minden egyes függvényeknél, illetve metódusoknál megjegyezhető. Ennek oka, hogy az a fejlesztő aki használja a DLL-t
 	nagyobb belátást kapjon arról hogy az adott metódus, miként és hogyan működik.\cite{benlutkevich}
 	\\
 	A projekthez a DLL-t, Nagy-Tóth Bence hallgatótársam szolgáltatja amelyben számos metódus meg lett írva, ezeket felhasználva a fő applikáció működésre bírható.
 	\\
-	Ezentúl, a működtettet eszközökkel való kommunikációt Delphi programozási nyelvben volt szükséges megírni amely a DLL alapját képezte. 
+	Ezentúl, a működtetett eszközökkel való kommunikáció alapját Delphi programozási nyelvből indulva C\# nyelvre lett implementálva amely a DLL és a felület alapját képezte. A programkódjáról egy részlet a \ref{fig:dllbence} ábrán találjuk. 
 	\\
-	\subsection{A projekthez tartozó eszközök}
-	Háromféle eszközt működtetünk, lámpát, nyilakat szimbolizáló lámpa, illetve egy hangszóró.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.3]{DLL_bence}
+		\caption[C\# DLL kódrészlete]{C\# DLL kódrészlete(főbb metódusok)}
+		\label{fig:dllbence}
+	\end{figure}
+	%ide kell Bencétől kép
+	\newpage
+	\section{A projekthez tartozó eszközök bemutatása}
+	Háromféle eszközt szeretnénk működtetni, lámpákat, nyilakat, illetve hangszórókat. Az eszközöknek többféle bemeneti csatlakozói vannak, de ezekről a későbbi  \ref{eszkozcsatlakozok} alfejezetben található meg.
+	Ezen eszközöket Keresztes Péter Tanár úr készítette, és szerelte össze.
+	Továbbá, mindegyik eszköz más és más érzékszervet stimulál, mint például a lámpa színének a felvillanása a szemünkre van nagy hatással, míg a hangszóró a hallásunkat veszi igénybe. 
+
+	\subsection{Lámpa eszköz}
+	A lámpa eszköz egy olyan LED-ek összessége melyben a fény akkor keletkezik, amikor az áramot vezető részecskék egyesülnek a félvezető anyagban. Az eszköz képes különféle színek kibocsájtására is, melyek vezérlését a tervezett felületen keresztül lehet vezérelni.
+	\subsubsection{Fénykibocsátó diódákról röviden}
+	A LED félvezető anyagában vannak energiasávok, és ezek elkülönülése határozza meg a LED által kibocsátott fényrészecskék energiáját.
+	Ezek a fényrészecskék határozzák meg a kibocsátott fény hullámhosszát, ezt követően a színét is. A nem megegyező sáv különbségek adják azt meg, hogy különféle színt eredményezzenek ezek a félvezető anyagok.\cite{leds_magazi}
+	Ezen az eszközön összesen 19 db dióda található meg amelyek egységesen tudnak funkcionálni.
+	Az eszköz a \ref{fig:lamp01} képen látható.
+	Továbbá az eszköz bemeneti csatlakozóiról a \ref{fig:csatlakozo} képen látható.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.12]{lamp01}
+		\caption[Lámpa eszköz]{Lámpa eszköz}
+		\label{fig:lamp01}
+	\end{figure}
+	\subsection{Nyíl eszköz}
+	A nyíl eszköz egy olyan eszköz amely különféle irányok megjelenítésére képes. Ezt úgy tudja elérni, hogy különböző sorrendben, más pozícióban éri az áram a diódát, ezzel elérve, hogy mintegy nyíl funkcionáljon.
+	Ezeket is Keresztes Péter Tanár úr építette fel. Az eszköz képes különféle színek kibocsájtására is, továbbá irányok jelzésére is alkalmas, melyek vezérlését a tervezett felületen keresztül lehet vezérelni. 
 	\\
+	Ezen az eszközön összesen 26 db dióda található meg amelyek egységesen is tudnak funkcionálni.	Maga az eszköz a \ref{fig:nyil01} képen látható.Továbbá az eszköz bemeneti csatlakozóiról a \ref{fig:csatlakozo} képen látható.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.12]{nyil01}
+		\caption[Nyíl eszköz]{Nyíl eszköz}
+		\label{fig:nyil01}
+	\end{figure}
+\newpage
+	\subsection{Hangszóró eszköz}
+	A hangszóró mint eszköz képes különféle hangszínen, más és más hangerőn hangokat lejátszani. Továbbá, egy hangszín lejátszásának a hosszát is betudjuk konfigurálni.
+	Az eszköz a \ref{fig:hangsz01} képen látható.
+	Továbbá az eszköz bemeneti csatlakozóiról a \ref{fig:csatlakozo} képen látható.  
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.12]{hangsz01}
+		\caption[Hangszóró eszköz]{Hangszóró eszköz}
+		\label{fig:hangsz01}
+	\end{figure}
+	\subsection{Eszközök portjai}
+	\label{eszkozcsatlakozok}
 	Ezen eszközöknek önálló tápellátással rendelkeznek, melyek közötti kapcsolatot 4 pólusú RJ típusú csatlakozókkal felszerelt kábelen keresztül lehet biztosítani. Ezek közül is az RJ 9-es változatát használjuk amely egy 4 eres csatlakozó, amibe csak a középső kettő(piros,zöld) vezetékeket kötjük be. \\
 	Alapvetően az RJ9 vezetékes telefonokba használják, a telefon készülék és a kagyló közötti adatátvitel céljából.\cite{RJ9ok}
 	Az egyes egységeket láncszerűen kell egymás után kapcsolni, melyeket vagy individuálisan vagy kollektívan lehet kötni a vezérlő számítógéphez. Ezen összekötéshez szükséges egy USB 2.0-ás nyomtatókábel, melynek az USB-B-s fele az eszközbe csatlakozik, és az USB-A-s fele pedig a tápot biztosító és programot futtató számítógépbe.
@@ -171,100 +219,14 @@
 	\\  
 	A hangszóró adott hangszínt le tud játszani, amelyeket különböző hosszúságig illetve hangerősségbe tudunk működtetni.
 	\par
-	A lámpa egy olyan eszköz lesz amelyen különböző színben tud világítani a LED, különböző időközönként. Természetesen a világítás hosszát is be lehet állítani különböző eszközökhöz.
-	\par
-	A nyíl egy olyan eszköz lesz amelyen különböző színben tud világítani a LED-ek összessége, illetve különböző irányba tud mutatni a LED-ek által kialakított alakzat.  Természetesen  világítás hosszát is be lehet állítani különböző eszközökhöz, különböző időközönként.
-
-\begin{comment}
-	%Hangszóró:
-	\begin{figure}[h!]
+	A nyíl egy olyan eszköz lesz amelyen különböző színben tud világítani a LED-ek összessége, illetve különböző irányba tud mutatni a LED-ek által kialakított alakzat. 
 	
-	\centering
-	\includegraphics[page=1,width=0.5\textwidth]{SLH}
-	\caption[Hangszoró]{hangszóró kapcsolási rajz \#1}
-	\label{fig:hangsz1}
-	
-	\end{figure}
-
-	\begin{figure}[h!]
+	\begin{figure}[h!]	
 		\centering
-		\includegraphics[page=2,width=0.5\textwidth]{SLH}
-		
-		\caption[Hangszoró]{hangszóró kapcsolási rajz \#2}
-		\label{fig:hangsz2}
+		\includegraphics[page=1,width=0.5\textwidth]{táp,rj9}
+		\caption[Eszközök bemeneti portjai]{Eszközök bemeneti portjai}
+		\label{fig:csatlakozo}
 	\end{figure}
-
-	\begin{figure}[h!]
-	
-		\centering
-		\includegraphics[page=3,width=0.5\textwidth]{SLH}
-		
-		\caption[Hangszoró]{hangszóró kapcsolási rajz \#3}
-		\label{fig:hangsz3}\medskip
-	\end{figure} 
-
-	%lámpa
-	\begin{figure}[h!]
-	
-		\centering
-		\includegraphics[page=1,width=0.5\textwidth]{SLL}
-		
-		\caption{lámpa kapcsolási rajz \#1}
-			\label{fig:lamp1}
-	
-	\end{figure}
-
-	\begin{figure}[h!]
-	
-		\centering
-		\includegraphics[page=2,width=0.5\textwidth]{SLL}
-		
-		\caption{lámpa kapcsolási rajz \#2}
-		\label{fig:lamp2}
-	
-	\end{figure}
-
-	\begin{figure}[h!]
-		
-		\centering
-		\includegraphics[page=3,width=0.5\textwidth]{SLL}
-		
-		\caption{lámpa kapcsolási rajz \#3}
-		\label{fig:lamp3}
-	
-	\end{figure}
-\par
-
-
-	%nyíl
-	\begin{figure}[h!]
-		\centering
-		\includegraphics[page=1,width=0.5\textwidth]{SLN}
-		
-		\caption{nyíl kapcsolási rajz \#1}
-		\label{fig:nyil1}
-	\end{figure}
-	\begin{figure}[h!]
-		\centering
-		\includegraphics[page=2,width=0.5\textwidth]{SLN}
-		
-		\caption{nyíl kapcsolási rajz \#2}
-		\label{fig:nyil2}
-	\end{figure}
-	\begin{figure}[h!]
-		\centering
-		\includegraphics[page=3,width=0.5\textwidth]{SLN}
-		\caption{nyíl kapcsolási rajz \#3}
-		\label{fig:nyil3}
-	\end{figure}
-
-\end{comment}
-
-
-	\begin{comment}
-		\includegraphics[width=0.5\textwidth]{SLL}
-		\includegraphics[width=0.5\textwidth]{SLN}
-	\end{comment}
 	\begin{comment}
 		2.fejezet: Melyik részét csinálom én? Mit csináltunk, és hogyan ui-t kellett fejleszteni, milyen lépésekből állt, képernyőképekkel, eladjuk a munkánkat.
 	\end{comment}
@@ -284,7 +246,7 @@
 	\\
 	Kutatásom során találkoztam egy olyan dizájn formával ami kifejezetten szépnek és modernnek bizonyult számomra.\cite{modernUI} 
 	Ezt a kinézetet egy nyílt forráskód és videó alapján készítettem, amely segítségemre volt a kinézet elképzelésében.
-	Maga a felület több részből épül fel. \cite{rjcode}
+	Maga a felület több részből épül fel.\cite{rjcode}
 	\\
 	\subsection{Windows Form}
 	A Windows Forms-on belül számtalan lehetőségünk van a felületünk  megtervezésére. Lehetőségünk van nézetet választani az egyik amely az alap tervezői nézet, és emellett természetesen az alkalmazásunkat kód formájában is megírhatjuk. Számomra a kettő nézet ugyanolyan releváns a projekt szempontjából, mivel a tervezői nézetben, ténylegesen átláthatjuk, hogy a felhasználó mit fog látni mint végtermék.
@@ -724,7 +686,7 @@ Az "azonosító" és "azonosítás" arra a célra utal, hogy megkülönböztesse
 
 	
 
-	\bibliographystyle{plain}
+	\bibliographystyle{IEEEtran}
 	\bibliography{references}
 	\begin{comment}
 		1.Alapötlet, Projekt célja, és hatásai az oktatásra/egézségügyre.
