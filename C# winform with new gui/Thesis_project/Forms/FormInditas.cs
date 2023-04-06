@@ -441,6 +441,19 @@ namespace Thesis_project.Forms
         {
             FormLampaSzerk.rowCount = dataGridInditas.Rows.Count;
             FormNyilSzerk.rowCount = dataGridInditas.Rows.Count;
+            if (nyilSzerkForm != null)
+            {
+                nyilSzerkForm.Close();
+            }
+            if (lampaSzerkForm != null)
+            {
+                lampaSzerkForm.Close();
+            }
+            if (hangSzerkForm != null)
+            {
+                hangSzerkForm.Close();
+            }
+           
 
 
 
