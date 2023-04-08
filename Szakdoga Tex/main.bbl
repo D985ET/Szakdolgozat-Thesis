@@ -38,6 +38,28 @@ E.~ILONA, ``Különleges memóriaterápia segíti a demens betegeket,''
 S.~László, ``Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok
   óvodától a felnőtt korig,'' p. 186, 2003.
 
+\bibitem{leds_magazi}
+L.~Magazine, ``What is an led?'' utolsó elérés: 2004-09-02,
+  \\\url{https://www.ledsmagazine.com/leds-ssl-design/materials/article/16701292/what-is-an-led}.
+
+\bibitem{rj9Pros}
+magi, ``The rj9 vs rj11 connectors-who is the winner?'' 2022.Március.26,
+  \url{https://www.utmel.com/components/the-rj9-vs-rj11-connectors-who-is-the-winner?id=1698#cat1/}.
+
+\bibitem{RJ9ok}
+Unknown, ``Know the difference rj9, rj11, rj12, rj45, rj48 pinout,''
+  \emph{eTechnophiles}, Last visited: 2023.03.27,
+  \url{https://www.etechnophiles.com/difference-rj9-rj11-rj12-rj45-rj48/}.
+
+\bibitem{typeab}
+Theydiffer, ``Difference between usb type-a and usb type-b,''
+  \emph{Theydiffer}, January 4, 2016,
+  \url{https://www.etechnophiles.com/difference-rj9-rj11-rj12-rj45-rj48/}.
+
+\bibitem{energom}
+energom., ``Mi az a tápegység?'' 2014.Április.08,
+  \url{https://www.energom.hu/muszaki-blog/mi-az-a-tapegyseg/}.
+
 \bibitem{hejlsberg2003c}
 A.~Hejlsberg, S.~Wiltamuth, and P.~Golde, \emph{CSharp language
   specification}.\hskip 1em plus 0.5em minus 0.4em\relax Addison-Wesley Longman
@@ -51,20 +73,6 @@ F.~Almeida, ``Visual c\# .net: Console applications and windows forms,''
 B.~Lutkevich, ``dynamic link library (dll),'' \emph{Tech Target}, Last updated:
   November 2021,
   \url{https://www.techtarget.com/searchwindowsserver/definition/dynamic-link-library-DLL}.
-
-\bibitem{leds_magazi}
-L.~Magazine, ``What is an led?'' utolsó elérés: 2004-09-02,
-  \\\url{https://www.ledsmagazine.com/leds-ssl-design/materials/article/16701292/what-is-an-led}.
-
-\bibitem{RJ9ok}
-Unknown, ``Know the difference rj9, rj11, rj12, rj45, rj48 pinout,''
-  \emph{eTechnophiles}, Last visited: 2023.03.27,
-  \url{https://www.etechnophiles.com/difference-rj9-rj11-rj12-rj45-rj48/}.
-
-\bibitem{typeab}
-Theydiffer, ``Difference between usb type-a and usb type-b,''
-  \emph{Theydiffer}, January 4, 2016,
-  \url{https://www.etechnophiles.com/difference-rj9-rj11-rj12-rj45-rj48/}.
 
 \bibitem{altexsoft}
 altexsoft, ``The good and the bad of c sharp programming,'' 2021.Október.29,

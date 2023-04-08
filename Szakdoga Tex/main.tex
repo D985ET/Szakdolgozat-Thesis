@@ -126,18 +126,127 @@
 		\item A példaprogramot Delphi-ben Dr. Király Roland Tanár úr fejlesztette le. 
 		\item Elméleti háttér kidolgozásában és kutatásában, Somodi László UEFA "A" licences labdarúgó szakedző.
 	\end{itemize}
-
-	
 	Én ezeknek a hardvereknek a működtetéséhez a felületet írtam, amin keresztül lehet különféle módon, vezérelni a fentebb említett eszközöket. %változatos ütemekben vezérelni a fentebb említett eszközöket. 
 	Ezt C\# nyelven írtam ami egy friss és modern felhasználói felület írására és elkészítésére megfelelő.
 	
-	
-	\begin{comment}
-		1.fejezet: Milyen technológiákat használunk, milyen nyelv, architektúrák, kapcsolási rajz, interface, ui, meg ezek hogyan néznek ki.
-	\end{comment}
 	\chapter{Szakdolgozatom elaborálása}
-	\section{C\# fejlődése}
+	\section{A projekthez tartozó eszközök bemutatása}
+	Háromféle eszközt szeretnénk működtetni, lámpákat, nyilakat, illetve hangszórókat. Az eszközöknek többféle bemeneti csatlakozói vannak, de ezekről a későbbi  \ref{eszkozcsatlakozok} alfejezetben található meg.
+	Ezen eszközöket Keresztes Péter Tanár úr készítette, és szerelte össze.
+	Továbbá, mindegyik eszköz más és más érzékszervet stimulál, mint például a lámpa színének a felvillanása a szemünkre van nagy hatással, míg a hangszóró a hallásunkat veszi igénybe. 
+	\subsection{Lámpa eszköz}
+	A lámpa eszköz egy olyan LED-ek összessége melyben a fény akkor keletkezik, amikor az áramot vezető részecskék egyesülnek a félvezető anyagban. Az eszköz képes különféle színek kibocsájtására is, melyek vezérlését a tervezett felületen keresztül lehet vezérelni.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.10]{lamp01}
+		\caption[Lámpa eszköz]{Lámpa eszköz}
+		\label{fig:lamp01}
+	\end{figure}
+	Ezen az eszközön összesen 19 db dióda található meg amelyek egységesen tudnak funkcionálni. 
+	Az eszköz a \ref{fig:lamp01} ábrán látható.
+	\subsubsection{Fénykibocsátó diódákról röviden}
+	A LED félvezető anyagában vannak energiasávok, és ezek elkülönülése határozza meg a LED által kibocsátott fényrészecskék energiáját.
+	Ezek a fényrészecskék határozzák meg a kibocsátott fény hullámhosszát, ezt követően a színét is. A nem megegyező sáv különbségek adják azt meg, hogy különféle színt eredményezzenek ezek a félvezető anyagok.\cite{leds_magazi}
+	\subsection{Nyíl eszköz}
+	A nyíl eszköz egy olyan eszköz amely különféle irányok megjelenítésére képes. Ezt úgy tudja elérni, hogy különböző sorrendben, más pozícióban éri az áram a diódát, ezzel elérve, hogy mintegy nyíl funkcionáljon.
+	Az eszköz képes különféle színek kibocsájtására is, továbbá irányok jelzésére is alkalmas, melyek vezérlését a tervezett felületen keresztül lehet vezérelni. 
+	\\
+	Ezen az eszközön összesen 26 db dióda található meg amelyek egységesen is tudnak funkcionálni.	
+	\\
+	Maga az eszköz a \ref{fig:nyil01} képen látható.	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.12]{nyil01}
+		\caption[Nyíl eszköz]{Nyíl mint eszköz}
+		\label{fig:nyil01}
+	\end{figure}
+\newpage
+	\subsection{Hangszóró eszköz}
+	A hangszóró, mint eszköz képes különféle hangszínen, más és más hangerőn hangokat lejátszani. Továbbá, egy hangszín lejátszásának a hosszát is betudjuk konfigurálni. Mind ezek alapvető funkcionálását és bekonfigurálását képesek vagyunk vezérelni a projekthez tartozó alkalmazással. A hangszóró emellett képes akár arra is hogy különböző hangszíneket lejátsszon egymást követően, ezzel akár különféle dallamokat és dalokat tudunk lejátszatni a hangszórónk segítségével.
+	\\
+	Magáról az eszközről a \ref{fig:hangsz01} ábrán találhatunk egy képet.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.10]{hangsz01}
+		\caption[Hangszóró eszköz]{Hangszóró eszköz}
+		\label{fig:hangsz01}
+	\end{figure}
+	\subsection{Eszközök aljzatai}
+	\label{eszkozcsatlakozok}
+	Ezen eszközöknek önálló tápellátással rendelkeznek, továbbá az eszközök közötti kapcsolatot, 4 pólusú RJ típusú csatlakozókkal felszerelt kábelen keresztül lehet biztosítani. Ezek közül is az RJ 9-es változatát használjuk amely egy 4 eres csatlakozó, amibe csak a középső kettő(piros,zöld) vezetékeket kötjük be.
+	Az eszközök aljzatai mind egységesen vannak felépítve, ezen aljazatokról a \ref{fig:csatlakozo} ábrán találhatunk képet.
+	\begin{figure}[h!]	
+		\centering
+		\includegraphics[page=1,width=0.5\textwidth]{táp,rj9}
+		\caption[Eszközök aljzatai]{Eszközök aljzatai}
+		\label{fig:csatlakozo}
+	\end{figure}
+	\newpage
+	Az egyes egységeket láncszerűen kell egymás után kapcsolni, melyeket vagy individuálisan vagy kollektívan lehet kötni a vezérlő számítógéphez. 	\\
+	Az eszköz tápellátásáért felelős aljzat a \ref{fig:tápcsatl} ábrán láthatjuk.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.5]{táp_csatl}
+		\caption[Eszköz egyik áramellátásért felelős aljzata]{Eszköz egyik áramellátásért felelős aljzata}
+		\label{fig:tápcsatl}
+	\end{figure}
+	
+	\subsubsection{RJ-9-es csatlakozó}
+	Az RJ-9-es csatlakozó kompakt, négyzetes kialakítású, és széles körben elterjedt a használata. A csatlakozó fej, felhasznált anyaga azért lehet érdekes, mivel áttetsző és akár ez esztétikailag is apellálóvá teheti az eszközt.
+	A "pin"-jei különleges bevonatú anyagokkal rendelkezik amely megakadályozza az eszköz rozsdásodását. \cite{rj9Pros}
+	Alapvetően az RJ9 vezetékes telefonokba használják, a telefon készülék és a kagyló közötti adatátvitel céljából.\cite{RJ9ok}
+	Az eszköz RJ-9-es aljazata a \ref{fig:rj9csatl} ábrán található.
+	\\
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[page=1,width=0.4\textwidth]{rj9_csatl}
+		\caption[Eszközök bemeneti portjai]{Eszköz RJ-9-es portja(bal oldali)}
+		\label{fig:rj9csatl}
+	\end{figure}
+\newpage
+	\subsubsection{USB-A és USB-B típus különbsége}
+	A szabványos-A típusú USB csatlakozó, amely nagyrészt arra használatos hogy más USB bemenettel rendelkező eszközöket meghajtson. Ilyen például az USB-hub amely laptopoknál több USB portot szolgáltat.
+	A szabványos-B típusú USB csatlakozó, amely főleg a perifériák vezérlése érdekében használatos. Ilyen perifériák például a nyomtatók, és a billentyűzetek. \cite{typeab}
+	\\
 
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.6]{lampa_usb2}
+		\caption[Eszközök bemeneti portjai]{Eszköz USB Type-B aljzata}
+		\label{fig:usb2_csatl}
+	\end{figure}
+	Az eszközhöz tartozó USB-B típusú aljzatról a \ref{fig:usb2_csatl} ábrán láthatunk egy fotót.
+\newpage
+	\subsection{Eszközök működtetéséhez szükséges kábelek}
+	Alapvetően önmagukban az eszközök nem funkcionálnak, szükségük van áramellátásra a működésükhöz. Erre kétféle megoldás létezik az eszközeinknél. \\
+	Az egyik ilyen megoldás ha a USB-n keresztül kötjük össze az eszközünket valamilyen erőforrást generáló eszközzel, például egy hordozható Laptoppal. 
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[page=1,width=0.4\textwidth]{USB}
+		\caption[Nyomtató kábel]{Nyomtató kábel}
+		\label{fig:USB_kabel}
+	\end{figure}
+	Ezen összekötéshez szükséges egy USB 2.0-ás nyomtatókábel, melynek az USB-B-s fele az eszköz USB-B-s aljzatába csatlakozik, és az USB-A-s fele pedig a tápot biztosító és programot futtató számítógépbe. 
+	\ref{fig:USB_kabel}
+	Ezen módszer segítségével képesek vagyunk, a megfelelő program segítségével egy eszközt működtetni individuálisan.
+	\\
+	A másik megoldás az, hogy felhasználjuk az eszközünkön lévő tápfeszültséget fogadó aljzatot, amelyet a \ref{fig:tápcsatl} ábrán láthatunk. Ezen aljzatba csatlakoztathatjuk a tápegységünket amely a \ref{fig:tapegyseg} ábrán található. Ez a tápegység egy SA124H-12G-s szériaszámmal rendelkező 24 Watt-os teljesítménnyel rendelkező egység, 
+	amely képes egyénileg egy eszközt ellátni a megfelelő tápfeszültséggel. Az elektromos készülékek más és más feszültséggel és áramerősséggel működnek, ezért lehet jó a tápegységek használata. \cite{energom} 
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[page=1,width=0.4\textwidth]{táp_adapter}
+		\caption[Tápegység]{Tápegység}
+		\label{fig:tapegyseg}
+	\end{figure}
+	Fontos részlet az, hogy az eszköz beállítása ilyenkor még nem módosíthatóak, mivel nincs rákötve a programot futtató számítógépre. Ezt a problémát úgy tudjuk kiküszöbölni, hogyha felhasználjuk az RJ-9-es kábelünket a tápkábelünkkel együtt. Ez a kábel, képes arra, hogy az eszközeinket sorba kösse, és ezáltal működtethető lehessen egyszerre.
+	Az RJ-9-es kábelről a \ref{fig:rj9_kabel} ábrán láthatunk képet. A kábel egyik végét az eszköz egyik RJ-9-es aljzatához kell csatlakoztatunk, majd ezt követően egy másik, a számítógéphez kötött eszközbe kell csatlakoztatnunk, ezzel elérve azt, hogy az eszköz sorba legyen kötve.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[page=1,width=0.4\textwidth]{rj9_kabel}
+		\caption[RJ-9 típusú kábel]{RJ-9 típusú kábel}
+		\label{fig:rj9_kabel}
+	\end{figure}
+\newpage
+	\section{C\# fejlődése}
 	A szakdolgozatom projektje C\# nyelven íródik amely a legjobban alkalmazkodik az ilyen felületek leimplementálásához. 
 	
 	A C\# nyelv alapvetően a Microsoft által kifejlesztett objektumorientált programozási nyelv.
@@ -158,95 +267,25 @@
 	A projekthez a DLL-t, Nagy-Tóth Bence hallgatótársam szolgáltatja amelyben számos metódus meg lett írva, ezeket felhasználva a fő applikáció működésre bírható.
 	\\
 	Ezentúl, a működtetett eszközökkel való kommunikáció alapját Delphi programozási nyelvből indulva C\# nyelvre lett implementálva amely a DLL és a felület alapját képezte. A programkódjáról egy részlet a \ref{fig:dllbence} ábrán találjuk. 
-	\\
 	\begin{figure}[H]	
 		\centering
 		\includegraphics[scale=0.3]{DLL_bence}
 		\caption[C\# DLL kódrészlete]{C\# DLL kódrészlete(főbb metódusok)}
 		\label{fig:dllbence}
 	\end{figure}
-	%ide kell Bencétől kép
-	\newpage
-	\section{A projekthez tartozó eszközök bemutatása}
-	Háromféle eszközt szeretnénk működtetni, lámpákat, nyilakat, illetve hangszórókat. Az eszközöknek többféle bemeneti csatlakozói vannak, de ezekről a későbbi  \ref{eszkozcsatlakozok} alfejezetben található meg.
-	Ezen eszközöket Keresztes Péter Tanár úr készítette, és szerelte össze.
-	Továbbá, mindegyik eszköz más és más érzékszervet stimulál, mint például a lámpa színének a felvillanása a szemünkre van nagy hatással, míg a hangszóró a hallásunkat veszi igénybe. 
 
-	\subsection{Lámpa eszköz}
-	A lámpa eszköz egy olyan LED-ek összessége melyben a fény akkor keletkezik, amikor az áramot vezető részecskék egyesülnek a félvezető anyagban. Az eszköz képes különféle színek kibocsájtására is, melyek vezérlését a tervezett felületen keresztül lehet vezérelni.
-	\subsubsection{Fénykibocsátó diódákról röviden}
-	A LED félvezető anyagában vannak energiasávok, és ezek elkülönülése határozza meg a LED által kibocsátott fényrészecskék energiáját.
-	Ezek a fényrészecskék határozzák meg a kibocsátott fény hullámhosszát, ezt követően a színét is. A nem megegyező sáv különbségek adják azt meg, hogy különféle színt eredményezzenek ezek a félvezető anyagok.\cite{leds_magazi}
-	Ezen az eszközön összesen 19 db dióda található meg amelyek egységesen tudnak funkcionálni.
-	Az eszköz a \ref{fig:lamp01} képen látható.
-	Továbbá az eszköz bemeneti csatlakozóiról a \ref{fig:csatlakozo} képen látható.
-	\begin{figure}[H]	
-		\centering
-		\includegraphics[scale=0.12]{lamp01}
-		\caption[Lámpa eszköz]{Lámpa eszköz}
-		\label{fig:lamp01}
-	\end{figure}
-	\subsection{Nyíl eszköz}
-	A nyíl eszköz egy olyan eszköz amely különféle irányok megjelenítésére képes. Ezt úgy tudja elérni, hogy különböző sorrendben, más pozícióban éri az áram a diódát, ezzel elérve, hogy mintegy nyíl funkcionáljon.
-	Ezeket is Keresztes Péter Tanár úr építette fel. Az eszköz képes különféle színek kibocsájtására is, továbbá irányok jelzésére is alkalmas, melyek vezérlését a tervezett felületen keresztül lehet vezérelni. 
-	\\
-	Ezen az eszközön összesen 26 db dióda található meg amelyek egységesen is tudnak funkcionálni.	Maga az eszköz a \ref{fig:nyil01} képen látható.Továbbá az eszköz bemeneti csatlakozóiról a \ref{fig:csatlakozo} képen látható.
-	\begin{figure}[H]	
-		\centering
-		\includegraphics[scale=0.12]{nyil01}
-		\caption[Nyíl eszköz]{Nyíl eszköz}
-		\label{fig:nyil01}
-	\end{figure}
-\newpage
-	\subsection{Hangszóró eszköz}
-	A hangszóró mint eszköz képes különféle hangszínen, más és más hangerőn hangokat lejátszani. Továbbá, egy hangszín lejátszásának a hosszát is betudjuk konfigurálni.
-	Az eszköz a \ref{fig:hangsz01} képen látható.
-	Továbbá az eszköz bemeneti csatlakozóiról a \ref{fig:csatlakozo} képen látható.  
-	\begin{figure}[H]	
-		\centering
-		\includegraphics[scale=0.12]{hangsz01}
-		\caption[Hangszóró eszköz]{Hangszóró eszköz}
-		\label{fig:hangsz01}
-	\end{figure}
-	\subsection{Eszközök portjai}
-	\label{eszkozcsatlakozok}
-	Ezen eszközöknek önálló tápellátással rendelkeznek, melyek közötti kapcsolatot 4 pólusú RJ típusú csatlakozókkal felszerelt kábelen keresztül lehet biztosítani. Ezek közül is az RJ 9-es változatát használjuk amely egy 4 eres csatlakozó, amibe csak a középső kettő(piros,zöld) vezetékeket kötjük be. \\
-	Alapvetően az RJ9 vezetékes telefonokba használják, a telefon készülék és a kagyló közötti adatátvitel céljából.\cite{RJ9ok}
-	Az egyes egységeket láncszerűen kell egymás után kapcsolni, melyeket vagy individuálisan vagy kollektívan lehet kötni a vezérlő számítógéphez. Ezen összekötéshez szükséges egy USB 2.0-ás nyomtatókábel, melynek az USB-B-s fele az eszközbe csatlakozik, és az USB-A-s fele pedig a tápot biztosító és programot futtató számítógépbe.
-\\
-	A szabványos-A típusú USB csatlakozó, amely nagyrészt arra használatos hogy más USB bemenettel rendelkező eszközöket meghajtson. Ilyen például az USB-hub amely laptopoknál több USB portot szolgáltat.
-	A szabványos-B típusú USB csatlakozó, amely főleg a perifériák vezérlése érdekében használatos. Ilyen perifériák például a nyomtatók, és a billentyűzetek. \cite{typeab}
-	\\  
-	A hangszóró adott hangszínt le tud játszani, amelyeket különböző hosszúságig illetve hangerősségbe tudunk működtetni.
-	\par
-	A nyíl egy olyan eszköz lesz amelyen különböző színben tud világítani a LED-ek összessége, illetve különböző irányba tud mutatni a LED-ek által kialakított alakzat. 
-	
-	\begin{figure}[h!]	
-		\centering
-		\includegraphics[page=1,width=0.5\textwidth]{táp,rj9}
-		\caption[Eszközök bemeneti portjai]{Eszközök bemeneti portjai}
-		\label{fig:csatlakozo}
-	\end{figure}
-	\begin{comment}
-		2.fejezet: Melyik részét csinálom én? Mit csináltunk, és hogyan ui-t kellett fejleszteni, milyen lépésekből állt, képernyőképekkel, eladjuk a munkánkat.
-	\end{comment}
-	\begin{comment}
-		2.fejezet: Melyik részét csinálom én? Mit csináltunk, és hogyan ui-t kellett fejleszteni, milyen lépésekből állt, képernyőképekkel.
-	\end{comment}
 	\section{Felület tervezése}
 	A jelenlegi fejezetben magáról a lefejlesztett kódról és a nagyobb felhasználói élmény eléréséhez szükséges dizájn elemek bemutatásáról szeretnék beszélni.
 	A korábbi fejezetekben már említést tettem azon kapcsán, hogy az alkalmazást a C\# programozási nyelvben írom. Ezenfelül, egy olyan asztali alkalmazást szerettem volna készíteni amely apelláló lehet a felhasználó számára. Továbbá, a megjelenéstől, és a küllemtől eltekintve fontosnak tartom azt is, hogy amennyire csak lehet egyszerű legyen az alkalmazás használata.
 	\\
-	Az elkészített szoftver, főleg Windows operációs rendszerrel rendelkező eszközre készül,emellett természetesen a .NET környezet támogatja a Linux, MacOS, Android illetve az IOS platformokat is, de fejlesztés szempontjából a Windows operációs rendszer tűnt a legkényelmesebbnek, emellett talán a Windows az egyik legelterjedtebb operációs rendszer. \cite{altexsoft}
-	Miután telepítettük a szoftvert azután USB port-on keresztül lehet kommunikálni az adott eszközökkel.
+	Az elkészített szoftver, főleg Windows operációs rendszerrel rendelkező eszközre készül, természetesen a .NET környezet támogatja a Linux, MacOS, Android illetve az IOS platformokat is, de fejlesztés szempontjából a Windows operációs rendszer tűnik a legkényelmesebbnek és a legegyszerűbbnek.\cite{altexsoft} Ezért az alkalmazás csak Windows eszközön lett kipróbálva és futtatva. 
+	Miután elindítjuk a szoftvert azután USB port-on keresztül lehet kommunikálni az adott eszközökkel.
 	\\
-	%ide még kell az hogy idegen szó a reszponzív szóval bekéne hivatkozni
-	A felületnek fontos jellemzője, hogy reszponzív legyen. Amikor a "reszponzív" kifejezést használjuk akkor a "reszponzív kinézetet" is értjük. Ez azt jelenti, hogy az adott alkalmazás elérhető és alkalmazkodó legyen mindenféle eszközön. Akár itt értjük azokat az eszközöket amelyeknél nincsen kifejezetten sok beépített periféria, ilyenek például a okos telefonok, tabletek. Az ilyen eszközök során, fontos azt megoldani, hogy az alkalmazásban lévő objektumok(gombok, címkék) könnyen észlelhetőek, és elérhetőek lehessenek a felhasználó számára. 
-	Mivel esetlegesen alacsony felbontású képernyőn vagy kis méretű kijelzőn ezek a funkciók nem feltétlen működnének. 
-	\\
+	Maga a felület, nem teljes képernyős módon lett lefejlesztve, hanem egy statikus érték alapján nézhetjük az alkalmazást.
+	Ennek oka, hogy az alkalmazás elsősorban egy okos telefon képernyőjénél nagyobb képernyőkre lett tervezve, ezért nem találtam lényegesnek a kisebb eszközökhöz való adaptálását.
 	Kutatásom során találkoztam egy olyan dizájn formával ami kifejezetten szépnek és modernnek bizonyult számomra.\cite{modernUI} 
 	Ezt a kinézetet egy nyílt forráskód és videó alapján készítettem, amely segítségemre volt a kinézet elképzelésében.
-	Maga a felület több részből épül fel.\cite{rjcode}
+	Maga a felület több részből épül fel amelyet a következő alfejezetekben taglalok.\cite{rjcode}
 	\\
 	\subsection{Windows Form}
 	A Windows Forms-on belül számtalan lehetőségünk van a felületünk  megtervezésére. Lehetőségünk van nézetet választani az egyik amely az alap tervezői nézet, és emellett természetesen az alkalmazásunkat kód formájában is megírhatjuk. Számomra a kettő nézet ugyanolyan releváns a projekt szempontjából, mivel a tervezői nézetben, ténylegesen átláthatjuk, hogy a felhasználó mit fog látni mint végtermék.
