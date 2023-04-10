@@ -45,7 +45,7 @@ namespace Thesis_project.Forms
             // 
             // btnFuttatasSzerk
             // 
-            this.btnFuttatasSzerk.Location = new System.Drawing.Point(238, 10);
+            this.btnFuttatasSzerk.Location = new System.Drawing.Point(458, 12);
             this.btnFuttatasSzerk.Name = "btnFuttatasSzerk";
             this.btnFuttatasSzerk.Size = new System.Drawing.Size(168, 43);
             this.btnFuttatasSzerk.TabIndex = 9;

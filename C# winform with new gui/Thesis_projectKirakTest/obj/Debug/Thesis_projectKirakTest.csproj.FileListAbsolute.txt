@@ -13,7 +13,6 @@ D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_projectKirakTest
 D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_projectKirakTest\bin\Debug\Thesis_project.exe.config
 D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_projectKirakTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_projectKirakTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_projectKirakTest\bin\Debug\SLFormHelper.pdb
 D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_projectKirakTest\bin\Debug\Newtonsoft.Json.xml
 D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_projectKirakTest\obj\Debug\Thesis_projectKirakTest.csproj.AssemblyReference.cache
 D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_projectKirakTest\obj\Debug\Thesis_projectKirakTest.csproj.CoreCompileInputs.cache

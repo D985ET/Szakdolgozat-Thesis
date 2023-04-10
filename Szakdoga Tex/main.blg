@@ -19,45 +19,45 @@ Warning--empty journal in SLaszlo
 Warning--empty journal in uri
 
 Done.
-You've used 18 entries,
+You've used 19 entries,
             4087 wiz_defined-function locations,
-            912 strings with 9992 characters,
-and the built_in function-call counts, 6593 in all, are:
-= -- 526
-> -- 81
+            920 strings with 10291 characters,
+and the built_in function-call counts, 7010 in all, are:
+= -- 563
+> -- 85
 < -- 2
-+ -- 41
-- -- 19
-* -- 236
-:= -- 1208
-add.period$ -- 36
-call.type$ -- 18
-change.case$ -- 26
++ -- 43
+- -- 20
+* -- 250
+:= -- 1284
+add.period$ -- 38
+call.type$ -- 19
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 589
-empty$ -- 642
-format.name$ -- 21
-if$ -- 1463
+cite$ -- 23
+duplicate$ -- 625
+empty$ -- 680
+format.name$ -- 22
+if$ -- 1556
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 117
-newline$ -- 77
-num.names$ -- 15
-pop$ -- 318
+int.to.str$ -- 19
+missing$ -- 126
+newline$ -- 80
+num.names$ -- 16
+pop$ -- 340
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 529
+skip$ -- 563
 stack$ -- 0
-substring$ -- 45
-swap$ -- 313
+substring$ -- 50
+swap$ -- 334
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 18
+type$ -- 19
 warning$ -- 4
-while$ -- 17
-width$ -- 20
-write$ -- 162
+while$ -- 18
+width$ -- 21
+write$ -- 171
 (There were 4 warnings)

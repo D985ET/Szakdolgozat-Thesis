@@ -310,11 +310,6 @@ namespace Thesis_project.Forms
             btnFuttatas.Enabled = false;
             utemTimer.Enabled = true;
             utemTimer.Interval = (int)(nUPTimer.Value*1000);
-            for (int i = 0; i < FormLampaSzerk.colors.Length; i++)
-            {
-                Console.WriteLine(FormLampaSzerk.colors[i]);
-
-            }
            
 
 
@@ -344,7 +339,9 @@ namespace Thesis_project.Forms
             {
                 speaker1.AddSound(FormHangszSzerk.pitch[i], 63, FormHangszSzerk.timeMilisec[i]);
             }
-           
+            Console.WriteLine("TIMER:");
+            Console.WriteLine(ledArrow1.Color);
+            Console.WriteLine(ledArrow1.Direction);
         
             /*ledLight1.Color = FormLampaSzerk.colors[i];*/
 

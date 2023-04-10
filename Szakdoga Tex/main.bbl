@@ -32,7 +32,8 @@ F.~Zs{\'o}fia, ``A zeneter{\'a}pia {\'u}tjai: Traum{\'a}t{\'o}l az
 
 \bibitem{erdelyiilonademensbetegek}
 E.~ILONA, ``Különleges memóriaterápia segíti a demens betegeket,''
-  2017.06.05.
+  2017.06.05.,
+  \url{https://ng.24.hu/tudomany/2017/06/05/kulonleges-memoriaterapia-segiti-a-demens-betegeket/}.
 
 \bibitem{SLaszlo}
 S.~László, ``Mozgáskoordináció- és gyorsaságfejlesztő gyakorlatok
@@ -88,6 +89,10 @@ RJCodeAdvance, ``{Modern Flat UI Random MultiColor Highlight button-Active Form
   WinForm CSharp V-0.1},''
   \url{https://rjcodeadvance.com/iu-moderno-temas-multicolor-aleatorio-resaltar-boton-form-activo-winform-c//},
   2019.dec.13.
+
+\bibitem{appSysWinform}
+M.~2023, ``Application class,'' last visited: 2023.Április.10,
+  \url{https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.application?view=windowsdesktop-7.0/}.
 
 \bibitem{uri}
 T.~Berners-Lee, R.~Fielding, and L.~Masinter, ``Uniform resource identifier
