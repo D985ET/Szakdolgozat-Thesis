@@ -39,13 +39,13 @@ namespace Thesis_project.Forms
             this.dataGridSzerkesztes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridSzerkesztes.Location = new System.Drawing.Point(16, 59);
             this.dataGridSzerkesztes.Name = "dataGridSzerkesztes";
-            this.dataGridSzerkesztes.Size = new System.Drawing.Size(610, 353);
+            this.dataGridSzerkesztes.Size = new System.Drawing.Size(952, 382);
             this.dataGridSzerkesztes.TabIndex = 1;
             this.dataGridSzerkesztes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridSzerkesztes_CellContentClick);
             // 
             // btnFuttatasSzerk
             // 
-            this.btnFuttatasSzerk.Location = new System.Drawing.Point(458, 12);
+            this.btnFuttatasSzerk.Location = new System.Drawing.Point(800, 10);
             this.btnFuttatasSzerk.Name = "btnFuttatasSzerk";
             this.btnFuttatasSzerk.Size = new System.Drawing.Size(168, 43);
             this.btnFuttatasSzerk.TabIndex = 9;
@@ -57,11 +57,11 @@ namespace Thesis_project.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 424);
+            this.ClientSize = new System.Drawing.Size(987, 453);
             this.Controls.Add(this.btnFuttatasSzerk);
             this.Controls.Add(this.dataGridSzerkesztes);
             this.Name = "FormSzerkesztes";
-            this.Text = "FormSzerkesztes";
+            this.Text = "Eszközök Szerkesztése";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSzerkesztes)).EndInit();
             this.ResumeLayout(false);
 

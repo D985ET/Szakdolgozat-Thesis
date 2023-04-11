@@ -248,7 +248,10 @@
 		\label{fig:rj9_kabel}
 	\end{figure}
 \newpage
-	\section{C\# fejlődése}
+
+	\section{Felület tervezésének alapjai}
+	A jelenlegi fejezetben magáról a lefejlesztett kódról és a nagyobb felhasználói élmény eléréséhez szükséges dizájn elemek bemutatásáról szeretnék beszélni. Továbbá, ezen felület kialakításához szükséges háttértudásokat szeretném bemutatni, amelyek nagyrészt elkerülhetetlenek egy ablakos alkalmazás fejlesztése során.
+	\subsection{C\# fejlődése}
 	A szakdolgozatom projektje C\# nyelven íródik amely a legjobban alkalmazkodik az ilyen felületek leimplementálásához. 
 	
 	A C\# nyelv alapvetően a Microsoft által kifejlesztett objektumorientált programozási nyelv.
@@ -260,9 +263,13 @@
 	\\
 	A C\#-ban még sok más opciónk is van programok fejlesztésére, ilyen például a Konzolos Applikáció(Console Application), a Windows Forms Application, illetve a WPF(Windows Presentation Foundation). Ezen utóbbi kettő applikáció segítségével ablakos illetve asztali alkalmazásokat készíthetünk. \cite{almeida2018visual}
 	\\
+	A korábbi fejezetekben már említést tettem azon kapcsán, hogy az alkalmazást a C\# programozási nyelvben írom. Ezenfelül, egy olyan asztali alkalmazást szerettem volna készíteni amely apelláló lehet a felhasználó számára. Továbbá, a megjelenéstől, és a küllemtől eltekintve fontosnak tartom azt is, hogy amennyire csak lehet egyszerű legyen az alkalmazás használata.
+	\\
+	Az elkészített szoftver, főleg Windows operációs rendszerrel rendelkező eszközre készül, habár természetesen a .NET környezet támogatja a Linux, MacOS, Android illetve az IOS platformokat is, de fejlesztés szempontjából a Windows operációs rendszer tűnik a legkényelmesebbnek és a legegyszerűbbnek.\cite{altexsoft} Ezért az alkalmazás csak Windows eszközön lett kipróbálva és futtatva.
+	\\
 	A projektem során azért választottam a Windows Forms Application-t mivel a különböző eszközök(gombok, címkék) amelyek az ezen alkalmazásban megtalálhatóak elősegítik a felhasználó számára a könnyed olvashatóságot és feltérképezés lehetőségét. Az alkalmazás hasonló módon elkészülhetett volna konzolos felületre is, de mivel ez a felhasználó és az esetlegesen laikus ügyfél számára is nehezen érthető, ezért az ablakos alkalmazás a támogatott.
 	\\ 
-	\section{Dynamic Link Library mint erőforrás}
+	\subsection{Dynamic Link Library mint erőforrás}
 	C\#-ban lehetőség van úgynevezett DLL-ek használatára is. A DLL(Dynamic Link Library) mint olyan az egy kisebb programok összessége, amelyeket nagyobb programok könnyűszerrel be tudnak importálni a saját projektjükbe. Ezen kisebb programokhoz vagy DLL fájlokhoz, hozzátartozik leírás is amelyek általában minden egyes függvényeknél, illetve metódusoknál megjegyezhető. Ennek oka, hogy az a fejlesztő aki használja a DLL-t
 	nagyobb belátást kapjon arról hogy az adott metódus, miként és hogyan működik.\cite{benlutkevich}
 	\\
@@ -275,13 +282,7 @@
 		\caption[C\# DLL kódrészlete]{C\# DLL kódrészlete(főbb metódusok)}
 		\label{fig:dllbence}
 	\end{figure}
-
-	\section{Felület tervezésének alapjai}
-	A jelenlegi fejezetben magáról a lefejlesztett kódról és a nagyobb felhasználói élmény eléréséhez szükséges dizájn elemek bemutatásáról szeretnék beszélni.
-	A korábbi fejezetekben már említést tettem azon kapcsán, hogy az alkalmazást a C\# programozási nyelvben írom. Ezenfelül, egy olyan asztali alkalmazást szerettem volna készíteni amely apelláló lehet a felhasználó számára. Továbbá, a megjelenéstől, és a küllemtől eltekintve fontosnak tartom azt is, hogy amennyire csak lehet egyszerű legyen az alkalmazás használata.
-	\\
-	Az elkészített szoftver, főleg Windows operációs rendszerrel rendelkező eszközre készül, habár természetesen a .NET környezet támogatja a Linux, MacOS, Android illetve az IOS platformokat is, de fejlesztés szempontjából a Windows operációs rendszer tűnik a legkényelmesebbnek és a legegyszerűbbnek.\cite{altexsoft} Ezért az alkalmazás csak Windows eszközön lett kipróbálva és futtatva.
-	\\ 
+	
 	Miután elindítjuk a szoftvert azután USB port-on keresztül lehet kommunikálni az adott eszközökkel, mint ahogyan arról említést is tettem a \ref{eszkozokmukodtetese} fejezetben is.
 	Maga a felület, nem teljes képernyős módon lett lefejlesztve, hanem egy statikus érték alapján nézhetjük az alkalmazást.
 	Ennek oka, hogy az alkalmazás elsősorban egy okos telefon képernyőjénél nagyobb képernyőkre lett tervezve, ezért nem találtam lényegesnek a kisebb eszközökhöz való adaptálását.
@@ -423,13 +424,39 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	Az első Form, a főmenü, vagyis amikor a felhasználó megnyitja az alkalmazást akkor ez az első képernyő ami számára megjelenik. 
 	Ezen képernyőn egy üdvözlő üzenetet kap, majd az észlelt eszközök darabszámát is látni fogja, amely ugyanúgy megjelenik a képernyőn.
 	Az üdvözlő üzenet, a fejlécen, a Form tetején jelenítjük meg amely egy Panel segítségével kapott színes hátteret.
-	\\TODO KÉPEK ide a form mainmenüről
-	\subsubsection{Konstruktor}
-	A kezdő menünek a konstruktora sok adatot tartalmaz a formmal kapcsolatban. Alapvetően az első és legfontosabb elem az a \textit{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására.
 	\\
-	 A kinézethez nagyban hozzájárult a(z) \textbf{EnableVisualStyles()} nevezetű metódus amely a(z) \textbf{Application} osztály egy metódusa. Az említett metódus akár félreérthető lehet, mivel első gondolatra lehetséges, hogy a fejlesztő arra asszociál, hogy a metódus segíti a Form-ban lévő objektumokat, vizuálisan kirajzolni. Valójában amikor ez a metódus fut, akkor a beépített Windows rendszer témájától függően alakítja az említett gombokat, címkéket, és további objektumokat. Amennyiben a használt gép beépített stílusok nélkül fut abban az esetben a felhasználó nem fog semmilyen változást észlelni a program/felület használatakor.
+	Eleinte a képernyő fejlesztése során felmerültek különböző problémák.
+	Ebbe beletartozik az, hogy egy képernyőn kicsit zsúfoltan voltak elhelyezve a gombok, címkék.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.2]{prototipus_main_menu}
+		\caption[Kezdő képernyő kezdeti fázisban]{Kezdő képernyő kezdeti fázisban}
+		\label{fig:main_menu_start}
+	\end{figure}
+	A \ref{fig:main_menu_start} ábrán is látható hogy túlságosan nagy volt a képernyő és sok kihasználatlan helyiség volt a kezdőképernyőn.
+	Ennek a problémának megoldására a címkéket találtam megfelelő eszköznek. A kezdő vagy üdvözlő képernyőnek az a célja, hogy továbbirányítsa a felhasználót, és hogy információt biztosítson azzal kapcsolatban, hogy az alkalmazás milyen funkciókat foglal magába.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.45]{FormMainMenu_land}
+		\caption[Kezdő képernyő címkékkel]{Kezdő képernyő címkékkel}
+		\label{fig:main_menu_end}
+	\end{figure}
+	A \ref{fig:main_menu_end} ábrán látható, hogy a kezdőképernyő hordoz magával már információkat arról, hogy az eszközök milyenfajta beállításokkal rendelkeznek. Továbbá, az ablak alsó részében, megtalálhatjuk az oldalsávban lévő gombok leírását is.
+	\\
+	A következő fejezetekben magát a kezdőképernyőt felépítő kódról szeretnék beszélni.
+	\subsubsection{Konstruktor}
+	A kezdő menünek a konstruktora sok adatot tartalmaz a formmal kapcsolatban. Alapvetően az első és legfontosabb elem az a \textit{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Ez a metódus mindegyik Form-nál azonosan szerepel.
+	\\
+	 A kinézethez nagyban hozzájárult a(z) \textbf{EnableVisualStyles()} nevezetű metódus amely a(z) \textbf{Application} osztály egy metódusa. Az említett metódus akár félreérthető lehet, mivel első gondolatra lehetséges, hogy a fejlesztő arra asszociálhat, hogy a metódus segíti a Form-ban lévő objektumokat, vizuálisan kirajzolni, amely részben igaz. Az előbb említett asszociáció kiegészítve lehet helyes, mivel amikor ez a metódus fut, akkor a beépített Windows rendszer témájától függően alakítja az említett színeket, szövegtípusokat, gombokat, címkéket, és további objektumokat.
+	 A színek, betűtípusok és egyéb grafikai elemek együttesen alkotják a felület vizuális stílusát. \cite{enablevisualstyless}
+	\subsubsection{panelBeallitas metódus}
+	A \textbf{panelBellitas()} metódus egy olyan eljárás amely beállítja a kezdőképernyőhöz tartozó címkéket, amelyek a navigálásnak a leírásáért felelősek. A címkék hozzáfűzését a panelhez, a való Controls.Add() metódussal oldottam meg amely paraméterben vár egy Control objektumot amely jelen esetben számunkra a címkék nevei voltak.
+	\\
+	Majd miután a címkéket hozzáadtuk a fő panelhez akkor utána a címkéknek a beállításait kell konfigurálnunk a "." operátor segítségével. A "." karakter segítségével betudjuk állítani a címkéink számára a megjelenítendő szöveget, és az ezzel kapcsolatos kinézeti funkciókat.
+	\\
+	A panelBeallitas eljárást a konstruktorban hívjuk meg.
 	\subsubsection{SelectThemeColor metódus}
-	A \textbf{SelectThemeColor()} metódus egy adott oldal fejlécének a színét fogja beállítani. A következő sorokban ezt taglalnám, miként és hogyan teszi ezt. 
+	A \textbf{SelectThemeColor()} metódus egy olyan függvény amely egy adott oldal fejlécének a színét fogja beállítani. A következő sorokban ezt taglalnám, miként és hogyan teszi ezt. 
 	\\
 	Elsőnek beállítunk egy index nevezetű változót ami egy véletlenszerűen választott értéket választ a \textbf{SzinTema} nevezetű osztály \textbf{ColorList} listájából. A véletlenszerű kiválasztást a \textbf{Random} osztály \textbf{Next} metódusával érjük el, amely a jelenlegi helyzetben egy 0-tól a \textbf{lista.Count}-ig megy ami a listának a teljes hosszát tartalmazza, vagyis azt, hogy a listában mennyi elem szerepel. 
 	\\
@@ -446,52 +473,102 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	 Végül a gombot amely az alaphelyzetbe állítását végzi a formnak, azt a gombot igazra (angolul:True) állítjuk.
 	\subsubsection{DisableButton metódus}
 	\label{Disablebuttonlabel}
-	A \textbf{DisableButton} metódus azért képezi fontos részét az alkalmazásnak mert amikor a felhasználó navigál a gombok között akkor kattintásával megváltoztatja az adott gombnak a háttérszínét is. Ez a funkció színesebbé teszi a formot és felhasználó barátibb lesz a rendszer maga. Ebben a metódusban ezt a színváltoztatást úgy érhetjük el, hogy a \textbf{panelMenu}-nek a \textbf{Controls} mezőjét végigjárjuk egy ciklussal és megvizsgáljuk, hogy az adott \textbf{Control} típusú változónak a típusa az gomb-e.
+	A \textbf{DisableButton} metódus azért képezi fontos részét a vizualizációnak mert amikor a felhasználó navigál a gombok között akkor kattintásával megváltoztatja az adott gombnak a háttérszínét is, ezzel elérve azt, hogy tudja a felhasználó, hogy éppen melyik formban tartózkodik. Ez a funkció színesebbé teszi a formot és felhasználó barátibb lesz a rendszer maga. Ebben a metódusban ezt a színváltoztatást úgy érhetjük el, hogy a \textbf{panelMenu}-nek a \textbf{Controls} mezőjét végigjárjuk egy ciklussal és megvizsgáljuk, hogy az adott \textbf{Control} típusú változónak a típusa az gomb-e.
 	Amennyiben a bool értéke a feltételnél Igaz abban az esetben az adott gombnak a háttérszínét és szövegtípusát megváltoztatjuk.
 	\\
 	Ellenkező esetben ha a feltétel kiértékelésénél Hamis értéket kapunk akkor nem változtatjuk meg az adott \textbf{Control} típusú változó értékeit.
 	\\ 
 	Ez a feltétel kiértékelés azért fontos mivel ha nem vizsgálnánk meg azt hogy az adott \textbf{Control} típusú objektum gomb-e, akkor az összes gombnak a színezése változatlan állapotba maradna.
-	\subsubsection{OpenChildForm metódus}
-	Az \textbf{OpenChildForm()} metódust arra fogjuk használni, hogy előző formban lévő adatokat, színeket átadjuk a másik következő formnak. Amikor rákattint a felhasználó az adott gombra, akkor ezt az eljárást hívjuk meg melynek paramétereiben megadjuk a kívánt formnak az objektumát, és a \textbf{sender}-t amely a gombnyomás metódus paraméteréből származik. A jelenlegi eljárásban, az éppen aktív formnak értékül adjuk a kattintáskor megadott form értékét. Ezt követően a paraméterben kapott form beállításait változtatjuk, majd megjelenítjük ezen formot. 
+	\subsubsection{OpenSubForm metódus}
+	Az \textbf{OpenSubForm()} metódust arra fogjuk használni, hogy előző formban lévő adatokat, színeket átadjuk a másik következő formnak. Amikor rákattint a felhasználó az adott gombra, akkor ezt az eljárást hívjuk meg melynek paramétereiben megadjuk a kívánt formnak az objektumát, és a \textbf{sender}-t amely a gombnyomás metódus paraméteréből származik. A jelenlegi eljárásban, az éppen aktív formnak értékül adjuk a kattintáskor megadott form értékét. Ezt követően a paraméterben kapott form beállításait változtatjuk, majd megjelenítjük ezen formot. 
+	\\
+	A \textbf{Form Main Menu}-n kívül az összes másik formot az \textbf{OpenSubForm()} metódussal hívunk meg.
 	\subsubsection{Reset metódus}
 	A \textbf{Reset} metódus meghívja a \textbf{DisableButton()} nevezetű metódust mely alaphelyzetbe állítja az oldalsávban lévő gombok színét, és stringjük méretét.
 	\\
 	Ezt követően a címhez tartozó címke \textbf{Text} változóját átírjuk \textbf{HOME}-ra, és mindent alapbeállításokra állítunk. Ezek tartalmazzák a címke átírása mellett a háttérszín alapszínre állítását, illetve a gyermek formot bezáró gomb láthatóságának false-ra vagyis hamisra állítását is.
 	\\
+	\subsubsection{Gomb Kattintás metódusok}
+	Amikor a felhasználó az egyik oldalsávbeli gombra kattint akkor a gomb Click eseménye meghívja az OpenSubForm metódust, amely elvégzi a megfelelő oldalsávbeli gombok színének beállításait, és megnyitja a megfelelő formot.
 	\subsubsection{Oldalsáv}
 	Az alap formunk még egy oldalsávból is áll a kezdőképernyőnk amely navigációt és könnyebb tájékozódást jelenthet a felhasználó számára.
-	Ebben a sávban gombok helyezkednek el amelyeknek, külön hátterük, és ikonjuk van. Ezek mind hozzájárulhatnak a felhasználó-barát szemléletmódhoz.
+	Ebben a sávban gombok helyezkednek el amelyeknek, külön hátterük, és ikonjuk van. Ezek mind hozzájárulhatnak a felhasználó-barát szemléletmódhoz. Mindegyik gombhoz tartozik egy esemény amelyben a megfelelő form-ok nyílnak meg.
 	\\
 	A navigáció sávban megtalálhatjuk a következő gombokat:
 	\begin{itemize}
 		\item Indítás
-		\item Feladatsor Mentés
-		\item Feladatsor Betöltés
-		\item Feladatsor Szerkesztés
+		\item Ütemsor Mentés
+		\item Ütemsor Betöltés
+		\item Eszközök Tesztelése
 		\item Kilépés
 	\end{itemize}
-	Az indítás gomb...
+	Az \textbf{Indítás} gomb a fő formunk az egész alkalmazáson belül, mivel itt tud a felhasználó, különféle ütemenként összeállítani, úgynevezett "gyakorlatokat" amelyek magába foglalják a lámpa, hangszóró és a nyíl eszköz külön működését. A többi információt a fő formmal kapcsolatban majd a \ref{FormInditas} alfejezetben fejteném ki.
 	%még nem tom mi kéne ide
 	\\
-	A Feladatsor Mentés gomb...
-	Ennek a gombnak a segítségével a jelenlegi eszközöknek a beállításait mentheti el a felhasználó, amennyiben számára az eszközök elérhetőek. A funkció kifejtését és a megoldását a későbbiekben, a Form Mentés \ref{Form Mentes} alfejezetben fejteném ki.
+	A  \textbf{Feladatsor Mentés} gombnak a segítségével a jelenlegi eszközöknek a beállításait mentheti el a felhasználó, amennyiben számára az eszközök elérhetőek. A funkció kifejtését és a megoldását a későbbiekben, a Form Mentés \ref{Form Mentes} alfejezetben fejteném ki.
 	\\
-	A Feladatsor Betöltés gomb...
-	A gomb használatával a felhasználó képes betölteni adott eszközökhöz tárolt adatokat, mint például: adott lámpákhoz tartozó LED-ek színét, vagy adott nyilakat ábrázoló eszközöknek a színét illetve irányát, vagy esetlegesen a hangszínt, hangerősséget, és még a hanghosszt adott hangszórók esetén.
-	Ezeknek kifejtését a Form Betöltés című \ref{Form Betoltes}
+	A \textbf{Feladatsor Betöltés} gomb használatával a felhasználó képes betölteni adott eszközökhöz tárolt adatokat, mint például: adott lámpákhoz tartozó LED-ek színét, vagy adott nyilakat ábrázoló eszközöknek a színét illetve irányát, vagy esetlegesen a hangszínt, és még a hanghosszt adott hangszórók esetén.	Ezeknek kifejtését a Form Betöltés című \ref{Form Betoltes}
 	alfejezetben fejtem ki.
 	\\
-	A Feladatsor Szerkesztés gomb...
-	Ezen gomb használatával a felhasználó tudja szerkeszteni a már ismert eszközöket. Akár az adott lámpákhoz tartozó LED-ek színét, vagy adott nyilakat ábrázoló eszközöknek a színét, illetve azok irányát, vagy esetlegesen a hangszínt, hangerősséget, és még a hanghosszt adott hangszórók esetén.
-	Ezeknek a kifejtését a Form Szerkesztés című \ref{Form Szerkesztes}	alfejezetben fejtem ki.
+	A \textbf{Feladatsor Szerkesztés} gomb használatával a felhasználó tudja szerkeszteni a már ismert eszközöket, és mint egy "demo" változatot kipróbálhatja az eszközök működését. Ezeknek a kifejtését a Form Szerkesztés című \ref{Form Szerkesztes}	alfejezetben fejtem ki.
 	\\
-	A Kilépés gombot arra használhatja a felhasználó, hogy az alkalmazást terminálni tudja. Ez a problémát egy gomb segítségével oldottam meg. A gombnak van egy olyan eseménye, hogy "MouseDown" amely segítségével egy olyan eseményt tudunk kiváltani amely akkor történik meg amikor a felhasználó lenyomja a gombot a bal egérgomb segítségével.
-	Ehhez az "event"-hez kötöttem egy Exit() metódust ami az Application osztáynak az egyik metódusa. Ez a metódus bezárja az applikációt, és befejezi a program futását. 
+	A \textbf{Kilépés} gombot arra használhatja a felhasználó, hogy az alkalmazást terminálni tudja. A kilépés gomb eseményéhez kötöttem egy Exit() metódust ami az Application osztálynak az egyik metódusa. Ez a metódus bezárja az applikációt, és befejezi a program futását. 
+	\\ 
 
+	\subsection{Form Inditás}
+	\label{FormInditas}
+	Az "Indítás" nevezetű oldalsávbeli gombra kattintva elérhetjük az alkalmazásunk fő ablakát, amely arra hivatott, hogy a projekt fő célját elvégezze: Vagyis, hogy a birtokunkba lévő eszközöket, legyen az lámpa, nyilat ábrázoló lámpa, vagy hangszóró, tudjunk vezérelni külön is meg akár egyben is.
+	Lehetősége van a felhasználónak, új sort/ütemet hozzáadni a jelenlegi eszközeihez. Ezen felül még minden egyes eszközt külön tud szerkeszteni, amely által színesebbé teheti az ütemek lejátszását.
+	Az ütemek timer-hez vannak kötve, amelyet a felhasználó be tud konfigurálni
+	A projekt jelenleg képes 1 vagy 2 eszköz együttes működtetésére, amelyek kombinációjával sokféle színes gyakorlatokat tudunk felépíteni.
+	\\
+	\subsubsection{Felmerülő problémák a panel vezérlővel}
+	Eleinte a fő ablak kidolgozása is problémákkal kezdődött, mivel felmerült az, hogy az eszközöket amelyeket észlel a DLL-ből kapott program, hogyan jelenítsük meg? Erre elsősorban a panel objektum tűnt megfelelőnek. A \ref{fig:prototipus1} ábrán láthatjuk a főképernyőt a panelek felhasználásával.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.5]{prototípus1}
+		\caption[Indítás képernyő panelekkel megoldva]{Indítás képernyő panelekkel megoldva}
+		\label{fig:prototipus1}
+	\end{figure}
+	A panel egy olyan konténeres vezérlő, amelyben hasonló "gyermekvezérlőket" is lehet elhelyezni. \cite{panelc}
+	A panelbe könnyedén el lehet helyezni gombokat, szövegdobozokat, és más különböző objektumokat is, de ezen objektumokat nehéz volt megkülönböztetni. 
+	\subsubsection{Panel vezérlő kiváltása DataGridView segítségével}
+	A DataGridView vezérlő azért megfelelő választás viszonylag rugalmas módot biztosít az adatok táblázatos formában történő megjelenítésére.\cite{datagridc} 
+	A DataGridView vezérlő emellett azért is bizonyult jobbnak mint a Panel vezérlő, mivel a DataGridView sorokkal és oszlopokkal van felépítve, amelyek interszekciója, egy cellát épít fel, amely jelen esetben számunkra egy gomb lesz. Így ezentúl tudunk erre a cellára hivatkozni, és képesek vagyunk megkülönböztetni őket.
+	A végső kinézete a főablaknak a \ref{fig:inditas3eszk} ábrán található.
+	A következőkben a fő formnak a metódusairól szeretnék bővebben írni.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.5]{Form_inditas_3eszkoz}
+		\caption[Indítás képernyő 3 eszközzel]{Indítás képernyő 3 eszközzel}
+		\label{fig:inditas3eszk}
+	\end{figure}
+	\subsubsection{Konstruktor}
+	A form konstruktorában hasonló módon jelennek meg a metódusok, mint a FormMainMenu-ben is, azzal a kivétellel, hogy a DataGridView vezérlő inicializálást végző eljárást is meghívjuk, mivel a form betöltésekor kell lefutnia. Ennek oka, hogy a gombokat és a különböző címkéket helyesen, és jól megjelenítse a képernyő.
+	\subsubsection{DataGridViewBetolt metódus}
+	A DataGridViewBetolt eljárás a DataGridView vezérlő alap konfigurációit végzi el. Ebbe beletartozik a vezérlő méretének beállítása, az hogy görgethető lehessen a vezérlő, és legutolsó sorban az, hogy helyes módon jelenítse meg az eszközöket szimbolizáló gombokat. 
+	\\
+	Minden egyes oszlophoz van rendelve egy HeaderText érték amely az adott eszköz oszlopát jeleníti meg ezzel, segítve a felhasználót. Továbbá, csak annyi eszköz jelenik meg a vezérlőn belül amennyit éppen érzékel a program, és ezen érzékelés alapján jelenít meg annyi gombot amennyi szükséges. 
+	\subsubsection{utemTimer\_Tick metódus}
+	A tick eljárás, a Timer-nek az eseménye, amely mindig lefut ha eltelik egy adott idő amelyet értéket megadunk futásidőben. Ebben az eljárásban, beállítjuk az eszközöket a felhasználó által kapott értékekre. Ezt követően pedig amikor egy újabb "Tick" következik akkor beállítjuk a következő sorban lévő értékekre az eszközöket.
+	\subsubsection{jsonBeMentes metódus}
+	Mivel az ütemek kitöltését futási időben kell megoldanunk ezért a legmegfelelőbb módszer az volt, hogyha a jelenlegi form-ban írom meg ezen metódusokat.
+	A jsonBeMentes eljárás paraméterbe kap egy stringet amely a fájl kimentésének a helyét határozza meg. Ezentúl az eljárásban szerepel egy SerializedTurnSettings tömbböt amelyet a DLL-ből kapunk meg. Ennek a tömbnek a mérete az oszlopok száma. Majd ezt egy iteráció követi amely végigjárja a GridView-nak az oszlopait és ebben a ciklusban megkapjuk az eszközök beállításait.
+	Majd ezeket követően JSON formátumra alakítjuk az eszközök beállításait, és kiíratjuk a beállításokat a File.WriteAllText() nevezetű metódussal.
+	
+	\subsubsection{jsonBolBetoltes metódus}
+	
+	A betöltés nehezebbnek bizonyult, mint a mentés mivel, itt a JSON formátumú fájlból kell kikérnünk a beállításokat.
+	Ehhez megoldásként a DLL-ből kapott LoadDeviceSettings függvényt használtam fel, amelybe a JSON fájlt alakítja át és helyezi bele az eszközökbe, mint konfigurációt. Majd ezt követően már be lehetett állítani azt, hogy mennyi oszlopot és sort generáltassunk le a DataGridView-ban a FormHelper.Devices.Count segítségével.
+	
+	\subsubsection{dataGridInditas\_CellContentClick metódus}
+	Ezen eljárás egy kattintás esemény, amely akkor fut le, hogyha az adott cellára/gombra rákattint a felhasználó.
+	Amikor ez megtörténik, akkor a program megvizsgálja, hogy az adott cellában lévő gomb az valójában beletartozik-e az eszközök csoportjába, és amennyiben igen, akkor a helyes szerkesztési formot jeleníti meg a felhasználónak, egy apró felületen keresztül.
+	
+	
 	\subsection{Form Mentés}
 	\label{Form Mentes}
-	A \textbf{Form Main Menu}-n kívül az összes másik formot az \textbf{OpenChildForm()} metódussal hívunk, így a feladatsor mentésre is kialakított formot is ezzel a metódussal hívjuk. Alapvetően, a mentés form arra lesz hivatott, hogy azokat az eszközöket amelyek érzékelve vannak a rendszer által kimentse, egy JSON file-ba.
+	 Alapvetően, a mentés form arra lesz hivatott, hogy a SaveFileDialog nevezetű osztályt felhasználva a megfelelő helyre mentse ki a JSON fájlt.
 	\\
 	A JSON azért optimális fájl formátum mivel közismert és tökéletes arra, hogy átmeneti adatot tároljunk benne. 
 	\\
@@ -501,17 +578,9 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	\\
 	A mentés azért is lehet optimális funkció mert ha a későbbiekben szükségünk volna egy adott beállításra, akkor lementjük az eszközök adatait és amikor újra szükségünk lesz betöltjük azokat a \textbf{Feladatsorok Betöltése} gombbal. Későbbiekben a betöltésről a \ref{Form Betoltes}
 	\subsubsection{Konstruktor}
-	A mentés formnak a konstruktora hasonlóképpen épül fel mint a \ref{FormMainmenu} fejezetben lévő konstruktor is. Az \textbf{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Beállítjuk a form méretét az elsődleges képernyő teljes méretére, majd ezt követően a form képernyő állapotát maximalizáljuk vagyis kinagyítjuk. A nagyítás változót a \textbf{FormWindowState} nevezetű \textbf{enum}-ból vesszük.
-	\\
-	Majd meghívunk egy \textbf{LoadTheme()} eljárást amelyet a következő szekcióban fejtenék ki részletesebben. 
-	\\
-	Miután meghívtuk a \textbf{LoadTheme()} metódust utána a \textbf{Mentes()} nevezetű eljárást hívjuk meg amely magát a fájl mentését végzi el. Erről a metódusról későbbi alfejezetben írnék.
-	\subsubsection{LoadTheme metódus}
-	A \textbf{LoadTheme()} hasonló a \ref{FormMainmenu} fejezetben lévő \textbf{DisableButton()} metódushoz, mivel a feltétel és a ciklus leimplementálása ugyanúgy fog történni. 
-	\\
-	Az eljárás egy ciklussal kezdődik amely végigiterál a \textbf{Controls} kollekción majd egy feltétel vizsgálatban megvizsgálja, hogy az adott elem gomb típusú-e. Amennyiben az adott elem gomb akkor létrehozunk egy új gomb változót melynek értékül adjuk a megtalált gombot. Ezek után a gombnak a háttérszínét és elő színét is beállítjuk a kívánt színre. 
-	\\
-	Majd a szélén lévő színnek az értékét is beállítjuk a másodlagos szín értékére amelyet a \textbf{SzinTema} osztályból kapunk meg.
+	A mentés formnak a konstruktora hasonlóképpen épül fel mint a \ref{FormMainmenu} fejezetben lévő konstruktor is. 
+	Miután meghívtuk a \textbf{LoadTheme()} metódust utána a \textbf{Mentes()} nevezetű eljárást hívjuk meg amely magát a fájl mentésének a helyét választja ki és ehhez a SaveFileDialog osztályt használja fel. Erről a metódusról későbbi alfejezetben írnék.
+	Továbbá, meghívjuk még a konstruktor paraméterében kapott FormInditas által meghívott jsonBeMentes() metódust is amelynek paraméterében a kimentés stringjét adjuk át. A \textbf{jsonBeMentes()} metódusról a \ref{FormInditas} fejezetben írtam le részletesebb információkat.
 	\subsubsection{Mentes metódus}
 	A \textbf{Mentes()} metódus számunkra ebben a formban a legfontosabb lesz mivel ez alakítja a \textbf{FormMentes}-nek a lényegét. 
 	\\
@@ -523,49 +592,45 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	\\
 	Lehetséges \textbf{Filtereket}, szűrőket is hozzáadni az opciókhoz amelyek segítségével bebiztosíthatjuk a programunkat, hogy csakis \textbf{JSON} fájlokat tudjon elmenteni.
 	\\
-	Ezt követően megvizsgáljuk, hogy a felhasználó az \textbf{OK} gombra nyomott-e és nem szakította meg a mentés folyamatát. Amennyiben a mentés során minden lefutott akkor elmentjük a fájl elérési útját és kiíratjuk azt a képernyőre.
-	\\
-	Majd ezután meghívjuk a beépített függvényt amelyet a \textbf{FormHelper} DLL-ből kaptunk meg, és átadjuk neki a fájl elérési útját.
+	Ezt követően megvizsgáljuk, hogy a felhasználó az \textbf{OK} gombra nyomott-e és nem szakította meg a mentés folyamatát. Amennyiben a mentés során minden lefutott akkor elmentjük a fájl elérési útját amelyet később a konstruktorban lévő \textbf{jsonBeMentes()} metódus kapja meg.
+	A mentés gomb a \ref{fig:mentesgomb} ábrán látható.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.5]{Ütemsor_ment}
+		\caption[Mentés ablak elhelyezkedése az oldalsávon]{Mentés ablak elhelyezkedése az oldalsávon}
+		\label{fig:mentesgomb}
+	\end{figure}
 	\subsection{Form Betöltés}
 	\label{Form Betoltes}
-	A feladatsorok vagyis az eszközök beállításához tartózó konfigurációkat meghívó formot is a \textbf{OpenChildForm()} nevezetű metóduson hívunk meg. A betöltés form alapvetően arra lesz hasznos számunkra, hogy azon az eszközök alapján amelyek éppen csatlakoztatva vannak a rendszerünkhöz, betöltsünk hozzájuk egy adott konfigurációt.
+	A feladatsorok vagyis az eszközök beállításához tartózó konfigurációkat meghívó formot is a \textbf{OpenSubForm()} nevezetű metóduson hívunk meg. A betöltés form alapvetően arra lesz számunkra fontos, hogy azon az eszközök alapján amelyek éppen csatlakoztatva vannak a rendszerünkhöz, betöltsünk hozzájuk egy adott konfigurációt.
 	\\
-	Ezen konfigurációkat, úgy tudjuk betölteni, hogyha van, egy vagy több eszközbeállításokat tartalmazó JSON fájlunk, amelyet be tud tölteni a rendszer. Majd ezt követően le is tudjuk ellenőrizni hogy a megadott konfiguráció helyes-e amit beakartunk tölteni.
-	\\ 
-	Majd tudjuk használni ezeket a beállításokat és lehetőségünk van természetesen kimenteni ezeket az adatokat is.
+	Ezen konfigurációkat, úgy tudjuk betölteni, hogyha van, egy vagy több eszközbeállításokat tartalmazó JSON fájlunk, amelyet be tud tölteni a rendszer. Ezt a betöltést a \ref{FormInditas} fejezetben található \textbf{jsonBolBetoltes()} metódus végzi el
 	\subsubsection{Konstruktor}
-	A betöltés formnak a konstruktora vagyis a belépési pontjában megtalálhatunk hasonlóságokat az előző formokkal együtt nézve.
-	\\
-	 Az \textbf{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Beállítjuk a form méretét az elsődleges képernyő teljes méretére, majd ezt követően a form képernyő állapotát maximalizáljuk vagyis kinagyítjuk. A nagyítás változót a \textbf{FormWindowState} nevezetű \textbf{enum}-ból vesszük.
-	\\
-	Majd meghívunk egy \textbf{LoadTheme()} eljárást amelyet a következő szekcióban fejtenék ki részletesebben. 
-	\\
-	Miután meghívtuk a \textbf{LoadTheme()} metódust utána a \textbf{Betoltes()} nevezetű eljárást hívjuk meg amely magát a fájl mentését végzi el. Erről a metódusról későbbi alfejezetben írnék.
-	\subsubsection{LoadTheme metódus}
-	A \textbf{LoadTheme} metódus ugyanúgy működik mint a Mentés formban lévő LoadTheme metódus.
-	Emellett hasonló a \ref{FormMainmenu} fejezetben lévő \textbf{DisableButton()} metódushoz, mivel a feltétel és a ciklus leimplementálása ugyanúgy fog történni. 
-	\\
-	Az eljárás egy ciklussal kezdődik amely végigiterál a \textbf{Controls} kollekción majd egy feltétel vizsgálatban megvizsgálja, hogy az adott elem gomb típusú-e. Amennyiben az adott elem gomb akkor létrehozunk egy új gomb változót melynek értékül adjuk a megtalált gombot. Ezek után a gombnak a háttérszínét és elő színét is beállítjuk a kívánt színre. 
-	\\
-	Majd a szélén lévő színnek az értékét is beállítjuk a másodlagos szín értékére amelyet a \textbf{SzinTema} osztályból kapunk meg.
+	A betöltés formnak a konstruktora vagyis a belépési pontjában megtalálhatjuk a \textbf{Betoltes()} nevezetű eljárást amely magát a fájl betöltését végzi el. Erről a metódusról későbbi alfejezetben írnék.
 	\subsubsection{Betoltes metódus}
-	A \textbf{Betoltes()} metódus kicsit máshogyan fog kinézni mint a \ref{Form Mentes} fejezetben lévő \textbf{Mentes()} metódus. Ezen metódus képezi a Betöltés magját, mivel itt érhetjük el azt, hogy betudjunk tölteni egy adott eszközhöz, vagy eszközökhöz a beállításokat. 
+	A \textbf{Betoltes()} metódus kicsit máshogyan fog kinézni mint a \ref{Form Mentes} fejezetben lévő \textbf{Mentes()} metódus. Ezen metódus képezi a Betöltés magját, mivel itt érhetjük el, hogy betudjunk tölteni a JSON fájlt.
 	\\
-	A betöltés algoritmusához a(z) \textbf{OpenFileDialog} nevezetű osztályból fogunk használni metódusokat és mezőket. Hasonló módon mint a \textbf{SaveFileDialog} osztálynál itt sem tudunk örökölni ebből az osztályból ezért ahhoz hogy tudjuk a \textbf{public} láthatósági szinttel ellátott metódusait és objektumait használni ezért szükségünk lesz egy úgynevezett \textbf{HAS-A} kapcsolatra.
+	A betöltés algoritmusához a(z) \textbf{OpenFileDialog} nevezetű osztályból fogunk használni metódusokat és mezőket. Hasonló módon mint a \textbf{SaveFileDialog} osztálynál itt sem tudunk örökölni ebből az osztályból ezért ahhoz, hogy tudjuk a \textbf{public} láthatósági szinttel ellátott metódusait és objektumait használni ezért szükségünk lesz az osztály objektumára.
+	Ehhez meghívjuk az \textbf{OpenFileDialog} osztályt, és egy objektumán keresztül hívogatjuk meg a publikus metódusait és mezőit.
 	\\
-	A \textbf{HAS-A} kapcsolat szimplán annyit takar, hogy egy osztálynak van egy másik osztályhoz tartozó objektuma, ami jelen esetben az \textbf{OpenFileDialog} osztályt takarja. Így leimplementáljuk vagyis meghívjuk az \textbf{OpenFileDialog} osztályt, és egy objektumán keresztül hívogatjuk meg a publikus metódusait és mezőit.
-	\\
-	Miután meghívtuk az OpenFileDialog osztályt azután tudjuk használni a mezőit és metódusait a leimplementált objektumán keresztül.
-	Ezen részben az \textbf{InitialDirectory}-t vagyis a kezdő könyvtárat állítjuk be, mely a felhasználót a gomb megnyomásakor az adott könyvtárba helyezi el. Ebből a könyvtárból tud navigálni tovább, és keresheti meg a betölteni kívánt fájlt. 
+	Ezek után az \textbf{InitialDirectory}-t vagyis a kezdő könyvtárat állítjuk be, mely a felhasználót a gomb megnyomásakor az adott könyvtárba helyezi el. Ebből a könyvtárból tud navigálni tovább, és keresheti meg a betölteni kívánt fájlt. 
 	\\
 	Majd a további beállítások a \textbf{Filter} mely segít abban, hogy csak azokat a fájlokat tudja leszűrni amelyeket tud fogadni a rendszer.
 	És még más további beállításokat is tudunk konfigurálni.
 	\\
-	A beállításokat követően megvizsgáljuk, hogy a felhasználó sikeresen és helyesen betöltötte-e a fájlt, amennyiben igen akkor a beépített \textbf{OpenFileDialog} osztály \textbf{OpenFile()} metódusával megnyitjuk ezt a fájlt, és beolvassuk az elejétől a végéig a megkapott JSON fájlt.
+	A beállításokat követően megvizsgáljuk, hogy a felhasználó sikeresen  megtalálta-e a JSON fájlt. Amennyiben helyesen megtalálta a fájlt utána elmentjük egy változóba a fájl nevét.
 	\\
-	A végső lépés, hogy a \textbf{FormHelper} DLL-ből a \textbf{LoadDeviceSettings()} metódust meghívjuk. Paraméterében vár egy elérési utat amelyet az \textbf{OpenFileDialog} osztálynak a \textbf{FileName} mezőjében kaphatjuk meg.
-	\\
-	Ezekkel a lépésekkel sikeresen betöltöttünk konfigurációkat az eszközeinkhez.
+	Ezután átadjuk ezt az értéket a konstruktorban lévő \textbf{jsonBolBetoltes()} metódusnak a paraméterében.
+	És a betöltéshez tartozó gombok megjelenítését a jsonBolBetoltes metódusra bízzuk rá.
+	A betöltés gomb a \ref{fig:betoltesgomb} ábrán látható.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.5]{Ütemsor_betolt}
+		\caption[Betöltés ablak elhelyezkedése az oldalsávon]{Betöltés ablak elhelyezkedése az oldalsávon}
+		\label{fig:betoltesgomb}
+	\end{figure}
+	
+	
 	\subsection{Form Szerkesztés}
 	\label{Form Szerkesztes}
 	Az eszközökhöz tartozó szerkesztés képernyőt ebben a formban jelenítjük meg. Ehhez a formhoz szükségünk lesz még több formra is, amelyek ilyen alképernyőként funkcionálnak majd programunkban.
@@ -736,7 +801,8 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	Végső soron, Istennek szeretném hálámat kifejezni, mivel a tudásomat és a kitartásomat, Tőle nyerhettem. 
 	
 
-	
+	% Aláírt, szkennelt nyilatkozat beillesztése a szakdolgozat végére
+	%\includepdf{nyilatkozat.pdf}
 
 	\bibliographystyle{IEEEtran}
 	\bibliography{references}

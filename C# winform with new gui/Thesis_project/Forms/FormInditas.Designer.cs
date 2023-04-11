@@ -70,7 +70,7 @@ namespace Thesis_project.Forms
             // 
             // btnFuttatas
             // 
-            this.btnFuttatas.Location = new System.Drawing.Point(506, 39);
+            this.btnFuttatas.Location = new System.Drawing.Point(845, 37);
             this.btnFuttatas.Name = "btnFuttatas";
             this.btnFuttatas.Size = new System.Drawing.Size(120, 40);
             this.btnFuttatas.TabIndex = 8;
@@ -90,7 +90,7 @@ namespace Thesis_project.Forms
             0,
             0,
             65536});
-            this.nUPTimer.Location = new System.Drawing.Point(506, 14);
+            this.nUPTimer.Location = new System.Drawing.Point(845, 11);
             this.nUPTimer.Maximum = new decimal(new int[] {
             10,
             0,
@@ -108,7 +108,8 @@ namespace Thesis_project.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(387, 16);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label2.Location = new System.Drawing.Point(723, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 13);
             this.label2.TabIndex = 10;
@@ -129,7 +130,7 @@ namespace Thesis_project.Forms
             this.dataGridInditas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridInditas.Location = new System.Drawing.Point(16, 85);
             this.dataGridInditas.Name = "dataGridInditas";
-            this.dataGridInditas.Size = new System.Drawing.Size(610, 353);
+            this.dataGridInditas.Size = new System.Drawing.Size(949, 353);
             this.dataGridInditas.TabIndex = 0;
             this.dataGridInditas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridInditas_CellContentClick);
             // 
@@ -137,7 +138,7 @@ namespace Thesis_project.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 445);
+            this.ClientSize = new System.Drawing.Size(982, 445);
             this.Controls.Add(this.dataGridInditas);
             this.Controls.Add(this.btnNewUtem);
             this.Controls.Add(this.label2);
@@ -147,7 +148,7 @@ namespace Thesis_project.Forms
             this.Controls.Add(this.Res2);
             this.Controls.Add(this.Res);
             this.Name = "FormInditas";
-            this.Text = "Gyakorlat";
+            this.Text = "Eszközök Futtatása";
             ((System.ComponentModel.ISupportInitialize)(this.nUPTimer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridInditas)).EndInit();
             this.ResumeLayout(false);

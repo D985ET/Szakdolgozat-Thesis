@@ -56,3 +56,4 @@ D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debu
 D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormSzerkesztes.resources
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormBetoltes.resources
 D:\Programtervinfo\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormSzerkesztes.resources
+D:\Proginfó\Szakdolgozat-Thesis\C# winform with new gui\Thesis_project\obj\Debug\Thesis_project.Forms.FormMentes.resources

@@ -15,45 +15,54 @@
 \select@language {magyar} \contentsline {subsubsection}{RJ-9-es csatlakozó}{9}{section*.3}%
 \select@language {magyar} \contentsline {subsubsection}{USB-A és USB-B típus különbsége}{10}{section*.4}%
 \select@language {magyar} \contentsline {subsection}{\numberline {3.1.5}Eszközök működtetéséhez szükséges kábelek}{11}{subsection.3.1.5}%
-\select@language {magyar} \contentsline {section}{\numberline {3.2}C\# fejlődése}{13}{section.3.2}%
-\select@language {magyar} \contentsline {section}{\numberline {3.3}Dynamic Link Library mint erőforrás}{13}{section.3.3}%
-\select@language {magyar} \contentsline {section}{\numberline {3.4}Felület tervezésének alapjai}{14}{section.3.4}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.4.1}Windows ablakos felület tervezés}{15}{subsection.3.4.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3.2}Felület tervezésének alapjai}{13}{section.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.1}C\# fejlődése}{13}{subsection.3.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.2}Dynamic Link Library mint erőforrás}{14}{subsection.3.2.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.3}Windows ablakos felület tervezés}{15}{subsection.3.2.3}%
 \select@language {magyar} \contentsline {subsubsection}{Designer nézet}{15}{section*.5}%
 \select@language {magyar} \contentsline {subsubsection}{Alap kód nézet}{15}{section*.6}%
 \select@language {magyar} \contentsline {subsubsection}{Initialize Component metódus}{16}{section*.7}%
 \select@language {magyar} \contentsline {subsubsection}{XAML nyelv}{16}{section*.8}%
 \select@language {magyar} \contentsline {subsubsection}{Uniform Resource Identifier, URI}{16}{section*.9}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.4.2}Eszköztár}{17}{subsection.3.4.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.4}Eszköztár}{17}{subsection.3.2.4}%
 \select@language {magyar} \contentsline {subsubsection}{Gombok}{17}{section*.10}%
 \select@language {magyar} \contentsline {subsubsection}{Címkék}{18}{section*.11}%
 \select@language {magyar} \contentsline {subsubsection}{Panel}{18}{section*.12}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.4.3}Delegatek}{19}{subsection.3.4.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.4.4}Események}{19}{subsection.3.4.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.5}Delegatek}{19}{subsection.3.2.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.6}Események}{19}{subsection.3.2.6}%
 \select@language {magyar} \contentsline {subsubsection}{Esemény készítése}{19}{section*.13}%
 \select@language {magyar} \contentsline {subsubsection}{Esemény a gyakorlatban}{19}{section*.14}%
 \select@language {magyar} \contentsline {subsubsection}{Esemény működtetése a formban}{20}{section*.15}%
-\select@language {magyar} \contentsline {section}{\numberline {3.5}A projekt Formjai}{20}{section.3.5}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.5.1}Form Main Menu}{20}{subsection.3.5.1}%
-\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{21}{section*.16}%
-\select@language {magyar} \contentsline {subsubsection}{SelectThemeColor metódus}{21}{section*.17}%
-\select@language {magyar} \contentsline {subsubsection}{ActivateButton metódus}{22}{section*.18}%
-\select@language {magyar} \contentsline {subsubsection}{DisableButton metódus}{22}{section*.19}%
-\select@language {magyar} \contentsline {subsubsection}{OpenChildForm metódus}{22}{section*.20}%
-\select@language {magyar} \contentsline {subsubsection}{Reset metódus}{23}{section*.21}%
-\select@language {magyar} \contentsline {subsubsection}{Oldalsáv}{23}{section*.22}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.5.2}Form Mentés}{24}{subsection.3.5.2}%
-\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{24}{section*.23}%
-\select@language {magyar} \contentsline {subsubsection}{LoadTheme metódus}{25}{section*.24}%
-\select@language {magyar} \contentsline {subsubsection}{Mentes metódus}{25}{section*.25}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.5.3}Form Betöltés}{26}{subsection.3.5.3}%
-\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{26}{section*.26}%
-\select@language {magyar} \contentsline {subsubsection}{LoadTheme metódus}{26}{section*.27}%
-\select@language {magyar} \contentsline {subsubsection}{Betoltes metódus}{27}{section*.28}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.5.4}Form Szerkesztés}{27}{subsection.3.5.4}%
-\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{28}{section*.29}%
-\select@language {magyar} \contentsline {subsubsection}{LoadTheme metódus}{28}{section*.30}%
-\select@language {magyar} \contentsline {subsubsection}{Gombokat\_Kirak metódus}{28}{section*.31}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.5.5}Form Hangszóró Szerkesztés}{28}{subsection.3.5.5}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.5.6}Form Lámpa Szerkesztés}{30}{subsection.3.5.6}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.5.7}Form Nyíl Szerkesztés}{30}{subsection.3.5.7}%
+\select@language {magyar} \contentsline {section}{\numberline {3.3}A projekt Formjai}{20}{section.3.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.1}Form Main Menu}{20}{subsection.3.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{22}{section*.16}%
+\select@language {magyar} \contentsline {subsubsection}{panelBeallitas metódus}{22}{section*.17}%
+\select@language {magyar} \contentsline {subsubsection}{SelectThemeColor metódus}{22}{section*.18}%
+\select@language {magyar} \contentsline {subsubsection}{ActivateButton metódus}{23}{section*.19}%
+\select@language {magyar} \contentsline {subsubsection}{DisableButton metódus}{23}{section*.20}%
+\select@language {magyar} \contentsline {subsubsection}{OpenSubForm metódus}{24}{section*.21}%
+\select@language {magyar} \contentsline {subsubsection}{Reset metódus}{24}{section*.22}%
+\select@language {magyar} \contentsline {subsubsection}{Gomb Kattintás metódusok}{24}{section*.23}%
+\select@language {magyar} \contentsline {subsubsection}{Oldalsáv}{24}{section*.24}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.2}Form Inditás}{25}{subsection.3.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{Felmerülő problémák a panel vezérlővel}{26}{section*.25}%
+\select@language {magyar} \contentsline {subsubsection}{Panel vezérlő kiváltása DataGridView segítségével}{26}{section*.26}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{27}{section*.27}%
+\select@language {magyar} \contentsline {subsubsection}{DataGridViewBetolt metódus}{27}{section*.28}%
+\select@language {magyar} \contentsline {subsubsection}{utemTimer\_Tick metódus}{27}{section*.29}%
+\select@language {magyar} \contentsline {subsubsection}{jsonBeMentes metódus}{28}{section*.30}%
+\select@language {magyar} \contentsline {subsubsection}{jsonBolBetoltes metódus}{28}{section*.31}%
+\select@language {magyar} \contentsline {subsubsection}{dataGridInditas\_CellContentClick metódus}{28}{section*.32}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.3}Form Mentés}{28}{subsection.3.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{29}{section*.33}%
+\select@language {magyar} \contentsline {subsubsection}{Mentes metódus}{29}{section*.34}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.4}Form Betöltés}{30}{subsection.3.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{30}{section*.35}%
+\select@language {magyar} \contentsline {subsubsection}{Betoltes metódus}{30}{section*.36}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.5}Form Szerkesztés}{31}{subsection.3.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{32}{section*.37}%
+\select@language {magyar} \contentsline {subsubsection}{LoadTheme metódus}{32}{section*.38}%
+\select@language {magyar} \contentsline {subsubsection}{Gombokat\_Kirak metódus}{32}{section*.39}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.6}Form Hangszóró Szerkesztés}{33}{subsection.3.3.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.7}Form Lámpa Szerkesztés}{34}{subsection.3.3.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.8}Form Nyíl Szerkesztés}{34}{subsection.3.3.8}%
