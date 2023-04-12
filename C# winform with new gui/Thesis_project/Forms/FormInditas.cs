@@ -19,7 +19,18 @@ namespace Thesis_project.Forms
     public partial class FormInditas : Form
     {
 
-        
+        bool dev485Set;
+     
+      
+        public void setDev485(bool dev485Set)
+        {
+     
+            this.dev485Set = dev485Set;
+        }
+        public bool getDev485()
+        {
+            return this.dev485Set;
+        }
         
         public FormInditas()
         {
@@ -31,12 +42,9 @@ namespace Thesis_project.Forms
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             Application.EnableVisualStyles();
-            DataGridViewBetolt();
-        }
-        public void DataGridViewBetolt()
-        {
-            dataGridInditas.Width = Screen.PrimaryScreen.WorkingArea.Width - 970;
-            dataGridInditas.Height = Screen.PrimaryScreen.WorkingArea.Height - 600;
+            LoadTheme();
+            dataGridInditas.Width = Screen.PrimaryScreen.WorkingArea.Width-970;
+            dataGridInditas.Height = Screen.PrimaryScreen.WorkingArea.Height-600;
             dataGridInditas.AllowUserToAddRows = false;
             dataGridInditas.RowHeadersVisible = false;
 
@@ -46,16 +54,16 @@ namespace Thesis_project.Forms
                 column.Name = string.Format("Eszköz_{0}", i);
                 column.HeaderText = string.Format("{0}", FormHelper.Devices[i].GetType().Name);
                 column.Resizable = DataGridViewTriState.False;
-
+               
                 dataGridInditas.Columns.Add(column);
             }
-
+          
             DataGridViewRow newRow = new DataGridViewRow();
             newRow.Height = 100; //magasság
 
             dataGridInditas.Rows.Add(newRow);
-
-
+            
+            
 
             for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
             {
@@ -65,9 +73,15 @@ namespace Thesis_project.Forms
                 dataGridInditas.Columns[i].DefaultCellStyle.BackColor = Color.Red;
             }
 
-        }
-        //ez az összes formba megy majd
 
+
+            /* panel1.AutoScroll = true;
+             panel1.Width = Screen.PrimaryScreen.WorkingArea.Width;
+             panel1.Height = Screen.PrimaryScreen.WorkingArea.Height;*/
+        }
+
+        //ez az összes formba megy majd
+       
         public void LoadTheme()
         {
             foreach (Control btns in this.Controls)
@@ -80,30 +94,214 @@ namespace Thesis_project.Forms
                     btn.FlatAppearance.BorderColor = SzinTema.SecondaryColor;
                 }
             }
+            
+            if(dev485Set == false)
+            {
+                setDev485(true);
+                Gombokat_Kirak();
+              
+              
+            }
+
         }
-     
+        Point p = new Point(0,0);
+        public void Gombokat_Kirak()
+        {
+
+            bool elsosor = true;
+
+            for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
+            {
+                Console.WriteLine();
+                Console.WriteLine(SLFormHelper.FormHelper.Devices[i].GetType().Name);
+                Console.WriteLine(SLFormHelper.FormHelper.Devices[i]);
+                
+                if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDArrow))
+                {
+                    nyilatKirak(p);
+                }
+                if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDLight))
+                {
+                    lampatKirak(p);
+                }
+                if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(Speaker))
+                {
+                    hangszoroKirak(p);
+                }
+                p.X = p.X + 300; 
+            }
+            p.Y = p.Y + 310;
+            p.X = 0;
+           
+              
+            /*lampAktSzin.Text = ((LEDLight)FormHelper.Devices[0]).Color.ToString();*/
+            EszkozokdbTxt.Text = SLFormHelper.FormHelper.Devices.Count.ToString() + " db"; //hány db eszköz van
+
+        }
 
 
         //buttonok kirakása attól függően hogy mik.
 
 
 
-       
+        public void nyilatKirak(Point location)
+        {
+
+           /* Button arrowButton = new Button();
+
+            try
+            {
+                if(location.X < 0 || location.Y < 0)
+                {
+                    throw new Exception("A paraméterben kapott érték nem megfelelő");
+                }
+                arrowButton.Location = location;
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception("A paraméterben kapott érték nem megfelelő",e);
+            }
+
+
+            arrowButton.Width = 300; //panel1.Width / 4
+            arrowButton.Height = 300;
+
+            arrowButton.BackColor = Color.White;
+            arrowButton.Image = Image.FromFile(@"img\right-arrow.png");
+            arrowButton.FlatStyle = FlatStyle.Flat;
+            arrowButton.FlatAppearance.BorderSize = 0;
+
+            DataGridViewRow newRow = new DataGridViewRow();*/
+            //DataGridViewButtonColumn datagridcolum = new DataGridViewButtonColumn();
+            //datagridcolum.Resizable = DataGridViewTriState.False;
+          /*  newRow.Cells.Add(new DataGridViewButtonCell());
+            dataGridInditas.Rows.Add(newRow);*/
+            
+            /* panel1.Controls.Add(arrowButton);*/
+
+        }
         private FormNyilSzerk nyilSzerkForm; //nyil kirakás új form Clickre
         LEDArrow ledArrow1;
-        
+        private void ArrowButton_Click(object sender, EventArgs e)
+        {
+           
+            
+            //for (int i = 0; i < FormHelper.Devices.Count; i++)
+            //{
+            //    if (FormHelper.Devices[i] is LEDArrow)
+            //    {
+            //        FormMainMenu formMain = new FormMainMenu();
+            //        ledArrow1 = (LEDArrow)FormHelper.Devices[i];
+            //        nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
+            //        nyilSzerkForm.Show();
+            //    }
+            //}
+
+            /*
+            if (FormHelper.Devices[0] is LEDArrow)
+            {
+                FormMainMenu formMain = new FormMainMenu();
+                ledArrow1 = (LEDArrow)FormHelper.Devices[i];
+                nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
+            }*/
+               
+
+            }
+
 
 
         Button lampaButton;
+        
+        private void lampatKirak(Point location)
+        {
+           /* System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
+            
+            lampaButton = new Button();
+           
+            lampaButton.Width = 300;
+            lampaButton.Height = 300;
+            lampaButton.Location = location;
+            lampaButton.BackColor = Color.White;
+            lampaButton.FlatStyle = FlatStyle.Flat;
+            lampaButton.FlatAppearance.BorderSize = 0;*/
+           /* lampaButton.Tag = newUtemCounter;*/
+            
+            //lampaButton.Text = "LAMPA";//TODO IMAGE
+           /* lampaButton.Image = Image.FromFile(@"img\lamp.png");*/
+            /*dataGridInditas.Controls.Add(lampaButton);*/
+
+            /*DataGridViewRow newRow = new DataGridViewRow();
+            newRow.Cells.Add(new DataGridViewButtonCell());
+            //dataGridInditas.Rows[dataGridInditas.Rows.Count - 1].Cells.Add(new DataGridViewButtonCell());
+            dataGridInditas.Rows.Add(newRow);*/
+
+            /* panel1.Controls.Add(lampaButton);*/
+            /*lampaButton.Click += LampaButton_Click;*/
+        }
         FormLampaSzerk lampaSzerkForm;
         LEDLight ledLight1;
-  
+        private void LampaButton_Click(object sender, DataGridViewCellEventArgs e)
+        {
+            //belelepettVMelyikbe = true;
+            //if (dataGridInditas.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            //{
+            //    for (int i = 0; i < FormHelper.Devices.Count; i++)
+            //    {
+            //        if (FormHelper.Devices[i] is LEDLight)
+            //        {
+            //            FormMainMenu formMain = new FormMainMenu();
+            //            ledLight1 = (LEDLight)FormHelper.Devices[i];
+            //            lampaSzerkForm = new FormLampaSzerk(ref ledLight1, ref lampaButton);
+            //            lampaSzerkForm.Show();
+            //        }
+            //    }
+            //}
+         
+            
+        }
 
 
 
+        private void hangszoroKirak(Point location)
+        {
+            /*Button hangszoroButton = new Button();
+          
+            hangszoroButton.Location = location;
+
+            hangszoroButton.Width = 300;
+            hangszoroButton.Height = 300;*/
+            /*hangszoroButton.Location = location;*/
+            /*hangszoroButton.Image = Image.FromFile(@"img\speaker-filled-audio-tool.png");
+            hangszoroButton.BackColor= Color.White;
+            hangszoroButton.FlatStyle = FlatStyle.Flat;
+            hangszoroButton.FlatAppearance.BorderSize = 0;*/
+            /*hangszoroButton.Text = "HANGSZORO";//TODO IMA*/
+
+           /* DataGridViewRow newRow = new DataGridViewRow();
+            newRow.Cells.Add(new DataGridViewButtonCell());
+            dataGridInditas.Rows.Add(newRow);*/
+            //dataGridInditas.Rows[dataGridInditas.Rows.Count - 1].Cells.Add(new DataGridViewButtonCell());
+            /*panel1.Controls.Add(hangszoroButton); //itt adom hozzá a panelt*/
+            //hangszoroButton.Click += hangszoroButton_Click;
+        }
         FormHangszSzerk hangSzerkForm;
         Speaker speaker1;
+        private void hangszoroButton_Click(object sender, EventArgs e)
+        {
+            
+            //for (int i = 0; i < FormHelper.Devices.Count; i++)
+            //{
+            //    if (FormHelper.Devices[i] is Speaker)
+            //    {
+            //        speaker1 = (Speaker)FormHelper.Devices[i];
+            //        speaker1.AddSound(Pitch.H_OKTAV3, 63, 300);
+            //        hangSzerkForm = new FormHangszSzerk(ref speaker1);
+            //        hangSzerkForm.Show();
+            //    }
 
+            //}
+        }
         
 
         int i = 0;
@@ -113,6 +311,9 @@ namespace Thesis_project.Forms
             utemTimer.Enabled = true;
             utemTimer.Interval = (int)(nUPTimer.Value*1000);
            
+
+
+
             //ez futtatja le a színt és a directiont
         }
 

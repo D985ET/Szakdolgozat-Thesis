@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  11 APR 2023 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  12 APR 2023 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1054,69 +1054,112 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.16})
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.631 	\end{figure}
-                    <./images//Ütemsor_ment.png>] [31
+                    <./images//Ütemsor_ment.png>]
+<./images//FormSzerk_page.png, id=456, 890.5772pt x 475.02469pt>
+File: ./images//FormSzerk_page.png Graphic file (type png)
+<use ./images//FormSzerk_page.png>
+Package pdftex.def Info: ./images//FormSzerk_page.png  used on input line 641.
+(pdftex.def)             Requested size: 445.2875pt x 237.51175pt.
+
+Overfull \hbox (4.26978pt too wide) in paragraph at lines 641--642
+ [][] 
+ []
+
+[31
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.17})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.641 	\subsubsection
-                     {Konstruktor} <./images//Ütemsor_betolt.png>]
+l.644 	\end{figure}
+                    <./images//Ütemsor_betolt.png>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 661.
- [32]
-<./images//hangsz_form.png, id=469, 601.4972pt x 346.29375pt>
-File: ./images//hangsz_form.png Graphic file (type png)
-<use ./images//hangsz_form.png>
-Package pdftex.def Info: ./images//hangsz_form.png  used on input line 691.
-(pdftex.def)             Requested size: 220.50887pt x 126.95363pt.
+put line 654.
 
-[33
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
+[]$ $ \T1/lmr/m/n/12 spea-ker1.AddSound(FormHangszSzerk.pitch[0],63,
+ []
+
+[32
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.18})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.706 	\subsection
-                  {Form Lámpa Szerkesztés} <./images//hangsz_form.png>]
-<./images//lamp_form.png, id=481, 599.99156pt x 345.54094pt>
-File: ./images//lamp_form.png Graphic file (type png)
-<use ./images//lamp_form.png>
-Package pdftex.def Info: ./images//lamp_form.png  used on input line 710.
-(pdftex.def)             Requested size: 220.50887pt x 126.99399pt.
-<./images//nyíl_form.png, id=484, 600.74437pt x 347.04657pt>
-File: ./images//nyíl_form.png Graphic file (type png)
-<use ./images//nyíl_form.png>
-Package pdftex.def Info: ./images//nyíl_form.png  used on input line 731.
-(pdftex.def)             Requested size: 220.50887pt x 127.38847pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[34
+l.686 
+       <./images//FormSzerk_page.png>]
+<./images//hangsz_form.png, id=475, 601.4972pt x 346.29375pt>
+File: ./images//hangsz_form.png Graphic file (type png)
+<use ./images//hangsz_form.png>
+Package pdftex.def Info: ./images//hangsz_form.png  used on input line 695.
+(pdftex.def)             Requested size: 220.50887pt x 126.95363pt.
+<./images//hangsz_szerk.png, id=477, 191.9672pt x 218.31563pt>
+File: ./images//hangsz_szerk.png Graphic file (type png)
+<use ./images//hangsz_szerk.png>
+Package pdftex.def Info: ./images//hangsz_szerk.png  used on input line 702.
+(pdftex.def)             Requested size: 176.40439pt x 200.62961pt.
+ [33
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.19})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.742 		\centering
-                   <./images//lamp_form.png>] Excluding 'comment' comment.
-[35
+l.705 	\end{figure}
+                    <./images//hangsz_form.png>] [34
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.20})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.758 	\chapter
-               *{Kitekintés} <./images//nyíl_form.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
-63.
+l.713 	\newpage
+                <./images//hangsz_szerk.png>]
+<./images//lamp_form.png, id=495, 599.99156pt x 345.54094pt>
+File: ./images//lamp_form.png Graphic file (type png)
+<use ./images//lamp_form.png>
+Package pdftex.def Info: ./images//lamp_form.png  used on input line 718.
+(pdftex.def)             Requested size: 220.50887pt x 126.99399pt.
+<./images//LampaSzerk.png, id=497, 173.89969pt x 229.60782pt>
+File: ./images//LampaSzerk.png Graphic file (type png)
+<use ./images//LampaSzerk.png>
+Package pdftex.def Info: ./images//LampaSzerk.png  used on input line 727.
+(pdftex.def)             Requested size: 176.40439pt x 232.9251pt.
+<./images//nyíl_form.png, id=499, 600.74437pt x 347.04657pt>
+File: ./images//nyíl_form.png Graphic file (type png)
+<use ./images//nyíl_form.png>
+Package pdftex.def Info: ./images//nyíl_form.png  used on input line 736.
+(pdftex.def)             Requested size: 220.50887pt x 127.38847pt.
+<./images//nyilSzerk.png, id=500, 177.66376pt x 284.56313pt>
+File: ./images//nyilSzerk.png Graphic file (type png)
+<use ./images//nyilSzerk.png>
+Package pdftex.def Info: ./images//nyilSzerk.png  used on input line 745.
+(pdftex.def)             Requested size: 176.40439pt x 282.55638pt.
+ [35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.21})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.755 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.22})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.755 
+       <./images//lamp_form.png> <./images//LampaSzerk.png>] [36
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.23})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.755 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.24})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.755 
+       <./images//nyíl_form.png> <./images//nyilSzerk.png>] [37]
+Excluding 'comment' comment. Excluding 'comment' comment. [38
 
-(D:\Program Files\MikTex\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) Excluding 'comment' comment.
-Excluding 'comment' comment. [36
+] [39
 
-] [37
-
-] Excluding 'comment' comment. [38]
-(main.bbl [39
+]
+Excluding 'comment' comment. [40] (main.bbl [41
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 25--28
@@ -1178,7 +1221,7 @@ Underfull \hbox (badness 1147) in paragraph at lines 65--68
 CSharp lan-gu-age spe-ci-fi-ca-ti-on\T1/lmr/m/n/12 .
  []
 
-[40
+[42
 
 ]
 Underfull \hbox (badness 2961) in paragraph at lines 78--81
@@ -1252,36 +1295,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--114
 u^^[s . com /
  []
 
-) Excluding 'comment' comment. [41] (main.lof)
+) Excluding 'comment' comment. [43] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [42
+ [44
 
 ] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 645471E8CD7C62069E185AC68BBB3919;6087.
  ) 
 Here is how much of TeX's memory you used:
- 16748 strings out of 476375
- 272538 string characters out of 5798785
+ 16735 strings out of 476375
+ 272798 string characters out of 5798785
  1862299 words of memory out of 5000000
- 36620 multiletter control sequences out of 15000+600000
- 572209 words of font info for 81 fonts, out of 8000000 for 9000
+ 36610 multiletter control sequences out of 15000+600000
+ 571891 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  78i,8n,81p,833b,602s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}{D:/Program Files/MikTe
-x/fonts/enc/dvips/lm/lm-rm.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-m
-athsy.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-mathit.enc}<D:/Program
+{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Program Files/M
+ikTex/fonts/enc/dvips/lm/lm-rm.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/
+lm-mathit.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}<D:/Program
  Files/MikTex/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTex/fonts/t
 ype1/public/lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmmi1
 2.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/Program File
 s/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fonts/type1/
-public/lm/lmsy10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmtt12.pfb>
-
-Output written on main.pdf (44 pages, 1701242 bytes).
+public/lm/lmsy10.pfb>
+Output written on main.pdf (46 pages, 1709473 bytes).
 PDF statistics:
- 657 PDF objects out of 1000 (max. 8388607)
- 166 named destinations out of 1000 (max. 500000)
- 366 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 678 PDF objects out of 1000 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
+ 386 words of extra memory for PDF output out of 10000 (max. 10000000)
 

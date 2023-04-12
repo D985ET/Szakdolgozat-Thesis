@@ -128,9 +128,6 @@
     <EmbeddedResource Include="Forms\EszkozSzerk\FormNyilSzerk.resx">
       <DependentUpon>FormNyilSzerk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormMentes.resx">
-      <DependentUpon>FormMentes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormSzerkesztes.resx">
       <DependentUpon>FormSzerkesztes.cs</DependentUpon>
     </EmbeddedResource>

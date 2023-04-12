@@ -61,8 +61,8 @@
 \select@language {magyar} \contentsline {subsubsection}{Betoltes metódus}{30}{section*.36}%
 \select@language {magyar} \contentsline {subsection}{\numberline {3.3.5}Form Szerkesztés}{31}{subsection.3.3.5}%
 \select@language {magyar} \contentsline {subsubsection}{Konstruktor}{32}{section*.37}%
-\select@language {magyar} \contentsline {subsubsection}{LoadTheme metódus}{32}{section*.38}%
-\select@language {magyar} \contentsline {subsubsection}{Gombokat\_Kirak metódus}{32}{section*.39}%
+\select@language {magyar} \contentsline {subsubsection}{dataGridSzerkesztes\_CellContentClick metódus}{32}{section*.38}%
+\select@language {magyar} \contentsline {subsubsection}{btnFuttatasSzerk\_Click metódus}{32}{section*.39}%
 \select@language {magyar} \contentsline {subsection}{\numberline {3.3.6}Form Hangszóró Szerkesztés}{33}{subsection.3.3.6}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.3.7}Form Lámpa Szerkesztés}{34}{subsection.3.3.7}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.3.8}Form Nyíl Szerkesztés}{34}{subsection.3.3.8}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.7}Form Lámpa Szerkesztés}{35}{subsection.3.3.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.8}Form Nyíl Szerkesztés}{36}{subsection.3.3.8}%

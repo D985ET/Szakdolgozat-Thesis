@@ -32,6 +32,8 @@ namespace Thesis_project
             //kinézet:
           /*  this.Size = Screen.PrimaryScreen.WorkingArea.Size;*/
             this.WindowState = FormWindowState.Normal;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             //ne lehessen állítani a size-t
             Application.EnableVisualStyles();
             panelBeallitas();
@@ -61,7 +63,6 @@ namespace Thesis_project
         public void panelBeallitas()
         {
             panelDesktopPanel.Controls.Add(HangszPanel);
-       
             panelDesktopPanel.Controls.Add(nyilPanel);
             panelDesktopPanel.Controls.Add(lampaPanel);
             panelDesktopPanel.Controls.Add(funkciokPanel);
@@ -77,7 +78,7 @@ namespace Thesis_project
             hangszoroCimLbl.TextAlign = ContentAlignment.MiddleCenter;
             hangszoroCimLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             hangszoroLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            hangszoroLbl.Text = "\n-  hangerő (Állandó hangerő), \n-  hangszín (Hangskálán lévő összes hangszin)  \n-  hanghossz (Másodpercben)";
+            hangszoroLbl.Text = "\n-  hangerő, \n-  hangszín  \n-  hanghossz (mp)";
             hangszoroLbl.Dock = DockStyle.Fill;
             hangszoroLbl.AutoSize = false;
             hangszoroLbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -95,7 +96,7 @@ namespace Thesis_project
             nyilCimLbl.TextAlign = ContentAlignment.MiddleCenter;
             nyilCimLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nyilLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nyilLbl.Text = "\n-  nyíl iránya (balra/jobbra/balra-jobbra), \n- szín (Színpalettán lévő színekkel)";
+            nyilLbl.Text = "\n-  nyíl iránya(balra/jobbra/balra-jobbra), \n- szín";
             nyilLbl.Dock = DockStyle.Fill;
             nyilLbl.AutoSize = false;
             nyilLbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -112,7 +113,7 @@ namespace Thesis_project
             lampaCimLbl.TextAlign = ContentAlignment.MiddleCenter;
             lampaCimLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lampaLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lampaLbl.Text = "\n- szín (Színpalettán lévő színekkel)";
+            lampaLbl.Text = "\n- szín";
             lampaLbl.Dock = DockStyle.Fill;
             lampaLbl.AutoSize = false;
             lampaLbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -237,7 +238,7 @@ namespace Thesis_project
             }
         }
 
-        public void OpenSubForm(Form childForm, object btnSender)
+        public void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
             {
@@ -263,15 +264,6 @@ namespace Thesis_project
            
 
         }
-         private void Reset()
-        {
-            DisableButton();
-            lblTitle.Text = "Kezdőlap";
-            panelTitleBar.BackColor = Color.DodgerBlue;
-            panelLogo.BackColor = Color.FromArgb(39, 39, 60);
-            currentButton = null;
-            btnCloseChildForm.Visible = false;
-        }
 
         FormInditas formInditas;
         private void btnInditas_Click(object sender, EventArgs e)
@@ -280,12 +272,12 @@ namespace Thesis_project
             {
                 formInditas = new Forms.FormInditas();
             }
-            OpenSubForm(formInditas, sender);
+            OpenChildForm(formInditas, sender);
         }
 
         private void btnMentes_Click(object sender, EventArgs e)
         {
-            OpenSubForm(new Forms.FormMentes(formInditas), sender);
+            OpenChildForm(new Forms.FormMentes(formInditas), sender);
         }
 
         private void btnBetoltes_Click(object sender, EventArgs e)
@@ -294,12 +286,38 @@ namespace Thesis_project
             {
                 formInditas = new Forms.FormInditas();
             }
-            OpenSubForm(new Forms.FormBetoltes(formInditas), sender);
+            OpenChildForm(new Forms.FormBetoltes(formInditas), sender);
         }
     
         public void btnSzerkesztes_Click(object sender, EventArgs e)
         {
-            OpenSubForm(new Forms.FormSzerkesztes(), sender);
+            //Ha nem sikerül a több eszközös
+            /*if (FormHelper.Devices[0] is LEDArrow)
+            {
+                LEDArrow ledArrow1;
+                FormNyilSzerk nyilSzerkForm; //ny
+                ledArrow1 = (LEDArrow)FormHelper.Devices[0];
+                nyilSzerkForm = new FormNyilSzerk(ref ledArrow1);
+                OpenChildForm(new Forms.FormNyilSzerk(ref ledArrow1), sender);
+            }
+            if (FormHelper.Devices[0] is LEDLight)
+            {
+                LEDLight ledLight1;
+                FormLampaSzerk lampaSzerkForm; //ny
+                ledLight1 = (LEDLight)FormHelper.Devices[0];
+                lampaSzerkForm = new FormLampaSzerk(ref ledLight1);
+                OpenChildForm(new Forms.FormLampaSzerk(ref ledLight1), sender);
+            }
+            if (FormHelper.Devices[0] is Speaker)
+            {
+                Speaker speaker1;
+                FormHangszSzerk hangSzerkForm;
+                speaker1 = (Speaker)FormHelper.Devices[0];
+                hangSzerkForm = new FormHangszSzerk(ref speaker1);
+                OpenChildForm(new Forms.EszkozSzerk.FormHangszSzerk(ref speaker1), sender);
+            }*/
+        
+            OpenChildForm(new Forms.FormSzerkesztes(), sender);
 
         }
 
@@ -316,7 +334,15 @@ namespace Thesis_project
             }
             Reset();
         }
-       
+        private void Reset()
+        {
+            DisableButton();
+            lblTitle.Text = "HOME";
+            panelTitleBar.BackColor = Color.DodgerBlue;
+            panelLogo.BackColor = Color.FromArgb(39, 39, 60);
+            currentButton = null;
+            btnCloseChildForm.Visible = false;
+        }
 
 
         //BENCE DLL-ből

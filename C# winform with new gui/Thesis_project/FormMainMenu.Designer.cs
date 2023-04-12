@@ -48,13 +48,13 @@ namespace Thesis_project
             this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPanel = new System.Windows.Forms.Panel();
-            this.funkcLeirCim = new System.Windows.Forms.Panel();
-            this.funkciokCimP = new System.Windows.Forms.Panel();
-            this.leirasPanel = new System.Windows.Forms.Panel();
-            this.funkciokPanel = new System.Windows.Forms.Panel();
             this.nyilPanel = new System.Windows.Forms.Panel();
             this.HangszPanel = new System.Windows.Forms.Panel();
             this.lampaPanel = new System.Windows.Forms.Panel();
+            this.funkciokPanel = new System.Windows.Forms.Panel();
+            this.leirasPanel = new System.Windows.Forms.Panel();
+            this.funkciokCimP = new System.Windows.Forms.Panel();
+            this.funkcLeirCim = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -91,7 +91,7 @@ namespace Thesis_project
             this.btnExit.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(200, 100);
             this.btnExit.TabIndex = 5;
-            this.btnExit.Text = "  Kilépés";
+            this.btnExit.Text = " Kilépés";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExit.UseVisualStyleBackColor = false;
@@ -332,8 +332,7 @@ namespace Thesis_project
             // 
             // lblTitle
             // 
-            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Myanmar Text", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
@@ -358,36 +357,6 @@ namespace Thesis_project
             this.panelDesktopPanel.Size = new System.Drawing.Size(984, 531);
             this.panelDesktopPanel.TabIndex = 2;
             // 
-            // funkcLeirCim
-            // 
-            this.funkcLeirCim.Location = new System.Drawing.Point(216, 373);
-            this.funkcLeirCim.Name = "funkcLeirCim";
-            this.funkcLeirCim.Size = new System.Drawing.Size(756, 28);
-            this.funkcLeirCim.TabIndex = 6;
-            // 
-            // funkciokCimP
-            // 
-            this.funkciokCimP.Location = new System.Drawing.Point(20, 373);
-            this.funkciokCimP.Name = "funkciokCimP";
-            this.funkciokCimP.Size = new System.Drawing.Size(187, 27);
-            this.funkciokCimP.TabIndex = 5;
-            // 
-            // leirasPanel
-            // 
-            this.leirasPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.leirasPanel.Location = new System.Drawing.Point(216, 407);
-            this.leirasPanel.Name = "leirasPanel";
-            this.leirasPanel.Size = new System.Drawing.Size(756, 121);
-            this.leirasPanel.TabIndex = 4;
-            // 
-            // funkciokPanel
-            // 
-            this.funkciokPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.funkciokPanel.Location = new System.Drawing.Point(20, 406);
-            this.funkciokPanel.Name = "funkciokPanel";
-            this.funkciokPanel.Size = new System.Drawing.Size(189, 122);
-            this.funkciokPanel.TabIndex = 3;
-            // 
             // nyilPanel
             // 
             this.nyilPanel.Location = new System.Drawing.Point(660, 6);
@@ -408,6 +377,36 @@ namespace Thesis_project
             this.lampaPanel.Name = "lampaPanel";
             this.lampaPanel.Size = new System.Drawing.Size(309, 361);
             this.lampaPanel.TabIndex = 0;
+            // 
+            // funkciokPanel
+            // 
+            this.funkciokPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.funkciokPanel.Location = new System.Drawing.Point(20, 406);
+            this.funkciokPanel.Name = "funkciokPanel";
+            this.funkciokPanel.Size = new System.Drawing.Size(189, 122);
+            this.funkciokPanel.TabIndex = 3;
+            // 
+            // leirasPanel
+            // 
+            this.leirasPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.leirasPanel.Location = new System.Drawing.Point(216, 407);
+            this.leirasPanel.Name = "leirasPanel";
+            this.leirasPanel.Size = new System.Drawing.Size(756, 121);
+            this.leirasPanel.TabIndex = 4;
+            // 
+            // funkciokCimP
+            // 
+            this.funkciokCimP.Location = new System.Drawing.Point(20, 373);
+            this.funkciokCimP.Name = "funkciokCimP";
+            this.funkciokCimP.Size = new System.Drawing.Size(187, 27);
+            this.funkciokCimP.TabIndex = 5;
+            // 
+            // funkcLeirCim
+            // 
+            this.funkcLeirCim.Location = new System.Drawing.Point(216, 373);
+            this.funkcLeirCim.Name = "funkcLeirCim";
+            this.funkcLeirCim.Size = new System.Drawing.Size(236, 26);
+            this.funkcLeirCim.TabIndex = 6;
             // 
             // FormMainMenu
             // 

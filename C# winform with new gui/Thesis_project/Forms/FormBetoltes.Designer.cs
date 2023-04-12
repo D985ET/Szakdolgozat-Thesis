@@ -37,7 +37,7 @@ namespace Thesis_project.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FormBetoltes";
-            this.Text = "Gyakorlatok Betöltése";
+            this.Text = "FormBetoltes";
             this.ResumeLayout(false);
 
         }

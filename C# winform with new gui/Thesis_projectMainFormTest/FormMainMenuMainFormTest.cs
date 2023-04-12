@@ -19,7 +19,7 @@ namespace Thesis_project.MainFormTest
             try
             {
 
-                formMain.OpenSubForm(null,null);
+                formMain.OpenChildForm(null,null);
             }
             catch (Exception e)
             {

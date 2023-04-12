@@ -39,7 +39,7 @@
 		leírom hogy miről szól, (nem kötelező), 2 rész -> probléma felvetés, mi a motiváció, kontextus, előremutatva a dolgozatban hol miről fogsz beszélni.(1.fejezetben befogom mutatni a kódolást)
 	\end{comment}
 	\chapter{Bevezetés}
-
+	\par
 	A tanulmányaim során sok olyan tárgyat tanulhattam amelyek segítettek belátást nyerni, hogy valójában melyik is az az szakirány az informatikán belül, amely felkeltette az érdeklődésemet. Az utolsó félévekben tanulhattam robotikát, a \textbf{Robotika alapjai} nevezetű tárgy során, amely közelebb vitt engem a hardver közeli programozás világába. Továbbá C\# nyelvben elég biztos tudást szerezhettem a \textbf{Szolgáltatás Orientált Programozás, Magasszintű programozási nyelvek I. és II.} című tárgyakon.
 	\par
 	Szakdolgozatom tematikájául szerettem volna egy olyan témát választani, melynek a későbbiekben mások számára hasznos lehet az az informatikai szaktudás amit elsajátítottam.
@@ -633,134 +633,132 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	
 	\subsection{Form Szerkesztés}
 	\label{Form Szerkesztes}
-	Az eszközökhöz tartozó szerkesztés képernyőt ebben a formban jelenítjük meg. Ehhez a formhoz szükségünk lesz még több formra is, amelyek ilyen alképernyőként funkcionálnak majd programunkban.
+	Az eszközökhöz tartozó szerkesztés képernyőt ebben a formban jelenítjük meg. A felhasználó ezen képernyőn kipróbálhatja az eszközeit, hogy mindegyik működik-e megfelelően vagy sem. Ehhez a formhoz szükségünk lesz még több formra is, amelyek ilyen alképernyőként funkcionálnak majd programunkban.
 	\\
-	Ebből a képernyőből fogunk navigálni attól függően, hogy éppen milyen eszköz van éppen csatlakoztatva a rendszerbe. Eleinte ez a megoldás még csak egyedüli eszközöknél működik, de későbbiekben az a funkció, amely arra alkalmas, hogy több eszközt is tudjunk szerkeszteni egyszerre, hozzáadásra kerülhet.
-	\\
+	A jelenlegi szerkesztés képernyőből fogunk navigálni attól függően, hogy éppen milyen eszköz van csatlakoztatva a rendszerbe. A szerkesztés formról képet a \ref{fig:SzerkformFo} ábrán találhatunk.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[scale=0.5]{FormSzerk_page}
+		\caption[Szerkesztés Form Fő ablaka]{Szerkesztés Form Fő ablaka}
+		\label{fig:SzerkformFo}
+	\end{figure}
 	A kód felépítése a következő alfejezetekben lesz tárgyalva.
 	\subsubsection{Konstruktor}
 	A főszerkesztés formnak a konstruktora, vagyis a belépési pontjában megtalálhatunk hasonlóságokat az előző formokkal együtt nézve.
-	\\
-	Az \textbf{InitializeComponent()} metódus amely az automatikusan megírt kód alapján előkészíti a form képernyőt a különböző objektumok fogadására. Beállítjuk a form méretét az elsődleges képernyő teljes méretére, majd ezt követően a form képernyő állapotát maximalizáljuk vagyis kinagyítjuk. A nagyítás változót a \textbf{FormWindowState} nevezetű \textbf{enum}-ból vesszük.
-	\\
-	Majd meghívunk egy \textbf{LoadTheme()} eljárást amelyet a következő szekcióban fejtenék ki részletesebben. 
-	\subsubsection{LoadTheme metódus}
-	A \textbf{LoadTheme} metódus hasonlóképpen fog festeni mint a többi formban lévő \textbf{LoadTheme()} metódus azzal a kivétellel, hogy egy \textbf{Gombokat\_Kirak()} metódust hívunk meg, amiről következő alfejezetben beszélnék.
-	\\
-	Emellett hasonló a \ref{FormMainmenu} fejezetben lévő \textbf{DisableButton()} metódushoz, mivel a feltétel és a ciklus leimplementálása ugyanúgy fog történni. 
-	\\
-	Az eljárás egy ciklussal kezdődik amely végigiterál a \textbf{Controls} kollekción majd egy feltétel vizsgálatban megvizsgálja, hogy az adott elem gomb típusú-e. Amennyiben az adott elem gomb akkor létrehozunk egy új gomb változót melynek értékül adjuk a megtalált gombot. Ezek után a gombnak a háttérszínét és elő színét is beállítjuk a kívánt színre. 
-	\\
-	Majd a szélén lévő színnek az értékét is beállítjuk a másodlagos szín értékére amelyet a \textbf{SzinTema} osztályból kapunk meg.
-	\subsubsection{Gombokat\_Kirak metódus}
-	Ez a metódus arra lesz hivatott, hogy azon eszközöket amelyeket felismer és érzékel a rendszer megjelenítse a formon mint nyomógombot.
-	\\
-	Ezt több lépésben fogjuk elérni.
+	Ebben a formban is mint az Indítás formban egyaránt DataGridView vezérlővel fogunk dolgozni, amelynek hasonlóképpen állítjuk be a konfigurációit, mint az Indítás formban. A beállításokat a \ref{FormInditas} fejezet Konstruktor alfejezetében találhatjuk meg.
+	\subsubsection{dataGridSzerkesztes\_CellContentClick metódus}
+	Ezen metódusban hasonlóképpen mint az Indítás formban, a DataGridView-ban lévő cellák értékeit vizsgáljuk meg, és az alapján, hogy az adott cella milyen típusú úgy nyitja meg az eszközhöz tartozó  szerkesztést. Háromféle eszköz szerkesztése lehetséges: a lámpa, nyíl, hangszóró.
+	\subsubsection{btnFuttatasSzerk\_Click metódus}
+	A futtatás szerkesztés kattint esemény, akkor fut le amint a felhasználó a "Futtatás" gombra kattint, ekkor az eszközöket megvizsgálja, és beállítja azokat a megfelelő beállításra amelyet a felhasználó adott meg. Az eljárás algoritmusa az \ref{alg:cap} ábrán található.
 	\begin{algorithm}
-		
-		\caption{Gombok megjelenítésére alkalmas eszközönként}\label{alg:cap}
+		\caption{Eszközök beállítása a szerkesztés formban}\label{alg:cap}
 		\begin{algorithmic}
-			\Procedure{Gombok\_Kirak}{ }
-			\State $Point \ p \gets new \  Point(0,0)$
-			\For{$ i \gets 0 \ to \ FormHelper.Devices.Count$}
-				\For{$ j \gets 0 \ to \ 1$}
-					\If{$FormHelper.Devices[i].GetType()\! = \!typeof(LEDArrow)$}
+			\Procedure{btnFuttatasSzerk\_Click}{ }
+				\If{$ledLight1 \! \neq \!null$}
+				\\
+				$\qquad \qquad \qquad $ ledLight1.Color = FormLampaSzerk.colors[0] //lámpa színe beáll.
+				\EndIf
+				\If{$ledArrow1 \! \neq \!null$}
 					\\
-					$\qquad \qquad \qquad $ nyilatKirak(p)
-					\EndIf
-					\If{$FormHelper.Devices[i].GetType() = typeof(LEDLight)$}
-						\\
-					$\qquad \qquad  \qquad $ lampatKirak(p)
-					\EndIf
-					\If{$FormHelper.Devices[i].GetType() = typeof(Speaker)$}
-						\\
-					$\qquad \qquad \qquad $ hangszoroKirak(p)
-					\EndIf
-				\EndFor
-			\EndFor
+				$\qquad \qquad  \qquad $ ledArrow1.Color = FormNyilSzerk.colors[0] // beállítjuk a nyíl színét.
+				\\
+				$\qquad \qquad  \qquad $  ledArrow1.Direction = FormNyilSzerk.directions[0] // nyíl irány beáll.
+				\EndIf
+				\If{$speaker1 \! \neq \!null$}
+					\\
+				$\qquad $ speaker1.AddSound(FormHangszSzerk.pitch[0],63, FormHangszSzerk.timeMilisec[0])$\qquad $// beállítjuk a hangszóró adatait.
+				\EndIf
+				\\
+				 string json\_source = FormHelper.DevicesToJSON(); $\qquad $// JSON-né alakítás
+				 \\
+				  FormHelper.CallSetTurnForEachDevice(ref json\_source);$\qquad $// beállítás kiküldése
+				 \\
+				 \If{$speaker1 \! \neq \!null$}
+				 \\
+				 $\qquad \qquad  \qquad $ 
+				 speaker1.ClearSounds(); $\qquad $// a speakert alapra állítjuk
+				 \EndIf
 			\EndProcedure
 		\end{algorithmic}
 	\end{algorithm}
+\\
+	A következő három fejezetben a különféle eszközökhöz tartozó form kialakításáról lesz szó.
 
 	\subsection{Form Hangszóró Szerkesztés}
-	A különböző eszközökhöz tartozó szerkesztési formokat, külön képernyő segítségével oldottuk meg, amelyek mint egyfajta \textit{"gyermek"} form-ként is szolgálnak az előző \ref{Form Szerkesztes} fejezet számára.
+	A különböző eszközökhöz tartozó szerkesztési formokat, külön képernyő segítségével oldottuk meg, amelyek mint egyfajta \textit{"gyermek"} form-ként is szolgálnak az előző \ref{Form Szerkesztes} fejezet számára. 
 	
-	%ide kéne kép
-	\begin{figure}[h!]	
-	\centering
-	\includegraphics[page=1,width=0.5\textwidth]{hangsz_form}
-	\caption[Hangszoro form]{hangszóróhoz tartozó form}
-	\label{fig:hangszform}
-	\end{figure}
+	
 
-	A hangszóró form ahogyan a nevéből is adódik a hangszóró eszköznek a szerkesztésére alkalmas képernyő ahol az adott hangszóróhoz tartozó beállításokat állíthatjuk be.
-	A képernyőn megtalálhatjuk a hangszórónak az egyedi azonosítóját amely alapból egy négyjegyű hexadecimális szám amelyet a \textit{"JSON"}, szöveges formátumon keresztül, már egy ötjegyű decimális formában kerül átadásra, de mint háttéradat, hexadecimális számként tekintünk rá. A JSON-né alakítást(szerializációt) Nagy-Tóth Bence szaktársam implementálta le.
-	 
-	Továbbá, a képernyőn beállíthatjuk a hangerőt, hangszínt, és hanghosszt. Mindezek alap állapotban valamilyen kezdőértékkel rendelkeznek, kivéve a hangszín mezőt.
+	A hangszóró form, a hangszóró eszköznek a szerkesztésére alkalmas képernyő, ahol az adott hangszóróhoz tartozó beállításokat állíthatjuk be. A kezdeti megvalósításban a képernyő a \ref{fig:hangszformProb} ábrán látható módon tűnt fel.
+	 \begin{figure}[H]	
+		\centering
+		\includegraphics[page=1,width=0.5\textwidth]{hangsz_form}
+		\caption[Hangszóró form prototípusa]{Hangszóró form prototípusa}
+		\label{fig:hangszformProb}
+	\end{figure}
+	A további fejlesztések során felmerült annak igénye, hogy egyes eszközök szerkesztési képernyője ne tűnjön nagynak, hanem inkább legyen esztétikailag egyszerű. Ezen okból kifolyólag át lett alakítva a form teljesen ahogyan azt a \ref{fig:hangszFormFo}.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[page=1,width=0.4\textwidth]{hangsz_szerk}
+		\caption[Hangszóró form legutolsó kinézete]{Hangszóró form legutolsó kinézete}
+		\label{fig:hangszFormFo}
+	\end{figure}
+	Az utóbbi leegyszerűsített változat, letisztultabb, és kevesebb hely is található rajta, amely segíti a felhasználót az egyszerű átláthatóságban. 
+	A képernyőn beállíthatjuk a hangszínt, és hanghosszt.
+	A hangszínt beállítását a legördülő mező segítségével érhetjük el. A beállítani kívánt hangszínt kiválasztva, megtudjuk adni azt is, hogy hány másodpercig játssza le azt a bizonyos hangszínt amit kiválasztottunk.
 	\\
-	A hangerőt lehetőség szerint maximum 63-as hangerősségig tudjuk állítani, amely természetesen az adott frekvencián kiadott hangszín hangerejét fogja beállítani.
+	A hanghossz értékét betudjuk állítani milliszekundumban is ezért ha például 0,5 másodpercig szeretnénk, hogy hangozzon az adott hangszín amit megadunk az eszközünknek akkor 0,5 értékre kell beállítanunk a hanghossz változót.
 	\\
-	Ezután a hangszínt tudunk beállítani a felsorolásban található adatokból.
-	\\
-	Majd végül a hanghossz betudjuk állítani mindezt milliszekundumban ezért ha például 1 másodpercig szeretnénk, hogy hangozzon az adott hangszín amit megadunk az eszközünknek akkor 1000 értékre kell beállítanunk a hanghossz változót.
+	Miután be lettek állítva a mezők értékei a "Mentés" gombra kattintva, beállítottuk a hangszóró eszközünknek a konfigurációit.
+	\newpage
 	\subsection{Form Lámpa Szerkesztés}
-	A különböző eszközökhöz tartozó szerkesztési formokat, külön képernyő segítségével oldottuk meg, amelyek mint egyfajta \textit{"gyermek"} form-ként is szolgálnak az előző \ref{Form Szerkesztes} fejezet számára.
-	\begin{figure}[h!]	
+	A lámpa form, a lámpa eszköz paramétereit konfigurálja be. Eleinte a form a \ref{fig:lampaformKezd} módon volt látható.
+	\begin{figure}[H]	
 		\centering
 		\includegraphics[page=1,width=0.5\textwidth]{lamp_form}
-		\caption[Lampa form]{lámpához tartozó form}
-		\label{fig:lampaform}
+		\caption[Lámpa form kezdeti állapotban]{Lámpa form kezdeti állapotban}
+		\label{fig:lampaformKezd}
 	\end{figure}
-	A lámpa form ahogyan a fenti \ref{fig:lampaform} ábra is mutatja a géphez csatlakoztatott lámpa eszköz paramétereit konfigurálja be.
-	\\
-	A képernyőn megtalálható a lámpa azonosítója amely alapból egy négyjegyű hexadecimális szám amelyet a \textit{"JSON"}-ben már egy ötjegyű decimális formában kerül átadásra, de mint háttéradat hexadecimális számként tekintünk rá. Ezt a művelet Nagy-Tóth Bence szaktársam implementálta le.
-	\\
-	A képernyőn továbbá lehetőségünk van arra is, hogy a lámpának a színét változtassuk, piros, kék, vagy zöld színre.
-	Természetesen, ki is tudjuk kapcsolni a lámpát, ekkor az \textit{"Üres"} gombbra kattintva az eszközre kimegy egy \textbf{RGB(0,0,0)} értékekkel ellátott jel.
-	\\
-	Az \textit{"Aktuális szín: "} címke a lámpa eszköz aktuális beállítását/színét hivatott jelezni a felhasználó számára.
-	\\
-	A \textit{"Mentés"} nevezetű gombbal tudjuk azt ellenőrizni, hogy a lámpánk valóban helyes jelet kap.
-	
-	
+	Mivel ez a kialakítás túl sok helyet ölelt fel, és a színek beállításai le voltak redukálva, piros, kék, és zöld színre ezért egy másikfajta megoldást kellett találnom a probléma kiiktatására.
+	Kutatást követően találtam egy úgynevezett \textbf{ColorPickerBox} objektumot, amely mintegy színpaletta segít kiválasztani különböző színárnyalatokat. A ColorPickerBox megvalósítást a nyíl eszköznél is alkalmaztam.
+	Egy kis formázás után a formunk a \ref{fig:lampaformveg} ábrán látható módon néz ki.
+	\begin{figure}[H]	
+		\centering
+		\includegraphics[page=1,width=0.4\textwidth]{LampaSzerk}
+		\caption[Lámpa form legutolsó kinézete]{Lámpa form legutolsó kinézete}
+		\label{fig:lampaformveg}
+	\end{figure}
+	Miután kiválasztottuk a megfelelő színt számunkra, utána a Mentés gombbal tudjuk azt ellenőrizni, hogy a lámpánk valóban helyes jelet kap.
 	\subsection{Form Nyíl Szerkesztés}
-	A különböző eszközökhöz tartozó szerkesztési formokat, külön képernyő segítségével oldottuk meg, amelyek mint egyfajta \textit{"gyermek"} form-ként is szolgálnak az előző \ref{Form Szerkesztes} fejezet számára.
-	
+	A nyíl form, a nyíl eszköz paramétereit konfigurálja be. Eleinte a form a \ref{fig:nyilformKezd} módon volt látható.
 	\begin{figure}[h!]	
 		\centering
 		\includegraphics[page=1,width=0.5\textwidth]{nyíl_form}
-		\caption[nyil form]{nyíl tartozó form}
-		\label{fig:nyilform}
+		\caption[Nyíl form kezdeti nézete]{Nyíl form kezdeti nézete}
+		\label{fig:nyilformKezd}
 	\end{figure}
-	A nyíl form a \ref{fig:nyilform} ábrán látható képernyőn található meg, amely képernyőt csak akkor tudunk elérni, hogyha a csatlakoztatott eszközeink közé nyíl eszköz is tartozik.
-	\\
-	A képernyőn megtalálható a nyílAzonosító amely alapból egy négyjegyű hexadecimális szám amelyet a \textit{"JSON"}-ben már egy ötjegyű decimális formában kerül átadásra, de mint háttéradat hexadecimális számként tekintünk rá. Ezt a művelet Nagy-Tóth Bence szaktársam implementálta le. 
-	\\
-	A képernyőn továbbá lehetőségünk van a nyíl színét, irányát konfigurálni. A nyíl színét háromféle színre tudjuk állítani csakúgy mint a lámpánál.
-	 A színek lehetnek:
-	\begin{enumerate}
+	A nyíl formnál is felmerültek hasonló problémák mint az előzőeknél is. A kialakítás túlságosan rendezetlen volt, és ugyanúgy mint a lámpánál is csak háromféle színt lehetett beállítani.
+	Ezért felhasználjuk a ColorPickerBox-ot és ennek segítségével választjuk ki a megfelelő színárnyalatot. Továbbá, a nyíl irányának kiválasztását se szövegesen jelenítjük meg hanem mint ábra.
+	A végső kinézete a képernyőnek az alábbi módon lett megvalósítva:
+		\begin{figure}[h!]	
 		\centering
-		\item Piros (RGB(255,0,0))
-		\item Kék (RGB(0,0,255))
-		\item Zöld (RGB(0,255,0))
-	\end{enumerate} 
-
-	A nyíl irányát is lehet változtatni, balra, jobbra, vagy akár mindkét irányba is lehetséges. Ez mindösszesen annyit jelent az eszköz számára, hogy a nyílban lévő LED-ek más és más pozícióban kapnak feszültséget.
+		\includegraphics[page=1,width=0.4\textwidth]{nyilSzerk}
+		\caption[Nyíl eszközhöz szerkesztési form]{Nyíl eszközhöz tartozó szerkesztési form}
+		\label{fig:nyilformveg}
+	\end{figure}
+	Miután beállítjuk a nekünk tetsző színárnyalatot utána betudjuk állítani a nyíl irányát is.
+	A nyíl irányát, balra, jobbra, vagy akár mindkét irányba be tudjuk állítani.
+	Ezen beállítás annyit jelent az eszköz számára, hogy a nyílban lévő LED-ek más pozícióban kapnak feszültséget.
 	\\
-	A nyilak ellenőrzésére a \textit{Mentés} gombot kell lenyomni, amely egy esemény hatására, a nyíl eszköznek kiküldi a megfelelő konfigurációkat .
-	
-	\begin{comment}
-		3.fejezet(vége): kitekintés, milyen más rendszerek vannak még, és ahhoz képest ez mit tud, vannak hasonló szoftverek, vannak tréner szoftverek, de a mienk az spec képzésre alkalmas
-		- szoftver és a hardvert hozzákellett fejleszteni, ez egy prototípus. Miért nem lehet ennek hasonló változata
-		Még kiegészíteni valamivel.
-	\end{comment}
+	A nyilak ellenőrzésére a \textit{Mentés} gombot kell lenyomni, amely egy esemény hatására, a nyíl eszköznek kiküldi a megfelelő konfigurációkat.
+	A nyíl szerkesztési formmal bezárólag az összes form bemutatása megtörtént.
 
 	\chapter*{Kitekintés}
-	A rendszer amit kiépítettünk, azon okból egyedülálló mivel a hardveres háttere specifikusan épül fel, és jelen állapotában az SLDLL képes vezérelni ezen eszközök helyes működését. Ez az alkalmazás a non-verbális eszközök palettáját bővítheti a technika segítségével.
+	A rendszer amit kiépítettünk, azon okból egyedülálló mivel a hardveres háttere specifikusan épül fel, vagyis nem elterjedt eszközökkel dolgoztunk. Az alkalmazás a non-verbális eszközök palettáját bővítheti a technika segítségével. 
 	\\
 	Lehetséges ötletek, az eszközök felhasználására, akár az lehetne, hogy mintegy közlekedési lámpa szimulálása amely három lámpa egységes összekötéséből és vezérléséből állna. Emellett, ha megtoldanánk egy hangszóró eszközzel is akkor egy hangjelzéses, átkelő lámpát is tudnánk ezzel szimulálni.
 	Mindezek az ötletek jelenlegi projektnek nem képezik szerves részét, de jövőbeni használatra, és továbbfejlesztésre, mindenképpen alkalmas lehet.
-	\verb*|#TODO|: Saját kitekintés mik vannak ilyen hasonlók
+	
 	
 	\begin{comment}
 		4.fejezet: (future works) továbbiakban milyen kimenetele lesz, ebből szabadalom lesz, az ötletgazda szeretné ezt kiadni olyan módon hogy piaci termék legyen. 
