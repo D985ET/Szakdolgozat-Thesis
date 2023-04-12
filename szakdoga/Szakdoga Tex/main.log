@@ -1,0 +1,1329 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  12 APR 2023 10:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-24>
+(D:\Program Files\MikTex\tex/latex/thesis-ekf\thesis-ekf.cls
+Document Class: thesis-ekf 2021/08/12 v4.2 Thesis class for Eszterhazy Karoly C
+atholic University (Eger, Hungary)
+(D:\Program Files\MikTex\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(D:\Program Files\MikTex\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(D:\Program Files\MikTex\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(D:\Program Files\MikTex\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(D:\Program Files\MikTex\tex/latex/base\report.cls
+Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
+(D:\Program Files\MikTex\tex/latex/base\size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(D:\Program Files\MikTex\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(D:\Program Files\MikTex\tex/latex/cmap\cmap.sty
+Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
+)
+(D:\Program Files\MikTex\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(D:\Program Files\MikTex\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
+
+(D:\Program Files\MikTex\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(D:\Program Files\MikTex\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(D:\Program Files\MikTex\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(D:\Program Files\MikTex\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(D:\Program Files\MikTex\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(D:\Program Files\MikTex\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(D:\Program Files\MikTex\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(D:\Program Files\MikTex\tex/latex/hyperref\nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(D:\Program Files\MikTex\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(D:\Program Files\MikTex\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count194
+)
+\@linkdim=\dimen141
+\Hy@linkcounter=\count195
+\Hy@pagecounter=\count196
+
+(D:\Program Files\MikTex\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(D:\Program Files\MikTex\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(D:\Program Files\MikTex\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count197
+
+(D:\Program Files\MikTex\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4045.
+Package hyperref Info: Option `linktocpage' set `true' on input line 4045.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4045
+.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count198
+
+(D:\Program Files\MikTex\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen142
+
+(D:\Program Files\MikTex\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(D:\Program Files\MikTex\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count199
+\Field@Width=\dimen143
+\Fld@charsize=\dimen144
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+
+(D:\Program Files\MikTex\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count266
+\c@Item=\count267
+\c@Hfootnote=\count268
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(D:\Program Files\MikTex\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
+
+(D:\Program Files\MikTex\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count269
+\c@bookmark@seq@number=\count270
+
+(D:\Program Files\MikTex\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(D:\Program Files\MikTex\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip50
+)
+(D:\Program Files\MikTex\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(D:\Program Files\MikTex\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count271
+\Gm@cntv=\count272
+\c@Gm@tempcnt=\count273
+\Gm@bindingoffset=\dimen145
+\Gm@wd@mp=\dimen146
+\Gm@odd@mp=\dimen147
+\Gm@even@mp=\dimen148
+\Gm@layoutwidth=\dimen149
+\Gm@layoutheight=\dimen150
+\Gm@layouthoffset=\dimen151
+\Gm@layoutvoffset=\dimen152
+\Gm@dimlist=\toks17
+
+(D:\Program Files\MikTex\tex/latex/geometry\geometry.cfg))
+(D:\Program Files\MikTex\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(D:\Program Files\MikTex\tex/latex/fixcmex\fixcmex.sty
+Package: fixcmex 2015/11/10 v1.0 Scalable math extensions font (Enrico Gregorio
+)
+)
+(D:\Program Files\MikTex\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count274
+)
+(D:\Program Files\MikTex\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Program Files\MikTex\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Program Files\MikTex\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(D:\Program Files\MikTex\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(D:\Program Files\MikTex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+))
+(D:\Program Files\MikTex\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+
+(D:\Program Files\MikTex\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)<<t1.cmap>>)
+(D:\Program Files\MikTex\tex/generic/babel\babel.sty
+Package: babel 2022/01/23 3.85 The Babel package
+\babel@savecnt=\count275
+\U@D=\dimen155
+\l@unhyphenated=\language79
+
+(D:\Program Files\MikTex\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count276
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(D:\Program Files\MikTex\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(D:\Program Files\MikTex\tex/latex/babel-hungarian\magyar.ldf
+Language: magyar 2019/01/14 v1.5c Magyar (Hungarian) support for babel
+\c@enumv=\count277
+Package babel Info: Making ; an active character on input line 2791.
+Package babel Info: Making ! an active character on input line 2793.
+Package babel Info: Making ? an active character on input line 2799.
+Package babel Info: Making : an active character on input line 2801.
+Package babel Info: Making ` an active character on input line 2819.
+\c@footnote@add=\count278
+\c@footnote@ch=\count279
+))
+(D:\Program Files\MikTex\tex/generic/babel/locale/hu\babel-magyar.tex
+Package babel Info: Importing font and identification data for magyar
+(babel)             from babel-hu.ini. Reported on input line 11.
+)
+(D:\Program Files\MikTex\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+
+(D:\Program Files\MikTex\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count280
+\calc@Bcount=\count281
+\calc@Adimen=\dimen156
+\calc@Bdimen=\dimen157
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count282
+\calc@Cskip=\skip53
+)
+(D:\Program Files\MikTex\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+(D:\Program Files\MikTex\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(D:\Program Files\MikTex\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(D:\Program Files\MikTex\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen158
+))
+(D:\Program Files\MikTex\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen159
+)
+(D:\Program Files\MikTex\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count283
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count284
+\leftroot@=\count285
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count286
+\DOTSCASE@=\count287
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen160
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count288
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count289
+\dotsspace@=\muskip17
+\c@parentequation=\count290
+\dspbrk@lvl=\count291
+\tag@help=\toks19
+\row@=\count292
+\column@=\count293
+\maxfields@=\count294
+\andhelp@=\toks20
+\eqnshift@=\dimen161
+\alignsep@=\dimen162
+\tagshift@=\dimen163
+\tagwidth@=\dimen164
+\totwidth@=\dimen165
+\lineht@=\dimen166
+\@envbody=\toks21
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\g_MT_multlinerow_int=\count295
+\l_MT_multwidth_dim=\dimen167
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen168
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen169
+\l_MT_above_intertext_sep=\dimen170
+\l_MT_below_intertext_sep=\dimen171
+\l_MT_above_shortintertext_sep=\dimen172
+\l_MT_below_shortintertext_sep=\dimen173
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen174
+)
+(D:\Program Files\MikTex\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(D:\Program Files\MikTex\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(D:\Program Files\MikTex\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
+\dth@everypar=\toks28
+)
+(D:\Program Files\MikTex\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+
+(D:\Program Files\MikTex\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(D:\Program Files\MikTex\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen175
+\ESO@tempdimb=\dimen176
+
+(D:\Program Files\MikTex\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(D:\Program Files\MikTex\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(D:\Program Files\MikTex\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+))
+\AM@pagewidth=\dimen177
+\AM@pageheight=\dimen178
+\AM@fboxrule=\dimen179
+
+(D:\Program Files\MikTex\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count296
+\AM@pagebox=\box54
+\AM@global@opts=\toks29
+\AM@pagecnt=\count297
+\AM@toc@title=\toks30
+\AM@lof@heading=\toks31
+\c@AM@survey=\count298
+\AM@templatesizebox=\box55
+)
+(D:\Program Files\MikTex\tex/latex/comment\comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(D:\Program Files\MikTex\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip61
+\enit@outerparindent=\dimen180
+\enit@toks=\toks32
+\enit@inbox=\box56
+\enit@count@id=\count299
+\enitdp@description=\count300
+)
+(D:\Program Files\MikTex\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+
+(D:\Program Files\MikTex\tex/latex/tools\array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen181
+\ar@mcellbox=\box57
+\extrarowheight=\dimen182
+\NC@list=\toks33
+\extratabsurround=\skip62
+\backup@length=\skip63
+\ar@cellbox=\box58
+)
+\everycr=\toks34
+\minrowclearance=\skip64
+\rownum=\count301
+)
+\c@tetel=\count302
+
+(D:\Program Files\MikTex\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen183
+\lightrulewidth=\dimen184
+\cmidrulewidth=\dimen185
+\belowrulesep=\dimen186
+\belowbottomsep=\dimen187
+\aboverulesep=\dimen188
+\abovetopsep=\dimen189
+\cmidrulesep=\dimen190
+\cmidrulekern=\dimen191
+\defaultaddspace=\dimen192
+\@cmidla=\count303
+\@cmidlb=\count304
+\@aboverulesep=\dimen193
+\@belowrulesep=\dimen194
+\@thisruleclass=\count305
+\@lastruleclass=\count306
+\@thisrulewidth=\dimen195
+)
+(D:\Program Files\MikTex\tex/latex/multirow\bigstrut.sty
+Package: bigstrut 2021/03/15 v2.8 Provide larger struts in tabulars
+\bigstrutjot=\dimen196
+)
+(D:\Program Files\MikTex\tex/latex/algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(D:\Program Files\MikTex\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count307
+\float@exts=\toks35
+\float@box=\box59
+\@float@everytoks=\toks36
+\@floatcapt=\box60
+)
+\@float@every@algorithm=\toks37
+\c@algorithm=\count308
+)
+(D:\Program Files\MikTex\tex/latex/algorithmicx\algpseudocode.sty
+Package: algpseudocode 
+
+(D:\Program Files\MikTex\tex/latex/algorithmicx\algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count309
+\c@ALG@rem=\count310
+\c@ALG@nested=\count311
+\ALG@tlm=\skip65
+\ALG@thistlm=\skip66
+\c@ALG@Lnr=\count312
+\c@ALG@blocknr=\count313
+\c@ALG@storecount=\count314
+\c@ALG@tmpcounter=\count315
+\ALG@tmplength=\skip67
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (D:\Program Files\MikTex\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(D:\Program Files\MikTex\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(D:\Program Files\MikTex\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count316
+\l__pdf_internal_box=\box61
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+Package hyperref Info: Link coloring OFF on input line 27.
+
+(main.out) (main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 441.01773pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=441.01773pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+7.
+(D:\Program Files\MikTex\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)<<ot1.cmap>>
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+7.
+
+(D:\Program Files\MikTex\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)<<oml.cmap>>
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+27.
+
+(D:\Program Files\MikTex\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)<<oms.cmap>>
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+27.
+
+(D:\Program Files\MikTex\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 27.
+<<omx.cmap>>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 27.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+
+
+(D:\Program Files\MikTex\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+
+
+(D:\Program Files\MikTex\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 27.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 27.
+
+(D:\Program Files\MikTex\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count317
+\scratchdimen=\dimen197
+\scratchbox=\box62
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count320
+\MPscratchDim=\dimen198
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks39
+) (D:\Program Files\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(D:\Program Files\MikTex\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+(D:\Program Files\MikTex\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(D:\Program Files\MikTex\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(D:\Program Files\MikTex\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(D:\Program Files\MikTex\tex/latex/base\report.cls
+LaTeX Info: Redefining \cal on input line 577.
+LaTeX Info: Redefining \mit on input line 578.
+)
+Package hyperref Info: Option `pageanchor' set `false' on input line 27.
+<eszterhazy-logo-hu.pdf, id=128, 256.07971pt x 88.04292pt>
+File: eszterhazy-logo-hu.pdf Graphic file (type pdf)
+<use eszterhazy-logo-hu.pdf>
+Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 35.
+(pdftex.def)             Requested size: 256.07907pt x 88.0427pt.
+
+Overfull \hbox (11.97958pt too wide) in paragraph at lines 35--35
+ []| []  [] [] 
+ []
+
+[1
+
+
+{C:/Users/Levente/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <D:/Program
+ Files/MikTex/tex/latex/thesis-ekf/eszterhazy-logo-hu.pdf>] (main.toc)
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+[1
+
+]
+Package hyperref Info: Option `pageanchor' set `true' on input line 37.
+ Excluding 'comment' comment.
+1. fejezet.
+[1
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+Excluding 'comment' comment. [2]
+2. fejezet.
+[3
+
+] Excluding 'comment' comment. [4] [5]
+3. fejezet.
+<./images//lamp01.jpg, id=208, 926.46124pt x 2055.68pt>
+File: ./images//lamp01.jpg Graphic file (type jpg)
+<use ./images//lamp01.jpg>
+Package pdftex.def Info: ./images//lamp01.jpg  used on input line 142.
+(pdftex.def)             Requested size: 92.65155pt x 205.58003pt.
+[6
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.148 	\subsubsection
+                     {F√©nykibocs√°t√≥ di√≥d√°kr√≥l r√∂viden} <./images//lamp01
+.jpg>]
+<./images//nyil01.jpg, id=217, 926.46124pt x 2055.68pt>
+File: ./images//nyil01.jpg Graphic file (type jpg)
+<use ./images//nyil01.jpg>
+Package pdftex.def Info: ./images//nyil01.jpg  used on input line 159.
+(pdftex.def)             Requested size: 111.17055pt x 246.67096pt.
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.163 \newpage
+               <./images//nyil01.jpg>]
+<./images//hangsz01.jpg, id=226, 926.46124pt x 2055.68pt>
+File: ./images//hangsz01.jpg Graphic file (type jpg)
+<use ./images//hangsz01.jpg>
+Package pdftex.def Info: ./images//hangsz01.jpg  used on input line 170.
+(pdftex.def)             Requested size: 92.65155pt x 205.58003pt.
+<./images//t√°p,rj9.jpg, id=228, 2055.68pt x 926.46124pt>
+File: ./images//t√°p,rj9.jpg Graphic file (type jpg)
+<use ./images//t√°p,rj9.jpg>
+Package pdftex.def Info: ./images//t√°p,rj9.jpg  used on input line 180.
+(pdftex.def)             Requested size: 220.50887pt x 99.36646pt.
+ [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.184 	\newpage
+               
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.184 	\newpage
+                <./images//hangsz01.jpg> <./images//t√°p,rj9.jpg>]
+<./images//t√°p_csatl.jpg, id=236, 111.41624pt x 261.22594pt>
+File: ./images//t√°p_csatl.jpg Graphic file (type jpg)
+<use ./images//t√°p_csatl.jpg>
+Package pdftex.def Info: ./images//t√°p_csatl.jpg  used on input line 189.
+(pdftex.def)             Requested size: 55.70798pt x 130.61264pt.
+<./images//rj9_csatl.jpg, id=240, 683.55376pt x 558.58687pt>
+File: ./images//rj9_csatl.jpg Graphic file (type jpg)
+<use ./images//rj9_csatl.jpg>
+Package pdftex.def Info: ./images//rj9_csatl.jpg  used on input line 202.
+(pdftex.def)             Requested size: 176.40439pt x 144.15521pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--205
+
+ []
+
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.206 \newpage
+              
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.206 \newpage
+               <./images//t√°p_csatl.jpg> <./images//rj9_csatl.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
+
+ []
+
+<./images//lampa_usb2.jpg, id=251, 263.48438pt x 350.05782pt>
+File: ./images//lampa_usb2.jpg Graphic file (type jpg)
+<use ./images//lampa_usb2.jpg>
+Package pdftex.def Info: ./images//lampa_usb2.jpg  used on input line 214.
+(pdftex.def)             Requested size: 158.09183pt x 210.0363pt.
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.219 \newpage
+               <./images//lampa_usb2.jpg>]
+<./images//USB.jpg, id=260, 1204.5pt x 1606.0pt>
+File: ./images//USB.jpg Graphic file (type jpg)
+<use ./images//USB.jpg>
+Package pdftex.def Info: ./images//USB.jpg  used on input line 226.
+(pdftex.def)             Requested size: 176.40439pt x 235.20432pt.
+<./images//t√°p_adapter.jpg, id=265, 1204.5pt x 1606.0pt>
+File: ./images//t√°p_adapter.jpg Graphic file (type jpg)
+<use ./images//t√°p_adapter.jpg>
+Package pdftex.def Info: ./images//t√°p_adapter.jpg  used on input line 238.
+(pdftex.def)             Requested size: 176.40439pt x 235.20432pt.
+ [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.242 	F
+        ontos r√©szlet az, hogy az eszk√∂z be√°ll√≠t√°sa ilyenkor m√©g nem m...
+ <./images//USB.jpg>]
+<./images//rj9_kabel.jpg, id=275, 1204.5pt x 1606.0pt>
+File: ./images//rj9_kabel.jpg Graphic file (type jpg)
+<use ./images//rj9_kabel.jpg>
+Package pdftex.def Info: ./images//rj9_kabel.jpg  used on input line 246.
+(pdftex.def)             Requested size: 176.40439pt x 235.20432pt.
+ [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.250 \newpage
+              
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.10})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.250 \newpage
+               <./images//t√°p_adapter.jpg> <./images//rj9_kabel.jpg>]
+Overfull \hbox (10.12099pt too wide) in paragraph at lines 257--272
+\T1/lmr/m/n/12 App-li-k·-ciÛ(Console App-li-ca-ti-on), a Win-dows Forms App-li-
+ca-ti-on, il-let-ve a WPF(Windows
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--272
+
+ []
+
+[13]
+<DLL_bence.png, id=293, 1446.40375pt x 714.67pt>
+File: DLL_bence.png Graphic file (type png)
+<use DLL_bence.png>
+Package pdftex.def Info: DLL_bence.png  used on input line 281.
+(pdftex.def)             Requested size: 433.92448pt x 214.40265pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
+
+ []
+
+[14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.11})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.293 	\subsection
+                  {Windows ablakos fel√ºlet tervez√©s} <./DLL_bence.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 310--316
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 317--324
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--328
+
+ []
+
+[16] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 385--388
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 409--412
+
+ []
+
+Excluding 'comment' comment.
+<./images//prototipus_main_menu.png, id=350, 1927.2pt x 1084.05pt>
+File: ./images//prototipus_main_menu.png Graphic file (type png)
+<use ./images//prototipus_main_menu.png>
+Package pdftex.def Info: ./images//prototipus_main_menu.png  used on input line
+ 432.
+(pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
+ [20]
+<./images//FormMainMenu_land.png, id=357, 894.34125pt x 478.03593pt>
+File: ./images//FormMainMenu_land.png Graphic file (type png)
+<use ./images//FormMainMenu_land.png>
+Package pdftex.def Info: ./images//FormMainMenu_land.png  used on input line 44
+0.
+(pdftex.def)             Requested size: 402.44984pt x 215.11418pt.
+ [21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.12})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.447 	\subsubsection
+                     {Konstruktor}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.13})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.447 	\subsubsection
+                     {Konstruktor} <./images//prototipus_main_menu.png> <./imag
+es//FormMainMenu_land.png>]
+Overfull \hbox (2.71156pt too wide) in paragraph at lines 448--452
+\T1/lmr/m/n/12 A ki-nÈ-zet-hez nagy-ban hoz-z·-j·-rult a(z) \T1/lmr/bx/n/12 En-
+ab-le-Vi-su-alSty-les() \T1/lmr/m/n/12 ne-ve-ze-t∂ me-tÛ-dus amely
+ []
+
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 487--491
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 505--517
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--525
+
+ []
+
+[25]
+<./images//protot√≠pus1.png, id=401, 549.55313pt x 441.14813pt>
+File: ./images//protot√≠pus1.png Graphic file (type png)
+<use ./images//protot√≠pus1.png>
+Package pdftex.def Info: ./images//protot√≠pus1.png  used on input line 529.
+(pdftex.def)             Requested size: 274.7759pt x 220.57352pt.
+<./images//Form_inditas_3eszkoz.png, id=405, 893.58844pt x 476.53032pt>
+File: ./images//Form_inditas_3eszkoz.png Graphic file (type png)
+<use ./images//Form_inditas_3eszkoz.png>
+Package pdftex.def Info: ./images//Form_inditas_3eszkoz.png  used on input line
+ 542.
+(pdftex.def)             Requested size: 446.79312pt x 238.26457pt.
+
+Overfull \hbox (5.77539pt too wide) in paragraph at lines 542--543
+ [][] 
+ []
+
+[26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.14})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.546 	\subsubsection
+                     {Konstruktor} <./images//protot√≠pus1.png>]
+Overfull \hbox (21.49675pt too wide) in paragraph at lines 547--548
+\T1/lmr/m/n/12 A form konst-ruk-to-r·-ban ha-son-lÛ mÛ-don je-len-nek meg a me-
+tÛ-du-sok, mint a FormMainMenu-
+ []
+
+[27
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.15})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.558 	
+        <./images//Form_inditas_3eszkoz.png>] [28]
+<./images//√útemsor_ment.png, id=436, 892.83563pt x 478.78876pt>
+File: ./images//√útemsor_ment.png Graphic file (type png)
+<use ./images//√útemsor_ment.png>
+Package pdftex.def Info: ./images//√útemsor_ment.png  used on input line 599.
+(pdftex.def)             Requested size: 446.41672pt x 239.39378pt.
+
+Overfull \hbox (5.39899pt too wide) in paragraph at lines 599--600
+ [][] 
+ []
+
+[29]
+<./images//√útemsor_betolt.png, id=448, 892.83563pt x 478.78876pt>
+File: ./images//√útemsor_betolt.png Graphic file (type png)
+<use ./images//√útemsor_betolt.png>
+Package pdftex.def Info: ./images//√útemsor_betolt.png  used on input line 628.
+
+(pdftex.def)             Requested size: 446.41672pt x 239.39378pt.
+
+Overfull \hbox (5.39899pt too wide) in paragraph at lines 628--629
+ [][] 
+ []
+
+[30
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.16})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.631 	\end{figure}
+                    <./images//√útemsor_ment.png>]
+<./images//FormSzerk_page.png, id=456, 890.5772pt x 475.02469pt>
+File: ./images//FormSzerk_page.png Graphic file (type png)
+<use ./images//FormSzerk_page.png>
+Package pdftex.def Info: ./images//FormSzerk_page.png  used on input line 641.
+(pdftex.def)             Requested size: 445.2875pt x 237.51175pt.
+
+Overfull \hbox (4.26978pt too wide) in paragraph at lines 641--642
+ [][] 
+ []
+
+[31
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.17})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.644 	\end{figure}
+                    <./images//√útemsor_betolt.png>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 654.
+
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
+[]$ $ \T1/lmr/m/n/12 spea-ker1.AddSound(FormHangszSzerk.pitch[0],63,
+ []
+
+[32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.18})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.686 
+       <./images//FormSzerk_page.png>]
+<./images//hangsz_form.png, id=475, 601.4972pt x 346.29375pt>
+File: ./images//hangsz_form.png Graphic file (type png)
+<use ./images//hangsz_form.png>
+Package pdftex.def Info: ./images//hangsz_form.png  used on input line 695.
+(pdftex.def)             Requested size: 220.50887pt x 126.95363pt.
+<./images//hangsz_szerk.png, id=477, 191.9672pt x 218.31563pt>
+File: ./images//hangsz_szerk.png Graphic file (type png)
+<use ./images//hangsz_szerk.png>
+Package pdftex.def Info: ./images//hangsz_szerk.png  used on input line 702.
+(pdftex.def)             Requested size: 176.40439pt x 200.62961pt.
+ [33
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.19})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.705 	\end{figure}
+                    <./images//hangsz_form.png>] [34
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.20})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.713 	\newpage
+                <./images//hangsz_szerk.png>]
+<./images//lamp_form.png, id=495, 599.99156pt x 345.54094pt>
+File: ./images//lamp_form.png Graphic file (type png)
+<use ./images//lamp_form.png>
+Package pdftex.def Info: ./images//lamp_form.png  used on input line 718.
+(pdftex.def)             Requested size: 220.50887pt x 126.99399pt.
+<./images//LampaSzerk.png, id=497, 173.89969pt x 229.60782pt>
+File: ./images//LampaSzerk.png Graphic file (type png)
+<use ./images//LampaSzerk.png>
+Package pdftex.def Info: ./images//LampaSzerk.png  used on input line 727.
+(pdftex.def)             Requested size: 176.40439pt x 232.9251pt.
+<./images//ny√≠l_form.png, id=499, 600.74437pt x 347.04657pt>
+File: ./images//ny√≠l_form.png Graphic file (type png)
+<use ./images//ny√≠l_form.png>
+Package pdftex.def Info: ./images//ny√≠l_form.png  used on input line 736.
+(pdftex.def)             Requested size: 220.50887pt x 127.38847pt.
+<./images//nyilSzerk.png, id=500, 177.66376pt x 284.56313pt>
+File: ./images//nyilSzerk.png Graphic file (type png)
+<use ./images//nyilSzerk.png>
+Package pdftex.def Info: ./images//nyilSzerk.png  used on input line 745.
+(pdftex.def)             Requested size: 176.40439pt x 282.55638pt.
+ [35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.21})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.755 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.22})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.755 
+       <./images//lamp_form.png> <./images//LampaSzerk.png>] [36
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.23})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.755 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.24})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.755 
+       <./images//ny√≠l_form.png> <./images//nyilSzerk.png>] [37]
+Excluding 'comment' comment. Excluding 'comment' comment. [38
+
+] [39
+
+]
+Excluding 'comment' comment. [40] (main.bbl [41
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+[]\T1/lmr/m/n/12 ^^REurÛp·ban egye-d¸l-·l-lÛ az idÆ-se-ket se-gÌ-tÆ gon-do-sÛ-r
+a prog-ram,'' []$http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+\T1/lmr/m/n/12 / / medicalonline . hu / informatika / cikk / europaban _ egyedu
+lallo _ az _ idoseket _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
+[]\T1/lmr/m/n/12 E. ILO-NA, ^^RK¸-lˆn-le-ges me-mÛ-ria-te-r·-pia se-gÌ-ti a de-
+mens be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
+\T1/lmr/m/n/12 te-ge-ket,'' 2017.06.05., []$https : / / ng . 24 . hu / tudomany
+ / 2017 / 06 / 05 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
+[]$\T1/lmr/m/n/12 https : / / www . ledsmagazine . com / leds-[]ssl-[]design / 
+materials / article / 16701292 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+\T1/lmr/m/n/12 / / www . utmel . com / components / the-[]rj9-[]vs-[]rj11-[]con
+nectors-[]who-[]is-[]the-[]winner ?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
+[]\T1/lmr/m/n/12 Unknown, ^^RKnow the dif-fe-ren-ce rj9, rj11, rj12, rj45, rj48
+ pi-no-ut,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
+\T1/lmr/m/it/12 eTech-nop-hi-les\T1/lmr/m/n/12 , Last vi-si-ted: 2023.03.27, []
+$https : / / www . etechnophiles . com /
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 61--63
+[]\T1/lmr/m/n/12 energom., ^^RMi az a t·p-egy-sÈg?'' 2014.¡p-ri-lis.08, []$http
+s : / / www . energom . hu /
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 65--68
+[]\T1/lmr/m/n/12 A. Hejls-berg, S. Wil-ta-muth, and P. Gol-de, \T1/lmr/m/it/12 
+CSharp lan-gu-age spe-ci-fi-ca-ti-on\T1/lmr/m/n/12 .
+ []
+
+[42
+
+]
+Underfull \hbox (badness 2961) in paragraph at lines 78--81
+[]\T1/lmr/m/n/12 B. Lut-ke-vich, ^^Rdy-na-mic link lib-rary (dll),'' \T1/lmr/m/
+it/12 Tech Tar-get\T1/lmr/m/n/12 , Last up-dated:
+ []
+
+
+Underfull \hbox (badness 4403) in paragraph at lines 78--81
+\T1/lmr/m/n/12 No-vem-ber 2021, []$https : / / www . techtarget . com / searchw
+indowsserver / de^^\nition /
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 88--92
+[]\T1/lmr/m/n/12 RJCodeAdvance, ^^RMo-dern Flat UI Ran-dom Mul-tiC-ol-or High-l
+ight button-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--92
+\T1/lmr/m/n/12 Active Form Win-Form CSharp V-0.1,'' []$https : / / rjcodeadvanc
+e . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--92
+\T1/lmr/m/n/12 iu-[]moderno-[]temas-[]multicolor-[]aleatorio-[]resaltar-[]boton
+-[]form-[]activo-[]winform-[]c / /$[],
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 94--96
+[]\T1/lmr/m/n/12 M. 2023, ^^RApp-li-ca-ti-on class,'' last vi-si-ted: 2023.¡p-r
+i-lis.10, []$https : / / learn .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+\T1/lmr/m/n/12 microsoft . com / en-[]us / dotnet / api / system . windows . fo
+rms . application ? view =
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 102--105
+[]\T1/lmr/m/n/12 ^^REvents in csharp,'' []$https : / / code-[]maze . com / csha
+rp-[]events / # : ~ : text = Events %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+\T1/lmr/m/n/12 20in % 20C % 23 % 20are % 20a\OML/lmm/m/it/12 ; \T1/lmr/m/n/12 s
+omething % 20they % 20listen % 20to % 20happens.$[],
+ []
+
+
+Underfull \hbox (badness 5388) in paragraph at lines 107--109
+[]\T1/lmr/m/n/12 ^^R"object sen-der" and "even-targs e",'' []$https : / / stack
+over^^]ow . com / questions /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+[]\T1/lmr/m/n/12 D. Stuff, ^^RWhat is the use of app-li-ca-ti-on.enablevisualst
+yles()?''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+\T1/lmr/m/n/12 last vi-si-ted: 2023.¡p-ri-lis.11, []$https : / / www . dotnetst
+u^^[s . com /
+ []
+
+) Excluding 'comment' comment. [43] (main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [44
+
+] (main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 645471E8CD7C62069E185AC68BBB3919;6087.
+ ) 
+Here is how much of TeX's memory you used:
+ 16735 strings out of 476375
+ 272798 string characters out of 5798785
+ 1862299 words of memory out of 5000000
+ 36610 multiletter control sequences out of 15000+600000
+ 571891 words of font info for 80 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 78i,8n,81p,833b,602s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Program Files/M
+ikTex/fonts/enc/dvips/lm/lm-rm.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/
+lm-mathit.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}<D:/Program
+ Files/MikTex/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTex/fonts/t
+ype1/public/lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmmi1
+2.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/Program File
+s/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fonts/type1/
+public/lm/lmsy10.pfb>
+Output written on main.pdf (46 pages, 1709473 bytes).
+PDF statistics:
+ 678 PDF objects out of 1000 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
+ 386 words of extra memory for PDF output out of 10000 (max. 10000000)
+

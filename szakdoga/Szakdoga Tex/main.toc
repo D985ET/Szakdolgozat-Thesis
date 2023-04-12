@@ -1,0 +1,68 @@
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Bevezetés}{1}{chapter.1}%
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Szakdolgozatom elméleti alapjai}{3}{chapter.2}%
+\select@language {magyar} \contentsline {section}{\numberline {2.1}Háttérelméleti forrás}{3}{section.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.1.1}Gyakorlati haszna}{3}{subsection.2.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.1.2}Módszer létfontossága}{3}{subsection.2.1.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.1.3}Intelligens szoba röviden}{4}{subsection.2.1.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.1.4}Automatizálás célja}{4}{subsection.2.1.4}%
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Szakdolgozatom elaborálása}{6}{chapter.3}%
+\select@language {magyar} \contentsline {section}{\numberline {3.1}A projekthez tartozó eszközök bemutatása}{6}{section.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.1}Lámpa eszköz}{6}{subsection.3.1.1}%
+\select@language {magyar} \contentsline {subsubsection}{Fénykibocsátó diódákról röviden}{7}{section*.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.2}Nyíl eszköz}{7}{subsection.3.1.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.3}Hangszóró eszköz}{8}{subsection.3.1.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.4}Eszközök aljzatai}{8}{subsection.3.1.4}%
+\select@language {magyar} \contentsline {subsubsection}{RJ-9-es csatlakozó}{9}{section*.3}%
+\select@language {magyar} \contentsline {subsubsection}{USB-A és USB-B típus különbsége}{10}{section*.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.5}Eszközök működtetéséhez szükséges kábelek}{11}{subsection.3.1.5}%
+\select@language {magyar} \contentsline {section}{\numberline {3.2}Felület tervezésének alapjai}{13}{section.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.1}C\# fejlődése}{13}{subsection.3.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.2}Dynamic Link Library mint erőforrás}{14}{subsection.3.2.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.3}Windows ablakos felület tervezés}{15}{subsection.3.2.3}%
+\select@language {magyar} \contentsline {subsubsection}{Designer nézet}{15}{section*.5}%
+\select@language {magyar} \contentsline {subsubsection}{Alap kód nézet}{15}{section*.6}%
+\select@language {magyar} \contentsline {subsubsection}{Initialize Component metódus}{16}{section*.7}%
+\select@language {magyar} \contentsline {subsubsection}{XAML nyelv}{16}{section*.8}%
+\select@language {magyar} \contentsline {subsubsection}{Uniform Resource Identifier, URI}{16}{section*.9}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.4}Eszköztár}{17}{subsection.3.2.4}%
+\select@language {magyar} \contentsline {subsubsection}{Gombok}{17}{section*.10}%
+\select@language {magyar} \contentsline {subsubsection}{Címkék}{18}{section*.11}%
+\select@language {magyar} \contentsline {subsubsection}{Panel}{18}{section*.12}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.5}Delegatek}{19}{subsection.3.2.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.6}Események}{19}{subsection.3.2.6}%
+\select@language {magyar} \contentsline {subsubsection}{Esemény készítése}{19}{section*.13}%
+\select@language {magyar} \contentsline {subsubsection}{Esemény a gyakorlatban}{19}{section*.14}%
+\select@language {magyar} \contentsline {subsubsection}{Esemény működtetése a formban}{20}{section*.15}%
+\select@language {magyar} \contentsline {section}{\numberline {3.3}A projekt Formjai}{20}{section.3.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.1}Form Main Menu}{20}{subsection.3.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{22}{section*.16}%
+\select@language {magyar} \contentsline {subsubsection}{panelBeallitas metódus}{22}{section*.17}%
+\select@language {magyar} \contentsline {subsubsection}{SelectThemeColor metódus}{22}{section*.18}%
+\select@language {magyar} \contentsline {subsubsection}{ActivateButton metódus}{23}{section*.19}%
+\select@language {magyar} \contentsline {subsubsection}{DisableButton metódus}{23}{section*.20}%
+\select@language {magyar} \contentsline {subsubsection}{OpenSubForm metódus}{24}{section*.21}%
+\select@language {magyar} \contentsline {subsubsection}{Reset metódus}{24}{section*.22}%
+\select@language {magyar} \contentsline {subsubsection}{Gomb Kattintás metódusok}{24}{section*.23}%
+\select@language {magyar} \contentsline {subsubsection}{Oldalsáv}{24}{section*.24}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.2}Form Inditás}{25}{subsection.3.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{Felmerülő problémák a panel vezérlővel}{26}{section*.25}%
+\select@language {magyar} \contentsline {subsubsection}{Panel vezérlő kiváltása DataGridView segítségével}{26}{section*.26}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{27}{section*.27}%
+\select@language {magyar} \contentsline {subsubsection}{DataGridViewBetolt metódus}{27}{section*.28}%
+\select@language {magyar} \contentsline {subsubsection}{utemTimer\_Tick metódus}{27}{section*.29}%
+\select@language {magyar} \contentsline {subsubsection}{jsonBeMentes metódus}{28}{section*.30}%
+\select@language {magyar} \contentsline {subsubsection}{jsonBolBetoltes metódus}{28}{section*.31}%
+\select@language {magyar} \contentsline {subsubsection}{dataGridInditas\_CellContentClick metódus}{28}{section*.32}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.3}Form Mentés}{28}{subsection.3.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{29}{section*.33}%
+\select@language {magyar} \contentsline {subsubsection}{Mentes metódus}{29}{section*.34}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.4}Form Betöltés}{30}{subsection.3.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{30}{section*.35}%
+\select@language {magyar} \contentsline {subsubsection}{Betoltes metódus}{30}{section*.36}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.5}Form Szerkesztés}{31}{subsection.3.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{Konstruktor}{32}{section*.37}%
+\select@language {magyar} \contentsline {subsubsection}{dataGridSzerkesztes\_CellContentClick metódus}{32}{section*.38}%
+\select@language {magyar} \contentsline {subsubsection}{btnFuttatasSzerk\_Click metódus}{32}{section*.39}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.6}Form Hangszóró Szerkesztés}{33}{subsection.3.3.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.7}Form Lámpa Szerkesztés}{35}{subsection.3.3.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.8}Form Nyíl Szerkesztés}{36}{subsection.3.3.8}%

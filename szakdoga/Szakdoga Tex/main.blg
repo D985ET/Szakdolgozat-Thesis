@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: references.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in zsofia2021zeneterapia
+Warning--empty journal in erdelyiilonademensbetegek
+Warning--empty journal in SLaszlo
+Warning--empty journal in uri
+
+Done.
+You've used 22 entries,
+            4087 wiz_defined-function locations,
+            935 strings with 10710 characters,
+and the built_in function-call counts, 8121 in all, are:
+= -- 652
+> -- 97
+< -- 2
++ -- 49
+- -- 23
+* -- 282
+:= -- 1482
+add.period$ -- 44
+call.type$ -- 22
+change.case$ -- 35
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 724
+empty$ -- 791
+format.name$ -- 25
+if$ -- 1804
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 150
+newline$ -- 89
+num.names$ -- 19
+pop$ -- 406
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 654
+stack$ -- 0
+substring$ -- 59
+swap$ -- 388
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 22
+warning$ -- 4
+while$ -- 21
+width$ -- 24
+write$ -- 195
+(There were 4 warnings)
