@@ -8,31 +8,29 @@ using System.Threading.Tasks;
 using System.Drawing;
 using Moq;
 using System.Windows.Forms;
+using SLFormHelper;
+using System.IO;
 
-namespace Thesis_project.Forms.FormKirakTest
+namespace Thesis_project.Forms
 {
     [TestClass()]
     public class FormInditasFormKirakTest
     {
+        
         [TestMethod()]
-        public void nyilatKiraknyilatKirakTest()
+        public void jsonBeMentesTest()
         {
-            Point p = new Point(1, 1);
-            var mock = new Mock<Form>();
-            var service = new FormInditas();
-
-            mock.Verify(x => service.Gombokat_Kirak(), Times.Never());
-
-        }
-
-        [TestMethod()]
-        public void LoadThemeLoadThemeTest()
-        {
+            FormHelper.CallFillDev485Static();
             FormInditas formInditas = new FormInditas();
-           
-            Assert.Fail();
+            formInditas.Show();
+            formInditas.jsonBeMentes("test.json");
+            bool letezikEFajl = File.Exists("test.json");
+            Assert.Equals(letezikEFajl, true); //megnézzük hogy létezik e a fájl
         }
-
-    
+        [TestMethod()]
+        public void jsonBeMentes_NemTalalDLL_Test()
+        {
+            Assert.ThrowsException<DllNotFoundException>(() => { FormHelper.CallFillDev485Static(); });
+        }
     }
 }

@@ -50,6 +50,10 @@
     <Reference Include="Moq, Version=4.18.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\Thesis_project\packages\Moq.4.18.4\lib\net462\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="SLFormHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Thesis_project\bin\Debug\Output_JÓ\Debug\SLFormHelper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Drawing" />

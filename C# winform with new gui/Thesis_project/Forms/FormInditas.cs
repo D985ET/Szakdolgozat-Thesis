@@ -19,18 +19,7 @@ namespace Thesis_project.Forms
     public partial class FormInditas : Form
     {
 
-        bool dev485Set;
-     
-      
-        public void setDev485(bool dev485Set)
-        {
-     
-            this.dev485Set = dev485Set;
-        }
-        public bool getDev485()
-        {
-            return this.dev485Set;
-        }
+    
         
         public FormInditas()
         {
@@ -95,49 +84,10 @@ namespace Thesis_project.Forms
                 }
             }
             
-            if(dev485Set == false)
-            {
-                setDev485(true);
-                Gombokat_Kirak();
-              
-              
-            }
+          
 
         }
-        Point p = new Point(0,0);
-        public void Gombokat_Kirak()
-        {
-
-            bool elsosor = true;
-
-            for (int i = 0; i < SLFormHelper.FormHelper.Devices.Count; i++) //megszámolja mennyi Device van.
-            {
-                Console.WriteLine();
-                Console.WriteLine(SLFormHelper.FormHelper.Devices[i].GetType().Name);
-                Console.WriteLine(SLFormHelper.FormHelper.Devices[i]);
-                
-                if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDArrow))
-                {
-                    nyilatKirak(p);
-                }
-                if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(LEDLight))
-                {
-                    lampatKirak(p);
-                }
-                if (SLFormHelper.FormHelper.Devices[i].GetType() == typeof(Speaker))
-                {
-                    hangszoroKirak(p);
-                }
-                p.X = p.X + 300; 
-            }
-            p.Y = p.Y + 310;
-            p.X = 0;
-           
-              
-            /*lampAktSzin.Text = ((LEDLight)FormHelper.Devices[0]).Color.ToString();*/
-            EszkozokdbTxt.Text = SLFormHelper.FormHelper.Devices.Count.ToString() + " db"; //hány db eszköz van
-
-        }
+    
 
 
         //buttonok kirakása attól függően hogy mik.
@@ -340,8 +290,8 @@ namespace Thesis_project.Forms
                 speaker1.AddSound(FormHangszSzerk.pitch[i], 63, FormHangszSzerk.timeMilisec[i]);
             }
             Console.WriteLine("TIMER:");
-            Console.WriteLine(ledArrow1.Color);
-            Console.WriteLine(ledArrow1.Direction);
+     /*       Console.WriteLine(ledArrow1.Color);
+            Console.WriteLine(ledArrow1.Direction);*/
         
             /*ledLight1.Color = FormLampaSzerk.colors[i];*/
 
@@ -387,6 +337,7 @@ namespace Thesis_project.Forms
             }
           
             File.WriteAllText(jsonPathToFile,JsonConvert.SerializeObject(turnSettings, Newtonsoft.Json.Formatting.Indented));
+            MessageBox.Show("Mentés megtörtént!");
         }
         public void jsonBolBetoltes(string jsonPathToFile)
         { 
@@ -422,6 +373,7 @@ namespace Thesis_project.Forms
                 dataGridInditas.Rows.Add(newRow);
 
             }
+            MessageBox.Show("Betöltés megtörtént!");
         }
 
         private void btnNewUtem_Click(object sender, EventArgs e)

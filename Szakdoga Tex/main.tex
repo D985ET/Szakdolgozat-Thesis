@@ -145,21 +145,21 @@
 	\end{figure}
 	Ezen az eszközön összesen 19 db dióda található meg amelyek egységesen tudnak funkcionálni. 
 	Az eszköz a \ref{fig:lamp01} ábrán látható.
+	A lámpa eszközről készült videofelvétel is amelyről az alábbi \url{https://www.youtube.com/watch?v=szECXr9RMNQ} linken találhatunk felvételt.
 	\subsubsection{Fénykibocsátó diódákról röviden}
 	A LED félvezető anyagában vannak energiasávok, és ezek elkülönülése határozza meg a LED által kibocsátott fényrészecskék energiáját.
 	Ezek a fényrészecskék határozzák meg a kibocsátott fény hullámhosszát, ezt követően a színét is. A nem megegyező sáv különbségek adják azt meg, hogy különféle színt eredményezzenek ezek a félvezető anyagok.\cite{leds_magazi}
 	\subsection{Nyíl eszköz}
 	A nyíl eszköz egy olyan eszköz amely különféle irányok megjelenítésére képes. Ezt úgy tudja elérni, hogy különböző sorrendben, más pozícióban éri az áram a diódát, ezzel elérve, hogy mintegy nyíl funkcionáljon.
 	Az eszköz képes különféle színek kibocsájtására is, továbbá irányok jelzésére is alkalmas, melyek vezérlését a tervezett felületen keresztül lehet vezérelni. 
-	\\
 	Ezen az eszközön összesen 26 db dióda található meg amelyek egységesen is tudnak funkcionálni.	
-	\\
 	Maga az eszköz a \ref{fig:nyil01} képen látható.	\begin{figure}[H]	
 		\centering
 		\includegraphics[scale=0.12]{nyil01}
 		\caption[Nyíl eszköz]{Nyíl mint eszköz}
 		\label{fig:nyil01}
 	\end{figure}
+A lámpa eszközről készült videofelvétel is amelyről az alábbi \url{https://youtu.be/shEyutbeBes} linken találhatunk felvételt.
 \newpage
 	\subsection{Hangszóró eszköz}
 	A hangszóró, mint eszköz képes különféle hangszínen, más és más hangerőn hangokat lejátszani. Továbbá, egy hangszín lejátszásának a hosszát is betudjuk konfigurálni. Mind ezek alapvető funkcionálását és bekonfigurálását képesek vagyunk vezérelni a projekthez tartozó alkalmazással. A hangszóró emellett képes akár arra is hogy különböző hangszíneket lejátsszon egymást követően, ezzel akár különféle dallamokat és dalokat tudunk lejátszatni a hangszórónk segítségével.
@@ -171,7 +171,8 @@
 		\caption[Hangszóró eszköz]{Hangszóró eszköz}
 		\label{fig:hangsz01}
 	\end{figure}
-	\subsection{Eszközök aljzatai}
+A lámpa és a hangszóró eszközökről készült videofelvétel is amelyről az alábbi \url{https://youtu.be/shEyutbeBes} linken találhatunk felvételt.
+	\subsection{Eszközök csatlakozói}
 	\label{eszkozcsatlakozok}
 	Ezen eszközöknek önálló tápellátással rendelkeznek, továbbá az eszközök közötti kapcsolatot, 4 pólusú RJ típusú csatlakozókkal felszerelt kábelen keresztül lehet biztosítani. Ezek közül is az RJ 9-es változatát használjuk amely egy 4 eres csatlakozó, amibe csak a középső kettő(piros,zöld) vezetékeket kötjük be.
 	Az eszközök aljzatai mind egységesen vannak felépítve, ezen aljazatokról a \ref{fig:csatlakozo} ábrán találhatunk képet.
@@ -568,13 +569,20 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	
 	\subsection{Form Mentés}
 	\label{Form Mentes}
-	 Alapvetően, a mentés form arra lesz hivatott, hogy a SaveFileDialog nevezetű osztályt felhasználva a megfelelő helyre mentse ki a JSON fájlt.
-	\\
+	 Alapvetően, a mentés form arra lesz hivatott, hogy a SaveFileDialog nevezetű osztályt felhasználva a megfelelő helyre mentse ki a JSON fájlt. A form képes jelenleg mindegyik eszköz beállításainak kimentésére. Egy JSON formátumú fájlba való kimentés a \ref{fig:keteszkozkimentes} ábrán található.
+	 \begin{figure}[H]	
+	 	\centering
+	 	\includegraphics[scale=0.7]{két_eszköz_kimentésének_a_JSON_fájlja}
+	 	\caption[Kimentés, JSON fájlba lámpa és nyíl eszközzel]{Kimentés, JSON fájlba lámpa és nyíl eszközzel}
+	 	\label{fig:keteszkozkimentes}
+	 \end{figure}
+
 	A JSON azért optimális fájl formátum mivel közismert és tökéletes arra, hogy átmeneti adatot tároljunk benne. 
 	\\
 	Ilyen átmeneti adat lehet egy felhasználó által generált adat, vagy például a jelenlegi helyzetben az eszközök beállításai. 
 	\\
 	A mentést a \textbf{Feladatsor Mentése} gomb megnyomásával válthatja ki a felhasználó. Ezt követően pedig ki kell választania a felhasználónak, hogy hova szeretné elmenteni a \textbf{JSON} fájlban eltárolt eszközök adatait.
+	A mentésről videofelvétel \url{https://youtu.be/0YGDGnBJYLA} linken találhatunk felvételt.
 	\\
 	A mentés azért is lehet optimális funkció mert ha a későbbiekben szükségünk volna egy adott beállításra, akkor lementjük az eszközök adatait és amikor újra szükségünk lesz betöltjük azokat a \textbf{Feladatsorok Betöltése} gombbal. Későbbiekben a betöltésről a \ref{Form Betoltes}
 	\subsubsection{Konstruktor}
@@ -602,7 +610,8 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	\end{figure}
 	\subsection{Form Betöltés}
 	\label{Form Betoltes}
-	A feladatsorok vagyis az eszközök beállításához tartózó konfigurációkat meghívó formot is a \textbf{OpenSubForm()} nevezetű metóduson hívunk meg. A betöltés form alapvetően arra lesz számunkra fontos, hogy azon az eszközök alapján amelyek éppen csatlakoztatva vannak a rendszerünkhöz, betöltsünk hozzájuk egy adott konfigurációt.
+	A feladatsorok vagyis az eszközök beállításához tartózó konfigurációkat meghívó formot is a \textbf{OpenSubForm()} nevezetű metóduson hívunk meg. A betöltés form célja az, hogy eszközök alapján amelyek éppen csatlakoztatva vannak a rendszerünkhöz, betöltsünk hozzájuk egy adott konfigurációt.
+	Jelenleg ez a funkció egyéni eszközök beállításainak betöltésére alkalmas.
 	\\
 	Ezen konfigurációkat, úgy tudjuk betölteni, hogyha van, egy vagy több eszközbeállításokat tartalmazó JSON fájlunk, amelyet be tud tölteni a rendszer. Ezt a betöltést a \ref{FormInditas} fejezetben található \textbf{jsonBolBetoltes()} metódus végzi el
 	\subsubsection{Konstruktor}
@@ -756,23 +765,26 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	\chapter*{Kitekintés}
 	A rendszer amit kiépítettünk, azon okból egyedülálló mivel a hardveres háttere specifikusan épül fel, vagyis nem elterjedt eszközökkel dolgoztunk. Az alkalmazás a non-verbális eszközök palettáját bővítheti a technika segítségével. 
 	\\
-	Lehetséges ötletek, az eszközök felhasználására, akár az lehetne, hogy mintegy közlekedési lámpa szimulálása amely három lámpa egységes összekötéséből és vezérléséből állna. Emellett, ha megtoldanánk egy hangszóró eszközzel is akkor egy hangjelzéses, átkelő lámpát is tudnánk ezzel szimulálni.
+	Lehetséges ötletek, az eszközök felhasználására, akár az lehetne, hogy mintegy közlekedési lámpa szimulálása amely három lámpa egységes összekötéséből és vezérléséből állna. 
+	\\
+	Emellett, ha megtoldanánk egy hangszóró eszközzel is akkor egy hangjelzéses, átkelő lámpát is tudnánk ezzel szimulálni. Amely akár a látási nehézségekkel küzdő embereknek segítséget nyújthat zebrák átkelése során.
+	\\
+	Továbbá, rajtjelző eszköznek is működtethető lehetne, mivel 3 lámpa eszközt összekötve, használni lehet ezen eszközöket. Amennyiben késleltetéseket építünk bele a programba, és 3 színt egységesen állítunk be akkor akár működtethető lehetne effajta módon is. 
+	\\
+	A nyíl egy lehetséges további felhasználása lehetne, hogy az irányjelző táblákon egyfajta iránymutatóként is szolgálhatna.
+	\\
 	Mindezek az ötletek jelenlegi projektnek nem képezik szerves részét, de jövőbeni használatra, és továbbfejlesztésre, mindenképpen alkalmas lehet.
+	
 	
 	
 	\begin{comment}
 		4.fejezet: (future works) továbbiakban milyen kimenetele lesz, ebből szabadalom lesz, az ötletgazda szeretné ezt kiadni olyan módon hogy piaci termék legyen. 
 		- Teljesen más technológia
 	\end{comment}
-	
-	\begin{comment}
-		5.fejezet:  összefoglaló, melyik fejezetben miről beszéltünk, miket sikerült elérni(pl 1.fejezetben említetteket megcsináltam, iylenek), Mi az EREDMÉNY! miért fontos, 
-		- miért jó ez? Működés közben videókat kéne csinálni. Érdemes lenne titkosítani.
-	\end{comment}
 	\chapter*{Befejezés}
-	Jelenlegi projekt során, ablakos applikációt tudtunk készíteni amely segítségével három fajta eszközt tudunk vezérelni akár önállóan egy eszközt, vagy kettőt együttesen.  %vagy 3 eszközt. 
+	Jelenlegi projekt során, ablakos applikációt tudtunk készíteni amely segítségével három fajta eszközt tudunk vezérelni akár önállóan egy eszközt, vagy kettőt együttesen.  
 	\par
-	A projekt kezdete során jó néhány problémára kellett megoldást találni, amely akár a megfelelő dizájn kialakítását vagy az eszközök megfelelő működtetését illeti. Célom volt, hogy az alkalmazáson belül több ablakot is tudjunk használni egyszerre az eszközöket illetően, amelyek lefejlesztése sikeresnek bizonyult. Továbbá, kompatibilissé is szerettem volna tenni az alkalmazást, olyan emberek számára is akik, az informatika világában nem jártasak. 
+	A projekt kezdete során jó néhány problémára kellett megoldást találni, amely akár a megfelelő dizájn kialakítását vagy az eszközök megfelelő működtetését illeti. Célom volt, hogy az alkalmazáson belül több ablakot is tudjunk használni egyszerre az eszközöket illetően, amelyek lefejlesztése sikeresnek bizonyult. Továbbá, kompatibilissé is szerettem volna tenni az alkalmazást, olyan emberek számára is akik, az informatika világában nem jártasak. Az eszközöket tudjuk működtetni C\# ablakos alkalmazáson belül.
 	\par
 	Annak a reményében készítettem ezt az alkalmazást, hogy későbbiek során felhasználásra kerüljön. Emellett törekedtem arra, hogy a projekt elkészítésével segíthessem a mozgásfejlesztésre szakosodott szakemberek munkáját.
 	\par
@@ -793,10 +805,12 @@ Mind az URI és az XAML is fontos szerepet tölt be, a C\# nyelvbe épített ala
 	\end{comment}
 
 	\chapter*{Köszönetnyílvánítás}
-	Szeretném köszönetemet ezúton is kifejezni a konzulensemnek, Dr.Király Roland Tanár Úrnak, aki lehetővé tette ezen téma feldolgozását.
+	Szeretném köszönetemet ezúton is kifejezni a konzulensemnek, Dr.Király Roland Egyetemi Docens Úr, aki lehetővé tette ezen téma feldolgozását.
+	Szakértelme és tudása segített engem abban, hogy munkámat megérthessem, elkezdhessem, folytathassam, végül sikeresen lezárhassam.
+	\\
 	Továbbá, szeretném megköszönni, kedves barátomnak és szaktársamnak, Nagy-Tóth Bencének a sok fáradságos munkáját, amely alapját képezte a programomnak. 
 	\\
-	Végső soron, Istennek szeretném hálámat kifejezni, mivel a tudásomat és a kitartásomat, Tőle nyerhettem. 
+	Végső soron, Istennek szeretném hálámat kifejezni, mivel a tudásomat és a kitartásomat, Tőle kaphattam. 
 	
 
 	% Aláírt, szkennelt nyilatkozat beillesztése a szakdolgozat végére
