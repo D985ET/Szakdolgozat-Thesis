@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  14 APR 2023 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.6)  14 APR 2023 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-01-24>
+L3 programming layer <2023-02-02>
 (D:\Program Files\MikTex\tex/latex/thesis-ekf\thesis-ekf.cls
 Document Class: thesis-ekf 2021/08/12 v4.2 Thesis class for Eszterhazy Karoly C
 atholic University (Eger, Hungary)
@@ -746,11 +746,17 @@ Overfull \hbox (11.97958pt too wide) in paragraph at lines 35--35
 Package hyperref Info: Option `pageanchor' set `true' on input line 37.
  Excluding 'comment' comment.
 1. fejezet.
+
+Overfull \hbox (0.32875pt too wide) in paragraph at lines 52--53
+[]\T1/lmr/m/n/12 T�j�koz�d�s�t, moz-g�-s�t il-let-ve kom-mu-ni-k�-ci-�-j�t hang
+, sz�n im-pul-zu-sok-kal �ssze-
+ []
+
 [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
@@ -763,10 +769,10 @@ Excluding 'comment' comment. [2]
 <./images//lamp01.jpg, id=208, 926.46124pt x 2055.68pt>
 File: ./images//lamp01.jpg Graphic file (type jpg)
 <use ./images//lamp01.jpg>
-Package pdftex.def Info: ./images//lamp01.jpg  used on input line 142.
+Package pdftex.def Info: ./images//lamp01.jpg  used on input line 145.
 (pdftex.def)             Requested size: 92.65155pt x 205.58003pt.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-48.
+51.
 (D:\Program Files\MikTex\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [6
@@ -776,30 +782,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.149 	\subsubsection
+l.152 	\subsubsection
                      {Fénykibocsátó diódákról röviden} <./images//lamp01
 .jpg>]
 <./images//nyil01.jpg, id=218, 926.46124pt x 2055.68pt>
 File: ./images//nyil01.jpg Graphic file (type jpg)
 <use ./images//nyil01.jpg>
-Package pdftex.def Info: ./images//nyil01.jpg  used on input line 158.
+Package pdftex.def Info: ./images//nyil01.jpg  used on input line 161.
 (pdftex.def)             Requested size: 111.17055pt x 246.67096pt.
  [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 \newpage
+l.166 \newpage
                <./images//nyil01.jpg>]
 <./images//hangsz01.jpg, id=230, 926.46124pt x 2055.68pt>
 File: ./images//hangsz01.jpg Graphic file (type jpg)
 <use ./images//hangsz01.jpg>
-Package pdftex.def Info: ./images//hangsz01.jpg  used on input line 170.
+Package pdftex.def Info: ./images//hangsz01.jpg  used on input line 173.
 (pdftex.def)             Requested size: 92.65155pt x 205.58003pt.
 <./images//táp,rj9.jpg, id=233, 2055.68pt x 926.46124pt>
 File: ./images//táp,rj9.jpg Graphic file (type jpg)
 <use ./images//táp,rj9.jpg>
-Package pdftex.def Info: ./images//táp,rj9.jpg  used on input line 181.
+Package pdftex.def Info: ./images//táp,rj9.jpg  used on input line 184.
 (pdftex.def)             Requested size: 220.50887pt x 99.36646pt.
 
 
@@ -810,20 +816,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.185 	\newpage
+l.188 	\newpage
                 <./images//hangsz01.jpg>]
 <./images//táp_csatl.jpg, id=241, 111.41624pt x 261.22594pt>
 File: ./images//táp_csatl.jpg Graphic file (type jpg)
 <use ./images//táp_csatl.jpg>
-Package pdftex.def Info: ./images//táp_csatl.jpg  used on input line 190.
+Package pdftex.def Info: ./images//táp_csatl.jpg  used on input line 193.
 (pdftex.def)             Requested size: 55.70798pt x 130.61264pt.
 <./images//rj9_csatl.jpg, id=245, 683.55376pt x 558.58687pt>
 File: ./images//rj9_csatl.jpg Graphic file (type jpg)
 <use ./images//rj9_csatl.jpg>
-Package pdftex.def Info: ./images//rj9_csatl.jpg  used on input line 203.
+Package pdftex.def Info: ./images//rj9_csatl.jpg  used on input line 206.
 (pdftex.def)             Requested size: 176.40439pt x 144.15521pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--206
+Underfull \hbox (badness 10000) in paragraph at lines 199--209
 
  []
 
@@ -832,79 +838,79 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.207 \newpage
+l.210 \newpage
               
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.207 \newpage
+l.210 \newpage
                <./images//táp,rj9.jpg> <./images//táp_csatl.jpg>] [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.207 \newpage
+l.210 \newpage
                <./images//rj9_csatl.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 209--212
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
 
  []
 
 <./images//lampa_usb2.jpg, id=260, 263.48438pt x 350.05782pt>
 File: ./images//lampa_usb2.jpg Graphic file (type jpg)
 <use ./images//lampa_usb2.jpg>
-Package pdftex.def Info: ./images//lampa_usb2.jpg  used on input line 215.
+Package pdftex.def Info: ./images//lampa_usb2.jpg  used on input line 218.
 (pdftex.def)             Requested size: 158.09183pt x 210.0363pt.
 [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.220 \newpage
+l.223 \newpage
                <./images//lampa_usb2.jpg>]
 <./images//USB.jpg, id=270, 1204.5pt x 1606.0pt>
 File: ./images//USB.jpg Graphic file (type jpg)
 <use ./images//USB.jpg>
-Package pdftex.def Info: ./images//USB.jpg  used on input line 227.
+Package pdftex.def Info: ./images//USB.jpg  used on input line 230.
 (pdftex.def)             Requested size: 176.40439pt x 235.20432pt.
 <./images//táp_adapter.jpg, id=275, 1204.5pt x 1606.0pt>
 File: ./images//táp_adapter.jpg Graphic file (type jpg)
 <use ./images//táp_adapter.jpg>
-Package pdftex.def Info: ./images//táp_adapter.jpg  used on input line 239.
+Package pdftex.def Info: ./images//táp_adapter.jpg  used on input line 242.
 (pdftex.def)             Requested size: 176.40439pt x 235.20432pt.
  [12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.243 	F
+l.246 	F
         ontos részlet az, hogy az eszköz beállítása ilyenkor még nem m...
  <./images//USB.jpg>]
 <./images//rj9_kabel.jpg, id=284, 1204.5pt x 1606.0pt>
 File: ./images//rj9_kabel.jpg Graphic file (type jpg)
 <use ./images//rj9_kabel.jpg>
-Package pdftex.def Info: ./images//rj9_kabel.jpg  used on input line 247.
+Package pdftex.def Info: ./images//rj9_kabel.jpg  used on input line 250.
 (pdftex.def)             Requested size: 176.40439pt x 235.20432pt.
  [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.251 \newpage
+l.254 \newpage
               
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.10})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.251 \newpage
+l.254 \newpage
                <./images//táp_adapter.jpg> <./images//rj9_kabel.jpg>]
-Overfull \hbox (10.12099pt too wide) in paragraph at lines 258--273
+Overfull \hbox (10.12099pt too wide) in paragraph at lines 261--276
 \T1/lmr/m/n/12 App-li-k�-ci�(Console App-li-ca-ti-on), a Win-dows Forms App-li-
 ca-ti-on, il-let-ve a WPF(Windows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--273
+Underfull \hbox (badness 10000) in paragraph at lines 261--276
 
  []
 
@@ -912,10 +918,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--273
 <DLL_bence.png, id=302, 1446.40375pt x 714.67pt>
 File: DLL_bence.png Graphic file (type png)
 <use DLL_bence.png>
-Package pdftex.def Info: DLL_bence.png  used on input line 282.
+Package pdftex.def Info: DLL_bence.png  used on input line 285.
 (pdftex.def)             Requested size: 433.92448pt x 214.40265pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--294
+Underfull \hbox (badness 10000) in paragraph at lines 290--297
 
  []
 
@@ -924,29 +930,29 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.11})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.294 	\subsection
+l.297 	\subsection
                   {Windows ablakos felület tervezés} <./DLL_bence.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 311--317
+Underfull \hbox (badness 10000) in paragraph at lines 314--320
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 318--325
+Underfull \hbox (badness 10000) in paragraph at lines 321--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--329
+Underfull \hbox (badness 10000) in paragraph at lines 329--332
 
  []
 
 [17] [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 386--389
+Underfull \hbox (badness 10000) in paragraph at lines 389--392
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 410--413
+Underfull \hbox (badness 10000) in paragraph at lines 413--416
 
  []
 
@@ -955,46 +961,46 @@ Excluding 'comment' comment.
 File: ./images//prototipus_main_menu.png Graphic file (type png)
 <use ./images//prototipus_main_menu.png>
 Package pdftex.def Info: ./images//prototipus_main_menu.png  used on input line
- 433.
+ 436.
 (pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
  [21]
 <./images//FormMainMenu_land.png, id=366, 894.34125pt x 478.03593pt>
 File: ./images//FormMainMenu_land.png Graphic file (type png)
 <use ./images//FormMainMenu_land.png>
 Package pdftex.def Info: ./images//FormMainMenu_land.png  used on input line 44
-1.
+4.
 (pdftex.def)             Requested size: 402.44984pt x 215.11418pt.
  [22
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.12})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.448 	\subsubsection
+l.451 	\subsubsection
                      {Konstruktor}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.13})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.448 	\subsubsection
+l.451 	\subsubsection
                      {Konstruktor} <./images//prototipus_main_menu.png> <./imag
 es//FormMainMenu_land.png>]
-Overfull \hbox (2.71156pt too wide) in paragraph at lines 449--453
+Overfull \hbox (2.71156pt too wide) in paragraph at lines 452--456
 \T1/lmr/m/n/12 A ki-n�-zet-hez nagy-ban hoz-z�-j�-rult a(z) \T1/lmr/bx/n/12 En-
 ab-le-Vi-su-alSty-les() \T1/lmr/m/n/12 ne-ve-ze-t� me-t�-dus amely
  []
 
 [23] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 488--492
+Underfull \hbox (badness 10000) in paragraph at lines 491--495
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 506--518
+Underfull \hbox (badness 10000) in paragraph at lines 509--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--526
+Underfull \hbox (badness 10000) in paragraph at lines 524--529
 
  []
 
@@ -1002,16 +1008,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 521--526
 <./images//prototípus1.png, id=410, 549.55313pt x 441.14813pt>
 File: ./images//prototípus1.png Graphic file (type png)
 <use ./images//prototípus1.png>
-Package pdftex.def Info: ./images//prototípus1.png  used on input line 530.
+Package pdftex.def Info: ./images//prototípus1.png  used on input line 533.
 (pdftex.def)             Requested size: 274.7759pt x 220.57352pt.
 <./images//Form_inditas_3eszkoz.png, id=414, 893.58844pt x 476.53032pt>
 File: ./images//Form_inditas_3eszkoz.png Graphic file (type png)
 <use ./images//Form_inditas_3eszkoz.png>
 Package pdftex.def Info: ./images//Form_inditas_3eszkoz.png  used on input line
- 543.
+ 546.
 (pdftex.def)             Requested size: 446.79312pt x 238.26457pt.
 
-Overfull \hbox (5.77539pt too wide) in paragraph at lines 543--544
+Overfull \hbox (5.77539pt too wide) in paragraph at lines 546--547
  [][] 
  []
 
@@ -1020,9 +1026,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.14})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.547 	\subsubsection
+l.550 	\subsubsection
                      {Konstruktor} <./images//prototípus1.png>]
-Overfull \hbox (21.49675pt too wide) in paragraph at lines 548--549
+Overfull \hbox (21.49675pt too wide) in paragraph at lines 551--552
 \T1/lmr/m/n/12 A form konst-ruk-to-r�-ban ha-son-l� m�-don je-len-nek meg a me-
 t�-du-sok, mint a FormMainMenu-
  []
@@ -1032,7 +1038,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.15})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.559 	
+l.562 	
         <./images//Form_inditas_3eszkoz.png>]
 <./images//két_eszköz_kimentésének_a_JSON_fájlja.png, id=435, 347.04657pt 
 x 386.94562pt>
@@ -1040,23 +1046,23 @@ File: ./images//két_eszköz_kimentésének_a_JSON_fájlja.png Graphic file (ty
 pe png)
 <use ./images//két_eszköz_kimentésének_a_JSON_fájlja.png>
 Package pdftex.def Info: ./images//két_eszköz_kimentésének_a_JSON_fájlja.p
-ng  used on input line 575.
+ng  used on input line 578.
 (pdftex.def)             Requested size: 242.93094pt x 270.86008pt.
  [29] [30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.16})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.592 	\subsubsection
+l.595 	\subsubsection
                      {Mentes metódus} <./images//két_eszköz_kimentésének_a
 _JSON_fájlja.png>]
 <./images//Ütemsor_ment.png, id=457, 892.83563pt x 478.78876pt>
 File: ./images//Ütemsor_ment.png Graphic file (type png)
 <use ./images//Ütemsor_ment.png>
-Package pdftex.def Info: ./images//Ütemsor_ment.png  used on input line 607.
+Package pdftex.def Info: ./images//Ütemsor_ment.png  used on input line 610.
 (pdftex.def)             Requested size: 446.41672pt x 239.39378pt.
 
-Overfull \hbox (5.39899pt too wide) in paragraph at lines 607--608
+Overfull \hbox (5.39899pt too wide) in paragraph at lines 610--611
  [][] 
  []
 
@@ -1065,16 +1071,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.17})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.617 	\subsubsection
+l.620 	\subsubsection
                      {Konstruktor} <./images//Ütemsor_ment.png>]
 <./images//Ütemsor_betolt.png, id=467, 892.83563pt x 478.78876pt>
 File: ./images//Ütemsor_betolt.png Graphic file (type png)
 <use ./images//Ütemsor_betolt.png>
-Package pdftex.def Info: ./images//Ütemsor_betolt.png  used on input line 637.
+Package pdftex.def Info: ./images//Ütemsor_betolt.png  used on input line 640.
 
 (pdftex.def)             Requested size: 446.41672pt x 239.39378pt.
 
-Overfull \hbox (5.39899pt too wide) in paragraph at lines 637--638
+Overfull \hbox (5.39899pt too wide) in paragraph at lines 640--641
  [][] 
  []
 
@@ -1082,10 +1088,10 @@ Overfull \hbox (5.39899pt too wide) in paragraph at lines 637--638
 <./images//FormSzerk_page.png, id=476, 890.5772pt x 475.02469pt>
 File: ./images//FormSzerk_page.png Graphic file (type png)
 <use ./images//FormSzerk_page.png>
-Package pdftex.def Info: ./images//FormSzerk_page.png  used on input line 650.
+Package pdftex.def Info: ./images//FormSzerk_page.png  used on input line 653.
 (pdftex.def)             Requested size: 445.2875pt x 237.51175pt.
 
-Overfull \hbox (4.26978pt too wide) in paragraph at lines 650--651
+Overfull \hbox (4.26978pt too wide) in paragraph at lines 653--654
  [][] 
  []
 
@@ -1094,13 +1100,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.18})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.654 	A
+l.657 	A
          kód felépítése a következő alfejezetekben lesz tárgyalva. <./im
 ages//Ütemsor_betolt.png>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 663.
+put line 666.
 
-Underfull \hbox (badness 10000) in paragraph at lines 678--679
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
 []$ $ \T1/lmr/m/n/12 spea-ker1.AddSound(FormHangszSzerk.pitch[0],63,
  []
 
@@ -1109,82 +1115,131 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.19})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.698 	
+l.701 	
         <./images//FormSzerk_page.png>]
 <./images//hangsz_form.png, id=495, 601.4972pt x 346.29375pt>
 File: ./images//hangsz_form.png Graphic file (type png)
 <use ./images//hangsz_form.png>
-Package pdftex.def Info: ./images//hangsz_form.png  used on input line 704.
+Package pdftex.def Info: ./images//hangsz_form.png  used on input line 707.
 (pdftex.def)             Requested size: 220.50887pt x 126.95363pt.
 <./images//hangsz_szerk.png, id=497, 191.9672pt x 218.31563pt>
 File: ./images//hangsz_szerk.png Graphic file (type png)
 <use ./images//hangsz_szerk.png>
-Package pdftex.def Info: ./images//hangsz_szerk.png  used on input line 711.
+Package pdftex.def Info: ./images//hangsz_szerk.png  used on input line 714.
 (pdftex.def)             Requested size: 176.40439pt x 200.62961pt.
  [35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.20})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.715 	A
+l.718 	A
         z utóbbi leegyszerűsített változat, letisztultabb, és kevesebb ...
  <./images//hangsz_form.png>] [36
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.21})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.722 	\newpage
+l.725 	\newpage
                 <./images//hangsz_szerk.png>]
 <./images//lamp_form.png, id=515, 599.99156pt x 345.54094pt>
 File: ./images//lamp_form.png Graphic file (type png)
 <use ./images//lamp_form.png>
-Package pdftex.def Info: ./images//lamp_form.png  used on input line 727.
+Package pdftex.def Info: ./images//lamp_form.png  used on input line 730.
 (pdftex.def)             Requested size: 220.50887pt x 126.99399pt.
 <./images//LampaSzerk.png, id=517, 173.89969pt x 229.60782pt>
 File: ./images//LampaSzerk.png Graphic file (type png)
 <use ./images//LampaSzerk.png>
-Package pdftex.def Info: ./images//LampaSzerk.png  used on input line 736.
+Package pdftex.def Info: ./images//LampaSzerk.png  used on input line 739.
 (pdftex.def)             Requested size: 176.40439pt x 232.9251pt.
 <./images//nyíl_form.png, id=519, 600.74437pt x 347.04657pt>
 File: ./images//nyíl_form.png Graphic file (type png)
 <use ./images//nyíl_form.png>
-Package pdftex.def Info: ./images//nyíl_form.png  used on input line 745.
+Package pdftex.def Info: ./images//nyíl_form.png  used on input line 748.
 (pdftex.def)             Requested size: 220.50887pt x 127.38847pt.
 <./images//nyilSzerk.png, id=520, 177.66376pt x 284.56313pt>
 File: ./images//nyilSzerk.png Graphic file (type png)
 <use ./images//nyilSzerk.png>
-Package pdftex.def Info: ./images//nyilSzerk.png  used on input line 754.
+Package pdftex.def Info: ./images//nyilSzerk.png  used on input line 757.
 (pdftex.def)             Requested size: 176.40439pt x 282.55638pt.
  [37
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.22})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.764 
+l.767 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.23})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.764 
+l.767 
        <./images//lamp_form.png> <./images//LampaSzerk.png>] [38
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.24})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.764 
+l.767 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.25})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.764 
+l.767 
        <./images//nyíl_form.png> <./images//nyilSzerk.png>] [39]
 Excluding 'comment' comment. [40
 
 ] [41
 
 ] Excluding 'comment' comment. [42]
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--834
+
+ []
+
 (main.bbl [43
 
 ]
@@ -1329,28 +1384,28 @@ u^^[s . com /
 
 ] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D93288BE624B6EB106050D045F13D9B9;6105.
+(rerunfilecheck)             Checksum: 704483A7A1F005DACCBB2DEFAB7F3FC8;6206.
  ) 
 Here is how much of TeX's memory you used:
- 16795 strings out of 476375
- 274083 string characters out of 5798785
- 1862299 words of memory out of 5000000
- 36661 multiletter control sequences out of 15000+600000
- 572209 words of font info for 81 fonts, out of 8000000 for 9000
+ 16800 strings out of 476374
+ 274201 string characters out of 5798664
+ 1862340 words of memory out of 5000000
+ 36665 multiletter control sequences out of 15000+600000
+ 576480 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  78i,8n,81p,833b,602s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Program Files/M
-ikTex/fonts/enc/dvips/lm/lm-rm.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/
-lm-mathit.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}<D:/Program
+{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ec.enc}{D:/Program Files/MikTe
+x/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/
+lm-rm.enc}{D:/Program Files/MikTex/fonts/enc/dvips/lm/lm-mathit.enc}<D:/Program
  Files/MikTex/fonts/type1/public/lm/lmbx12.pfb><D:/Program Files/MikTex/fonts/t
-ype1/public/lm/lmcsc10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmmi1
-2.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/Program File
-s/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/Program Files/MikTex/fonts/type1/
-public/lm/lmsy10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmtt12.pfb>
-
-Output written on main.pdf (48 pages, 1749463 bytes).
+ype1/public/lm/lmbxi10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmcsc
+10.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmmi12.pfb><D:/Program Fi
+les/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/Program Files/MikTex/fonts/type1
+/public/lm/lmri12.pfb><D:/Program Files/MikTex/fonts/type1/public/lm/lmsy10.pfb
+><D:/Program Files/MikTex/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (48 pages, 1770265 bytes).
 PDF statistics:
- 701 PDF objects out of 1000 (max. 8388607)
+ 705 PDF objects out of 1000 (max. 8388607)
  172 named destinations out of 1000 (max. 500000)
  391 words of extra memory for PDF output out of 10000 (max. 10000000)
 
