@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7FA1BE8-C161-40EC-A781-3C66DC63666B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Thesis_project</RootNamespace>
+    <AssemblyName>Thesis_project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SLFormHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Output_JÓ\Debug\SLFormHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormHangszSzerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormHangszSzerk.Designer.cs">
+      <DependentUpon>FormHangszSzerk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBetoltes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBetoltes.Designer.cs">
+      <DependentUpon>FormBetoltes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormInditas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormInditas.Designer.cs">
+      <DependentUpon>FormInditas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormLampaSzerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormLampaSzerk.Designer.cs">
+      <DependentUpon>FormLampaSzerk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMentes.Designer.cs">
+      <DependentUpon>FormMentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormNyilSzerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EszkozSzerk\FormNyilSzerk.Designer.cs">
+      <DependentUpon>FormNyilSzerk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSzerkesztes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSzerkesztes.Designer.cs">
+      <DependentUpon>FormSzerkesztes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SzinTema.cs" />
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EszkozSzerk\FormHangszSzerk.resx">
+      <DependentUpon>FormHangszSzerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EszkozSzerk\FormLampaSzerk.resx">
+      <DependentUpon>FormLampaSzerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBetoltes.resx">
+      <DependentUpon>FormBetoltes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormInditas.resx">
+      <DependentUpon>FormInditas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EszkozSzerk\FormNyilSzerk.resx">
+      <DependentUpon>FormNyilSzerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSzerkesztes.resx">
+      <DependentUpon>FormSzerkesztes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-networko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\programmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UnitTests\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
